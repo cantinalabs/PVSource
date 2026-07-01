@@ -6,6 +6,8 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 
 ### A
 
+**Angle of incidence (AOI)** — The angle between the sun's rays and a line perpendicular to the module surface. As AOI increases, more light is reflected off the glass (AOI/IAM losses), reducing captured irradiance.
+
 **AC / DC** — **Alternating Current (AC)** periodically reverses direction (the form delivered by the utility grid and produced by inverters); **Direct Current (DC)** flows one direction (the form produced by PV modules and stored in batteries).
 
 **AFCI (Arc-Fault Circuit Interrupter)** — A protective function that detects the electrical signature of a dangerous arc (a series or parallel fault) and de-energizes the circuit. NEC 690.11 requires DC arc-fault protection for most PV circuits to reduce fire risk.
@@ -98,9 +100,13 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 
 ### E
 
+**Effective irradiance** — The plane-of-array irradiance actually converted by the module after reflection (IAM), soiling and spectral losses — the irradiance the cells 'see', used in performance models.
+
 **EVSE (Electric Vehicle Supply Equipment)** — The charging station hardware (the "charger") that safely delivers AC or DC electricity to an electric vehicle; increasingly paired with solar and managed to charge during high production or off-peak periods.
 
 ### F
+
+**Feed-in tariff (FIT)** — A fixed, guaranteed per-kWh payment for all solar energy exported (or generated) over a set term. Common outside the U.S.; a few U.S. programs (e.g., standard-offer tariffs) work similarly.
 
 **FERC (Federal Energy Regulatory Commission)** — The U.S. agency regulating interstate electricity transmission, wholesale power markets, and interconnection of large generators; FERC orders shape interconnection procedures and market rules.
 
@@ -109,6 +115,8 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 **Front-of-the-meter (FTM)** — Generation or storage connected to the grid on the utility side of the customer meter, selling energy or services into wholesale markets; contrast with **behind-the-meter**.
 
 ### G
+
+**Irradiance components (GHI / DNI / DHI)** — Global Horizontal Irradiance (total on a horizontal surface), Direct Normal Irradiance (beam component perpendicular to the sun) and Diffuse Horizontal Irradiance (scattered sky light). GHI ≈ DNI·cos(zenith) + DHI.
 
 **Gen-tie line** — The "generation tie" — the high- or medium-voltage line that carries a utility-scale plant's output from its substation/switchyard to the **point of interconnection** with the grid.
 
@@ -123,6 +131,8 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 **Grounding vs Bonding** — **Bonding** electrically connects metal parts together to a common potential for fault-current return; **Grounding** connects the bonded system to earth. Both are required for safety; they are distinct functions often conflated.
 
 ### H
+
+**Hot spot** — A localized overheating of a shaded or mismatched cell that is reverse-biased and dissipates power as heat; bypass diodes limit the effect. Severe hot spots can permanently damage a module.
 
 **Hosting capacity** — The amount of additional distributed generation a given point on the distribution grid can accept without requiring upgrades or violating voltage/thermal limits; utilities publish hosting-capacity maps to guide siting.
 
@@ -152,6 +162,10 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 
 ### L
 
+**Light-induced degradation (LID)** — An initial drop in output (often ~1–3%) in the first hours of sun exposure, mainly in boron-doped p-type silicon; largely mitigated in modern PERC/TOPCon and n-type cells.
+
+**LeTID** — Light- and elevated-Temperature-Induced Degradation — a slower, partly reversible power loss under heat and illumination affecting some cell types; managed by cell processing and screening.
+
 **LCOE (Levelized Cost of Energy)** — The discounted lifetime cost of a system divided by its discounted lifetime energy output, expressed in $/kWh; the per-unit cost at which the project breaks even.
 
 **LGIA / SGIA** — The **Large** and **Small Generator Interconnection Agreement** — the FERC-jurisdictional contracts governing how a generator connects to the transmission grid, defining facilities, cost responsibility, and operating obligations (typically split at 20 MW).
@@ -170,6 +184,8 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 
 ### M
 
+**Microcrack** — A hairline fracture in a solar cell (from handling, transport or thermal/mechanical stress) that can grow over time, isolating cell areas and reducing output; detected by electroluminescence imaging.
+
 **Main panel upgrade (MPU)** — Replacing a home's main service panel/busbar (e.g. from 100 A to 200 A) to provide capacity for solar back-feed, batteries, EV charging, or electrification when the existing panel cannot accommodate the addition under NEC 705.12.
 
 **Medium voltage (MV)** — Distribution-class voltages roughly 1 kV–35 kV (commonly 12.47–34.5 kV in solar collection systems) at which utility-scale plants gather and transmit power before final step-up.
@@ -185,6 +201,8 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 **MPPT (Maximum Power Point Tracking)** — The inverter/optimizer algorithm that continuously adjusts operating voltage to keep the array at its maximum-power point as irradiance and temperature change.
 
 ### N
+
+**Non-bypassable charges (NBCs)** — Per-kWh utility charges (e.g., for public programs, wildfire funds, nuclear decommissioning) that a net-metered customer still pays on consumed energy even when solar offsets the bill — a key factor in NEM 3.0 economics.
 
 **NABCEP** — The **North American Board of Certified Energy Practitioners**, the leading voluntary certification body for solar installers, designers, and inspectors in North America.
 
@@ -202,11 +220,17 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 
 ### O
 
+**Overbuild** — Installing more DC (or storage) capacity than the interconnection or PPA nominal rating to raise energy capture or firm output; related to the DC/AC ratio and to storage 'augmentation'.
+
 **OCPD (Overcurrent Protective Device)** — A fuse or circuit breaker that protects conductors and equipment from over-current; sized per NEC 690.9 (PV) and 240.6 (standard ratings).
 
 **Optimizer** — A module-level DC-DC power electronics device that performs per-module MPPT and reports data while a central string inverter handles DC-to-AC conversion; also provides module-level rapid shutdown.
 
 ### P
+
+**Potential-induced degradation (PID)** — Power loss caused by stray leakage currents between cells and the grounded frame under high system voltage, heat and humidity; countered by PID-resistant cells, encapsulants and inverter grounding schemes.
+
+**Point of common coupling (PCC)** — The point where a customer's (or plant's) electrical system connects to the utility grid — where interconnection, metering and power-quality requirements are measured.
 
 **P50 / P90** — Probabilistic energy estimates from a production model. **P50** is the median expected annual yield (50% chance of exceedance); **P90** is the conservative value exceeded 90% of years, used by lenders to size debt.
 
@@ -259,6 +283,10 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 **RPS (Renewable Portfolio Standard)** — A state mandate requiring load-serving entities to source a minimum share of electricity from renewables, often met by retiring RECs/SRECs; a primary driver of solar demand.
 
 ### S
+
+**Snail trails** — Discoloration lines on a module (silver/grey trails) that appear over time, often tracking microcracks; usually cosmetic but can indicate cell damage.
+
+**Solar window** — The band of sky (and time of day/year) in which an array receives usable, largely unshaded sunlight — commonly the ~9 a.m.–3 p.m. window used for shading analysis.
 
 **SCADA (Supervisory Control and Data Acquisition)** — The monitoring and control system that gathers telemetry from plant equipment and relays operator/PPC commands; the operational backbone of utility-scale solar and storage.
 
@@ -319,6 +347,8 @@ A reference glossary of photovoltaic (PV) and solar-energy engineering terms for
 **UL 9540 / 9540A** — **UL 9540** is the product safety standard for energy storage systems and equipment; **UL 9540A** is the companion test method that characterizes thermal-runaway fire propagation in a BESS. UL 9540A results inform NFPA 855 siting and separation requirements.
 
 ### V
+
+**Value of solar (VOS)** — A tariff/methodology that pays exported solar based on its calculated value to the grid (avoided energy, capacity, losses, environmental and grid benefits) rather than the retail rate.
 
 **V2H (Vehicle-to-Home)** — A bidirectional EV-charging capability that lets an electric vehicle's battery discharge to power a home (and back up loads during outages), turning the vehicle into a mobile storage asset; a subset of broader vehicle-to-grid (V2G).
 

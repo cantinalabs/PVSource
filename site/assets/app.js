@@ -344,6 +344,60 @@
     if(jz) document.querySelectorAll('[data-jz]').forEach(function(e){ e.textContent = ' Your saved jurisdiction: ' + jz + '.'; });
   })();
 
+  /* ---------- bookmarks (persist across sessions via localStorage) ---------- */
+  (function(){
+    var BKEY = 'pv-bookmarks';
+    function getBM(){ try{ return JSON.parse(localStorage.getItem(BKEY) || '[]'); }catch(e){ return []; } }
+    function setBM(a){ try{ localStorage.setItem(BKEY, JSON.stringify(a)); }catch(e){} }
+    var slug = location.pathname.split('/').pop();
+    var pageTitle = (document.title || '').replace(/\s·\sPVSource$/, '').replace(/\sPVSource$/, '');
+    var section = document.body.getAttribute('data-section') || '';
+    // star toggle in the page header
+    var star = document.querySelector('[data-bookmark]');
+    if(star){
+      var marked = function(){ return getBM().some(function(b){ return b.slug === slug; }); };
+      var sync = function(){ var m = marked(); star.classList.toggle('on', m); star.setAttribute('title', m ? 'Remove bookmark' : 'Bookmark this page'); };
+      sync();
+      star.addEventListener('click', function(){
+        var a = getBM(), i = a.map(function(b){ return b.slug; }).indexOf(slug);
+        if(i >= 0) a.splice(i, 1); else a.push({ slug: slug, title: pageTitle, section: section });
+        setBM(a); sync();
+      });
+    }
+    // bookmarks page
+    var listEl = document.getElementById('bookmarks-list');
+    if(listEl){
+      var bms = getBM();
+      if(!bms.length){
+        listEl.innerHTML = '<div class="bm-empty">No bookmarks yet.<br>Open any guide and tap the <strong>☆ Bookmark</strong> button in its header to save it here — your list is kept on this device even after you close and reopen the site.</div>';
+      } else {
+        var order = [], g = {};
+        bms.forEach(function(b){ var s = b.section || 'Saved'; if(!g[s]){ g[s] = []; order.push(s); } g[s].push(b); });
+        listEl.innerHTML = order.map(function(s){
+          return '<div class="bm-group"><h3>' + esc(s) + '</h3>' + g[s].map(function(b){
+            return '<div class="bm-item"><a href="' + b.slug + '">' + esc(b.title) + '</a><button class="bm-rm" data-slug="' + b.slug + '" title="Remove" aria-label="Remove bookmark">✕</button></div>';
+          }).join('') + '</div>';
+        }).join('');
+        listEl.addEventListener('click', function(e){
+          var rm = e.target.closest('.bm-rm'); if(!rm) return;
+          setBM(getBM().filter(function(b){ return b.slug !== rm.getAttribute('data-slug'); }));
+          var it = rm.closest('.bm-item'), grp = it.parentNode; it.remove();
+          if(grp && !grp.querySelector('.bm-item')) grp.remove();
+          if(!listEl.querySelector('.bm-item')) listEl.innerHTML = '<div class="bm-empty">No bookmarks yet.</div>';
+        });
+      }
+    }
+  })();
+
+  /* ---------- shortcut hint: show "Ctrl K" on Windows/Linux ---------- */
+  (function(){
+    var isMac = /Mac|iPhone|iPod|iPad/i.test(navigator.platform || '') || /Mac OS X/i.test(navigator.userAgent || '');
+    if(isMac) return;
+    document.querySelectorAll('.kbd').forEach(function(k){
+      if(/⌘\s*K/i.test(k.textContent)) k.textContent = 'Ctrl K';
+    });
+  })();
+
   /* ---------- year in footer ---------- */
   var yr = document.getElementById('yr'); if(yr) yr.textContent = new Date().getFullYear();
 })();
