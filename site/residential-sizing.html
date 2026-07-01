@@ -1,0 +1,313 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Residential Sizing &amp; Calculations · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="residential" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link active" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="residential-design.html" aria-label="Previous: Residential Design"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Residential Design</span></div><div class="side-nav next"><a href="residential-battery-backup.html" aria-label="Next: Battery &amp; Whole-Home Backup"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Battery &amp; Whole-Home Backup</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Residential</span><h1>Residential Sizing &amp; Calculations</h1><p class="lede">Residential sizing worked end to end — panels from your bill, string and microinverter sizing, battery-backup sizing, busbar and conductor math, and payback.</p><div class="banner-meta"><div class="m"><b>kWh → kW</b><span>From the bill</span></div><div class="m"><b>200A panel</b><span>705.12 example</span></div><div class="m"><b>Payback</b><span>Worked example</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>This page is the arithmetic companion to <strong>Residential System Design</strong>. It shows the actual numbers:
+how to convert utility bills into a system size, count panels, size strings and microinverters, size a
+battery for backup, run the <strong>NEC 705.12</strong> busbar check, size the PV back-feed conductor and breaker,
+and estimate simple payback under current incentive rules. Every formula is followed by a worked
+example using plain-text math.</p>
+<blockquote>
+<p><strong>Scope.</strong> Residential (1–2 family dwelling) grid-tied and battery-backup sizing. Verify every code
+figure against the <strong>NEC edition adopted by your AHJ</strong> and confirm interconnection limits with your
+utility.</p>
+</blockquote>
+<hr />
+<h2 id="1-estimate-annual-energy-use-from-bills">1. Estimate annual energy use from bills</h2>
+<p>Pull <strong>12 months of utility statements</strong> and sum the kWh-used figures. Twelve months captures summer
+cooling and winter heating swings that a single bill would miss.</p>
+<pre><code>Annual_kWh = sum of 12 monthly kWh-used values
+</code></pre>
+<p><strong>Worked example — the Reyes household:</strong></p>
+<pre><code>Bills total over 12 months ............ 11,400 kWh
+Average monthly use ................... 11,400 ÷ 12 ≈ 950 kWh/month
+</code></pre>
+<p>We'll carry <strong>11,400 kWh/yr</strong> through the rest of this page.</p>
+<hr />
+<h2 id="2-peak-sun-hours-psh-by-region">2. Peak sun hours (PSH) by region</h2>
+<p><strong>Peak sun hours</strong> is the number of hours per day equivalent to 1,000 W/m² of sun — it bundles
+latitude, climate, and seasonality into one daily-average number. Use a location-specific value from
+<strong>NREL PVWatts</strong>; the table below is for orientation only.</p>
+<table>
+<thead>
+<tr>
+<th>Region (illustrative)</th>
+<th>Approx. annual-average PSH/day</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desert Southwest (AZ, NV, NM)</td>
+<td>5.5–6.5</td>
+</tr>
+<tr>
+<td>Southeast / South Central (TX, FL, GA)</td>
+<td>4.5–5.5</td>
+</tr>
+<tr>
+<td>Mid-Atlantic / Midwest</td>
+<td>4.0–4.8</td>
+</tr>
+<tr>
+<td>Northeast / Pacific NW</td>
+<td>3.5–4.3</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Rule of thumb:</strong> Always pull a real PSH (or use PVWatts directly) for the design address. A
+half-hour error in PSH shifts system size by ~10%.</p>
+</blockquote>
+<p>For the Reyes example, assume a Mid-Atlantic site at <strong>4.5 PSH/day</strong>.</p>
+<hr />
+<h2 id="3-system-size-from-energy-use">3. System size from energy use</h2>
+<p>The core sizing formula accounts for real-world losses with a <strong>performance ratio (PR)</strong> — typically
+<strong>0.75–0.85</strong> (temperature, soiling, wiring, inverter, mismatch losses):</p>
+<pre><code>System_kW = Annual_kWh ÷ (PSH × 365 × PR)
+</code></pre>
+<p><strong>Worked example (Reyes, 100% offset target, PR = 0.80):</strong></p>
+<pre><code>System_kW = 11,400 ÷ (4.5 × 365 × 0.80)
+          = 11,400 ÷ 1,314
+          ≈ 8.68 kW
+</code></pre>
+<p>So a roughly <strong>8.7 kW DC</strong> array offsets ~100% of usage at this site.</p>
+<hr />
+<h2 id="4-number-of-panels">4. Number of panels</h2>
+<pre><code>Panels = round_up( System_kW × 1000 ÷ Panel_W )
+Actual_System_kW = Panels × Panel_W ÷ 1000
+</code></pre>
+<p><strong>Worked example (430 W modules):</strong></p>
+<pre><code>Panels = 8,680 ÷ 430 = 20.2  → round up to 21 panels
+Actual_System_kW = 21 × 430 ÷ 1000 = 9.03 kW DC
+</code></pre>
+<p>Twenty-one 430 W modules give <strong>9.03 kW DC</strong>. Then confirm those 21 modules physically fit within the
+usable roof area after fire setbacks (see <strong>Residential System Design</strong>).</p>
+<hr />
+<h2 id="5-offset-percentage-check">5. Offset percentage check</h2>
+<pre><code>Offset_% = (Estimated_annual_production ÷ Annual_kWh) × 100
+Estimated_annual_production ≈ Actual_System_kW × PSH × 365 × PR
+</code></pre>
+<p><strong>Worked example:</strong></p>
+<pre><code>Production ≈ 9.03 × 4.5 × 365 × 0.80 ≈ 11,866 kWh/yr
+Offset_%  = 11,866 ÷ 11,400 × 100 ≈ 104%
+</code></pre>
+<p>About <strong>104% offset</strong> — within typical utility caps of ~110%. If the utility caps at 100%, drop to 20
+modules (8.6 kW, ~99%).</p>
+<hr />
+<h2 id="6-string-vs-microinverter-sizing-for-a-home">6. String vs. microinverter sizing for a home</h2>
+<h3 id="microinverter-sizing">Microinverter sizing</h3>
+<p>With microinverters, you match each module to a compatible microinverter and check two limits:</p>
+<ol>
+<li><strong>Module power within the micro's DC input window</strong> (the micro must handle the module's rated W).</li>
+<li><strong>AC branch circuit limit</strong> — how many micros share one AC branch, set by the micro's continuous
+   output current and the branch breaker.</li>
+</ol>
+<pre><code>Max_micros_per_branch = floor( (Branch_breaker_A × 0.80) ÷ Micro_continuous_A )
+</code></pre>
+<p><strong>Worked example</strong> — micro rated <strong>1.45 A</strong> continuous AC, <strong>20 A</strong> branch breaker:</p>
+<pre><code>Max_micros_per_branch = floor( (20 × 0.80) ÷ 1.45 )
+                      = floor( 16 ÷ 1.45 )
+                      = floor(11.03) = 11 micros per 20A branch
+</code></pre>
+<p>So 21 modules → <strong>two AC branch circuits</strong> (e.g., 11 + 10). Always confirm against the
+manufacturer's published per-branch maximum, which already bakes in the 80% rule.</p>
+<h3 id="string-inverter-sizing">String inverter sizing</h3>
+<p>With a string inverter you must keep the string <strong>voltage</strong> inside the inverter's MPPT window across
+all temperatures and the <strong>current</strong> within input limits.</p>
+<ul>
+<li><strong>Max modules per string (cold limit):</strong> the string's open-circuit voltage at the <strong>coldest
+  expected temperature</strong> must stay below the inverter's max DC input voltage.</li>
+</ul>
+<pre><code>Voc_cold_per_module = Voc_stc × [1 + TempCoeff_Voc × (T_cold − 25)]
+Max_modules = floor( Inverter_max_DC_V ÷ Voc_cold_per_module )
+</code></pre>
+<p><strong>Worked example</strong> — <code>Voc_stc = 40 V</code>, <code>TempCoeff_Voc = −0.0028/°C</code> (−0.28%/°C),
+record-low <code>T_cold = −15°C</code>, inverter max input <strong>600 V</strong>:</p>
+<pre><code>Voc_cold = 40 × [1 + (−0.0028)(−15 − 25)]
+         = 40 × [1 + (−0.0028)(−40)]
+         = 40 × [1 + 0.112]
+         = 40 × 1.112 = 44.48 V per module
+Max_modules = floor( 600 ÷ 44.48 ) = floor(13.5) = 13 modules max per string
+</code></pre>
+<blockquote>
+<p><strong>Cold = high voltage.</strong> PV voltage <em>rises</em> as temperature drops. Sizing strings at STC (25°C)
+instead of record-cold temperature is a classic error that can over-voltage and damage the inverter.
+Use the AHJ-referenced extreme-low ("Extreme Annual Mean Minimum") temperature for the site.</p>
+</blockquote>
+<p>For a 21-module 9 kW array, a string inverter might run two strings of 10–11 modules; with the cold
+limit of 13 above, that's comfortably within range.</p>
+<hr />
+<h2 id="7-battery-sizing-for-critical-load-backup">7. Battery sizing for critical-load backup</h2>
+<p>Backup batteries are sized to the <strong>critical loads</strong> you want to keep alive during an outage and the
+<strong>hours of autonomy</strong> you want — not the whole house.</p>
+<h3 id="step-1-list-critical-loads-and-daily-energy">Step 1 — list critical loads and daily energy</h3>
+<pre><code>Daily_load_kWh = Σ ( Load_W × Hours_per_day ) ÷ 1000
+</code></pre>
+<p><strong>Worked example — critical loads:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Load</th>
+<th>Power (W)</th>
+<th>Hours/day</th>
+<th>Wh/day</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Refrigerator (duty-cycled avg)</td>
+<td>150</td>
+<td>24</td>
+<td>3,600</td>
+</tr>
+<tr>
+<td>Furnace blower / boiler controls</td>
+<td>300</td>
+<td>6</td>
+<td>1,800</td>
+</tr>
+<tr>
+<td>Well pump (avg)</td>
+<td>200</td>
+<td>2</td>
+<td>400</td>
+</tr>
+<tr>
+<td>LED lighting</td>
+<td>200</td>
+<td>5</td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>Internet / phones / misc</td>
+<td>100</td>
+<td>12</td>
+<td>1,200</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td><strong>8,000 Wh/day = 8.0 kWh/day</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-2-size-usable-battery-capacity">Step 2 — size usable battery capacity</h3>
+<p>Account for <strong>days of autonomy</strong>, <strong>depth of discharge (DoD)</strong>, and <strong>round-trip efficiency (η)</strong>:</p>
+<pre><code>Battery_kWh = (Daily_load_kWh × Days_autonomy) ÷ (DoD × η)
+</code></pre>
+<p><strong>Worked example</strong> — 1 day of autonomy, LFP DoD = 0.90, η = 0.90:</p>
+<pre><code>Battery_kWh = (8.0 × 1) ÷ (0.90 × 0.90)
+            = 8.0 ÷ 0.81
+            ≈ 9.9 kWh usable-rated battery
+</code></pre>
+<p>A single <strong>~10 kWh</strong> LFP battery covers this critical-load list for one day with no solar input. Two
+days of autonomy (cloudy outage) would need ~20 kWh. In a grid-tied + battery system, daytime solar
+<strong>recharges</strong> the battery, so real-world ride-through is usually longer than the no-sun figure.</p>
+<blockquote>
+<p><strong>Check the inverter's continuous and surge power</strong>, not just energy. A well pump or AC compressor
+can draw a large momentary <strong>surge</strong>; the backup inverter must handle it or the load won't start.</p>
+</blockquote>
+<hr />
+<h2 id="8-nec-70512-busbar-120-example-200a-panel">8. NEC 705.12 busbar (120%) example — 200A panel</h2>
+<p>For a <strong>load-side back-fed breaker</strong> at the opposite end of the busbar from the main:</p>
+<pre><code>Max_PV_breaker_A = (Busbar_A × 1.20) − Main_breaker_A
+</code></pre>
+<p><strong>Worked example — 200A busbar, 200A main:</strong></p>
+<pre><code>Max_PV_breaker_A = (200 × 1.20) − 200 = 240 − 200 = 40A
+</code></pre>
+<p>So the largest load-side PV back-fed breaker is <strong>40 A</strong>. Now translate that to allowed inverter
+output (the breaker must be ≥125% of continuous inverter current):</p>
+<pre><code>Max_continuous_inverter_A = Max_PV_breaker_A ÷ 1.25 = 40 ÷ 1.25 = 32A
+</code></pre>
+<p>At 240 V single-phase that's about <code>32 × 240 = 7,680 VA ≈ 7.7 kW AC</code> of inverter capacity on a
+load-side connection.</p>
+<blockquote>
+<p><strong>If the array exceeds this</strong>, options are a main-breaker downgrade, a <strong>main panel upgrade</strong>, or a
+<strong>supply-side (line-side) tap</strong>, which sidesteps the 120% calc entirely. See <strong>Residential System
+Design</strong> for the trade-offs.</p>
+</blockquote>
+<hr />
+<h2 id="9-conductor-breaker-sizing-for-the-pv-back-feed">9. Conductor &amp; breaker sizing for the PV back-feed</h2>
+<p>Inverter output circuits are treated as <strong>continuous</strong> loads, so conductors and overcurrent devices
+are sized at <strong>125%</strong> of the inverter's max continuous output current.</p>
+<pre><code>Min_breaker_A   = ceil_to_standard( Inverter_Imax × 1.25 )
+Min_conductor_A = Inverter_Imax × 1.25   (before temperature/conduit derates)
+</code></pre>
+<p><strong>Worked example</strong> — single 240 V inverter, max continuous output <strong>27 A</strong>:</p>
+<pre><code>Min_breaker_A   = 27 × 1.25 = 33.75  → next standard size = 35A breaker
+Min_conductor_A = 27 × 1.25 = 33.75A required ampacity
+</code></pre>
+<p>A <strong>35 A</strong> back-fed breaker fits under the 40 A busbar limit from section 8. For the conductor, an
+8 AWG copper (THWN-2, 75°C column ≈ 50 A) easily covers 33.75 A <strong>before</strong> derates. Apply any ambient
+temperature and conduit-fill <strong>derating factors</strong>, and verify the wire's ampacity still meets the
+required 33.75 A and the <strong>OCPD ≤ conductor ampacity</strong> rule.</p>
+<blockquote>
+<p><strong>Two checks must both pass:</strong> (1) the breaker protects the conductor (conductor ampacity ≥ breaker
+rating after derates) and (2) the breaker satisfies the 120% busbar rule. Resize the conductor up if
+conduit/temperature derates pull its ampacity below the breaker rating.</p>
+</blockquote>
+<hr />
+<h2 id="10-simple-payback-example">10. Simple payback example</h2>
+<blockquote>
+<p><strong>Critical 2026 tax note:</strong> The federal <strong>Section 25D Residential Clean Energy Credit (30%)</strong> was
+<strong>terminated by the One Big Beautiful Bill Act</strong> for expenditures/installations <strong>placed in service
+after December 31, 2025</strong>. A system installed and operational in 2026 generally <strong>does not</strong> qualify
+for the 30% residential credit. The example below shows both a <strong>pre-2026 (credit-eligible)</strong> case
+for reference and a <strong>2026 (no federal credit)</strong> case. Always confirm current federal and
+<strong>state/local</strong> incentives for the install year.</p>
+</blockquote>
+<p><strong>Assumptions:</strong> 9.0 kW system, installed cost <strong>$3.00/W = $27,000</strong>, ~11,900 kWh/yr produced,
+retail/net-metering value <strong>$0.16/kWh</strong>.</p>
+<pre><code>Annual_savings = 11,900 kWh × $0.16 = $1,904/year
+</code></pre>
+<p><strong>Case A — placed in service on/before Dec 31, 2025 (25D credit applied):</strong></p>
+<pre><code>Federal credit = 30% × $27,000 = $8,100
+Net cost       = $27,000 − $8,100 = $18,900
+Simple_payback = $18,900 ÷ $1,904 ≈ 9.9 years
+</code></pre>
+<p><strong>Case B — placed in service in 2026 (no federal 25D credit):</strong></p>
+<pre><code>Net cost       = $27,000  (federal credit no longer available)
+Simple_payback = $27,000 ÷ $1,904 ≈ 14.2 years
+</code></pre>
+<pre><code>Simple_payback_years = Net_system_cost ÷ Annual_savings
+</code></pre>
+<blockquote>
+<p><strong>Net metering drives payback.</strong> Where utilities pay full retail for exports, payback is short;
+where exports are credited at low "avoided cost" rates, a <strong>battery</strong> to self-consume evening energy
+can improve the economics. Time-of-use rates, escalating utility prices, and remaining
+<strong>state/local</strong> incentives all shift the real number — model your specific tariff.</p>
+</blockquote>
+<hr />
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" href="downloads.html">NREL PVWatts Calculator</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit">IRS — Residential Clean Energy Credit (Section 25D)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.congress.gov/crs-product/IN12611">Congress.gov CRS — Expiration and Carryforward Rules for the Residential Clean Energy Credit</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.greenlancer.com/post/120-rule-for-solar">GreenLancer — The 120% Rule for Solar (NEC 705.12)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.greenlancer.com/post/solar-rapid-shutdown-requirements">GreenLancer — Solar Rapid Shutdown Requirements (NEC 690.12)</a></li>
+<li><a class="inline" href="downloads.html">EnergySage — Solar Panel Cost</a></li>
+<li><a class="inline" href="downloads.html">Solar.com — 2026 Solar Panel Costs</a></li>
+</ul>
+<hr />
+<p><em>Educational/reference only; not engineering, electrical, or financial advice. Permits, licensed
+electricians, and AHJ approval are required for grid-tied systems.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="residential-design.html" class="prev"><span class="dir">Previous</span><span class="ttl">Residential Design</span></a><a href="residential-battery-backup.html" class="next"><span class="dir">Next</span><span class="ttl">Battery &amp; Whole-Home Backup</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#1-estimate-annual-energy-use-from-bills">1. Estimate annual energy use from bills</a>
+<a class="lvl-2" href="#2-peak-sun-hours-psh-by-region">2. Peak sun hours (PSH) by region</a>
+<a class="lvl-2" href="#3-system-size-from-energy-use">3. System size from energy use</a>
+<a class="lvl-2" href="#4-number-of-panels">4. Number of panels</a>
+<a class="lvl-2" href="#5-offset-percentage-check">5. Offset percentage check</a>
+<a class="lvl-2" href="#6-string-vs-microinverter-sizing-for-a-home">6. String vs. microinverter sizing for a home</a>
+<a class="lvl-3" href="#microinverter-sizing">Microinverter sizing</a>
+<a class="lvl-3" href="#string-inverter-sizing">String inverter sizing</a>
+<a class="lvl-2" href="#7-battery-sizing-for-critical-load-backup">7. Battery sizing for critical-load backup</a>
+<a class="lvl-3" href="#step-1-list-critical-loads-and-daily-energy">Step 1 — list critical loads and daily energy</a>
+<a class="lvl-3" href="#step-2-size-usable-battery-capacity">Step 2 — size usable battery capacity</a>
+<a class="lvl-2" href="#8-nec-70512-busbar-120-example-200a-panel">8. NEC 705.12 busbar (120%) example — 200A panel</a>
+<a class="lvl-2" href="#9-conductor-breaker-sizing-for-the-pv-back-feed">9. Conductor &amp; breaker sizing for the PV back-feed</a>
+<a class="lvl-2" href="#10-simple-payback-example">10. Simple payback example</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

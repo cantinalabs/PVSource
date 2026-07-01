@@ -1,0 +1,308 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Power, Energy &amp; Key Metrics · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="calc" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link active" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="how-solar-works.html" aria-label="Previous: How Solar Works"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">How Solar Works</span></div><div class="side-nav next"><a href="fundamentals-solar-resource.html" aria-label="Next: The Solar Resource &amp; Geometry"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">The Solar Resource &amp; Geometry</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Fundamentals</span><h1>Power, Energy &amp; Key Metrics</h1><p class="lede">A plain-language primer that makes the rest of the site legible — kW vs kWh, kWp, capacity factor, specific yield, performance ratio, DC/AC ratio, and common conversions.</p><div class="banner-meta"><div class="m"><b>kW vs kWh</b><span>Power vs energy</span></div><div class="m"><b>Specific yield</b><span>kWh/kWp</span></div><div class="m"><b>Conversions</b><span>Quick reference</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>Almost every other page on this site quotes a number — <code>kWp</code>, <code>kWh/kWp</code>, <code>PR</code>, <code>DC/AC ratio</code>, <code>LCOE</code>. This primer defines those terms in plain language, shows how they relate, and gives small worked conversions so the rest of the reference is legible. If you only read one page first, read this one.</p>
+<h2 id="power-vs-energy-kw-vs-kwh">Power vs. Energy: kW vs. kWh</h2>
+<p>The most common confusion in solar is <strong>power</strong> versus <strong>energy</strong>.</p>
+<ul>
+<li><strong>Power</strong> is the <em>rate</em> of energy flow, measured in <strong>watts (W)</strong> or <strong>kilowatts (kW)</strong>. It is an instantaneous quantity — what you have "right now."</li>
+<li><strong>Energy</strong> is power accumulated <strong>over time</strong>, measured in <strong>watt-hours (Wh)</strong> or <strong>kilowatt-hours (kWh)</strong>. It is what you are billed for and what a system <em>produces</em>.</li>
+</ul>
+<pre><code>Energy (kWh) = Power (kW) × Time (hours)
+</code></pre>
+<blockquote>
+<p><strong>Key point:</strong> A <code>5 kW</code> array is a <em>power</em> rating (how fast it can produce). The <code>7,500 kWh</code> it makes in a year is <em>energy</em> (how much it produced). Confusing the two is like confusing speed (mph) with distance (miles).</p>
+</blockquote>
+<p><strong>Worked conversion:</strong> a <code>400 W</code> panel running at full output for <code>5 hours</code> produces <code>400 W × 5 h = 2,000 Wh = 2 kWh</code>.</p>
+<h3 id="wp-and-kwp-watt-peak">Wp and kWp (Watt-Peak)</h3>
+<p><strong>Wp</strong> (watt-peak) and <strong>kWp</strong> (kilowatt-peak) describe the <strong>rated power output of PV under Standard Test Conditions (STC)</strong> — <code>1000 W/m²</code> irradiance, <code>25 °C</code> cell temperature, AM1.5 spectrum. The "peak" reminds you it is a <em>nameplate maximum under ideal lab conditions</em>, not what you will see most of the day.</p>
+<blockquote>
+<p><strong>Key point:</strong> <code>kWp</code> is the DC nameplate of the panels. Real-world output is almost always <strong>less</strong> than nameplate because real irradiance, temperature, soiling, and losses rarely match STC.</p>
+</blockquote>
+<h2 id="ac-vs-dc-ratings">AC vs. DC Ratings</h2>
+<p>A PV system has two different power ratings:</p>
+<table>
+<thead>
+<tr>
+<th>Rating</th>
+<th>What it describes</th>
+<th>Set by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DC (kWp / kWdc)</strong></td>
+<td>Sum of module nameplates at STC</td>
+<td>The panels</td>
+</tr>
+<tr>
+<td><strong>AC (kWac)</strong></td>
+<td>Maximum the inverter can deliver to the grid</td>
+<td>The inverter(s)</td>
+</tr>
+</tbody>
+</table>
+<p>A system is often described as, e.g., <strong>"7.6 kWdc / 6.0 kWac."</strong> Utilities and interconnection agreements usually care about the <strong>AC</strong> number (grid impact); module counts and incentives often reference the <strong>DC</strong> number. The relationship between them is the <strong>DC/AC ratio</strong> below. See <a class="inline" href="fundamentals-inverters.html">Inverters Deep-Dive</a>.</p>
+<h2 id="dcac-ratio-inverter-loading-ratio-ilr">DC/AC Ratio (Inverter Loading Ratio, ILR)</h2>
+<pre><code>DC/AC ratio (ILR) = DC nameplate (kWp) / Inverter AC rating (kWac)
+</code></pre>
+<p>Designers intentionally install <strong>more DC than AC</strong> (ratios commonly <code>1.1–1.4</code>) because the array rarely reaches STC, so a "smaller" inverter is cost-effective and produces a flatter, longer output curve. When DC briefly exceeds AC capacity, the excess is <strong>clipped</strong>.</p>
+<p><strong>Worked example:</strong> <code>7.6 kWdc ÷ 6.0 kWac = 1.27</code> ILR. Modest, occasional midday clipping; typical residential design.</p>
+<blockquote>
+<p><strong>Key point:</strong> A higher ILR harvests more energy in low light and shoulders of the day but increases <strong>clipping</strong> losses at peak. The economic optimum depends on climate and energy prices.</p>
+</blockquote>
+<h2 id="insolation-peak-sun-hours-psh">Insolation &amp; Peak Sun Hours (PSH)</h2>
+<p><strong>Insolation</strong> is the solar energy received per unit area over a period, typically <strong>kWh/m²/day</strong>. Conveniently, because STC defines power at <code>1000 W/m² = 1 kW/m²</code>:</p>
+<pre><code>Peak Sun Hours (PSH) = daily insolation in kWh/m²/day
+</code></pre>
+<p>So a site receiving <code>5 kWh/m²/day</code> has <strong>5 peak sun hours</strong> — equivalent to 5 hours of full <code>1000 W/m²</code> sun, even though the real sun is spread across a longer, weaker day.</p>
+<p><strong>Worked estimate (back-of-envelope yield):</strong></p>
+<pre><code>Daily energy ≈ kWp × PSH × overall efficiency factor
+            ≈ 6 kWp × 5 PSH × 0.80 = 24 kWh/day
+</code></pre>
+<p>The <code>0.80</code> lumps inverter, wiring, temperature, soiling, and mismatch losses (it is the <strong>derate</strong> / performance ratio, below).</p>
+<h2 id="capacity-factor">Capacity Factor</h2>
+<p><strong>Capacity factor (CF)</strong> is how much energy a system actually produced versus its theoretical maximum if it ran at full nameplate power 24/7/365.</p>
+<pre><code>Capacity factor = Actual annual energy / (Rated power × 8760 hours)
+</code></pre>
+<p><strong>Worked example:</strong> a <code>6 kWdc</code> system producing <code>10,500 kWh/year</code>:</p>
+<pre><code>CF = 10,500 / (6 × 8760) = 10,500 / 52,560 ≈ 0.20 = 20%
+</code></pre>
+<p>Fixed-tilt PV typically lands around <strong>15–25%</strong>; single-axis tracking and very sunny sites push higher. Low CF is normal for solar — the sun only shines part of the day.</p>
+<h2 id="specific-yield-kwhkwp">Specific Yield (kWh/kWp)</h2>
+<p><strong>Specific yield</strong> normalizes energy by system size so you can compare a small roof to a large farm:</p>
+<pre><code>Specific yield = Annual energy (kWh) / DC nameplate (kWp)   [units: kWh/kWp]
+</code></pre>
+<p><strong>Worked example:</strong> <code>10,500 kWh ÷ 6 kWp = 1,750 kWh/kWp/year</code>. Typical values range from ~<code>900</code> (cloudy, high-latitude) to <code>1,800+</code> (sunny, low-loss) kWh/kWp/year. It is essentially <code>PSH × 365 × PR</code>.</p>
+<h2 id="performance-ratio-pr">Performance Ratio (PR)</h2>
+<p><strong>Performance ratio</strong> is the headline <em>quality</em> metric — the fraction of the energy the array <em>should</em> have produced (given the irradiance it actually received) that it <em>did</em> produce. It strips out weather to isolate system health.</p>
+<pre><code>PR = Actual energy yield / Theoretical yield at measured irradiance
+   = Specific yield / (in-plane insolation × performance period)
+</code></pre>
+<p>PR captures all losses: temperature, inverter, wiring, soiling, mismatch, shading, downtime. Good modern systems run <strong>PR ≈ 0.75–0.85</strong>; the methodology is standardized in <strong>IEC 61724</strong>. See <a class="inline" href="fundamentals-standards-bodies.html">Standards &amp; Certification Bodies</a> and the loss breakdown in <a class="inline" href="fundamentals-shading-mismatch.html">Shading, Mismatch &amp; Bypass Diodes</a>.</p>
+<blockquote>
+<p><strong>Key point:</strong> <strong>Capacity factor</strong> answers "how much of nameplate did it run at?" (size + weather + losses). <strong>Performance ratio</strong> answers "how well did it convert the sunlight it got?" (losses only). High PR with low CF just means a good system at a cloudy site.</p>
+</blockquote>
+<h2 id="degradation">Degradation</h2>
+<p>Modules lose output slowly over time. <strong>Degradation rate</strong> is expressed in <strong>%/year</strong>. A common warranty profile is a higher first-year <strong>light-induced degradation (LID)</strong> step (~<code>1–2%</code>) then a linear <code>~0.4–0.7%/year</code> thereafter, with end-of-warranty output guaranteed around <code>~85–92%</code> at 25–30 years for quality modules.</p>
+<p><strong>Worked example:</strong> at <code>0.5%/year</code>, a module is at <code>(1 − 0.005)^20 ≈ 0.905</code>, i.e. ~<code>90.5%</code> of original output after 20 years.</p>
+<h2 id="availability">Availability</h2>
+<p><strong>Availability</strong> is the fraction of time a system was <em>capable</em> of operating (not down for faults, grid outages, or maintenance):</p>
+<pre><code>Availability = Uptime / Total time
+</code></pre>
+<p>Well-run plants target <code>&gt;98–99%</code>. Low availability silently erodes annual energy independent of weather, and shows up as a depressed PR.</p>
+<h2 id="lcoe-at-a-glance">LCOE at a Glance</h2>
+<p><strong>Levelized Cost of Energy (LCOE)</strong> is the lifetime cost of a system divided by its lifetime energy production — a single <code>$/kWh</code> (or <code>$/MWh</code>) figure for comparing technologies.</p>
+<pre><code>LCOE ≈ (Total lifetime costs, discounted) / (Total lifetime energy, discounted)
+</code></pre>
+<p>Lifetime costs include capital, financing, O&amp;M, and replacements; lifetime energy accounts for degradation and availability. Lower is better. The full discounting math is in <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>.</p>
+<blockquote>
+<p><strong>Key point:</strong> LCOE lets you compare a solar plant to gas, wind, or storage on equal footing — but it is sensitive to discount rate, capacity factor, and assumed lifetime, so always check the assumptions behind any quoted number.</p>
+</blockquote>
+<h2 id="common-unit-conversions">Common Unit Conversions</h2>
+<p>Small, frequently-needed conversions for sizing, irradiance, and energy comparisons.</p>
+<table>
+<thead>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Multiply by</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1 kW</code></td>
+<td><code>W</code></td>
+<td><code>1,000</code></td>
+<td>power</td>
+</tr>
+<tr>
+<td><code>1 kWh</code></td>
+<td><code>Wh</code></td>
+<td><code>1,000</code></td>
+<td>energy</td>
+</tr>
+<tr>
+<td><code>1 MWh</code></td>
+<td><code>kWh</code></td>
+<td><code>1,000</code></td>
+<td>energy</td>
+</tr>
+<tr>
+<td><code>1 kWh</code></td>
+<td><code>MJ</code></td>
+<td><code>3.6</code></td>
+<td><code>1 kWh = 3.6 MJ</code></td>
+</tr>
+<tr>
+<td><code>1 kW/m²</code></td>
+<td><code>W/ft²</code></td>
+<td><code>92.9</code></td>
+<td><code>1000 W/m² ≈ 92.9 W/ft²</code> (STC)</td>
+</tr>
+<tr>
+<td><code>1 kW/m²</code></td>
+<td><code>W/m²</code></td>
+<td><code>1,000</code></td>
+<td>STC reference irradiance</td>
+</tr>
+<tr>
+<td><code>1 therm</code></td>
+<td><code>kWh</code></td>
+<td><code>29.3</code></td>
+<td><code>1 therm = 100,000 BTU</code></td>
+</tr>
+<tr>
+<td><code>1 kWh</code></td>
+<td><code>therm</code></td>
+<td><code>0.0341</code></td>
+<td>inverse of above</td>
+</tr>
+<tr>
+<td><code>1 kWh</code></td>
+<td><code>BTU</code></td>
+<td><code>3,412</code></td>
+<td>energy</td>
+</tr>
+<tr>
+<td><code>1 ton (cooling)</code></td>
+<td><code>kW (thermal)</code></td>
+<td><code>3.517</code></td>
+<td>HVAC sizing</td>
+</tr>
+<tr>
+<td><code>1 hp</code></td>
+<td><code>kW</code></td>
+<td><code>0.746</code></td>
+<td>motor power</td>
+</tr>
+<tr>
+<td><code>1 m²</code></td>
+<td><code>ft²</code></td>
+<td><code>10.76</code></td>
+<td>area</td>
+</tr>
+<tr>
+<td><code>1 acre</code></td>
+<td><code>m²</code></td>
+<td><code>4,047</code></td>
+<td>land for ground-mount</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Worked conversions:</strong></p>
+<ul>
+<li><strong>Irradiance to imperial:</strong> STC <code>1000 W/m² × (1 ft² / 10.76 m²) ≈ 92.9 W/ft²</code>.</li>
+<li><strong>Gas vs. electric energy:</strong> a home using <code>600 therms/year</code> of gas = <code>600 × 29.3 ≈ 17,580 kWh</code> of energy — useful when comparing a gas furnace to a heat pump powered by solar.</li>
+<li><strong>Sizing sanity check:</strong> <code>7,500 kWh/year ÷ 1,750 kWh/kWp ≈ 4.3 kWp</code> array needed at that site's specific yield.</li>
+</ul>
+<h2 id="quick-reference-metric-table">Quick-Reference Metric Table</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Units</th>
+<th>Formula</th>
+<th>Typical range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power</td>
+<td>kW</td>
+<td>rate of energy flow</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>kWh</td>
+<td><code>kW × hours</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Nameplate</td>
+<td>kWp / kWdc</td>
+<td>sum of module STC ratings</td>
+<td>—</td>
+</tr>
+<tr>
+<td>DC/AC ratio (ILR)</td>
+<td>unitless</td>
+<td><code>kWdc / kWac</code></td>
+<td><code>1.1–1.4</code></td>
+</tr>
+<tr>
+<td>Peak sun hours</td>
+<td>h (= kWh/m²/day)</td>
+<td>site insolation</td>
+<td><code>3–7</code></td>
+</tr>
+<tr>
+<td>Capacity factor</td>
+<td>%</td>
+<td><code>Energy / (Rated kW × 8760)</code></td>
+<td><code>15–25%</code> (fixed)</td>
+</tr>
+<tr>
+<td>Specific yield</td>
+<td>kWh/kWp</td>
+<td><code>Annual kWh / kWp</code></td>
+<td><code>900–1,800+</code></td>
+</tr>
+<tr>
+<td>Performance ratio</td>
+<td>unitless</td>
+<td><code>Actual / theoretical yield</code></td>
+<td><code>0.75–0.85</code></td>
+</tr>
+<tr>
+<td>Degradation</td>
+<td>%/yr</td>
+<td>output loss per year</td>
+<td><code>0.4–0.7</code></td>
+</tr>
+<tr>
+<td>Availability</td>
+<td>%</td>
+<td><code>Uptime / total time</code></td>
+<td><code>&gt;98%</code></td>
+</tr>
+<tr>
+<td>LCOE</td>
+<td>$/kWh</td>
+<td>lifetime cost / lifetime energy</td>
+<td>site-specific</td>
+</tr>
+</tbody>
+</table>
+<p>For derivations and worked design math, continue to <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>. Term definitions are in the <a class="inline" href="engineering-glossary.html">Engineering Glossary</a>; equipment context is in <a class="inline" href="fundamentals-pv-modules.html">PV Modules Deep-Dive</a> and <a class="inline" href="fundamentals-inverters.html">Inverters Deep-Dive</a>.</p>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" href="downloads.html">NREL PVWatts — energy estimation, PSH, and derate methodology</a></li>
+<li><a class="inline" href="downloads.html">IEC 61724 — PV system performance monitoring (performance ratio)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.nrel.gov/analysis/tech-lcoe.html">NREL — Levelized Cost of Energy (LCOE) and System Advisor Model</a></li>
+<li><a class="inline" href="downloads.html">U.S. EIA — Capacity factor and energy unit conversions</a></li>
+<li>Related: <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a> · <a class="inline" href="fundamentals-shading-mismatch.html">Shading, Mismatch &amp; Bypass Diodes</a> · <a class="inline" href="engineering-glossary.html">Engineering Glossary</a></li>
+</ul>
+<hr />
+<p><em>Disclaimer: Educational reference only; typical ranges vary by climate, technology, and design — verify site-specific figures with measured data and modeling tools.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="how-solar-works.html" class="prev"><span class="dir">Previous</span><span class="ttl">How Solar Works</span></a><a href="fundamentals-solar-resource.html" class="next"><span class="dir">Next</span><span class="ttl">The Solar Resource &amp; Geometry</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#power-vs-energy-kw-vs-kwh">Power vs. Energy: kW vs. kWh</a>
+<a class="lvl-3" href="#wp-and-kwp-watt-peak">Wp and kWp (Watt-Peak)</a>
+<a class="lvl-2" href="#ac-vs-dc-ratings">AC vs. DC Ratings</a>
+<a class="lvl-2" href="#dcac-ratio-inverter-loading-ratio-ilr">DC/AC Ratio (Inverter Loading Ratio, ILR)</a>
+<a class="lvl-2" href="#insolation-peak-sun-hours-psh">Insolation &amp; Peak Sun Hours (PSH)</a>
+<a class="lvl-2" href="#capacity-factor">Capacity Factor</a>
+<a class="lvl-2" href="#specific-yield-kwhkwp">Specific Yield (kWh/kWp)</a>
+<a class="lvl-2" href="#performance-ratio-pr">Performance Ratio (PR)</a>
+<a class="lvl-2" href="#degradation">Degradation</a>
+<a class="lvl-2" href="#availability">Availability</a>
+<a class="lvl-2" href="#lcoe-at-a-glance">LCOE at a Glance</a>
+<a class="lvl-2" href="#common-unit-conversions">Common Unit Conversions</a>
+<a class="lvl-2" href="#quick-reference-metric-table">Quick-Reference Metric Table</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

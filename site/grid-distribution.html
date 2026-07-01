@@ -1,0 +1,194 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Distribution Interconnection · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="grid" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link active" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="grid-overview.html" aria-label="Previous: Grid &amp; Interconnection Overview"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Grid &amp; Interconnection Overview</span></div><div class="side-nav next"><a href="grid-ieee1547.html" aria-label="Next: IEEE 1547 &amp; Smart Inverters"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">IEEE 1547 &amp; Smart Inverters</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Grid &amp; Interconnection</span><h1>Distribution Interconnection</h1><p class="lede">Connecting on the distribution grid — the application and review process, Fast Track screens, hosting-capacity maps, common technical screens, upgrades and timelines.</p><div class="banner-meta"><div class="m"><b>Fast Track</b><span>Screens</span></div><div class="m"><b>Hosting capacity</b><span>Maps</span></div><div class="m"><b>15% screen</b><span>Penetration</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>Distribution interconnection is the process for connecting a generator to the <strong>distribution system</strong> — the medium- and low-voltage network (typically below 69 kV) that delivers power to end customers. The overwhelming majority of solar projects — residential rooftop, commercial C&amp;I, and small community solar — interconnect here. This page covers the application and review process, the technical screens that decide a project's fate, hosting capacity, upgrades and cost allocation, timelines, and smart-inverter requirements.</p>
+<p>For the broader institutional context and the FERC-vs-state jurisdictional split, see <a class="inline" href="grid-overview.html">Grid &amp; Interconnection Overview</a>. For the technical standard that defines how the generator must behave, see <a class="inline" href="grid-ieee1547.html">IEEE 1547 &amp; Smart Inverters</a>.</p>
+<h2 id="the-governing-framework">The Governing Framework</h2>
+<p>Distribution interconnection is <strong>state-jurisdictional</strong>. Each state adopts an interconnection standard, and each utility implements it through a tariff. Many state rules are modeled on FERC's <strong>Small Generator Interconnection Procedures (SGIP)</strong> — the pro-forma process FERC requires for generators of 20 MW or less connecting under its jurisdiction. Even when a project is purely state-jurisdictional, the SGIP's structure (Fast Track, supplemental review, study process) is the common template, so it is the reference model used here.</p>
+<blockquote>
+<p>The SGIP provides three pathways: (1) a process for inverter-based facilities no larger than <strong>10 kW</strong>, (2) a <strong>Fast Track</strong> process, and (3) the full <strong>interconnection study</strong> process. State analogs (e.g., the SGIP-derived levels in many states, California's Rule 21, New York's SIR) vary in thresholds but share this tiered logic.</p>
+</blockquote>
+<h2 id="the-interconnection-process">The Interconnection Process</h2>
+<pre><code>APPLICATION ──► COMPLETENESS ──► FAST TRACK ──► (pass) ──► AGREEMENT ──► PTO
+                  REVIEW          SCREENS
+                                     │ fail
+                                     ▼
+                              SUPPLEMENTAL ──► (pass) ──► AGREEMENT ──► PTO
+                              REVIEW
+                                     │ fail
+                                     ▼
+                              STUDY PROCESS
+                              (feasibility →
+                               system impact →
+                               facilities) ──► AGREEMENT (+ upgrades) ──► PTO
+</code></pre>
+<h3 id="1-application">1. Application</h3>
+<p>The applicant submits the utility's interconnection form with: site and customer details, generator nameplate and inverter model, a <strong>single-line (one-line) diagram</strong>, equipment certifications (UL 1741 listing), and the proposed export arrangement. Completeness review confirms the package is sufficient to begin technical evaluation; the clock for utility response usually starts when the application is deemed complete.</p>
+<h3 id="2-fast-track-review-and-screens">2. Fast Track Review and Screens</h3>
+<p><strong>Fast Track</strong> is an expedited path for smaller projects that can be approved on engineering screens alone, without a full study. The utility runs a series of pass/fail technical screens (below). If the project passes all of them, it proceeds directly to an interconnection agreement.</p>
+<h3 id="3-supplemental-review">3. Supplemental Review</h3>
+<p>When a project fails one or more Fast Track screens, it may request <strong>supplemental review</strong> rather than going straight to the study process. FERC added supplemental review to the SGIP with three additional screens designed to protect safety and reliability — most notably a <strong>100%-of-minimum-load screen</strong> plus power-quality and safety/reliability screens. Many projects that fail the blunt 15% screen still pass supplemental review and avoid a costly study.</p>
+<h3 id="4-study-process">4. Study Process</h3>
+<p>Projects that cannot be cleared by screens enter the study track, typically in stages:</p>
+<table>
+<thead>
+<tr>
+<th>Study</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Feasibility Study</strong></td>
+<td>High-level look at whether interconnection is achievable and what it might cost</td>
+</tr>
+<tr>
+<td><strong>System Impact Study</strong></td>
+<td>Detailed analysis of effects on the feeder, substation, protection, and voltage</td>
+</tr>
+<tr>
+<td><strong>Facilities Study</strong></td>
+<td>Engineering design and cost estimate for the specific upgrades required</td>
+</tr>
+</tbody>
+</table>
+<p>Each stage costs money and adds months. Larger projects on constrained feeders routinely spend a year or more in studies.</p>
+<h2 id="common-technical-screens">Common Technical Screens</h2>
+<p>Screens are deterministic pass/fail tests applied to a project on its specific feeder. The most cited is the <strong>15% screen</strong>.</p>
+<h3 id="the-15-of-peak-load-screen">The 15% of Peak Load Screen</h3>
+<blockquote>
+<p>For a facility connecting to a radial distribution circuit, the <strong>aggregated generation on the line section — including the proposed facility — must not exceed 15% of the line section's annual peak load</strong>, as most recently measured at the substation.</p>
+</blockquote>
+<p>This is a conservative proxy for "will reverse power flow cause problems?" It was deliberately strict so that passing projects almost never cause issues. Its weakness is the opposite: many <em>safe</em> projects fail it, especially on lightly loaded feeders. That failure is precisely what supplemental review (the 100%-of-minimum-load screen) was created to address.</p>
+<h3 id="other-common-screens">Other Common Screens</h3>
+<table>
+<thead>
+<tr>
+<th>Screen</th>
+<th>What it checks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Penetration / aggregate capacity</strong></td>
+<td>Total DER on the feeder vs feeder capacity</td>
+</tr>
+<tr>
+<td><strong>100% of minimum load</strong> (supplemental)</td>
+<td>Generation should not exceed minimum daytime load on the line section — a more physically meaningful test of reverse flow than the 15% peak screen</td>
+</tr>
+<tr>
+<td><strong>Voltage / flicker</strong></td>
+<td>Whether the generator pushes voltage outside ANSI C84.1 limits or causes flicker</td>
+</tr>
+<tr>
+<td><strong>Protection &amp; coordination</strong></td>
+<td>Interaction with reclosers, fuses, relays; risk of nuisance trips or miscoordination</td>
+</tr>
+<tr>
+<td><strong>Transformer / service</strong></td>
+<td>Whether the interconnection back-feeds a shared or network secondary improperly; spot-network and grid-network screens</td>
+</tr>
+<tr>
+<td><strong>Short-circuit contribution</strong></td>
+<td>Whether the DER raises fault current beyond equipment ratings</td>
+</tr>
+<tr>
+<td><strong>Unintentional islanding</strong></td>
+<td>Whether anti-islanding (per IEEE 1547) adequately addresses the risk</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hosting-capacity-hosting-capacity-maps">Hosting Capacity &amp; Hosting-Capacity Maps</h2>
+<p><strong>Hosting capacity</strong> is the amount of distributed generation a given point on the distribution system can accommodate without requiring upgrades or violating operating limits. It varies enormously by location: a feeder with high daytime load and strong voltage support may host many megawatts; a long, lightly loaded rural feeder may host almost nothing.</p>
+<p>Many utilities now publish <strong>hosting-capacity maps</strong> — public online maps showing, feeder by feeder (and sometimes node by node), how much additional DER can connect before upgrades are triggered. They are a screening tool, not a guarantee.</p>
+<blockquote>
+<p>Use a hosting-capacity map at the <strong>pre-application</strong> stage to gauge feasibility and steer siting toward feeders with headroom. A site with ample published hosting capacity is far more likely to clear screens quickly; a constrained site signals likely studies, upgrades, and delay.</p>
+</blockquote>
+<p>Hosting capacity is also increasingly relevant to <strong>DER aggregation</strong>. Under <strong>FERC Order No. 2222</strong>, aggregations of distributed resources can participate in wholesale markets, which makes accurate, location-specific hosting-capacity data important to both distribution operators and aggregators. See <a class="inline" href="grid-overview.html">Grid &amp; Interconnection Overview</a>.</p>
+<h2 id="upgrades-cost-allocation">Upgrades &amp; Cost Allocation</h2>
+<p>When a project exceeds available hosting capacity, the utility may require <strong>system upgrades</strong> — reconductoring, a larger transformer, voltage-regulation equipment, protection changes, or substation work. The interconnection agreement specifies who pays.</p>
+<table>
+<thead>
+<tr>
+<th>Upgrade type</th>
+<th>Typical allocation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Interconnection facilities</strong> (the equipment needed to physically attach the generator)</td>
+<td>Generally the <strong>interconnecting customer</strong></td>
+</tr>
+<tr>
+<td><strong>Distribution upgrades</strong> (changes to the shared network triggered by the project)</td>
+<td>Commonly the <strong>interconnecting customer</strong>, though some states socialize or cost-share</td>
+</tr>
+<tr>
+<td><strong>Network upgrades</strong> (broader system reinforcement)</td>
+<td>Varies by jurisdiction; can be substantial</td>
+</tr>
+</tbody>
+</table>
+<p>Cost-allocation policy is a key state-policy lever. Some states require the triggering project to pay in full ("cost causer pays"); others spread costs across customers or future interconnectors, or offer cost-sharing when later projects benefit from an upgrade an earlier project funded. Upgrade costs are the single largest source of unpredictability in distribution interconnection economics.</p>
+<h2 id="timelines">Timelines</h2>
+<p>Timelines depend almost entirely on which track a project lands in:</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Typical duration (varies by state/utility)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inverter-based ≤10 kW / Fast Track pass</td>
+<td>Weeks to a few months</td>
+</tr>
+<tr>
+<td>Supplemental review</td>
+<td>Added weeks</td>
+</tr>
+<tr>
+<td>Feasibility → system impact → facilities studies</td>
+<td>Many months to over a year</td>
+</tr>
+<tr>
+<td>With major upgrades</td>
+<td>Add utility construction lead time on top</td>
+</tr>
+</tbody>
+</table>
+<p>The strategic takeaway: <strong>siting for hosting capacity and a clean screen pass is the most powerful schedule lever a developer has.</strong></p>
+<h2 id="smart-inverter-requirements">Smart-Inverter Requirements</h2>
+<p>Modern distribution interconnection requires <strong>smart inverters</strong> capable of grid-support functions — voltage regulation (Volt-VAR, Volt-Watt), frequency response, and ride-through — and the ability to be configured to the utility's required settings. These capabilities are defined by <strong>IEEE 1547-2018</strong> and certified through <strong>UL 1741 SB</strong>.</p>
+<p>Smart-inverter capability often <em>increases</em> the DER a feeder can host: an inverter that absorbs reactive power to hold voltage down can connect where a legacy unity-power-factor inverter could not. As part of commissioning, the utility verifies that the inverter is configured to the <strong>required setting profile</strong> (e.g., the active Volt-VAR curve) before granting PTO. The functions, categories, and settings are covered in detail in <a class="inline" href="grid-ieee1547.html">IEEE 1547 &amp; Smart Inverters</a>.</p>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf">FERC — pro forma Small Generator Interconnection Procedures (SGIP)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.federalregister.gov/documents/2013/12/05/2013-28515/small-generator-interconnection-agreements-and-procedures">FERC — Small Generator Interconnection Agreements and Procedures (Order 792, Federal Register)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="http://www.solarabcs.org/about/publications/reports/ferc-screens/pdfs/ABCS-FERC_studyreport.pdf">Solar ABCs — Small Generator Interconnection Procedures Screens (study report)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://ferc.gov/media/ferc-order-no-2222-fact-sheet">FERC Order No. 2222 Fact Sheet</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://programs.dsireusa.org/system/program/detail/2774/interconnection-standards-for-small-generators">DSIRE — Interconnection Standards for Small Generators</a></li>
+</ul>
+<hr />
+<p><em>This page is general reference information, not engineering, legal, or regulatory advice. Verify all thresholds, screens, and cost-allocation rules with the applicable utility and state regulator.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="grid-overview.html" class="prev"><span class="dir">Previous</span><span class="ttl">Grid &amp; Interconnection Overview</span></a><a href="grid-ieee1547.html" class="next"><span class="dir">Next</span><span class="ttl">IEEE 1547 &amp; Smart Inverters</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#the-governing-framework">The Governing Framework</a>
+<a class="lvl-2" href="#the-interconnection-process">The Interconnection Process</a>
+<a class="lvl-3" href="#1-application">1. Application</a>
+<a class="lvl-3" href="#2-fast-track-review-and-screens">2. Fast Track Review and Screens</a>
+<a class="lvl-3" href="#3-supplemental-review">3. Supplemental Review</a>
+<a class="lvl-3" href="#4-study-process">4. Study Process</a>
+<a class="lvl-2" href="#common-technical-screens">Common Technical Screens</a>
+<a class="lvl-3" href="#the-15-of-peak-load-screen">The 15% of Peak Load Screen</a>
+<a class="lvl-3" href="#other-common-screens">Other Common Screens</a>
+<a class="lvl-2" href="#hosting-capacity-hosting-capacity-maps">Hosting Capacity &amp; Hosting-Capacity Maps</a>
+<a class="lvl-2" href="#upgrades-cost-allocation">Upgrades &amp; Cost Allocation</a>
+<a class="lvl-2" href="#timelines">Timelines</a>
+<a class="lvl-2" href="#smart-inverter-requirements">Smart-Inverter Requirements</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

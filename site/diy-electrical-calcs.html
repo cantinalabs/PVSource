@@ -1,0 +1,621 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>DIY Electrical Calculations · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="diy" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link active" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="diy-portable-emergency.html" aria-label="Previous: Portable &amp; Emergency Power"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Portable &amp; Emergency Power</span></div><div class="side-nav next"><a href="diy-structural-calcs.html" aria-label="Next: DIY Structural Calculations"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">DIY Structural Calculations</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Build It Yourself</span><h1>DIY Electrical Calculations</h1><p class="lede">The DIY electrical math — series vs parallel, voltage drop, wire and ampacity sizing, overcurrent protection, conduit fill, grounding, and battery-bank/controller sizing.</p><div class="banner-meta"><div class="m"><b>Voltage drop</b><span>DC &amp; AC</span></div><div class="m"><b>Conduit fill</b><span>40% rule</span></div><div class="m"><b>OCPD</b><span>Fuse &amp; breaker</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>This page walks through the electrical math behind a do-it-yourself solar install: how series and parallel wiring change voltage and current, how to pick a system voltage, how to calculate <strong>voltage drop</strong>, size <strong>conductors</strong> and <strong>overcurrent protection</strong>, work out <strong>conduit fill</strong>, size the <strong>equipment grounding conductor (EGC)</strong>, and size a <strong>battery bank and charge controller</strong>. Every section includes worked examples with the arithmetic shown.</p>
+<p>This is part of the <strong>Build It Yourself</strong> series — start with <a class="inline" href="diy-overview.html">Building Your Own System</a>, and see the platform-specific guides for <a class="inline" href="diy-rv-van.html">RV, Van &amp; Mobile Solar</a> and <a class="inline" href="diy-ground-mount.html">Ground-Mount &amp; Pole-Mount</a>. For the general theory behind these formulas, see <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>.</p>
+<blockquote>
+<p><strong>Educational reference only.</strong> The National Electrical Code (NEC / NFPA 70) is adopted, amended, and enforced locally. Article and table numbers below reference recent editions, but you must use the <strong>NEC edition adopted by your Authority Having Jurisdiction (AHJ)</strong> and verify final designs with a licensed electrician. Table values shown are representative — read them out of your adopted code book, not from this page.</p>
+</blockquote>
+<h2 id="series-vs-parallel-wiring">Series vs. Parallel Wiring</h2>
+<p>How you interconnect modules (and batteries) sets the <strong>voltage</strong> and <strong>current</strong> your wiring must carry. This is the single most important early decision because it drives wire size, fuse size, and voltage drop.</p>
+<h3 id="the-rules">The rules</h3>
+<ul>
+<li><strong>Series</strong> (string): connect positive of one module to negative of the next. <strong>Voltages add; current stays the same.</strong></li>
+<li><strong>Parallel</strong>: connect all positives together and all negatives together. <strong>Currents add; voltage stays the same.</strong></li>
+<li><strong>Series-parallel</strong>: combine both to hit a target voltage and current.</li>
+</ul>
+<pre><code>SERIES:    V_total = V1 + V2 + ... + Vn        I_total = I (one module)
+PARALLEL:  I_total = I1 + I2 + ... + In        V_total = V (one module)
+POWER:     P_total = P1 + P2 + ... (same either way, for identical modules)
+</code></pre>
+<h3 id="worked-example-same-power-very-different-current">Worked example — same power, very different current</h3>
+<p>Four identical 400 W modules, each with <strong>Vmp = 40 V</strong> and <strong>Imp = 10 A</strong> (so 40 × 10 = 400 W each, 1600 W total).</p>
+<pre><code>ALL IN SERIES (4S):
+  V = 40 + 40 + 40 + 40 = 160 V
+  I = 10 A
+  P = 160 V × 10 A = 1600 W
+
+ALL IN PARALLEL (4P):
+  V = 40 V
+  I = 10 + 10 + 10 + 10 = 40 A
+  P = 40 V × 40 A = 1600 W
+
+TWO STRINGS OF TWO (2S2P):
+  Each string: V = 80 V, I = 10 A
+  Two strings parallel: V = 80 V, I = 20 A
+  P = 80 V × 20 A = 1600 W
+</code></pre>
+<p>Same 1600 W three ways, but the current is <strong>10 A, 40 A, or 20 A</strong>. The 40 A parallel array needs far heavier copper than the 10 A series array for the same wire run.</p>
+<blockquote>
+<p><strong>Rule of thumb:</strong> Higher voltage / lower current = smaller, cheaper wire and less voltage drop. Series your modules as much as your charge controller's or inverter's <strong>maximum input voltage</strong> allows (always check the cold-weather Voc — see <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>).</p>
+</blockquote>
+<h2 id="choosing-system-voltage-12-24-48-v">Choosing System Voltage (12 / 24 / 48 V)</h2>
+<p>In off-grid and mobile DC systems you also choose a <strong>battery / bus voltage</strong>. For a given load <strong>power</strong>, current is inversely proportional to voltage: <code>I = P / V</code>. Double the voltage and you halve the current — and current is what determines wire size and voltage drop.</p>
+<h3 id="worked-example-1200-w-load-at-three-bus-voltages">Worked example — 1200 W load at three bus voltages</h3>
+<pre><code>I = P / V
+
+12 V system:  I = 1200 / 12 = 100 A
+24 V system:  I = 1200 / 24 =  50 A
+48 V system:  I = 1200 / 48 =  25 A
+</code></pre>
+<p>The 12 V system draws <strong>four times</strong> the current of the 48 V system. Because voltage-drop and resistive (I²R) losses scale with current, the 12 V system needs roughly 4× the copper cross-section to hold the same percentage drop over the same distance.</p>
+<table>
+<thead>
+<tr>
+<th>Bus voltage</th>
+<th>Current for 1200 W</th>
+<th>Relative wire size for equal Vd%</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12 V</td>
+<td>100 A</td>
+<td>~4× (largest)</td>
+<td>Small RV/van, single panel</td>
+</tr>
+<tr>
+<td>24 V</td>
+<td>50 A</td>
+<td>~2×</td>
+<td>Mid-size van/cabin</td>
+</tr>
+<tr>
+<td>48 V</td>
+<td>25 A</td>
+<td>~1× (smallest)</td>
+<td>Whole-home off-grid, large rigs</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Rule of thumb:</strong> Go <strong>48 V</strong> for any system above roughly 2–3 kW or with long DC runs. Reserve <strong>12 V</strong> for small mobile systems where most appliances are natively 12 V. See <a class="inline" href="diy-rv-van.html">RV, Van &amp; Mobile Solar</a> for the mobile-specific trade-offs.</p>
+</blockquote>
+<h2 id="voltage-drop">Voltage Drop</h2>
+<p><strong>Voltage drop (Vd)</strong> is the voltage lost to wire resistance between source and load. Too much drop wastes energy, dims/weakens loads, and can keep batteries from fully charging. The NEC notes voltage-drop targets in informational notes (e.g., 210.19, 215.2) rather than mandating them: keep <strong>branch circuits ≤ 3%</strong> and <strong>feeder + branch combined ≤ 5%</strong>. For DC solar charging circuits, designers often target <strong>≤ 2%</strong> or even ≤ 1% to preserve charge-controller performance.</p>
+<h3 id="two-equivalent-formula-forms">Two equivalent formula forms</h3>
+<pre><code>K-CONSTANT (circular-mils) METHOD:
+  Vd = (2 × K × I × L) / cmil          (single-phase / DC, 2 = both legs)
+  Vd = (1.732 × K × I × L) / cmil      (three-phase)
+
+  K   = resistivity constant = 12.9 for copper, 21.2 for aluminum
+        (ohms per circular-mil-foot × 1000, at ~75°C)
+  I   = current in amps
+  L   = ONE-WAY length of the run in feet
+  cmil= conductor cross-section in circular mils (from a wire table)
+
+WIRE-RESISTANCE METHOD (using NEC Chapter 9 Table 8/9 ohms per 1000 ft):
+  Vd = 2 × L × I × R / 1000            (single-phase / DC)
+  Vd = 1.732 × L × I × R / 1000        (three-phase)
+
+  R = conductor resistance in ohms per 1000 ft
+  L = one-way length in feet
+</code></pre>
+<p>Both forms give the same answer; the K form needs the wire's <strong>circular-mil area</strong>, the resistance form needs the wire's <strong>ohms/1000 ft</strong>. Express drop as a percentage: <code>Vd% = (Vd / V_source) × 100</code>.</p>
+<h3 id="copper-reference-data-representative">Copper reference data (representative)</h3>
+<table>
+<thead>
+<tr>
+<th>AWG</th>
+<th>Circular mils (cmil)</th>
+<th>Resistance (ohms/1000 ft, ~75°C)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14</td>
+<td>4,110</td>
+<td>3.14</td>
+</tr>
+<tr>
+<td>12</td>
+<td>6,530</td>
+<td>1.98</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10,380</td>
+<td>1.24</td>
+</tr>
+<tr>
+<td>8</td>
+<td>16,510</td>
+<td>0.778</td>
+</tr>
+<tr>
+<td>6</td>
+<td>26,240</td>
+<td>0.491</td>
+</tr>
+<tr>
+<td>4</td>
+<td>41,740</td>
+<td>0.308</td>
+</tr>
+<tr>
+<td>2</td>
+<td>66,360</td>
+<td>0.194</td>
+</tr>
+<tr>
+<td>1/0</td>
+<td>105,600</td>
+<td>0.122</td>
+</tr>
+<tr>
+<td>2/0</td>
+<td>133,100</td>
+<td>0.0967</td>
+</tr>
+<tr>
+<td>4/0</td>
+<td>211,600</td>
+<td>0.0608</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Values approximate NEC Chapter 9, Table 8 (DC resistance) and standard AWG areas. Use your code edition's tables for final work; AC circuits with large conductors should use <strong>Table 9</strong> (which includes reactance).</p>
+</blockquote>
+<h3 id="worked-example-a-low-voltage-dc-12-v-long-run">Worked example A — low-voltage DC (12 V, long run)</h3>
+<p>A 12 V system feeds a 10 A load 25 ft away (so a 25 ft one-way run). Target ≤ 3% drop. Try <strong>10 AWG</strong> copper.</p>
+<pre><code>Allowable Vd = 3% × 12 V = 0.36 V
+
+K-constant method, 10 AWG cmil = 10,380:
+  Vd = (2 × 12.9 × 10 × 25) / 10,380
+     = (2 × 12.9 = 25.8)
+     × 10 = 258
+     × 25 = 6,450
+     ÷ 10,380 = 0.621 V
+
+  Vd% = 0.621 / 12 = 5.18%   -&gt; TOO HIGH (&gt; 3%)
+</code></pre>
+<p>10 AWG fails. Step up to <strong>6 AWG</strong> (cmil = 26,240):</p>
+<pre><code>  Vd = (2 × 12.9 × 10 × 25) / 26,240
+     = 6,450 / 26,240 = 0.246 V
+  Vd% = 0.246 / 12 = 2.05%   -&gt; OK (&lt; 3%)
+</code></pre>
+<p>Cross-check with the resistance method, 6 AWG = 0.491 ohms/1000 ft:</p>
+<pre><code>  Vd = 2 × 25 × 10 × 0.491 / 1000
+     = (2 × 25 = 50) × 10 = 500 × 0.491 = 245.5 ÷ 1000 = 0.246 V   (matches)
+</code></pre>
+<p>This is exactly why low-voltage DC eats copper: a modest 10 A load at 12 V over 25 ft already needs <strong>6 AWG</strong> just for voltage drop, even though 6 AWG's ampacity could carry 55 A.</p>
+<h3 id="worked-example-b-240-v-ac-inverter-output">Worked example B — 240 V AC inverter output</h3>
+<p>A 5,000 W, 240 V single-phase inverter feeds a subpanel 80 ft away. Target ≤ 3% (feeder).</p>
+<pre><code>Load current:  I = P / V = 5000 / 240 = 20.8 A
+Allowable Vd = 3% × 240 = 7.2 V
+
+Try 10 AWG copper (cmil = 10,380), one-way L = 80 ft:
+  Vd = (2 × 12.9 × 20.8 × 80) / 10,380
+     = 2 × 12.9 = 25.8
+     × 20.8 = 536.6
+     × 80 = 42,930
+     ÷ 10,380 = 4.14 V
+  Vd% = 4.14 / 240 = 1.72%   -&gt; OK (&lt; 3%)
+</code></pre>
+<p>The same 20 A at 240 V drops only 1.7% over 80 ft, while 10 A at 12 V dropped 5% over 25 ft. <strong>Higher voltage tolerates far longer runs</strong> with the same wire.</p>
+<blockquote>
+<p><strong>Watch the load current vs. drop current.</strong> Size <strong>ampacity</strong> for the NEC continuous-load current (below), but compute <strong>voltage drop</strong> using the actual operating current and the longest one-way run.</p>
+</blockquote>
+<h2 id="conductor-wire-sizing-ampacity">Conductor / Wire Sizing &amp; Ampacity</h2>
+<p>Two separate checks decide wire size — take the <strong>larger</strong> result:</p>
+<ol>
+<li><strong>Ampacity</strong> — the conductor must carry the circuit's continuous current with NEC margins, after temperature and conduit-fill derates.</li>
+<li><strong>Voltage drop</strong> — the conductor must hold your Vd% target over the run (above).</li>
+</ol>
+<h3 id="ampacity-baseline-nec-table-31016">Ampacity baseline — NEC Table 310.16</h3>
+<p>Table 310.16 (formerly 310.15(B)(16)) gives allowable ampacities at 30°C (86°F) ambient with no more than three current-carrying conductors. Use the <strong>terminal temperature column</strong> your equipment is rated for — most field terminations are <strong>75°C</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>AWG (Cu)</th>
+<th>60°C</th>
+<th>75°C</th>
+<th>90°C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14</td>
+<td>15</td>
+<td>20</td>
+<td>25</td>
+</tr>
+<tr>
+<td>12</td>
+<td>20</td>
+<td>25</td>
+<td>30</td>
+</tr>
+<tr>
+<td>10</td>
+<td>30</td>
+<td>35</td>
+<td>40</td>
+</tr>
+<tr>
+<td>8</td>
+<td>40</td>
+<td>50</td>
+<td>55</td>
+</tr>
+<tr>
+<td>6</td>
+<td>55</td>
+<td>65</td>
+<td>75</td>
+</tr>
+<tr>
+<td>4</td>
+<td>70</td>
+<td>85</td>
+<td>95</td>
+</tr>
+<tr>
+<td>2</td>
+<td>95</td>
+<td>115</td>
+<td>130</td>
+</tr>
+<tr>
+<td>1/0</td>
+<td>125</td>
+<td>150</td>
+<td>170</td>
+</tr>
+<tr>
+<td>2/0</td>
+<td>145</td>
+<td>175</td>
+<td>195</td>
+</tr>
+<tr>
+<td>4/0</td>
+<td>195</td>
+<td>230</td>
+<td>260</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Note the small-conductor rule (240.4(D)): even though 14/12/10 AWG show higher ampacities at 75/90°C, overcurrent protection is generally limited to <strong>15 A (14 AWG), 20 A (12 AWG), 30 A (10 AWG)</strong>. Representative values — confirm in your adopted edition.</p>
+</blockquote>
+<h3 id="the-pv-125-125-rule-nec-6908">The PV 125% × 125% rule (NEC 690.8)</h3>
+<p>PV source/output circuits are <strong>continuous loads</strong> and the sun can exceed standard test conditions, so NEC 690.8 applies <strong>two</strong> 125% factors:</p>
+<pre><code>Step 1 (690.8(A)) — maximum circuit current:
+  I_max = 1.25 × Isc            (Isc = sum of parallel-string short-circuit currents)
+
+Step 2 (690.8(B)) — minimum conductor ampacity (continuous load):
+  I_min = 1.25 × I_max = 1.25 × 1.25 × Isc = 1.5625 × Isc  (~156% of Isc)
+</code></pre>
+<p>The conductor's <strong>ampacity after derating</strong> must be ≥ the 690.8(B) result, AND the conductor's ampacity at 690.8(A) current must clear the temperature/fill derates.</p>
+<h3 id="temperature-conduit-fill-adjustment-nec-31015">Temperature &amp; conduit-fill adjustment (NEC 310.15)</h3>
+<p>Two correction factors reduce ampacity. Apply both to the table ampacity:</p>
+<pre><code>Adjusted ampacity = Table ampacity × (temp correction) × (conduit-fill adjustment)
+</code></pre>
+<p>Representative factors (read exact values from your code edition):</p>
+<table>
+<thead>
+<tr>
+<th>Ambient °C (90°C wire)</th>
+<th>Temp correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26–30</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>36–40</td>
+<td>0.91</td>
+</tr>
+<tr>
+<td>41–45</td>
+<td>0.87</td>
+</tr>
+<tr>
+<td>51–55</td>
+<td>0.76</td>
+</tr>
+<tr>
+<td>61–70</td>
+<td>0.58</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th># current-carrying conductors in raceway</th>
+<th>Fill adjustment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4–6</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td>7–9</td>
+<td>0.70</td>
+</tr>
+<tr>
+<td>10–20</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>21–30</td>
+<td>0.45</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Rooftop conduit gets hot.</strong> Earlier editions added a rooftop temperature adder (310.15(B)(3)(c)); recent editions revised it. Always include a realistic ambient for sun-exposed conduit (often 40–60°C+), then apply the 90°C correction factor even when sizing to 75°C terminals.</p>
+</blockquote>
+<h3 id="worked-example-sizing-a-pv-source-circuit-conductor">Worked example — sizing a PV source-circuit conductor</h3>
+<p>Two parallel strings, each module <strong>Isc = 11 A</strong>, so array <strong>Isc = 22 A</strong>. Conductors run in conduit on a hot roof: design ambient <strong>45°C</strong>, and <strong>6 current-carrying conductors</strong> share the raceway. 90°C-rated conductors (e.g., PV wire / THWN-2), 75°C terminals.</p>
+<pre><code>Step 1 — 690.8(A) max current:
+  I_max = 1.25 × Isc = 1.25 × 22 = 27.5 A
+
+Step 2 — 690.8(B) minimum ampacity (continuous):
+  I_min = 1.25 × 27.5 = 34.375 A   (this is the ampacity the conductor must show)
+
+Try 10 AWG, 90°C column = 40 A. Apply derates:
+  Temp (45°C, 90°C wire) = 0.87
+  Fill (6 conductors)    = 0.80
+  Adjusted = 40 × 0.87 × 0.80 = 27.84 A
+
+  27.84 A &lt; 34.375 A required  -&gt; 10 AWG FAILS
+
+Try 8 AWG, 90°C column = 55 A:
+  Adjusted = 55 × 0.87 × 0.80 = 38.28 A
+  38.28 A &gt; 34.375 A required  -&gt; 8 AWG OK on ampacity
+
+Final check: also confirm the 75°C terminal ampacity of 8 AWG (50 A)
+exceeds the 690.8(A) current (27.5 A): 50 ≥ 27.5  -&gt; OK.
+</code></pre>
+<p>Result: <strong>8 AWG</strong> for ampacity. Now also run the voltage-drop check for the actual run length and keep the <strong>larger</strong> of the two.</p>
+<h2 id="overcurrent-protection-ocpd">Overcurrent Protection (OCPD)</h2>
+<p>Fuses and breakers protect the <strong>conductor</strong> (and sometimes equipment). For solar, OCPD is sized per <strong>NEC 690.9</strong> and the general rules of <strong>240.4 / 240.6</strong>.</p>
+<h3 id="sizing-the-ocpd">Sizing the OCPD</h3>
+<pre><code>OCPD rating ≥ 1.25 × continuous current (690.9 / 690.8(A))
+  For a PV source circuit:  OCPD ≥ 1.25 × (1.25 × Isc) = 1.5625 × Isc
+Then round UP to the next standard size (240.6):
+  15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 125...
+And the OCPD must not exceed the conductor's derated ampacity.
+</code></pre>
+<h3 id="worked-example-series-fuse-for-parallel-strings">Worked example — series fuse for parallel strings</h3>
+<p>A combiner has <strong>4 parallel strings</strong>, each module <strong>Isc = 10 A</strong>, module series-fuse rating (from datasheet) <strong>15 A</strong>.</p>
+<pre><code>Per-string OCPD (690.9):
+  Min = 1.5625 × 10 = 15.6 A -&gt; round UP to 20 A standard
+
+  But the module datasheet max series fuse = 15 A.
+  The fuse must NOT exceed the module's listed series-fuse rating.
+  -&gt; Use 15 A per string (the lower limit governs).
+
+Why series (per-string) fuses are needed:
+  With 4 strings, a fault in one string can be back-fed by the
+  other 3 strings: 3 × 10 A = 30 A through the faulted string.
+  Each module's 15 A series fuse must clear that back-feed current.
+</code></pre>
+<blockquote>
+<p><strong>Three or more parallel strings almost always need per-string (series) overcurrent protection.</strong> Two strings can usually skip it because no string can be over-driven beyond its rating, but verify against 690.9 in your edition.</p>
+</blockquote>
+<h3 id="dc-rated-devices-and-battery-circuits">DC-rated devices and battery circuits</h3>
+<ul>
+<li><strong>Use DC-rated OCPD on DC circuits.</strong> A breaker/fuse rated only for AC will not safely interrupt a DC arc (DC has no zero-crossing). PV fuses are typically rated 600 VDC or 1000 VDC.</li>
+<li><strong>Battery-to-inverter / battery-to-bus</strong> circuits carry huge currents at low voltage. Protect them with a <strong>DC-rated class-T, ANL, or MEGA fuse</strong> sized just above the continuous current and within the conductor ampacity. Class-T fuses have high interrupt ratings (e.g., 20,000 A) suited to large lithium banks.</li>
+</ul>
+<pre><code>Worked: 3000 W inverter on a 24 V bank, surge factor included.
+  Continuous I = 3000 / 24 = 125 A
+  With inverter efficiency ~90%: 125 / 0.90 = ~139 A
+  Add headroom and choose fuse &lt;= cable ampacity:
+    -&gt; 175 A or 200 A class-T / ANL, with cable (e.g., 2/0) rated above it.
+</code></pre>
+<h2 id="conduit-fill">Conduit Fill</h2>
+<p>When conductors share a raceway, NEC <strong>Chapter 9, Table 1</strong> limits how much of the conduit's cross-sectional area the wires may fill:</p>
+<table>
+<thead>
+<tr>
+<th># of conductors</th>
+<th>Max fill</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 conductor</td>
+<td>53%</td>
+</tr>
+<tr>
+<td>2 conductors</td>
+<td>31%</td>
+</tr>
+<tr>
+<td>3 or more</td>
+<td>40%</td>
+</tr>
+</tbody>
+</table>
+<p>Conductor and conduit areas come from <strong>Chapter 9, Tables 4 (conduit area) and 5 (conductor area)</strong>. Work in square inches.</p>
+<h3 id="worked-example-five-conductors-in-emt">Worked example — five conductors in EMT</h3>
+<p>Five <strong>8 AWG THWN-2</strong> conductors (three current-carrying plus extras). From Table 5, THWN-2 8 AWG ≈ <strong>0.0366 in²</strong> each.</p>
+<pre><code>Total conductor area = 5 × 0.0366 = 0.1830 in²
+
+Because there are 3+ conductors, max fill = 40%.
+Required conduit interior area &gt;= 0.1830 / 0.40 = 0.4575 in²
+
+From Table 4 (40% column), look up trade sizes:
+  1/2&quot; EMT  40% area ≈ 0.122 in²  -&gt; too small
+  3/4&quot; EMT  40% area ≈ 0.213 in²  -&gt; too small
+  1&quot;   EMT  40% area ≈ 0.346 in²  -&gt; too small
+  1-1/4&quot; EMT 40% area ≈ 0.598 in² -&gt; OK (0.598 &gt;= 0.4575)
+
+Result: 1-1/4&quot; EMT.
+</code></pre>
+<blockquote>
+<p>Table 4 already lists the <strong>40% allowable area</strong> per trade size — compare your total conductor area directly to that column. Representative areas shown; use your code edition's Tables 4 and 5.</p>
+</blockquote>
+<h2 id="grounding-egc-sizing">Grounding &amp; EGC Sizing</h2>
+<p>The <strong>equipment grounding conductor (EGC)</strong> bonds metal parts and provides a fault-clearing path. Size it from the <strong>rating of the overcurrent device</strong> protecting the circuit, per <strong>NEC Table 250.122</strong>. PV-specific grounding/bonding is in <strong>690.45 / 690.43</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>OCPD rating (A)</th>
+<th>Copper EGC (AWG)</th>
+<th>Aluminum EGC (AWG)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15</td>
+<td>14</td>
+<td>12</td>
+</tr>
+<tr>
+<td>20</td>
+<td>12</td>
+<td>10</td>
+</tr>
+<tr>
+<td>60</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr>
+<td>100</td>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr>
+<td>200</td>
+<td>6</td>
+<td>4</td>
+</tr>
+<tr>
+<td>300</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td>400</td>
+<td>3</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="worked-example-egc-for-a-40-a-inverter-circuit">Worked example — EGC for a 40 A inverter circuit</h3>
+<pre><code>Circuit OCPD = 40 A breaker.
+Table 250.122: next listed rating at/above 40 A is 60 A -&gt; 10 AWG Cu EGC.
+
+(For 40 A, the 60 A row governs because 40 A falls in the 25–60 A band
+that maps to 10 AWG copper.)
+</code></pre>
+<blockquote>
+<p><strong>If you upsize conductors for voltage drop, you may have to upsize the EGC proportionally</strong> (250.122(B)) — by the same ratio the ungrounded conductors were increased in circular-mil area. PV array bonding and grounding-electrode conductors have additional rules (690.45–690.47); verify in your edition.</p>
+</blockquote>
+<h2 id="battery-bank-charge-controller-sizing">Battery Bank &amp; Charge-Controller Sizing</h2>
+<h3 id="battery-bank-from-energy-to-amp-hours">Battery bank — from energy to amp-hours</h3>
+<pre><code>1) Daily energy:  Wh/day = (sum of loads in W × hours/day)
+2) Days of autonomy desired:  D
+3) Usable energy needed:  Wh_needed = Wh/day × D
+4) Account for depth of discharge (DoD):
+     Wh_bank = Wh_needed / DoD
+5) Convert to amp-hours at bank voltage:
+     Ah = Wh_bank / V_bank
+</code></pre>
+<p>DoD guidance: lead-acid ~50% (to preserve cycle life), LiFePO4 ~80–100%.</p>
+<h3 id="worked-example-48-v-lifepo4-bank">Worked example — 48 V LiFePO4 bank</h3>
+<pre><code>Loads = 2,000 Wh/day, want 2 days autonomy, LiFePO4 DoD = 0.80, bank = 48 V.
+
+Wh_needed = 2000 × 2 = 4,000 Wh
+Wh_bank   = 4000 / 0.80 = 5,000 Wh
+Ah        = 5000 / 48 = 104 Ah
+
+-&gt; Round up to a standard 48 V, 100–120 Ah battery (e.g., one 100 Ah
+   module plus margin, or 2 × 50 Ah). Add margin for inverter losses
+   and cold-temperature derate.
+</code></pre>
+<p>Compare to lead-acid at 50% DoD:</p>
+<pre><code>Wh_bank = 4000 / 0.50 = 8,000 Wh
+Ah      = 8000 / 48 = 167 Ah   (60% more capacity for the same usable energy)
+</code></pre>
+<h3 id="charge-controller-amperage-mppt-vs-pwm">Charge-controller amperage — MPPT vs. PWM</h3>
+<pre><code>Controller output current ≈ Array Watts / Battery Voltage  (MPPT)
+PWM passes array CURRENT through (output ≈ array Imp), so:
+  PWM output current ≈ array Imp (Vmp is &quot;wasted&quot; down to battery V)
+</code></pre>
+<h3 id="worked-example-mppt-vs-pwm-for-an-800-w-array">Worked example — MPPT vs. PWM for an 800 W array</h3>
+<pre><code>Array: 800 W, Vmp = 72 V, Imp = 11.1 A, charging a 24 V bank.
+
+MPPT (converts excess voltage into current):
+  Output I ≈ 800 / 24 = 33.3 A
+  Add 25% margin: 33.3 × 1.25 = 41.6 A -&gt; 50 A MPPT controller
+
+PWM (no conversion; output current ≈ array Imp):
+  Output I ≈ 11.1 A only
+  Power actually delivered ≈ 24 V × 11.1 A = 266 W  (huge loss!)
+  PWM would waste ~67% of this high-Vmp array.
+</code></pre>
+<blockquote>
+<p><strong>Match the controller to the array voltage.</strong> PWM only makes sense when the array Vmp is close to the battery voltage (e.g., a nominal "12 V" panel on a 12 V bank). For high-Vmp arrays or series strings, <strong>MPPT</strong> recovers the extra voltage as charging current. Size the MPPT controller's amp rating at <strong>≥ 1.25 × (array W / bank V)</strong>.</p>
+</blockquote>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.greenlancer.com/post/nec-690-8-solar-conductor-sizing">NEC 690.8 Solar Conductor Sizing Guide — GreenLancer</a></li>
+<li><a class="inline" href="downloads.html">Sizing PV Conductors &amp; OCPD per NEC Article 690 — ExpertCE</a></li>
+<li><a class="inline" href="downloads.html">How to Use NEC Table 310.16 for Conductor Ampacity — ExpertCE</a></li>
+<li><a class="inline" href="downloads.html">How to Calculate Voltage Drop: NEC Formula &amp; Examples — ExpertCE</a></li>
+<li><a class="inline" href="downloads.html">Sizing Equipment Grounding Conductors with NEC Table 250.122 — ExpertCE</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://conduit-fill-calculator.com/blog/guides/conduit-sizing-for-solar-installations.html">Conduit Sizing for Solar Installations — Conduit Fill Calculator</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70">NFPA 70, National Electrical Code (purchase / free read access)</a></li>
+<li>Related on this site: <a class="inline" href="diy-overview.html">Building Your Own System</a> · <a class="inline" href="diy-rv-van.html">RV, Van &amp; Mobile Solar</a> · <a class="inline" href="diy-ground-mount.html">Ground-Mount &amp; Pole-Mount</a> · <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a></li>
+</ul>
+<blockquote>
+<p><strong>Disclaimer:</strong> This material is educational and for reference only. It does not replace the <strong>NEC edition adopted by your AHJ</strong>, local amendments, manufacturer instructions, or the judgment of a <strong>licensed electrician</strong>. Verify every value and calculation against your adopted code and have your design reviewed before energizing.</p>
+</blockquote><div class="related" id="related-slot" hidden></div><div class="pager"><a href="diy-portable-emergency.html" class="prev"><span class="dir">Previous</span><span class="ttl">Portable &amp; Emergency Power</span></a><a href="diy-structural-calcs.html" class="next"><span class="dir">Next</span><span class="ttl">DIY Structural Calculations</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#series-vs-parallel-wiring">Series vs. Parallel Wiring</a>
+<a class="lvl-3" href="#the-rules">The rules</a>
+<a class="lvl-3" href="#worked-example-same-power-very-different-current">Worked example — same power, very different current</a>
+<a class="lvl-2" href="#choosing-system-voltage-12-24-48-v">Choosing System Voltage (12 / 24 / 48 V)</a>
+<a class="lvl-3" href="#worked-example-1200-w-load-at-three-bus-voltages">Worked example — 1200 W load at three bus voltages</a>
+<a class="lvl-2" href="#voltage-drop">Voltage Drop</a>
+<a class="lvl-3" href="#two-equivalent-formula-forms">Two equivalent formula forms</a>
+<a class="lvl-3" href="#copper-reference-data-representative">Copper reference data (representative)</a>
+<a class="lvl-3" href="#worked-example-a-low-voltage-dc-12-v-long-run">Worked example A — low-voltage DC (12 V, long run)</a>
+<a class="lvl-3" href="#worked-example-b-240-v-ac-inverter-output">Worked example B — 240 V AC inverter output</a>
+<a class="lvl-2" href="#conductor-wire-sizing-ampacity">Conductor / Wire Sizing &amp; Ampacity</a>
+<a class="lvl-3" href="#ampacity-baseline-nec-table-31016">Ampacity baseline — NEC Table 310.16</a>
+<a class="lvl-3" href="#the-pv-125-125-rule-nec-6908">The PV 125% × 125% rule (NEC 690.8)</a>
+<a class="lvl-3" href="#temperature-conduit-fill-adjustment-nec-31015">Temperature &amp; conduit-fill adjustment (NEC 310.15)</a>
+<a class="lvl-3" href="#worked-example-sizing-a-pv-source-circuit-conductor">Worked example — sizing a PV source-circuit conductor</a>
+<a class="lvl-2" href="#overcurrent-protection-ocpd">Overcurrent Protection (OCPD)</a>
+<a class="lvl-3" href="#sizing-the-ocpd">Sizing the OCPD</a>
+<a class="lvl-3" href="#worked-example-series-fuse-for-parallel-strings">Worked example — series fuse for parallel strings</a>
+<a class="lvl-3" href="#dc-rated-devices-and-battery-circuits">DC-rated devices and battery circuits</a>
+<a class="lvl-2" href="#conduit-fill">Conduit Fill</a>
+<a class="lvl-3" href="#worked-example-five-conductors-in-emt">Worked example — five conductors in EMT</a>
+<a class="lvl-2" href="#grounding-egc-sizing">Grounding &amp; EGC Sizing</a>
+<a class="lvl-3" href="#worked-example-egc-for-a-40-a-inverter-circuit">Worked example — EGC for a 40 A inverter circuit</a>
+<a class="lvl-2" href="#battery-bank-charge-controller-sizing">Battery Bank &amp; Charge-Controller Sizing</a>
+<a class="lvl-3" href="#battery-bank-from-energy-to-amp-hours">Battery bank — from energy to amp-hours</a>
+<a class="lvl-3" href="#worked-example-48-v-lifepo4-bank">Worked example — 48 V LiFePO4 bank</a>
+<a class="lvl-3" href="#charge-controller-amperage-mppt-vs-pwm">Charge-controller amperage — MPPT vs. PWM</a>
+<a class="lvl-3" href="#worked-example-mppt-vs-pwm-for-an-800-w-array">Worked example — MPPT vs. PWM for an 800 W array</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

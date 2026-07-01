@@ -1,0 +1,273 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Energy-Yield Modeling (P50/P90) · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="utility" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link active" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="util-solar-storage-hybrid.html" aria-label="Previous: Solar-Plus-Storage Hybrids"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Solar-Plus-Storage Hybrids</span></div><div class="side-nav next"><a href="util-environmental-permitting.html" aria-label="Next: Environmental Permitting"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Environmental Permitting</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Utility-Scale Solar</span><h1>Energy-Yield Modeling (P50/P90)</h1><p class="lede">Making a number a bank will trust — the loss chain to performance ratio, PVsyst/SAM modeling, weather variability, and what P50/P90 exceedance probabilities mean.</p><div class="banner-meta"><div class="m"><b>Loss chain</b><span>→ PR</span></div><div class="m"><b>P50 / P90</b><span>Exceedance</span></div><div class="m"><b>PVsyst · SAM</b><span>Tools</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>A bankable energy-yield estimate is the financial foundation of a utility-scale solar project: lenders size debt to a conservative production number, the offtaker prices the PPA against the expected number, and the sponsor's equity return depends on the spread between them. This page explains how an annual energy estimate is built from irradiance through the <strong>loss chain</strong> to a <strong>performance ratio (PR)</strong>, the tools that do it, how weather data and inter-annual variability feed the <strong>P50/P75/P90/P99</strong> exceedance probabilities, where the uncertainty comes from, and how an <strong>independent engineer (IE)</strong> reviews the model for bankability. It pairs with <a class="inline" href="util-site-land.html">Site Selection &amp; Land</a>, <a class="inline" href="util-trackers.html">Trackers &amp; Fixed-Tilt Mounting</a>, and the <a class="inline" href="util-overview.html">Utility-Scale Solar Overview</a>.</p>
+<h2 id="the-modeling-chain">The Modeling Chain</h2>
+<p>Yield modeling marches from the resource at the site down to delivered AC energy, subtracting a stack of physical losses at each step.</p>
+<pre><code>Solar resource (GHI/DNI/DHI, TMY or multi-year)
+        │  transposition to plane-of-array (POA)
+        ▼
+POA irradiance ── shading &amp; near-/far-horizon losses
+        ▼
+Effective irradiance ── soiling, IAM (reflection), spectral
+        ▼
+DC array output ── temperature, low-light, module quality, mismatch, LID/degradation
+        ▼
+DC at inverter ── DC wiring (ohmic) loss
+        ▼
+AC output ── inverter efficiency &amp; clipping
+        ▼
+At meter ── AC wiring, MV transformer, parasitics, availability, curtailment
+        ▼
+Net delivered energy  →  Performance Ratio (PR)
+</code></pre>
+<h2 id="the-loss-chain">The Loss Chain</h2>
+<p>Each loss is a multiplicative derate applied to the ideal output. Typical ranges below are <strong>planning order-of-magnitude only</strong> — every value is site- and design-specific and must be justified from data, not assumed.</p>
+<table>
+<thead>
+<tr>
+<th>Loss</th>
+<th>Typical annual range</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Soiling</strong></td>
+<td>~1–5% (much higher in arid/dusty/no-rain sites)</td>
+<td>Highly site-specific; cleaning schedule dependent</td>
+</tr>
+<tr>
+<td><strong>Temperature</strong></td>
+<td>~2–8%</td>
+<td>Hot climates worse; tracker/airflow helps</td>
+</tr>
+<tr>
+<td><strong>Shading (near + horizon)</strong></td>
+<td>~0.5–3%</td>
+<td>Row-to-row + terrain; tracker backtracking limits it</td>
+</tr>
+<tr>
+<td><strong>IAM / reflection</strong></td>
+<td>~1–3%</td>
+<td>Angle-of-incidence reflection losses</td>
+</tr>
+<tr>
+<td><strong>Spectral</strong></td>
+<td>~±1%</td>
+<td>Deviation from STC spectrum</td>
+</tr>
+<tr>
+<td><strong>Module quality / mismatch</strong></td>
+<td>~1–3%</td>
+<td>Manufacturing tolerance + array mismatch</td>
+</tr>
+<tr>
+<td><strong>DC wiring (ohmic)</strong></td>
+<td>~1–2%</td>
+<td>Conductor sizing tradeoff</td>
+</tr>
+<tr>
+<td><strong>Inverter (efficiency + clipping)</strong></td>
+<td>~1–4%</td>
+<td>Clipping driven by DC/AC ratio</td>
+</tr>
+<tr>
+<td><strong>AC wiring + MV transformer</strong></td>
+<td>~1–3%</td>
+<td>Collection system + step-up</td>
+</tr>
+<tr>
+<td><strong>Availability</strong></td>
+<td>~1–3%</td>
+<td>Forced/planned outages; ~97–99% uptime</td>
+</tr>
+<tr>
+<td><strong>Snow</strong></td>
+<td>~0–5%+</td>
+<td>Latitude/climate dependent; near zero in deserts</td>
+</tr>
+<tr>
+<td><strong>Curtailment</strong></td>
+<td>site-specific</td>
+<td>Grid/economic; modeled separately</td>
+</tr>
+<tr>
+<td><strong>Degradation (year 1 + annual)</strong></td>
+<td>~1–2% LID yr-1, then ~0.4–0.75%/yr</td>
+<td>Compounds over the project life</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Key point:</strong> Soiling, temperature, availability, and degradation drive most of the variance between a generous and a conservative estimate. Lenders scrutinize these four hardest because they are the most assumption-driven.</p>
+</blockquote>
+<h2 id="performance-ratio">Performance Ratio</h2>
+<p><strong>Performance ratio (PR)</strong> is the ratio of actual delivered energy to the energy the array would produce at its nameplate efficiency under the measured in-plane irradiance — it bundles the whole loss chain into one number.</p>
+<pre><code>        Actual AC energy delivered (kWh)
+PR = ───────────────────────────────────────────────
+       POA irradiance (kWh/m²) × array area (m²) × STC efficiency
+</code></pre>
+<p>Modern utility-scale fixed-tilt/tracker plants commonly model <strong>PR ≈ 0.78–0.84</strong> at year 1 in temperate climates (lower in hot/dusty sites, declining over time with degradation). <strong>Specific yield</strong> (kWh/kWp/yr) is the companion metric used to compare sites.</p>
+<pre><code>Worked loss-stack example (illustrative derates → PR)
+
+Start: ideal POA energy at nameplate efficiency = 100.0%
+  × (1 − 0.02)  soiling        → 98.0%
+  × (1 − 0.05)  temperature    → 93.1%
+  × (1 − 0.015) shading        → 91.7%
+  × (1 − 0.015) IAM/reflection → 90.3%
+  × (1 − 0.02)  mismatch/qual. → 88.5%
+  × (1 − 0.015) DC wiring      → 87.2%
+  × (1 − 0.02)  inverter+clip  → 85.5%
+  × (1 − 0.02)  AC + MV xfmr   → 83.8%
+  × (1 − 0.02)  availability   → 82.1%
+  ───────────────────────────────────────
+  Year-1 PR ≈ 0.82
+
+Specific yield ≈ POA (kWh/m²/yr) × module eff × PR / module eff
+  e.g. 2,000 kWh/m²/yr resource → ~1,600–1,700 kWh/kWp/yr (site-dependent)
+</code></pre>
+<blockquote>
+<p>The derates above are illustrative placeholders chosen to show the arithmetic. Use site-measured soiling, modeled shading, manufacturer module data, and a real availability assumption — never copy these numbers into a model.</p>
+</blockquote>
+<h2 id="tools">Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Role</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PVsyst</strong></td>
+<td>Industry-standard bankable PV simulation</td>
+<td>Reference tool lenders/IEs expect; detailed loss tree, P50/P90 module</td>
+</tr>
+<tr>
+<td><strong>SAM (System Advisor Model)</strong></td>
+<td>Free NREL tool; strong financial + P50/P90</td>
+<td>LCOE, PPA, tax-equity, hybrid modeling</td>
+</tr>
+<tr>
+<td><strong>PlantPredict</strong></td>
+<td>Cloud, utility-scale focused</td>
+<td>Originated for large-plant energy estimates</td>
+</tr>
+<tr>
+<td><strong>Solargis / Meteonorm</strong></td>
+<td>Weather data + some yield</td>
+<td>Resource data and uncertainty inputs</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PVsyst</strong> remains the de facto reference for bankable energy reports; <strong>SAM</strong> is widely used for financial structuring and as an independent cross-check; <strong>PlantPredict</strong> is purpose-built for utility scale. Lenders frequently require a <strong>PVsyst-based</strong> report plus IE review.</p>
+<h2 id="weather-data-inter-annual-variability">Weather Data &amp; Inter-Annual Variability</h2>
+<p>The single biggest input — and a major uncertainty source — is the solar resource itself.</p>
+<ul>
+<li><strong>TMY (Typical Meteorological Year):</strong> a synthetic "typical" year stitched from a long record. Convenient for a single deterministic run, but a TMY does <strong>not</strong> by itself convey year-to-year spread.</li>
+<li><strong>Multi-year time series (15+ years recommended):</strong> required to characterize <strong>inter-annual variability (IAV)</strong> — the natural year-to-year swing in irradiance driven by weather and large-scale patterns (e.g., ENSO). Annual GHI commonly varies a few percent (often ~2–4% standard deviation, site-dependent).</li>
+<li><strong>Ground vs satellite data:</strong> on-site pyranometer/met-station data (ideally ≥1 year, longer is better) reduces resource uncertainty when correlated to a long satellite record.</li>
+</ul>
+<blockquote>
+<p><strong>Key point:</strong> A P50 is only as credible as the resource dataset behind it. Lenders weight the <em>length and quality</em> of the weather record heavily because IAV and long-term bias dominate the P90 spread.</p>
+</blockquote>
+<h2 id="p50-p75-p90-p99-exceedance-probabilities">P50, P75, P90, P99 — Exceedance Probabilities</h2>
+<p>The model output is not a single number but a <strong>probability distribution</strong> of annual energy. A <strong>PXX</strong> value is the production level that has an XX% probability of being <strong>met or exceeded</strong> in a given year.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Meaning</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P50</strong></td>
+<td>Median; 50% chance of exceeding</td>
+<td>Central / expected case; sponsor base case</td>
+</tr>
+<tr>
+<td><strong>P75</strong></td>
+<td>75% chance of exceeding</td>
+<td>Intermediate downside</td>
+</tr>
+<tr>
+<td><strong>P90</strong></td>
+<td>90% chance of exceeding (1-year)</td>
+<td>Common debt-sizing case</td>
+</tr>
+<tr>
+<td><strong>P99</strong></td>
+<td>99% chance of exceeding</td>
+<td>Deep stress / downside covenant</td>
+</tr>
+</tbody>
+</table>
+<pre><code>P50 → P90 note (Gaussian approximation)
+
+  P90 ≈ P50 × (1 − 1.282 × σ_total)
+
+  where σ_total = combined relative uncertainty (one standard deviation),
+  built by root-sum-square of independent sources:
+
+  σ_total = sqrt( σ_resource² + σ_model² + σ_IAV(1yr)² + σ_data² + ... )
+
+  Example: if σ_total ≈ 7%
+    P90 ≈ P50 × (1 − 1.282 × 0.07) ≈ P50 × 0.910  →  ~9% below P50
+
+  The 1.282 factor is the standard-normal z-score at the 10th percentile.
+  Multi-year exceedance (e.g., P90 over the debt tenor) uses a smaller IAV
+  term because year-to-year variation averages out over many years.
+</code></pre>
+<blockquote>
+<p><strong>Caution:</strong> P90 over <strong>one year</strong> and P90 over the <strong>loan life</strong> are different numbers — IAV averages down over many years, so a multi-year P90 sits closer to P50 than a single-year P90. Confirm which definition a lender's term sheet uses.</p>
+</blockquote>
+<h2 id="sources-of-uncertainty">Sources of Uncertainty</h2>
+<p>The P50→P90 gap is driven by the combined (root-sum-square) uncertainty of several largely independent contributors:</p>
+<ul>
+<li><strong>Resource / irradiance data</strong> — long-term bias and measurement uncertainty (often the largest single term).</li>
+<li><strong>Inter-annual variability</strong> — natural year-to-year resource swing.</li>
+<li><strong>Transposition / modeling</strong> — POA conversion, soiling/shading/temperature model error (PVsyst-class uncertainty often ~±3–5%).</li>
+<li><strong>Module/inverter performance</strong> vs datasheet, degradation rate uncertainty.</li>
+<li><strong>Availability and operational</strong> assumptions.</li>
+</ul>
+<p>These combine, not add: <code>σ_total = sqrt(Σ σ_i²)</code>. Reducing the <em>resource</em> uncertainty (longer record, on-site met data) usually moves the P90 more than refining any single loss term.</p>
+<h2 id="independent-engineer-review-bankability">Independent Engineer Review &amp; Bankability</h2>
+<p>Before financial close, lenders engage an <strong>independent engineer (IE)</strong> to audit the yield model. The IE typically:</p>
+<ul>
+<li>Re-runs or reviews the <strong>PVsyst/SAM</strong> model and inputs (weather source, losses, degradation, availability).</li>
+<li>Validates the <strong>P50 and P90</strong> and may issue an independent IE P50/P90, sometimes more conservative than the sponsor's.</li>
+<li>Checks the loss assumptions against measured data and industry norms, flags optimistic derates, and reviews equipment warranties.</li>
+<li>Produces a report the lender uses to <strong>size debt</strong> (often to a P90 or P99 debt-service test) and the offtaker uses to validate the PPA shape.</li>
+</ul>
+<blockquote>
+<p><strong>Bankability</strong> is less about a single number and more about a defensible, well-documented chain from a credible long-term weather record through justified losses to a transparent P-curve. A clean IE review is the practical definition of "bankable."</p>
+</blockquote>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" href="downloads.html">PVsyst — P50 / P90 evaluations</a></li>
+<li><a class="inline" href="downloads.html">NREL System Advisor Model (SAM)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://kb.solargis.com/docs/p50-p90-and-other-scenarios">Solargis — P50, P90 and other scenarios</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://kb.solargis.com/docs/uncertainty-estimates">Solargis — Uncertainty estimates</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://iea-pvps.org/wp-content/uploads/2021/04/IEA-PVPS-T13-22_2021-Assessment-of-Performance-Loss-Rate-of-PV-Power-Systems-report.pdf">IEA PVPS — Assessment of Performance Loss Rate of PV Power Systems</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://docs.nrel.gov/docs/fy23osti/85463.pdf">NREL — Perspective: Performance Loss Rate in Photovoltaic Systems</a></li>
+</ul>
+<hr />
+<p><em>Reference content for educational use; yield assumptions, uncertainty values, and exceedance definitions are project-specific — confirm with qualified resource assessors and the project's independent engineer before relying on them.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="util-solar-storage-hybrid.html" class="prev"><span class="dir">Previous</span><span class="ttl">Solar-Plus-Storage Hybrids</span></a><a href="util-environmental-permitting.html" class="next"><span class="dir">Next</span><span class="ttl">Environmental Permitting</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#the-modeling-chain">The Modeling Chain</a>
+<a class="lvl-2" href="#the-loss-chain">The Loss Chain</a>
+<a class="lvl-2" href="#performance-ratio">Performance Ratio</a>
+<a class="lvl-2" href="#tools">Tools</a>
+<a class="lvl-2" href="#weather-data-inter-annual-variability">Weather Data &amp; Inter-Annual Variability</a>
+<a class="lvl-2" href="#p50-p75-p90-p99-exceedance-probabilities">P50, P75, P90, P99 — Exceedance Probabilities</a>
+<a class="lvl-2" href="#sources-of-uncertainty">Sources of Uncertainty</a>
+<a class="lvl-2" href="#independent-engineer-review-bankability">Independent Engineer Review &amp; Bankability</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

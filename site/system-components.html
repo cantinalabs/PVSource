@@ -1,0 +1,352 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Solar System Components · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="fundamentals" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link active" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="fundamentals-shading-mismatch.html" aria-label="Previous: Shading, Mismatch &amp; Bypass Diodes"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Shading, Mismatch &amp; Bypass Diodes</span></div><div class="side-nav next"><a href="fundamentals-inverters.html" aria-label="Next: Inverters Deep-Dive"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Inverters Deep-Dive</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Fundamentals</span><h1>Solar System Components</h1><p class="lede">Every part of a PV system explained — modules, inverters, racking, conductors, protection and monitoring — plus how to read the datasheets.</p><div class="banner-meta"><div class="m"><b>Modules → BOS</b><span>The full stack</span></div><div class="m"><b>String vs micro</b><span>Inverter types</span></div><div class="m"><b>Datasheets</b><span>How to read them</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>A photovoltaic system is more than panels. This page is a component-by-component reference: what each part does, the key specifications that matter, and how to read the datasheets that describe them. Coverage is shared across <strong>residential</strong> and <strong>commercial</strong> installations; where a component or practice is typical of one, it is labeled. Code references are to the U.S. <strong>National Electrical Code (NEC)</strong> as of the 2023 edition unless noted; always design to the locally adopted code.</p>
+<h2 id="pv-modules">PV Modules</h2>
+<p>The <strong>PV module</strong> is the generator. Modules are characterized by their electrical ratings at STC and by mechanical and safety attributes.</p>
+<p>Key specs:
+- <strong>Pmax (W)</strong> — rated power at STC.
+- <strong>Vmp / Imp</strong> — voltage and current at the maximum power point.
+- <strong>Voc / Isc</strong> — open-circuit voltage and short-circuit current (used for string sizing and overcurrent design).
+- <strong>Module efficiency (%)</strong> — power per unit area.
+- <strong>Temperature coefficients (%/°C)</strong> of Pmax, Voc, Isc.
+- <strong>Maximum system voltage</strong> — typically 600 V (residential) or 1000–1500 V (commercial/utility).
+- <strong>Series fuse rating / maximum overcurrent protection (A)</strong>.
+- <strong>Mechanical load ratings (Pa)</strong> for wind/snow.
+- <strong>Certifications</strong> — UL 61730 / IEC 61730 (safety), IEC 61215 (design qualification).</p>
+<blockquote>
+<p><strong>Residential vs commercial:</strong> Residential roofs commonly use 60–66 cell modules (~400–440 W); commercial and ground-mount use larger 72–144 half-cell modules (~450–600+ W) and higher system voltages (1000–1500 V DC).</p>
+</blockquote>
+<h2 id="mounting-and-racking">Mounting and Racking</h2>
+<p><strong>Racking</strong> secures modules, transfers wind and snow loads to the structure, and sets tilt and orientation. The attachment method depends on the surface.</p>
+<table>
+<thead>
+<tr>
+<th>Mount type</th>
+<th>Where used</th>
+<th>Key considerations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Composition-shingle roof</strong></td>
+<td>Residential</td>
+<td>Lag bolts into rafters with flashed standoffs; watertightness</td>
+</tr>
+<tr>
+<td><strong>Tile roof</strong></td>
+<td>Residential</td>
+<td>Tile hooks or replacement tiles; breakage risk</td>
+</tr>
+<tr>
+<td><strong>Metal (standing-seam) roof</strong></td>
+<td>Residential &amp; commercial</td>
+<td>Clamp-on, often non-penetrating; fast install</td>
+</tr>
+<tr>
+<td><strong>Flat (low-slope) roof</strong></td>
+<td>Commercial</td>
+<td>Ballasted or attached tilt frames; roof load limits</td>
+</tr>
+<tr>
+<td><strong>Ground mount</strong></td>
+<td>Residential &amp; commercial</td>
+<td>Driven piles or concrete; soil/geotech matters</td>
+</tr>
+<tr>
+<td><strong>Ballasted</strong></td>
+<td>Commercial flat roofs</td>
+<td>Concrete blocks resist uplift; minimizes penetrations</td>
+</tr>
+<tr>
+<td><strong>Carport / canopy</strong></td>
+<td>Commercial</td>
+<td>Elevated structure; engineered steel; doubles as shade</td>
+</tr>
+<tr>
+<td><strong>Single-axis tracker</strong></td>
+<td>Commercial / utility ground-mount</td>
+<td>Follows sun east–west; +15–25% yield; more O&amp;M</td>
+</tr>
+</tbody>
+</table>
+<p>Key specs: rail/clamp load ratings, wind and snow design loads (per ASCE 7), allowable rail span, grounding/bonding method (see WEEBs below), and corrosion class of fasteners. Trackers add motor, controller, and backtracking software to avoid row-to-row shading.</p>
+<blockquote>
+<p><strong>Warning:</strong> Ballasted systems impose significant point and distributed loads — a structural engineer must confirm the roof can carry them. Penetrating mounts must be flashed to maintain the roof warranty and prevent leaks.</p>
+</blockquote>
+<h2 id="inverters">Inverters</h2>
+<p>The <strong>inverter</strong> converts DC to grid-compatible AC and performs MPPT, grid synchronization, and protective functions (anti-islanding, ground-fault detection).</p>
+<table>
+<thead>
+<tr>
+<th>Inverter type</th>
+<th>Architecture</th>
+<th>Typical use</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>String inverter</strong></td>
+<td>One inverter serves one or more series strings</td>
+<td>Residential &amp; commercial</td>
+<td>Lowest cost/W; module-level issues affect the string</td>
+</tr>
+<tr>
+<td><strong>Microinverter</strong></td>
+<td>One small inverter per module (or per 2–4)</td>
+<td>Residential &amp; small commercial</td>
+<td>Module-level MPPT; better shade tolerance; built-in rapid shutdown</td>
+</tr>
+<tr>
+<td><strong>Central inverter</strong></td>
+<td>Large inverter for many parallel strings</td>
+<td>Commercial / utility</td>
+<td>Lowest $/W at scale; requires combiners</td>
+</tr>
+<tr>
+<td><strong>Hybrid inverter</strong></td>
+<td>String inverter with integrated battery DC port</td>
+<td>Residential &amp; commercial storage</td>
+<td>Manages PV + battery + grid + backup</td>
+</tr>
+</tbody>
+</table>
+<p>Key concepts:
+- <strong>MPPT</strong> — number of independent trackers; more MPPTs allow strings of differing orientation/shading to be optimized separately.
+- <strong>DC-AC ratio (ILR / overbuild)</strong> — ratio of array DC nameplate to inverter AC rating. Ratios of <strong>1.1–1.3</strong> are common to capture more energy in off-peak conditions.
+- <strong>Clipping</strong> — when array DC power exceeds the inverter's AC limit, the inverter caps ("clips") output. A modest amount of clipping is an intentional economic trade-off, not a fault.</p>
+<h2 id="dc-power-optimizers">DC Power Optimizers</h2>
+<p>A <strong>power optimizer</strong> is a module-level DC-DC converter that performs per-module MPPT and conditions each module's output before it reaches a central string inverter. Optimizers improve performance under shade/mismatch, enable module-level monitoring, and provide module-level <strong>rapid shutdown</strong>. Unlike microinverters, the DC-to-AC conversion still happens at a central string inverter. Most common in <strong>residential</strong> and small <strong>commercial</strong> systems with shading or complex roofs.</p>
+<h2 id="combiner-boxes">Combiner Boxes</h2>
+<p>A <strong>combiner box</strong> parallels multiple PV source circuits (strings) into one larger output circuit, typically housing <strong>string fuses</strong> (overcurrent protection), and often a DC disconnect and surge protection. Combiners are standard on <strong>commercial/utility</strong> systems with many strings; small residential string systems often combine inside the inverter and need no separate box. Key specs: number of inputs, fuse rating per input, busbar current rating, max system voltage, and enclosure rating (e.g., NEMA 3R/4X for outdoor).</p>
+<h2 id="disconnects-ac-and-dc">Disconnects (AC and DC)</h2>
+<p><strong>Disconnects</strong> provide a visible, lockable means to de-energize equipment for maintenance and emergency response.</p>
+<ul>
+<li><strong>DC disconnect</strong> — isolates the PV/DC side from the inverter; often integrated into the inverter.</li>
+<li><strong>AC disconnect</strong> — isolates the inverter output from the building/grid. Many utilities require an <strong>accessible, lockable, visible-blade AC disconnect</strong> near the meter.</li>
+</ul>
+<p>Key specs: voltage and current rating, DC vs AC rating (DC arcs are harder to break), number of poles, and enclosure rating.</p>
+<h2 id="conductors-and-wiring">Conductors and Wiring</h2>
+<ul>
+<li><strong>PV wire / USE-2</strong> — the conductor type used for exposed array (source-circuit) wiring. <strong>PV Wire</strong> has thicker insulation and is required for ungrounded/transformerless systems; <strong>USE-2</strong> is also sunlight-resistant and used for many grounded applications. Both are rated for wet locations and high temperature.</li>
+<li><strong>MC4 connectors</strong> — the de-facto standard locking DC connector between modules and to homerun leads. Only intermateable connectors of the same brand/type should be joined; cross-mating different makes is a code and reliability concern.</li>
+<li><strong>Conduit</strong> — protects conductors run inside the building or where physical protection is required (e.g., EMT, PVC, or flexible conduit). Conductors in conduit must be derated for the number of current-carrying conductors and for ambient/rooftop temperature.</li>
+</ul>
+<p>Key specs: conductor ampacity, insulation temperature rating (90 °C wet typical), voltage rating, and required ampacity after temperature and conduit-fill derating. Voltage drop should generally be held under ~2% on DC and ~1% on AC for efficiency.</p>
+<h2 id="overcurrent-protection-ocpd">Overcurrent Protection (OCPD)</h2>
+<p><strong>Overcurrent protective devices</strong> — fuses and circuit breakers — protect conductors and equipment from currents above their safe rating.</p>
+<ul>
+<li><strong>String fuses</strong> protect PV source circuits, sized above the string's rated current but at or below the module's series fuse rating. Note that with <strong>two or fewer</strong> parallel strings, fusing is often not required because no string can deliver dangerous reverse fault current.</li>
+<li><strong>Breakers / OCPDs</strong> protect the inverter output circuit and the point of interconnection.</li>
+<li><strong>120% rule (NEC 705.12):</strong> for load-side (back-fed breaker) interconnection on a busbar, <code>(busbar rating × 1.2) ≥ (main breaker + PV breaker)</code>. This is a frequent design constraint on both residential and commercial panels.</li>
+</ul>
+<h2 id="grounding-and-bonding">Grounding and Bonding</h2>
+<p>Grounding and bonding give fault current a safe path and keep exposed metal at a safe potential.</p>
+<ul>
+<li><strong>Equipment Grounding Conductor (EGC)</strong> — bonds module frames, racking, and enclosures together and back to the system ground.</li>
+<li><strong>Grounding Electrode Conductor (GEC)</strong> — connects the grounded system to the earth (grounding electrode / rod).</li>
+<li><strong>WEEB (Washer, Electrical Equipment Bonding)</strong> — a stainless bonding washer/clip that bites through anodized aluminum to create a listed electrical bond between modules and rails without a separate copper jumper. Common in residential and commercial rack bonding.</li>
+</ul>
+<p>Key specs: EGC sizing per NEC 250.122 (by OCPD), listed bonding hardware, and corrosion-compatible (often tin-plated copper or stainless) connections.</p>
+<h2 id="rapid-shutdown-devices">Rapid Shutdown Devices</h2>
+<p><strong>Rapid shutdown</strong> reduces the voltage of conductors inside and on the building during an emergency so firefighters are not exposed to high DC voltage. Under <strong>NEC 690.12</strong>, conductors inside the array boundary must be reduced to a safe level (commonly <strong>≤80 V within 30 seconds</strong>) and outside the boundary to a low level (commonly ≤30 V). Compliance is achieved with <strong>module-level power electronics (MLPE)</strong> — microinverters or optimizers — or dedicated rapid-shutdown switching devices, plus an initiator. Required for building-mounted PV; <strong>ground-mount</strong> systems are generally exempt.</p>
+<h2 id="monitoring-systems">Monitoring Systems</h2>
+<p><strong>Monitoring</strong> tracks production, consumption, and faults, typically via a gateway/data logger reporting to a cloud portal or app.</p>
+<ul>
+<li><strong>Residential:</strong> system- or module-level production, with consumption monitoring (CT clamps) for self-consumption insight.</li>
+<li><strong>Commercial:</strong> revenue-grade metering, string-level analytics, alerting, and integration with O&amp;M / SCADA for performance ratio tracking.</li>
+</ul>
+<p>Key specs: measurement accuracy (revenue-grade vs indicative), data granularity, communication method (Wi-Fi, cellular, Ethernet, Modbus), and module-level vs string-level resolution.</p>
+<h2 id="metering-revenue-production-and-net-meters">Metering: Revenue, Production, and Net Meters</h2>
+<ul>
+<li><strong>Production meter</strong> — measures total PV generation (often required for performance-based incentives/SRECs).</li>
+<li><strong>Net meter</strong> — the utility's bidirectional meter that records energy imported from and exported to the grid for <strong>net metering</strong> billing.</li>
+<li><strong>Revenue-grade meter</strong> — a meter meeting accuracy standards (e.g., ANSI C12.20, typically ±0.5–2%) suitable for financial settlement; common in <strong>commercial</strong> PPAs and incentive programs.</li>
+</ul>
+<h2 id="transformers-commercial">Transformers (Commercial)</h2>
+<p>Large <strong>commercial and utility</strong> systems frequently include <strong>transformers</strong> to step inverter output voltage up to the building's distribution or the utility's service voltage (e.g., 480 V inverter output stepped to medium voltage). Key specs: kVA rating, primary/secondary voltage, impedance, efficiency, cooling class, and overcurrent/grounding configuration. Transformers are rare in <strong>residential</strong> systems, which typically interconnect at 120/240 V single-phase.</p>
+<h2 id="how-to-read-a-module-datasheet">How to Read a Module Datasheet</h2>
+<p>Focus on these fields when evaluating or designing with a module:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What it tells you</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pmax (STC)</strong></td>
+<td>Nameplate watts</td>
+<td>Sizing the array</td>
+</tr>
+<tr>
+<td><strong>Vmp / Imp</strong></td>
+<td>MPP operating point</td>
+<td>Inverter MPPT window matching</td>
+</tr>
+<tr>
+<td><strong>Voc / Isc</strong></td>
+<td>Open-circuit V / short-circuit A</td>
+<td>String sizing and OCPD design</td>
+</tr>
+<tr>
+<td><strong>Temp. coefficient of Voc</strong></td>
+<td>V change per °C</td>
+<td>Cold-temperature max-voltage check</td>
+</tr>
+<tr>
+<td><strong>Temp. coefficient of Pmax</strong></td>
+<td>Power loss with heat</td>
+<td>Hot-climate yield</td>
+</tr>
+<tr>
+<td><strong>Max system voltage</strong></td>
+<td>600 / 1000 / 1500 V</td>
+<td>String length limit</td>
+</tr>
+<tr>
+<td><strong>Max series fuse rating</strong></td>
+<td>A</td>
+<td>String OCPD ceiling</td>
+</tr>
+<tr>
+<td><strong>NOCT</strong></td>
+<td>Realistic cell temp</td>
+<td>Field-output modeling</td>
+</tr>
+<tr>
+<td><strong>Efficiency</strong></td>
+<td>%</td>
+<td>Area-constrained roofs</td>
+</tr>
+<tr>
+<td><strong>Mechanical load (Pa)</strong></td>
+<td>Wind/snow rating</td>
+<td>Structural compliance</td>
+</tr>
+<tr>
+<td><strong>Warranty</strong></td>
+<td>Product &amp; performance terms</td>
+<td>Long-term value; check year-1 and annual degradation cap</td>
+</tr>
+<tr>
+<td><strong>Certifications</strong></td>
+<td>UL 61730 / IEC 61215/61730</td>
+<td>Code-required listing</td>
+</tr>
+</tbody>
+</table>
+<pre><code>Cold-weather max-voltage check (worked example):
+  Voc(STC)            = 41.0 V
+  Temp coeff of Voc   = -0.25 %/°C  (= -0.1025 V/°C)
+  Record low temp     = -15 °C  (delta from 25°C = -40 °C)
+  Voc(cold) = 41.0 + (-0.1025 V/°C × -40 °C) = 41.0 + 4.1 = 45.1 V/module
+  Max modules/string = System max voltage / Voc(cold)
+                     = 600 V / 45.1 V ≈ 13.3  -&gt; 13 modules max
+</code></pre>
+<h2 id="how-to-read-an-inverter-datasheet">How to Read an Inverter Datasheet</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What it tells you</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Max DC input voltage</strong></td>
+<td>Absolute DC ceiling</td>
+<td>Must exceed cold Voc of the string</td>
+</tr>
+<tr>
+<td><strong>MPPT voltage range</strong></td>
+<td>Operating window</td>
+<td>Strings must stay in-window across temperatures</td>
+</tr>
+<tr>
+<td><strong>Number of MPPTs / inputs</strong></td>
+<td>Independent trackers</td>
+<td>Mixed orientations / shading</td>
+</tr>
+<tr>
+<td><strong>Max DC input current per MPPT</strong></td>
+<td>A</td>
+<td>Limits parallel strings per tracker</td>
+</tr>
+<tr>
+<td><strong>Rated / max AC output power</strong></td>
+<td>W (kW)</td>
+<td>Sets DC-AC ratio and clipping</td>
+</tr>
+<tr>
+<td><strong>Max output current</strong></td>
+<td>A</td>
+<td>AC OCPD and conductor sizing</td>
+</tr>
+<tr>
+<td><strong>Nominal AC voltage / phases</strong></td>
+<td>e.g., 240 V 1Φ, 208/480 V 3Φ</td>
+<td>Interconnection compatibility</td>
+</tr>
+<tr>
+<td><strong>CEC / peak efficiency</strong></td>
+<td>%</td>
+<td>Weighted real-world efficiency</td>
+</tr>
+<tr>
+<td><strong>Rapid shutdown / RSD compatibility</strong></td>
+<td>—</td>
+<td>NEC 690.12 compliance</td>
+</tr>
+<tr>
+<td><strong>Grid support / UL 1741-SA/SB</strong></td>
+<td>—</td>
+<td>Utility interconnection ride-through</td>
+</tr>
+</tbody>
+</table>
+<pre><code>DC-AC ratio (worked example):
+  Array DC nameplate = 11.0 kW
+  Inverter AC rating  = 8.5 kW
+  DC-AC ratio = 11.0 / 8.5 = 1.29
+  -&gt; ~1.29 overbuild; expect minor midday clipping, generally
+     economic for boosting morning/evening and cloudy-day yield.
+</code></pre>
+<blockquote>
+<p><strong>Key takeaway:</strong> Two checks dominate string sizing — the <strong>cold-temperature Voc</strong> must not exceed the inverter/system maximum voltage, and the operating <strong>Vmp</strong> must stay within the MPPT window at the hottest expected temperature.</p>
+</blockquote>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70">NEC Article 690 — Solar Photovoltaic Systems (NFPA 70)</a></li>
+<li><a class="inline" href="downloads.html">NREL — System Advisor Model (SAM) and loss modeling</a></li>
+<li><a class="inline" href="downloads.html">EnergySage — Solar Inverters Explained</a></li>
+<li><a class="inline" href="downloads.html">Mayfield Renewables — PV system design references</a></li>
+<li><a class="inline" href="downloads.html">EnergySage — Solar Panel Testing and Certifications</a></li>
+</ul>
+<hr />
+<p><em>Educational and reference use only — not engineering advice. Component specs, code rules, and certifications change; verify against current manufacturer datasheets, the locally adopted NEC, and licensed professionals before design or installation.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="fundamentals-shading-mismatch.html" class="prev"><span class="dir">Previous</span><span class="ttl">Shading, Mismatch &amp; Bypass Diodes</span></a><a href="fundamentals-inverters.html" class="next"><span class="dir">Next</span><span class="ttl">Inverters Deep-Dive</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#pv-modules">PV Modules</a>
+<a class="lvl-2" href="#mounting-and-racking">Mounting and Racking</a>
+<a class="lvl-2" href="#inverters">Inverters</a>
+<a class="lvl-2" href="#dc-power-optimizers">DC Power Optimizers</a>
+<a class="lvl-2" href="#combiner-boxes">Combiner Boxes</a>
+<a class="lvl-2" href="#disconnects-ac-and-dc">Disconnects (AC and DC)</a>
+<a class="lvl-2" href="#conductors-and-wiring">Conductors and Wiring</a>
+<a class="lvl-2" href="#overcurrent-protection-ocpd">Overcurrent Protection (OCPD)</a>
+<a class="lvl-2" href="#grounding-and-bonding">Grounding and Bonding</a>
+<a class="lvl-2" href="#rapid-shutdown-devices">Rapid Shutdown Devices</a>
+<a class="lvl-2" href="#monitoring-systems">Monitoring Systems</a>
+<a class="lvl-2" href="#metering-revenue-production-and-net-meters">Metering: Revenue, Production, and Net Meters</a>
+<a class="lvl-2" href="#transformers-commercial">Transformers (Commercial)</a>
+<a class="lvl-2" href="#how-to-read-a-module-datasheet">How to Read a Module Datasheet</a>
+<a class="lvl-2" href="#how-to-read-an-inverter-datasheet">How to Read an Inverter Datasheet</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

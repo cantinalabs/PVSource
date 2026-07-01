@@ -1,0 +1,365 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>DIY Battery Builds · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="diy" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link active" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="diy-structural-calcs.html" aria-label="Previous: DIY Structural Calculations"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">DIY Structural Calculations</span></div><div class="side-nav next"><a href="diy-tools-testing.html" aria-label="Next: Tools, Testing &amp; Commissioning"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Tools, Testing &amp; Commissioning</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Build It Yourself</span><h1>DIY Battery Builds</h1><p class="lede">Building your own LiFePO4 bank — cell grades and sourcing, capacity testing, top-balancing, BMS wiring, busbars and compression, and an honest build-vs-buy comparison.</p><div class="banner-meta"><div class="m"><b>LiFePO4</b><span>From cells</span></div><div class="m"><b>BMS</b><span>Selection &amp; wiring</span></div><div class="m"><b>Safety</b><span>Fire &amp; code</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>Building your own <strong>LiFePO4</strong> (lithium iron phosphate) battery bank from raw prismatic cells is one of the most popular—and most misunderstood—DIY solar projects. Done correctly, a home-built pack delivers utility-grade storage at a fraction of the cost of a sealed commercial unit. Done carelessly, it is a fire hazard, an insurance liability, and a code violation waiting to happen.</p>
+<p>This page covers the full workflow: cell grading and sourcing, capacity and internal-resistance testing, top-balancing, <strong>BMS</strong> selection and wiring, busbars and torque, compression fixtures, enclosures, series/parallel configuration for 12/24/48&nbsp;V banks, commissioning, and the honest trade-offs of build-vs-buy. It assumes you have already read <a class="inline" href="diy-overview.html">Building Your Own System</a> and the broader <a class="inline" href="battery-storage.html">Battery Energy Storage</a> reference.</p>
+<blockquote>
+<p>SAFETY FIRST. A 48&nbsp;V LiFePO4 bank can deliver thousands of amps into a dead short. A single 280&nbsp;Ah cell stores enough energy to vaporize a wrench, spray molten metal, and start a fire that water will not extinguish. <strong>If you are not comfortable working with high-energy DC, stop and buy a listed product.</strong> Nothing on this page is a substitute for professional judgment or your local electrical code.</p>
+</blockquote>
+<h2 id="why-lifepo4-for-diy">Why LiFePO4 for DIY?</h2>
+<p>LiFePO4 is the default DIY chemistry because it is the most forgiving lithium chemistry available:</p>
+<ul>
+<li><strong>Thermal stability</strong> — far higher thermal-runaway onset temperature than NMC/NCA. It still burns under abuse, but it is much less prone to spontaneous runaway.</li>
+<li><strong>Cycle life</strong> — typically <strong>4,000–8,000+ cycles</strong> to 80% capacity at moderate depth of discharge.</li>
+<li><strong>Flat voltage curve</strong> — a nominal <strong>3.2&nbsp;V/cell</strong>, with a usable window roughly <strong>2.5&nbsp;V (empty) to 3.65&nbsp;V (full)</strong>.</li>
+<li><strong>No cobalt</strong>, lower cost, wide cell availability.</li>
+</ul>
+<blockquote>
+<p>WARNING: "More forgiving" is not "safe." LiFePO4 can and does cause fires when over-charged, over-discharged, mechanically damaged, or assembled with a bad BMS. Treat every cell as a live, dangerous energy source from the moment it arrives.</p>
+</blockquote>
+<h2 id="cell-grades-and-sourcing-risks">Cell Grades and Sourcing Risks</h2>
+<p>Prismatic LiFePO4 cells (common sizes: 100&nbsp;Ah, 105&nbsp;Ah, 230&nbsp;Ah, 280&nbsp;Ah, 304&nbsp;Ah, 314&nbsp;Ah) are sold in informal "grades." These grades are <strong>not a regulated standard</strong>—they are seller marketing—so verify everything yourself.</p>
+<table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Typical claim</th>
+<th>Reality / risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grade A</strong></td>
+<td>Matched capacity, low internal resistance, no defects, full warranty</td>
+<td>The target for any build. Genuine Grade A cells come matched within a tight capacity/IR band. Counterfeit "Grade A" is rampant.</td>
+</tr>
+<tr>
+<td><strong>Grade B</strong></td>
+<td>Minor cosmetic flaws, slightly mismatched capacity or IR</td>
+<td>Acceptable only for budget/experimental builds. Expect more balancing work and shorter life.</td>
+</tr>
+<tr>
+<td><strong>Grade C / "used" / "reclaimed"</strong></td>
+<td>Salvaged from EV/ESS packs</td>
+<td>High risk: unknown history, possible internal damage, mismatched aging. Not recommended for home builds.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>RULE: There is no such thing as a "Grade A" cell you can verify from a photo. <strong>Grade is a claim you must prove with your own capacity and IR tests.</strong> Budget time and equipment to test every cell.</p>
+</blockquote>
+<p><strong>Sourcing risk checklist:</strong></p>
+<ul>
+<li>Buy from established vendors with a track record and a return policy that survives a bad batch.</li>
+<li>Expect to pay a deposit + balance and wait weeks for ocean freight; "in-stock domestic" cells cost more but ship fast and dodge customs hassles.</li>
+<li>Inspect on arrival for <strong>dents, swelling, leaking electrolyte, damaged terminals, or terminals not at the same voltage</strong>.</li>
+<li>Photograph QR/serial codes and arrival voltages before you do anything else (important for warranty claims).</li>
+<li>Beware cells delivered at wildly different voltages or below ~2.5&nbsp;V—deeply discharged cells may be internally damaged.</li>
+</ul>
+<blockquote>
+<p>WARNING: Damaged or swollen cells are scrap. Do not attempt to "recover" a swollen LiFePO4 cell. Isolate it outdoors away from combustibles and dispose of it through a proper battery-recycling channel.</p>
+</blockquote>
+<h2 id="capacity-and-internal-resistance-ir-testing">Capacity and Internal-Resistance (IR) Testing</h2>
+<p>Before a single cell goes into a pack, you must know two numbers for each: its <strong>actual capacity (Ah)</strong> and its <strong>internal resistance (mΩ)</strong>. Mismatched cells are the #1 cause of DIY pack problems.</p>
+<h3 id="what-you-need">What you need</h3>
+<ul>
+<li>A <strong>battery capacity tester / DC electronic load</strong> (e.g., a programmable load capable of a 0.2C–0.5C discharge with coulomb counting), or</li>
+<li>A bench power supply + load + a coulomb-counting meter, and</li>
+<li>A <strong>milliohm meter</strong> or a tester with a built-in 4-wire (Kelvin) IR function. Cheap handheld IR readings are noisy; a 4-wire reading is far more trustworthy.</li>
+</ul>
+<h3 id="capacity-test-procedure-per-cell">Capacity test procedure (per cell)</h3>
+<pre><code>1. Charge cell to 3.65 V at &lt;= 0.5C; hold (CV) until current tapers to ~0.05C.
+2. Rest 30-60 minutes.
+3. Discharge at a fixed rate (e.g., 0.2C-0.5C) down to 2.5 V.
+4. Record measured Ah (this is the cell's true capacity).
+5. Recharge to storage (~3.30-3.35 V / ~30-50% SoC) if not building immediately.
+</code></pre>
+<blockquote>
+<p>RULE: Build a pack only from cells whose <strong>measured capacities fall within a tight band</strong> (a common DIY target is within ~1–2% of each other). The pack's usable capacity is limited by its weakest cell.</p>
+</blockquote>
+<h3 id="ir-guidance">IR guidance</h3>
+<ul>
+<li>Record IR at a consistent SoC (e.g., ~50%) and temperature; IR varies with both.</li>
+<li>Genuine modern Grade A large-format cells often read in the low single-digit mΩ range. An outlier reading <strong>much higher</strong> than its siblings is a red flag—quarantine that cell.</li>
+<li>Match cells by IR as well as capacity where possible; this improves current sharing in parallel groups.</li>
+</ul>
+<blockquote>
+<p>Keep a spreadsheet: cell serial, arrival voltage, measured capacity, IR, and position in the final pack. This log is your warranty evidence and your future troubleshooting map.</p>
+</blockquote>
+<h2 id="top-balancing">Top-Balancing</h2>
+<p><strong>Top-balancing</strong> brings every cell to the same fully-charged voltage so that, when wired in series, they reach the top of charge together. Without it, one cell hits 3.65&nbsp;V first and the BMS trips early, starving you of capacity—or worse, individual cells overshoot.</p>
+<h3 id="parallel-top-balance-method-most-common">Parallel top-balance method (most common)</h3>
+<pre><code>1. Fully discharge/settle cells to a known state if needed.
+2. Bus all cells in PARALLEL (all + together, all - together) with
+   correctly sized busbars/cables. Paralleling auto-equalizes them
+   toward a common voltage.
+3. Connect a bench power supply set to a constant 3.65 V with a
+   current limit (e.g., 5-10 A for a small bank; higher for larger).
+4. Let it run. As the group nears 3.65 V the current tapers toward
+   zero. Balancing is &quot;done&quot; when current falls to a very small,
+   stable value (commonly &lt; ~1-2 A, depending on bank size) and
+   voltage holds at 3.65 V.
+5. This often takes 12-48+ hours. Do not rush it.
+</code></pre>
+<blockquote>
+<p>SAFETY: Never set a power supply above <strong>3.65&nbsp;V</strong> for LiFePO4 top-balancing. A miswired supply or a stuck CV stage can over-charge cells into venting or fire. Stay nearby, fuse the leads, and never leave a charging battery bank unattended overnight in an occupied dwelling without monitoring.</p>
+<p>RULE: Top-balance <strong>before</strong> final series assembly. Re-balancing 16 series cells in a finished 48&nbsp;V pack with only a small BMS balance current can take weeks.</p>
+</blockquote>
+<h2 id="bms-selection-and-wiring">BMS Selection and Wiring</h2>
+<p>The <strong>Battery Management System</strong> is the single most important safety component in a DIY pack. It must protect against over-voltage, under-voltage, over-current, short circuit, and over/under-temperature, and it balances cells during operation.</p>
+<h3 id="selecting-a-bms">Selecting a BMS</h3>
+<table>
+<thead>
+<tr>
+<th>Spec</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cell count (S)</strong></td>
+<td>Must match your series count: 4S (12&nbsp;V), 8S (24&nbsp;V), 16S (48&nbsp;V).</td>
+</tr>
+<tr>
+<td><strong>Continuous current rating</strong></td>
+<td>Must exceed your worst-case continuous load/charge current with margin. Size to the inverter, not the average load.</td>
+</tr>
+<tr>
+<td><strong>Balance current</strong></td>
+<td>Higher active-balance current finishes faster and holds large banks better. Passive balancers are slow.</td>
+</tr>
+<tr>
+<td><strong>Temperature sensing</strong></td>
+<td>Required to cut off charging in the cold and discharging when hot.</td>
+</tr>
+<tr>
+<td><strong>Comms / monitoring</strong></td>
+<td>Bluetooth/CAN/RS-485 lets you watch per-cell voltages—invaluable for catching a drifting cell early.</td>
+</tr>
+<tr>
+<td><strong>Separate-port vs common-port</strong></td>
+<td>Separate-port allows independent charge/discharge MOSFET paths; common-port is simpler. Choose to match your wiring.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>RULE: A BMS is the <strong>last line of defense, not the primary balancing tool.</strong> Top-balance manually first. The BMS only needs to nudge cells and disconnect in a fault—not do the heavy lifting.</p>
+<p>WARNING: <strong>Never charge LiFePO4 below freezing (0&nbsp;°C / 32&nbsp;°F).</strong> Charging cold plates lithium and permanently damages cells and creates internal shorts. Your BMS <em>must</em> have a low-temperature charge cutoff, or you must add a separate low-temp disconnect and/or self-heating provision.</p>
+</blockquote>
+<h3 id="bms-wiring-balancesense-leads">BMS wiring — balance/sense leads</h3>
+<p>The balance leads measure each cell junction. <strong>Wiring them in the wrong order can destroy the BMS or a cell.</strong></p>
+<pre><code>48V / 16S pack, balance harness (B- to B+):
+ [B-]--C1--C2--C3--C4--C5--C6--C7--C8--C9-...-C16--[B+]
+  |    |   |   |   ...                          |
+ wire0 w1  w2  w3  ...                         w16
+ (each balance wire taps the junction BETWEEN two series cells;
+  wire0 = pack negative, w16 = pack positive)
+</code></pre>
+<blockquote>
+<p>RULE: Connect balance leads <strong>in order, starting from the most-negative cell (B-) and working up.</strong> Double-check each tap voltage with a meter before energizing the BMS: B- to wire1 ~3.3&nbsp;V, wire1 to wire2 ~3.3&nbsp;V, and so on, climbing ~3.3&nbsp;V per step to full pack voltage. A reversed or skipped lead can apply a large voltage across BMS inputs rated for one cell.</p>
+<p>SAFETY: Fuse the balance harness if your BMS doesn't, and keep the harness physically secured. A balance wire that shorts to a busbar can dump cell current through a tiny conductor and start a fire.</p>
+</blockquote>
+<h2 id="busbars-lugs-and-torque">Busbars, Lugs and Torque</h2>
+<p>The main current path is busbars and cables between cells. Poor connections create heat, and heat is the enemy.</p>
+<ul>
+<li>Use the <strong>manufacturer-supplied or correctly-sized busbars</strong> for cell-to-cell links; size main cables to the full system current with margin.</li>
+<li>Clean terminal faces; many builders use a thin film of approved anti-oxidant on aluminum terminals (follow cell maker guidance).</li>
+<li>Use the <strong>correct fastener thread and length</strong>—too long can bottom out and damage the terminal; too short strips threads.</li>
+</ul>
+<blockquote>
+<p>RULE: Torque every terminal bolt to the <strong>cell manufacturer's spec</strong> with a calibrated torque wrench/driver. Typical large-format prismatic specs land in the <strong>2–8&nbsp;N·m</strong> range depending on terminal—<strong>but always use the maker's number, never a guess.</strong> Over-torque strips the terminal; under-torque creates a hot, high-resistance joint. See <a class="inline" href="diy-tools-testing.html">DIY Tools, Testing &amp; Commissioning</a> for torque-tool selection.</p>
+<p>WARNING: Use <strong>insulated tools</strong> and remove watches, rings, and metal jewelry. Cover busbars you aren't actively working on. A dropped uninsulated wrench across two terminals is the classic DIY catastrophe.</p>
+</blockquote>
+<h2 id="cell-compression-and-fixtures">Cell Compression and Fixtures</h2>
+<p>Prismatic LiFePO4 cells swell and contract as they cycle. Manufacturers specify assembling cells under <strong>controlled compression</strong> (commonly cited around a few hundred kgf of fixturing force, with end plates and tie rods or banding) to maximize cycle life and prevent excessive swelling.</p>
+<pre><code>   tie rod / threaded rod ----+
+ [endplate][C1][C2]...[C16][endplate]
+   tie rod / threaded rod ----+
+ (rigid end plates + rods/bands hold the stack under
+  even, distributed pressure across the cell faces)
+</code></pre>
+<blockquote>
+<p>RULE: Follow the <strong>cell datasheet's compression force and fixture guidance.</strong> Too little compression accelerates aging; too much can damage cells. Use rigid end plates so pressure is even across the cell face, not concentrated.</p>
+</blockquote>
+<h2 id="enclosures">Enclosures</h2>
+<p>The enclosure protects the pack and protects <em>you</em> from the pack.</p>
+<ul>
+<li><strong>Non-combustible or fire-rated</strong> materials are strongly preferred for the structure around the cells.</li>
+<li>Provide <strong>ventilation</strong>: even LiFePO4 vents gas under fault. Never seal a pack airtight.</li>
+<li>Keep terminals and busbars <strong>physically shielded</strong> so nothing can fall across them.</li>
+<li>Include a <strong>main fuse/breaker</strong> close to the battery positive and a clearly labeled <strong>DC disconnect</strong>.</li>
+<li>Mount in a location away from living-space ignition sources and per local code (see Fire Safety below).</li>
+<li>Provide thermal management appropriate to your climate—heating for cold (charge cutoff!) and ventilation for heat.</li>
+</ul>
+<h2 id="seriesparallel-for-122448-v-banks">Series/Parallel for 12/24/48&nbsp;V Banks</h2>
+<p>LiFePO4 nominal is 3.2&nbsp;V/cell. Series count sets voltage:</p>
+<table>
+<thead>
+<tr>
+<th>Bank</th>
+<th>Series count</th>
+<th>Nominal V</th>
+<th>Charge (full, 3.65&nbsp;V/cell)</th>
+<th>Low cutoff (~2.5&nbsp;V/cell)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12&nbsp;V</strong></td>
+<td>4S</td>
+<td>12.8&nbsp;V</td>
+<td>~14.6&nbsp;V</td>
+<td>~10.0&nbsp;V</td>
+</tr>
+<tr>
+<td><strong>24&nbsp;V</strong></td>
+<td>8S</td>
+<td>25.6&nbsp;V</td>
+<td>~29.2&nbsp;V</td>
+<td>~20.0&nbsp;V</td>
+</tr>
+<tr>
+<td><strong>48&nbsp;V</strong></td>
+<td>16S</td>
+<td>51.2&nbsp;V</td>
+<td>~58.4&nbsp;V</td>
+<td>~40.0&nbsp;V</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>RECOMMENDATION: For whole-home and large off-grid systems, build at <strong>48&nbsp;V</strong>. Higher voltage means lower current for the same power, smaller cables, less heat, and broader inverter compatibility. See <a class="inline" href="diy-off-grid-whole-home.html">Off-Grid Whole-Home Design</a>.</p>
+</blockquote>
+<p><strong>Parallel strategy — strongly preferred approach:</strong> build complete, individually-BMS'd 48&nbsp;V packs and parallel the <em>finished packs</em> at the bank level, rather than paralleling raw cells across a single huge BMS. This isolates faults, simplifies expansion, and matches how the industry builds modular ESS.</p>
+<pre><code>[ Pack 1: 16S + BMS ]--+
+[ Pack 2: 16S + BMS ]--+--&gt; common 48V bus --&gt; inverter/charger
+[ Pack 3: 16S + BMS ]--+
+ (each pack independently protected; use a common, well-fused bus)
+</code></pre>
+<blockquote>
+<p>RULE: When paralleling packs, ensure they are at the <strong>same voltage/SoC before connecting</strong>, use equal-length cables to each pack for balanced current sharing, and fuse each pack.</p>
+<p>WARNING: <strong>Never wire cells in parallel-then-series with a single small BMS that can't see each cell group</strong> unless you fully understand the failure modes. A hidden imbalance inside a parallel group is invisible to a 16S BMS that only senses 16 nodes.</p>
+</blockquote>
+<h2 id="commissioning-and-balancing">Commissioning and Balancing</h2>
+<pre><code>1. Verify every balance-lead tap voltage with a meter (climb of ~3.3 V/step).
+2. Confirm BMS parameters: cell over/under-V, pack over-current,
+   temperature cutoffs (especially LOW-TEMP CHARGE CUTOFF), balance start V.
+3. Power up the BMS; confirm it reports all cells and reasonable values.
+4. First charge SLOWLY at low current; watch per-cell voltages converge.
+5. Run a controlled charge to full; confirm BMS balancing engages near top.
+6. Discharge under a known load; confirm under-V protection and capacity.
+7. Re-check torque after the first few cycles (terminals can settle).
+8. Log baseline per-cell voltages, IR if available, and capacity.
+</code></pre>
+<blockquote>
+<p>RULE: Commission with <strong>monitoring on and a person present.</strong> The first full charge/discharge is when assembly mistakes reveal themselves. Have a Class&nbsp;D / lithium-rated extinguisher and a plan to isolate the bank.</p>
+</blockquote>
+<h2 id="fire-safety-insurance-and-code-cautions">Fire Safety, Insurance and Code Cautions</h2>
+<p>This is the section people skip and regret.</p>
+<blockquote>
+<p>CRITICAL SAFETY:
+- DIY packs are typically built from <strong>non-UL-listed cells</strong>. A home-assembled pack is <strong>not</strong> a listed energy-storage system.
+- Listing standards that matter: <strong>UL&nbsp;1973</strong> (battery packs), <strong>UL&nbsp;9540</strong> (energy storage <em>systems</em>, including inverter + battery as a system), and <strong>UL&nbsp;9540A</strong> (fire-propagation test). Many jurisdictions now require UL&nbsp;9540 / 9540A for permitted residential storage.
+- <strong>NEC Article&nbsp;706</strong> (Energy Storage Systems) governs ESS installation—disconnects, working space, labeling, and (in recent code cycles) BMS documentation and short-circuit current rating (SCCR) labeling. NEC&nbsp;480 covers storage-battery installation generally.</p>
+</blockquote>
+<p><strong>The hard truths for DIY builders:</strong></p>
+<ul>
+<li>Many <strong>AHJs (Authorities Having Jurisdiction) will not permit a battery built from non-listed cells.</strong> Some explicitly refuse DIY lithium packs. Check <em>before</em> you buy cells.</li>
+<li>A non-listed, non-permitted battery that causes a fire can <strong>void your homeowner's insurance</strong> and expose you to liability. Insurers increasingly ask about energy storage.</li>
+<li>Place batteries per code/NFPA guidance: many requirements push storage out of habitable spaces, limit kWh per area, and require fire separation and signage.</li>
+<li>Self-certification is not certification. "It has a BMS" is not a substitute for listing.</li>
+</ul>
+<blockquote>
+<p>RECOMMENDATION: If your install must be permitted, inspected, or insured for a primary dwelling, <strong>strongly consider a UL-9540-listed commercial battery</strong> instead of a DIY pack. Reserve DIY packs for outbuildings, off-grid cabins, experimentation, and situations where you (and your AHJ and insurer) accept the risk knowingly.</p>
+</blockquote>
+<h2 id="diy-pack-vs-buy-built-an-honest-comparison">DIY Pack vs. Buy-Built: An Honest Comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>DIY pack (raw cells)</th>
+<th>Buy-built (server-rack / listed ESS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Up-front cost</strong></td>
+<td>Lower (~$1,500–2,200 for a 48&nbsp;V/280&nbsp;Ah-class bank, ballpark)</td>
+<td>Higher (~$2,800–4,000+ for comparable kWh)</td>
+</tr>
+<tr>
+<td><strong>Listing / permits</strong></td>
+<td>Usually non-listed; often <strong>not permittable</strong></td>
+<td>UL&nbsp;1973 / UL&nbsp;9540A available; permittable</td>
+</tr>
+<tr>
+<td><strong>Insurance</strong></td>
+<td>May be excluded; disclose to insurer</td>
+<td>Generally accepted</td>
+</tr>
+<tr>
+<td><strong>Labor / time</strong></td>
+<td>Many hours: testing, balancing, assembly</td>
+<td>Plug-and-play</td>
+</tr>
+<tr>
+<td><strong>Warranty</strong></td>
+<td>Per-cell only (if honored); none on your assembly</td>
+<td>System warranty</td>
+</tr>
+<tr>
+<td><strong>Skill required</strong></td>
+<td>High; mistakes are dangerous</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><strong>Repairability / upgradability</strong></td>
+<td>Excellent (you know every part)</td>
+<td>Module-level only</td>
+</tr>
+<tr>
+<td><strong>Risk if done wrong</strong></td>
+<td>Fire, injury, liability</td>
+<td>Low (engineered + tested)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>BOTTOM LINE: DIY makes sense when you have the skills, time, and a use case (off-grid, outbuilding, hobby) where listing isn't mandatory. For a permitted, insured home backup system, buy listed. The few thousand dollars saved is not worth your house.</p>
+</blockquote>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li>UL — <a class="inline" href="downloads.html">UL 1973: Batteries for Use in Stationary and Motive Auxiliary Power Applications</a></li>
+<li>UL Solutions — <a class="inline" href="downloads.html">UL 9540 / UL 9540A Energy Storage System Safety</a></li>
+<li>NFPA — <a class="inline" href="downloads.html">NFPA 855: Standard for the Installation of Stationary Energy Storage Systems</a></li>
+<li>NFPA — <a class="inline" href="downloads.html">NEC (NFPA 70), Articles 480, 706, 710</a></li>
+<li>Fluke — <a class="inline" target="_blank" rel="noopener" href="https://www.fluke.com/en-us/learn/blog/renewable-energy/cat3-clamp-meter">CAT III meters in solar installations</a></li>
+<li>DIY Solar Power Forum — <a class="inline" href="downloads.html">Building DIY LiFePO4 banks (community knowledge base)</a></li>
+<li>Related pages: <a class="inline" href="diy-overview.html">Building Your Own System</a> · <a class="inline" href="diy-electrical-calcs.html">DIY Electrical Calculations</a> · <a class="inline" href="diy-structural-calcs.html">DIY Structural Calculations</a> · <a class="inline" href="diy-sourcing.html">Sourcing Materials &amp; Kits</a> · <a class="inline" href="battery-storage.html">Battery Energy Storage</a> · <a class="inline" href="diy-off-grid-whole-home.html">Off-Grid Whole-Home Design</a> · <a class="inline" href="diy-tools-testing.html">DIY Tools, Testing &amp; Commissioning</a></li>
+</ul>
+<hr />
+<p><em>Disclaimer: This page is educational only. Building lithium battery packs involves serious fire, explosion, electrocution, and arc-flash hazards; verify all work against current codes (NEC, NFPA 855), manufacturer specifications, your AHJ, and your insurer, and consult a licensed professional before energizing.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="diy-structural-calcs.html" class="prev"><span class="dir">Previous</span><span class="ttl">DIY Structural Calculations</span></a><a href="diy-tools-testing.html" class="next"><span class="dir">Next</span><span class="ttl">Tools, Testing &amp; Commissioning</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#why-lifepo4-for-diy">Why LiFePO4 for DIY?</a>
+<a class="lvl-2" href="#cell-grades-and-sourcing-risks">Cell Grades and Sourcing Risks</a>
+<a class="lvl-2" href="#capacity-and-internal-resistance-ir-testing">Capacity and Internal-Resistance (IR) Testing</a>
+<a class="lvl-3" href="#what-you-need">What you need</a>
+<a class="lvl-3" href="#capacity-test-procedure-per-cell">Capacity test procedure (per cell)</a>
+<a class="lvl-3" href="#ir-guidance">IR guidance</a>
+<a class="lvl-2" href="#top-balancing">Top-Balancing</a>
+<a class="lvl-3" href="#parallel-top-balance-method-most-common">Parallel top-balance method (most common)</a>
+<a class="lvl-2" href="#bms-selection-and-wiring">BMS Selection and Wiring</a>
+<a class="lvl-3" href="#selecting-a-bms">Selecting a BMS</a>
+<a class="lvl-3" href="#bms-wiring-balancesense-leads">BMS wiring — balance/sense leads</a>
+<a class="lvl-2" href="#busbars-lugs-and-torque">Busbars, Lugs and Torque</a>
+<a class="lvl-2" href="#cell-compression-and-fixtures">Cell Compression and Fixtures</a>
+<a class="lvl-2" href="#enclosures">Enclosures</a>
+<a class="lvl-2" href="#seriesparallel-for-122448-v-banks">Series/Parallel for 12/24/48 V Banks</a>
+<a class="lvl-2" href="#commissioning-and-balancing">Commissioning and Balancing</a>
+<a class="lvl-2" href="#fire-safety-insurance-and-code-cautions">Fire Safety, Insurance and Code Cautions</a>
+<a class="lvl-2" href="#diy-pack-vs-buy-built-an-honest-comparison">DIY Pack vs. Buy-Built: An Honest Comparison</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

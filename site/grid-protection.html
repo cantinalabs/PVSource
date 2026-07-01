@@ -1,0 +1,204 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Anti-Islanding &amp; Grid Protection · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="grid" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link active" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="grid-studies-queues.html" aria-label="Previous: Interconnection Studies &amp; Queues"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Interconnection Studies &amp; Queues</span></div><div class="side-nav next"><a href="grid-three-phase.html" aria-label="Next: Three-Phase &amp; Service Connections"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Three-Phase &amp; Service Connections</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Grid &amp; Interconnection</span><h1>Anti-Islanding &amp; Grid Protection</h1><p class="lede">Keeping the grid safe — the islanding hazard and anti-islanding methods, protective relaying, ride-through vs trip, grounding for larger systems, and transfer trip.</p><div class="banner-meta"><div class="m"><b>Anti-islanding</b><span>Active &amp; passive</span></div><div class="m"><b>Relays</b><span>UV/UF · ROCOF</span></div><div class="m"><b>Ride-through</b><span>vs trip</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>When a solar plant feeds power into the grid, the grid and its operators rely on the plant to <strong>stop energizing</strong> the lines under the right conditions and to <strong>stay connected</strong> under others. Getting this balance right is the job of <strong>anti-islanding</strong> and <strong>grid protection</strong> — the relays, inverter functions, grounding schemes, and communications that keep equipment, line workers, and the grid itself safe.</p>
+<p>This page explains the islanding hazard and the methods used to detect it, the protective relays applied at larger interconnections, the modern shift from "trip on any disturbance" to <strong>ride-through</strong>, grounding requirements for larger systems, relay coordination, and the SCADA and <strong>direct transfer trip</strong> schemes used at utility-scale plants.</p>
+<blockquote>
+<p><strong>Key point:</strong> Anti-islanding protects the <em>outside world</em> from the plant (no energizing a dead grid). Ride-through protects the <em>grid</em> from the plant disconnecting all at once. These two goals pull in opposite directions and must be carefully coordinated.</p>
+</blockquote>
+<p>See also: <a class="inline" href="grid-overview.html">Grid &amp; Interconnection Overview</a>, <a class="inline" href="grid-ieee1547.html">IEEE 1547 &amp; Smart Inverters</a>, <a class="inline" href="grid-studies-queues.html">Interconnection Studies &amp; Queues</a>, <a class="inline" href="grid-three-phase.html">Three-Phase Power &amp; Service Connections</a>.</p>
+<h2 id="the-islanding-hazard">The Islanding Hazard</h2>
+<p>An <strong>island</strong> forms when a portion of the grid becomes electrically isolated from the utility source — for example a feeder section opened by a recloser or a downed line — yet a distributed generator keeps energizing that section. An <strong>unintentional island</strong> is dangerous because:</p>
+<ul>
+<li><strong>Line-worker safety:</strong> Crews expect a de-energized line to stay de-energized. A back-feeding inverter can keep a "dead" line live.</li>
+<li><strong>Equipment damage:</strong> The islanded generator's voltage and frequency are no longer locked to the grid; out-of-spec conditions can damage customer equipment.</li>
+<li><strong>Out-of-phase reclosing:</strong> When the utility recloser snaps the island back onto the grid, the island and grid may be out of phase, producing a large transient torque/current that can damage generators and transformers.</li>
+</ul>
+<pre><code>        Utility                Open recloser              Customers + PV
+   ~~~grid source~~~ ───X────────[ R ]────────●──────────●──────────●
+                                              │          │          │
+                          ISLAND ─────────────┴── PV inverter keeps
+                                                   energizing this dead
+                                                   section = HAZARD
+</code></pre>
+<p>The defense is <strong>anti-islanding</strong>: the DER must detect that the utility source is gone and <strong>cease to energize</strong> within a defined time.</p>
+<h2 id="anti-islanding-detection-methods">Anti-Islanding Detection Methods</h2>
+<p>Inverters detect islands using <strong>passive</strong> methods (watching the grid) and <strong>active</strong> methods (gently probing the grid). Most modern inverters combine both.</p>
+<h3 id="passive-methods">Passive Methods</h3>
+<p>Passive schemes monitor electrical quantities and trip when they leave normal bounds — abnormal values imply the stiff utility source is no longer present.</p>
+<table>
+<thead>
+<tr>
+<th>Passive method</th>
+<th>What it watches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Over/Under Voltage (OUV)</strong></td>
+<td>RMS voltage outside limits</td>
+</tr>
+<tr>
+<td><strong>Over/Under Frequency (OUF)</strong></td>
+<td>Frequency outside limits</td>
+</tr>
+<tr>
+<td><strong>Rate of Change of Frequency (ROCOF)</strong></td>
+<td><code>df/dt</code> — how fast frequency is moving</td>
+</tr>
+<tr>
+<td><strong>Phase Jump Detection (PJD)</strong></td>
+<td>Sudden shift in voltage phase angle</td>
+</tr>
+<tr>
+<td><strong>Harmonic Detection (HD)</strong></td>
+<td>Rise in voltage/current harmonics when the grid drops</td>
+</tr>
+</tbody>
+</table>
+<p>Passive methods are simple and add no disturbance, but they have a <strong>non-detection zone (NDZ)</strong> — if local generation and load happen to be nearly balanced, voltage and frequency may not deviate enough to trip.</p>
+<h3 id="active-methods">Active Methods</h3>
+<p>Active schemes inject a small, deliberate disturbance and watch the response. A <strong>stiff grid</strong> absorbs the probe with little change; an <strong>island</strong> lets the probe push voltage or frequency away from nominal, revealing the island and shrinking the NDZ.</p>
+<ul>
+<li><strong>Slip-Mode Frequency Shift (SMS):</strong> the inverter biases its phase/reactive output to nudge frequency; a strong grid holds frequency, an island runs away.</li>
+<li><strong>Active Frequency Drift (AFD) / Sandia Frequency Shift (SFS):</strong> the inverter slightly distorts current to drift frequency; positive feedback in an island drives it past the trip limit.</li>
+<li><strong>Reactive power / impedance perturbation:</strong> periodically vary reactive power and measure the voltage response to estimate grid impedance.</li>
+</ul>
+<blockquote>
+<p><strong>Key point:</strong> Per <strong>IEEE 1547-2018</strong>, a DER must detect an unintentional island and <strong>cease to energize within 2 seconds</strong> of island formation. Anti-islanding settings must be coordinated with ride-through (below) so the inverter does not trip on a normal grid disturbance.</p>
+</blockquote>
+<h2 id="protective-relaying">Protective Relaying</h2>
+<p>Beyond inverter-internal functions, interconnections — especially larger ones — apply discrete <strong>protective relays</strong> identified by ANSI/IEEE device numbers:</p>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Function</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>27</strong></td>
+<td>Undervoltage</td>
+<td>Trip on collapsed/low voltage</td>
+</tr>
+<tr>
+<td><strong>59</strong></td>
+<td>Overvoltage</td>
+<td>Trip on excessive voltage</td>
+</tr>
+<tr>
+<td><strong>81U / 81O</strong></td>
+<td>Under/over frequency</td>
+<td>Trip outside the frequency band</td>
+</tr>
+<tr>
+<td><strong>81R</strong></td>
+<td>Rate of change of frequency (ROCOF)</td>
+<td>Fast islanding/disturbance detection</td>
+</tr>
+<tr>
+<td><strong>32</strong></td>
+<td>Directional power</td>
+<td>Detect reverse/abnormal power flow</td>
+</tr>
+<tr>
+<td><strong>67</strong></td>
+<td>Directional overcurrent</td>
+<td>Fault current flowing the wrong way</td>
+</tr>
+<tr>
+<td><strong>50/51</strong></td>
+<td>Instantaneous / time overcurrent</td>
+<td>Fault protection</td>
+</tr>
+<tr>
+<td><strong>25</strong></td>
+<td>Synchronism check</td>
+<td>Permit closing only when in phase</td>
+</tr>
+<tr>
+<td><strong>DTT</strong></td>
+<td>Direct Transfer Trip (communications)</td>
+<td>Utility commands the plant to trip</td>
+</tr>
+</tbody>
+</table>
+<p>Voltage and frequency elements (<strong>27/59/81</strong>) provide the baseline disconnection. <strong>ROCOF (81R)</strong> gives faster island detection than a fixed frequency window. <strong>Directional</strong> elements (<strong>32/67</strong>) distinguish a fault or island on the utility side from normal operation. For large plants, a <strong>transfer trip</strong> circuit lets the utility's protection directly command the plant offline — the most reliable anti-islanding method because it does not rely on the inverter inferring the grid's state.</p>
+<h2 id="ride-through-vs-trip">Ride-Through vs. Trip</h2>
+<p>Early interconnection rules told inverters to <strong>trip</strong> on almost any voltage or frequency excursion. With high penetrations of solar, this became a reliability problem: a single transmission fault could momentarily depress voltage across a wide area and cause <strong>thousands of MW of solar to disconnect simultaneously</strong>, turning a small event into a large one.</p>
+<p>Modern standards therefore require <strong>ride-through</strong>: the DER must <em>stay connected and keep supporting the grid</em> through defined voltage and frequency disturbances, and only trip if the disturbance is severe or sustained beyond the ride-through envelope.</p>
+<pre><code>  Voltage
+   1.0 ──┬─────── normal operation ───────────
+         │
+   0.88 ─┤··· mandatory ride-through region ···      stay connected,
+         │                                            keep injecting
+   0.5  ─┤   momentary cessation / trip region
+         └──────────────────────────────────────► time
+            short dip → ride through      long/deep dip → trip
+</code></pre>
+<blockquote>
+<p><strong>Key point:</strong> Ride-through and anti-islanding are in tension. Ride-through says "do not trip on a brief disturbance"; anti-islanding says "trip when the grid is gone." The passive trip settings (voltage, frequency, ROCOF) must sit <em>outside</em> the ride-through envelope so the inverter rides through normal grid events but still catches a true island. IEEE 1547-2018 defines the ride-through profiles and abnormal-condition categories that make this coordination possible.</p>
+</blockquote>
+<p>For details on the inverter functions that implement ride-through and grid support, see <a class="inline" href="grid-ieee1547.html">IEEE 1547 &amp; Smart Inverters</a>.</p>
+<h2 id="grounding-for-larger-systems">Grounding for Larger Systems</h2>
+<p>How the generator and its interconnection transformer are <strong>grounded</strong> affects fault behavior and is a frequent point in interconnection studies.</p>
+<ul>
+<li>An <strong>effectively grounded</strong> source limits the temporary overvoltage on un-faulted phases during a line-to-ground fault to roughly 1.25–1.4× nominal, protecting arresters and equipment.</li>
+<li>An <strong>ungrounded or ineffectively grounded</strong> generator can drive <strong>ground-fault overvoltage</strong> on healthy phases when the utility's own ground reference is lost during an islanding event.</li>
+<li>A <strong>grounding transformer</strong> (often a zig-zag or grounded-wye/delta unit) is frequently required to provide a ground source on the generator side so the system stays effectively grounded as seen from the utility, while still allowing the right fault current for <strong>ground overcurrent relaying</strong> to operate.</li>
+</ul>
+<p>The choice of interconnection transformer winding configuration (e.g., grounded-wye/delta) and any added grounding transformer is determined in the interconnection study to satisfy the utility's grounding and protection criteria.</p>
+<h2 id="relay-coordination">Relay Coordination</h2>
+<p><strong>Coordination</strong> ensures that for any fault, the <em>closest</em> protective device operates first and only the faulted section is isolated — selectivity. Adding a generator complicates this because:</p>
+<ul>
+<li>The generator contributes <strong>additional fault current</strong>, which can change pickup levels and desensitize or mis-coordinate existing utility relays.</li>
+<li>Fault current can now flow in <strong>both directions</strong>, so non-directional overcurrent relays may trip incorrectly — driving the use of <strong>directional (67)</strong> elements.</li>
+<li><strong>Fuse-recloser</strong> coordination on distribution feeders can be upset by the back-fed fault current.</li>
+</ul>
+<p>The interconnection study verifies that, with the plant connected, the utility's reclosers, fuses, and relays still coordinate, and specifies any required relay setting changes or added devices.</p>
+<h2 id="scada-telemetry-direct-transfer-trip-for-large-plants">SCADA, Telemetry &amp; Direct Transfer Trip for Large Plants</h2>
+<p>Utility-scale plants are integrated into the utility/RTO control room through <strong>SCADA</strong> (Supervisory Control and Data Acquisition) and <strong>telemetry</strong>:</p>
+<ul>
+<li><strong>Telemetry</strong> streams real-time MW, MVAr, voltage, and breaker status to the operator so the plant is visible and dispatchable.</li>
+<li><strong>Remote control / curtailment</strong> lets operators raise or lower output, set reactive power or voltage targets, and curtail the plant during congestion.</li>
+<li><strong>Direct Transfer Trip (DTT)</strong> is a dedicated, high-reliability communications channel that lets the utility's protection <strong>directly open the plant's interconnection breaker</strong> when an upstream device opens — guaranteeing the plant cannot island. DTT is the gold-standard anti-islanding measure for large interconnections precisely because it does not depend on the inverter detecting the island on its own.</li>
+</ul>
+<pre><code>  Utility / RTO control room
+        │  SCADA telemetry (MW, MVAr, V, status)
+        │  setpoints / curtailment commands
+        ▼
+   ┌─────────────────────────────┐      DTT (dedicated comms)
+   │  Plant controller + relays  │◄──────────────────────────── utility
+   │  POI breaker  ──────────────┼──► trip on local OR transfer-trip
+   └─────────────────────────────┘
+</code></pre>
+<blockquote>
+<p><strong>Key point:</strong> At the residential scale, anti-islanding lives entirely inside the inverter (IEEE 1547). At the utility scale, it is reinforced by dedicated protective relays, SCADA visibility, and a <strong>direct transfer trip</strong> circuit — defense in depth, because the consequences of an undetected island are far larger.</p>
+</blockquote>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.kitecompliance.ai/navigating-compliance/ieee-1547">Kite Compliance — IEEE 1547 Explained: DER Interconnection Guide</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.kitecompliance.ai/navigating-compliance/anti-islanding-protection">Kite Compliance — Anti-Islanding Protection: Guide to Inverters &amp; Compliance</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.aeso.ca/assets/DER-Anti-Islanding-Screening-and-Study-Guide-December-2023.pdf">AESO — DER Anti-Islanding Screening and Study Guideline</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.franklinwh.com/document/anti-islanding-tech-brief">FranklinWH — Anti-Islanding Technical Brief</a></li>
+<li><a class="inline" href="downloads.html">IEEE Standards — IEEE 1547 (Standard for Interconnection of DER)</a></li>
+</ul>
+<hr />
+<p><em>This page is educational reference material, not a substitute for utility interconnection requirements or a licensed protection engineer; relay settings and grounding schemes must be designed and approved for the specific installation.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="grid-studies-queues.html" class="prev"><span class="dir">Previous</span><span class="ttl">Interconnection Studies &amp; Queues</span></a><a href="grid-three-phase.html" class="next"><span class="dir">Next</span><span class="ttl">Three-Phase &amp; Service Connections</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#the-islanding-hazard">The Islanding Hazard</a>
+<a class="lvl-2" href="#anti-islanding-detection-methods">Anti-Islanding Detection Methods</a>
+<a class="lvl-3" href="#passive-methods">Passive Methods</a>
+<a class="lvl-3" href="#active-methods">Active Methods</a>
+<a class="lvl-2" href="#protective-relaying">Protective Relaying</a>
+<a class="lvl-2" href="#ride-through-vs-trip">Ride-Through vs. Trip</a>
+<a class="lvl-2" href="#grounding-for-larger-systems">Grounding for Larger Systems</a>
+<a class="lvl-2" href="#relay-coordination">Relay Coordination</a>
+<a class="lvl-2" href="#scada-telemetry-direct-transfer-trip-for-large-plants">SCADA, Telemetry &amp; Direct Transfer Trip for Large Plants</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

@@ -1,0 +1,304 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Interactive Calculators · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="calc" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link active" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav next"><a href="state-solar-map.html" aria-label="Next: U.S. State Solar Map"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">U.S. State Solar Map</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Interactive Tools</span><h1>Interactive Calculators</h1><p class="lede">Eleven live tools that put the site&#x27;s formulas to work — system &amp; string sizing, voltage drop, conduit fill, ampacity, inter-row spacing, DC/AC ratio, demand charges, battery backup, specific yield and payback.</p><div class="banner-meta"><div class="m"><b>11 tools</b><span>Live &amp; offline</span></div><div class="m"><b>Sizing → payback</b><span>End to end</span></div><div class="m"><b>No server</b><span>Runs locally</span></div></div></div></section><div class="doc-wrap" style="grid-template-columns:1fr"><article class="content"><p>Six live calculators built from the formulas elsewhere on this site. Everything runs locally in your browser — nothing is sent anywhere. <strong>These are planning estimates, not a substitute for a stamped design or the adopted code.</strong> Always verify against the NEC edition your AHJ enforces and manufacturer data.</p>
+
+<div class="calc-wrap" id="calcs">
+
+  <section class="calc" id="system-sizing">
+    <h3>System Sizing</h3>
+    <p class="cdesc">Estimate array size from annual consumption. <code>kW = Annual kWh ÷ (PSH × 365 × PR)</code></p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Annual usage (kWh)</label><input type="number" id="ss_kwh" value="11000"></div>
+      <div class="calc-field"><label>Offset target (%)</label><input type="number" id="ss_off" value="100"></div>
+      <div class="calc-field"><label>Peak sun hours (h/day)</label><input type="number" id="ss_psh" value="4.5" step="0.1"></div>
+      <div class="calc-field"><label>Performance ratio (%)</label><input type="number" id="ss_pr" value="80"></div>
+      <div class="calc-field"><label>Panel wattage (W)</label><input type="number" id="ss_pw" value="440"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="ss_kw">–</div><div class="ol">system size (kW-DC)</div></div>
+      <div><div class="ov" id="ss_n">–</div><div class="ol">panels</div></div>
+      <div><div class="ov" id="ss_gen">–</div><div class="ol">est. annual kWh</div></div>
+    </div>
+    <p class="calc-note">Performance ratio bundles temperature, soiling, wiring, inverter and availability losses (typically 75–82%).</p>
+  </section>
+
+  <section class="calc" id="string-sizing">
+    <h3>String Sizing (max modules)</h3>
+    <p class="cdesc">Cold-temperature open-circuit voltage sets the maximum string length. <code>Voc(cold) = Voc × [1 + (β/100)(Tmin − 25)]</code></p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Module Voc at STC (V)</label><input type="number" id="st_voc" value="41.5" step="0.1"></div>
+      <div class="calc-field"><label>Temp. coeff. of Voc (%/°C)</label><input type="number" id="st_beta" value="-0.27" step="0.01"></div>
+      <div class="calc-field"><label>Record low temp (°C)</label><input type="number" id="st_tmin" value="-10"></div>
+      <div class="calc-field"><label>Inverter max DC input (V)</label><input type="number" id="st_vmax" value="600"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="st_cold">–</div><div class="ol">Voc per module at Tmin (V)</div></div>
+      <div><div class="ov" id="st_max">–</div><div class="ol">max modules per string</div></div>
+    </div>
+    <p class="calc-note">Use your site's ASHRAE extreme-minimum design temperature. Also confirm the string's cold Voc stays within the inverter and conductor/OCPD ratings. Min string length (MPPT start) is a separate check.</p>
+  </section>
+
+  <section class="calc" id="voltage-drop">
+    <h3>Voltage Drop</h3>
+    <p class="cdesc">One-way run, uncoated copper. <code>Vd = k × I × R × L ÷ 1000</code> (k = 2 for 1-phase, √3 for 3-phase)</p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>System voltage (V)</label><input type="number" id="vd_v" value="240"></div>
+      <div class="calc-field"><label>Current (A)</label><input type="number" id="vd_i" value="20"></div>
+      <div class="calc-field"><label>One-way length (ft)</label><input type="number" id="vd_l" value="120"></div>
+      <div class="calc-field"><label>Conductor (AWG/kcmil)</label><select id="vd_awg"></select></div>
+      <div class="calc-field"><label>Phase</label><select id="vd_ph"><option value="1">Single-phase</option><option value="3">Three-phase</option></select></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="vd_o">–</div><div class="ol">voltage drop (V)</div></div>
+      <div><div class="ov" id="vd_p">–</div><div class="ol">% of voltage</div></div>
+    </div>
+    <p class="calc-note">Common targets: ≤ 2% on feeders, ≤ 3% total. Copper resistance at ~75°C; aluminum and conduit temperature will differ — verify per NEC Chapter 9.</p>
+  </section>
+
+  <section class="calc" id="conduit-fill">
+    <h3>Conduit Fill</h3>
+    <p class="cdesc">Percentage fill for identical THHN/THWN conductors in EMT. NEC limit is 40% for 3+ conductors.</p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Conductor size (THHN)</label><select id="cf_wire"></select></div>
+      <div class="calc-field"><label>Number of conductors</label><input type="number" id="cf_n" value="4"></div>
+      <div class="calc-field"><label>EMT trade size</label><select id="cf_emt"></select></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="cf_pct">–</div><div class="ol">fill</div></div>
+      <div><div class="ov" id="cf_ok">–</div><div class="ol">vs 40% limit</div></div>
+    </div>
+    <p class="calc-note">Uses NEC Chapter 9 Table 5 (THHN areas) and Table 4 (EMT). Mixed sizes, other conduit types, and derating aren't covered here — verify with the full tables.</p>
+  </section>
+
+  <section class="calc" id="battery-sizing">
+    <h3>Battery Backup Sizing</h3>
+    <p class="cdesc">Size a bank from a daily critical-load budget and days of autonomy.</p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Critical load (Wh/day)</label><input type="number" id="bt_wh" value="6000"></div>
+      <div class="calc-field"><label>Days of autonomy</label><input type="number" id="bt_days" value="1" step="0.5"></div>
+      <div class="calc-field"><label>Usable depth of discharge (%)</label><input type="number" id="bt_dod" value="90"></div>
+      <div class="calc-field"><label>System voltage (V)</label><input type="number" id="bt_v" value="48"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="bt_use">–</div><div class="ol">usable energy (kWh)</div></div>
+      <div><div class="ov" id="bt_nom">–</div><div class="ol">nameplate (kWh)</div></div>
+      <div><div class="ov" id="bt_ah">–</div><div class="ol">capacity (Ah)</div></div>
+    </div>
+    <p class="calc-note">Round-trip and inverter losses aren't included; add ~10–15% headroom. LFP typically allows ~80–100% DoD.</p>
+  </section>
+
+  <section class="calc" id="payback">
+    <h3>Payback &amp; Simple ROI</h3>
+    <p class="cdesc">Simple (undiscounted) payback. <code>Payback = (Cost − Incentives) ÷ Annual savings</code></p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>System cost ($)</label><input type="number" id="pb_cost" value="25000"></div>
+      <div class="calc-field"><label>Incentives / credits (%)</label><input type="number" id="pb_incp" value="30"></div>
+      <div class="calc-field"><label>Other incentives ($)</label><input type="number" id="pb_incf" value="0"></div>
+      <div class="calc-field"><label>Annual savings ($/yr)</label><input type="number" id="pb_sav" value="1800"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="pb_net">–</div><div class="ol">net cost</div></div>
+      <div><div class="ov" id="pb_yr">–</div><div class="ol">simple payback (yrs)</div></div>
+      <div><div class="ov" id="pb_roi">–</div><div class="ol">25-yr ROI</div></div>
+    </div>
+    <p class="calc-note">Simple payback ignores the time value of money, escalation, degradation and financing. For commercial projects, layer in MACRS/depreciation and demand-charge savings.</p>
+  </section>
+
+  <section class="calc" id="ampacity">
+    <h3>Conductor Ampacity Check</h3>
+    <p class="cdesc">Compare a conductor's 75 °C ampacity to a continuous load sized at 125%. <code>Required = Load × 1.25</code></p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Conductor (Cu, 75 °C)</label><select id="am_awg"></select></div>
+      <div class="calc-field"><label>Continuous load (A)</label><input type="number" id="am_load" value="40"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="am_amp">–</div><div class="ol">ampacity (A)</div></div>
+      <div><div class="ov" id="am_req">–</div><div class="ol">required (125%)</div></div>
+      <div><div class="ov" id="am_ok">–</div><div class="ol">result</div></div>
+    </div>
+    <p class="calc-note">NEC 310.16, copper, 75 °C column, no temperature/conduit-fill derating applied. PV source-circuit conductors use 690.8's 156% rule instead — verify per code.</p>
+  </section>
+
+  <section class="calc" id="dc-ac-ratio">
+    <h3>DC/AC Ratio (ILR)</h3>
+    <p class="cdesc">Inverter loading ratio. <code>ILR = DC kW ÷ AC kW</code></p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Array size (kW-DC)</label><input type="number" id="dr_dc" value="12"></div>
+      <div class="calc-field"><label>Inverter size (kW-AC)</label><input type="number" id="dr_ac" value="10"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="dr_r">–</div><div class="ol">DC/AC ratio</div></div>
+      <div><div class="ov" id="dr_note">–</div><div class="ol">zone</div></div>
+    </div>
+    <p class="calc-note">Typical residential 1.1–1.3; utility fixed-tilt often 1.3+. Higher ratios recover more morning/evening energy but clip more at midday.</p>
+  </section>
+
+  <section class="calc" id="row-spacing">
+    <h3>Inter-Row Spacing &amp; GCR</h3>
+    <p class="cdesc">Minimum row pitch to avoid shading at a worst-case solar elevation. <code>Pitch = L·cos(tilt) + L·sin(tilt)/tan(elev)</code></p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Row slope length L (ft)</label><input type="number" id="rs_l" value="6.5" step="0.1"></div>
+      <div class="calc-field"><label>Tilt angle (°)</label><input type="number" id="rs_tilt" value="20"></div>
+      <div class="calc-field"><label>Min solar elevation (°)</label><input type="number" id="rs_elev" value="22"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="rs_pitch">–</div><div class="ol">min row pitch (ft)</div></div>
+      <div><div class="ov" id="rs_gcr">–</div><div class="ol">ground-coverage ratio</div></div>
+    </div>
+    <p class="calc-note">Worst-case elevation ≈ 90 − latitude − 23.5 (winter-solstice noon), or use your 9am design angle. Azimuth offsets and terrain change this — model for final design.</p>
+  </section>
+
+  <section class="calc" id="demand-savings">
+    <h3>Demand-Charge Savings</h3>
+    <p class="cdesc">Annual savings from shaving billed peak demand. <code>Savings = ΔkW × $/kW-mo × 12</code></p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Peak demand reduced (kW)</label><input type="number" id="ds_kw" value="50"></div>
+      <div class="calc-field"><label>Demand charge ($/kW-month)</label><input type="number" id="ds_rate" value="18" step="0.5"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="ds_mo">–</div><div class="ol">per month</div></div>
+      <div><div class="ov" id="ds_yr">–</div><div class="ol">per year</div></div>
+    </div>
+    <p class="calc-note">Solar alone rarely guarantees demand reduction (cloud transients, evening peaks); storage is usually needed to reliably shave the billed peak. Watch for demand ratchets.</p>
+  </section>
+
+  <section class="calc" id="yield-cf">
+    <h3>Specific Yield &amp; Capacity Factor</h3>
+    <p class="cdesc"><code>Specific yield = Annual kWh ÷ kW-DC</code> &nbsp;·&nbsp; <code>CF = Annual kWh ÷ (kW-AC × 8760)</code></p>
+    <div class="calc-grid">
+      <div class="calc-field"><label>Annual production (kWh)</label><input type="number" id="yc_kwh" value="18000"></div>
+      <div class="calc-field"><label>Array size (kW-DC)</label><input type="number" id="yc_dc" value="12"></div>
+      <div class="calc-field"><label>Inverter size (kW-AC)</label><input type="number" id="yc_ac" value="10"></div>
+    </div>
+    <div class="calc-out">
+      <div><div class="ov" id="yc_sy">–</div><div class="ol">specific yield (kWh/kWp)</div></div>
+      <div><div class="ov" id="yc_cf">–</div><div class="ol">capacity factor</div></div>
+    </div>
+    <p class="calc-note">Specific yield ~1,000–1,800 kWh/kWp/yr across US climates; AC capacity factor commonly ~15–28% (higher with trackers).</p>
+  </section>
+
+</div>
+<div class="related" id="related-slot" hidden></div><div class="pager"><span class="disabled"></span><a href="state-solar-map.html" class="next"><span class="dir">Next</span><span class="ttl">U.S. State Solar Map</span></a></div></article></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script><script>(function(){
+  "use strict";
+  var $ = function(id){ return document.getElementById(id); };
+  var num = function(id){ var v = parseFloat($(id).value); return isFinite(v) ? v : 0; };
+  function set(id, val){ var el = $(id); if(el) el.textContent = val; }
+
+  // NEC-style reference data (approximate; verify against the code)
+  var AWG = [ // [label, ohms/1000ft copper ~75C, THHN area in^2, 75C ampacity A]
+    ["14",3.14,0.0097,20],["12",1.98,0.0133,25],["10",1.24,0.0211,35],["8",0.778,0.0366,50],
+    ["6",0.491,0.0507,65],["4",0.308,0.0824,85],["3",0.245,0.0973,100],["2",0.194,0.1158,115],
+    ["1",0.154,0.1562,130],["1/0",0.122,0.1855,150],["2/0",0.0967,0.2223,175],["3/0",0.0766,0.2679,200],
+    ["4/0",0.0608,0.3237,230],["250",0.0515,0.3970,255],["350",0.0367,0.5242,310],["500",0.0258,0.7085,380]
+  ];
+  var EMT = [ // [trade size, total internal area in^2]
+    ["1/2",0.304],["3/4",0.533],["1",0.864],["1-1/4",1.496],["1-1/2",2.036],
+    ["2",3.356],["2-1/2",5.858],["3",8.846],["3-1/2",11.545],["4",14.753]
+  ];
+
+  // populate selects
+  var vdSel = $("vd_awg"), cfWire = $("cf_wire"), cfEmt = $("cf_emt"), amSel = $("am_awg");
+  AWG.forEach(function(r,i){
+    vdSel.insertAdjacentHTML("beforeend","<option value='"+i+"'>"+r[0]+"</option>");
+    cfWire.insertAdjacentHTML("beforeend","<option value='"+i+"'>"+r[0]+"</option>");
+    amSel.insertAdjacentHTML("beforeend","<option value='"+i+"'>"+r[0]+"</option>");
+  });
+  amSel.value = "5"; // 4 AWG default
+  EMT.forEach(function(r,i){ cfEmt.insertAdjacentHTML("beforeend","<option value='"+i+"'>"+r[0]+'"</option>'); });
+  vdSel.value = "0";        // 14 AWG default -> set to 10 AWG (index 2) for the 20A example
+  vdSel.value = "2";
+  cfWire.value = "1";       // 12 AWG
+  cfEmt.value = "1";        // 3/4"
+
+  function compute(){
+    // system sizing
+    var kwh = num("ss_kwh") * (num("ss_off")/100);
+    var denom = num("ss_psh") * 365 * (num("ss_pr")/100);
+    var kw = denom > 0 ? kwh/denom : 0;
+    var pw = num("ss_pw");
+    set("ss_kw", kw ? kw.toFixed(2) : "–");
+    set("ss_n", (kw && pw) ? Math.ceil(kw*1000/pw) : "–");
+    set("ss_gen", denom ? Math.round(kw*num("ss_psh")*365*(num("ss_pr")/100)).toLocaleString() : "–");
+
+    // string sizing
+    var voc = num("st_voc"), beta = num("st_beta"), tmin = num("st_tmin"), vmax = num("st_vmax");
+    var cold = voc * (1 + (beta/100)*(tmin - 25));
+    set("st_cold", cold ? cold.toFixed(1) : "–");
+    set("st_max", (cold>0 && vmax>0) ? Math.floor(vmax/cold) : "–");
+
+    // voltage drop
+    var vv = num("vd_v"), vi = num("vd_i"), vl = num("vd_l");
+    var R = AWG[parseInt(vdSel.value,10)][1];
+    var k = ($("vd_ph").value === "3") ? Math.sqrt(3) : 2;
+    var vd = k * vi * R * vl / 1000;
+    set("vd_o", vd ? vd.toFixed(2) : "–");
+    set("vd_p", (vd && vv) ? (vd/vv*100).toFixed(2)+"%" : "–");
+
+    // conduit fill
+    var wa = AWG[parseInt(cfWire.value,10)][2];
+    var n = Math.max(0, Math.round(num("cf_n")));
+    var ea = EMT[parseInt(cfEmt.value,10)][1];
+    var fill = ea>0 ? (n*wa/ea*100) : 0;
+    set("cf_pct", fill ? fill.toFixed(1)+"%" : "–");
+    set("cf_ok", fill ? (fill<=40 ? "OK" : "Over") : "–");
+    var okEl = $("cf_ok"); if(okEl){ okEl.style.color = fill>40 ? "var(--obbba,#A8482C)" : ""; }
+
+    // battery
+    var whd = num("bt_wh"), days = num("bt_days"), dod = num("bt_dod"), bv = num("bt_v");
+    var use = whd*days/1000;
+    var nom = dod>0 ? use/(dod/100) : 0;
+    set("bt_use", use ? use.toFixed(1) : "–");
+    set("bt_nom", nom ? nom.toFixed(1) : "–");
+    set("bt_ah", (nom && bv>0) ? Math.round(nom*1000/bv) : "–");
+
+    // payback
+    var cost = num("pb_cost"), incp = num("pb_incp"), incf = num("pb_incf"), sav = num("pb_sav");
+    var net = cost - cost*(incp/100) - incf;
+    set("pb_net", "$"+Math.round(net).toLocaleString());
+    set("pb_yr", sav>0 ? (net/sav).toFixed(1) : "–");
+    set("pb_roi", sav>0 ? "$"+Math.round(sav*25 - net).toLocaleString() : "–");
+
+    // ampacity
+    var amp = AWG[parseInt(amSel.value,10)][3];
+    var req = num("am_load")*1.25;
+    set("am_amp", amp);
+    set("am_req", req ? req.toFixed(1) : "–");
+    var amok = $("am_ok");
+    if(req>0){ amok.textContent = amp>=req ? "OK" : "Undersized"; amok.style.color = amp>=req ? "" : "var(--obbba,#A8482C)"; }
+    else amok.textContent = "–";
+
+    // dc/ac ratio
+    var dc = num("dr_dc"), ac = num("dr_ac");
+    var ratio = ac>0 ? dc/ac : 0;
+    set("dr_r", ratio ? ratio.toFixed(2) : "–");
+    set("dr_note", ratio ? (ratio<1.1?"low":ratio<=1.35?"typical":ratio<=1.5?"high":"very high") : "–");
+
+    // row spacing / GCR
+    var L = num("rs_l"), tilt = num("rs_tilt")*Math.PI/180, elev = num("rs_elev")*Math.PI/180;
+    var pitch = L*Math.cos(tilt) + (Math.tan(elev)>0 ? L*Math.sin(tilt)/Math.tan(elev) : 0);
+    set("rs_pitch", pitch>0 ? pitch.toFixed(1) : "–");
+    set("rs_gcr", pitch>0 ? (L/pitch).toFixed(2) : "–");
+
+    // demand savings
+    var dkw = num("ds_kw"), drate = num("ds_rate");
+    set("ds_mo", "$"+Math.round(dkw*drate).toLocaleString());
+    set("ds_yr", "$"+Math.round(dkw*drate*12).toLocaleString());
+
+    // yield & capacity factor
+    var ykwh = num("yc_kwh"), ydc = num("yc_dc"), yac = num("yc_ac");
+    set("yc_sy", ydc>0 ? Math.round(ykwh/ydc).toLocaleString() : "–");
+    set("yc_cf", yac>0 ? (ykwh/(yac*8760)*100).toFixed(1)+"%" : "–");
+  }
+
+  document.getElementById("calcs").addEventListener("input", compute);
+  document.getElementById("calcs").addEventListener("change", compute);
+  compute();
+})();
+</script></body></html>

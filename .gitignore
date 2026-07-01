@@ -1,0 +1,65 @@
+# ── macOS ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+Icon?
+
+# ── Windows ────────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── Linux ──────────────────────────────────────────────
+*~
+.directory
+.Trash-*
+
+# ── Editors / IDEs ─────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+
+# ── Python (build tooling, if kept alongside the repo) ─
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+
+# ── Node (only if you add tooling here later) ──────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+.npm/
+
+# ── Logs & misc ────────────────────────────────────────
+*.log
+*.zip
+.cache/
+tmp/
+temp/
+
+# ── NOT ignored (kept on purpose) ──────────────────────
+# site/ is the built, self-contained website and IS committed —
+# it cannot be regenerated from this repo alone (the build script
+# lives outside it), so everything under site/ (including the
+# assets/*.min.js libraries and generated *-data.js / search-index.js)
+# must stay tracked. Do not add site/ here.

@@ -1,0 +1,410 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>DIY Tools, Testing &amp; Commissioning · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="diy" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link active" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="diy-battery-builds.html" aria-label="Previous: DIY Battery Builds"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">DIY Battery Builds</span></div><div class="side-nav next"><a href="diy-permitting-inspection.html" aria-label="Next: Permitting &amp; Inspection"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Permitting &amp; Inspection</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Build It Yourself</span><h1>DIY Tools, Testing &amp; Commissioning</h1><p class="lede">The gear and the checks — hand tools and PPE, multimeters and clamp/IV/insulation testers, measuring Voc/Isc and polarity, a commissioning checklist, and fault troubleshooting.</p><div class="banner-meta"><div class="m"><b>Test gear</b><span>Meter to IV tracer</span></div><div class="m"><b>Voc · Isc</b><span>Measurements</span></div><div class="m"><b>Commissioning</b><span>Checklist</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>The right tools—and knowing how to use them safely—separate a clean, durable install from a fire hazard. This page covers hand tools and PPE, electrical test gear and its critical <strong>CAT safety ratings</strong>, how to measure the numbers that matter (Voc, Isc, string voltage, polarity), a commissioning checklist, and troubleshooting for the faults you'll actually hit.</p>
+<p>Pair this with <a class="inline" href="diy-overview.html">Building Your Own System</a>, <a class="inline" href="diy-electrical-calcs.html">DIY Electrical Calculations</a>, <a class="inline" href="diy-battery-builds.html">DIY Battery Builds</a>, and <a class="inline" href="diy-sourcing.html">Sourcing Materials &amp; Kits</a>.</p>
+<blockquote>
+<p>SAFETY FIRST. PV arrays are <strong>always live in daylight</strong>—there is no "off switch" on a sunlit panel. Battery banks deliver enormous fault current. Using an under-rated meter on a high-energy circuit can cause an <strong>arc-flash explosion</strong> that blinds or kills. The CAT-rating section below is not optional reading.</p>
+</blockquote>
+<h2 id="hand-tools-and-ppe">Hand Tools and PPE</h2>
+<h3 id="core-hand-tools">Core hand tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Insulated screwdrivers / nut drivers</strong></td>
+<td>Terminations on live-adjacent work</td>
+</tr>
+<tr>
+<td><strong>Wire strippers / cutters</strong></td>
+<td>PV wire, battery cable</td>
+</tr>
+<tr>
+<td><strong>Crimpers (MC4 + lug)</strong></td>
+<td>MC4 connectors; battery lug crimps (hydraulic crimper for large lugs)</td>
+</tr>
+<tr>
+<td><strong>MC4 disconnect/spanner tool</strong></td>
+<td>Safely separate PV connectors</td>
+</tr>
+<tr>
+<td><strong>Calibrated torque wrench/driver</strong></td>
+<td>Battery terminals, lugs, breakers to spec</td>
+</tr>
+<tr>
+<td><strong>Cordless drill/driver + bits</strong></td>
+<td>Mounting, racking</td>
+</tr>
+<tr>
+<td><strong>Cable cutters (large)</strong></td>
+<td>Battery/4-0 cable without crushing strands</td>
+</tr>
+<tr>
+<td><strong>Heat gun</strong></td>
+<td>Heat-shrink on terminations</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>RULE: <strong>Torque matters.</strong> Battery terminals, breakers, and lugs all have a manufacturer torque spec. Use a calibrated torque tool, not "good and tight." Under-torqued joints overheat; over-torqued ones strip. See <a class="inline" href="diy-battery-builds.html">DIY Battery Builds</a>.</p>
+</blockquote>
+<h3 id="ppe">PPE</h3>
+<table>
+<thead>
+<tr>
+<th>PPE</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Safety glasses / face shield</strong></td>
+<td>Always; face shield for battery work</td>
+</tr>
+<tr>
+<td><strong>Insulated (1000&nbsp;V-rated) gloves</strong></td>
+<td>Live DC work, battery terminals</td>
+</tr>
+<tr>
+<td><strong>Arc-rated clothing</strong></td>
+<td>High-energy battery/inverter work</td>
+</tr>
+<tr>
+<td><strong>Non-conductive footwear</strong></td>
+<td>All electrical work</td>
+</tr>
+<tr>
+<td><strong>No metal jewelry</strong></td>
+<td>Always—rings/watches cause dead shorts</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>WARNING: A single ring across two 48&nbsp;V battery terminals can deliver hundreds of amps through your finger in an instant—severe burns or amputation. <strong>Remove all metal jewelry before touching a battery bank.</strong></p>
+</blockquote>
+<h2 id="electrical-test-gear">Electrical Test Gear</h2>
+<table>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Digital multimeter (DMM)</strong></td>
+<td>DC/AC voltage, resistance, continuity; the everyday workhorse</td>
+</tr>
+<tr>
+<td><strong>Clamp meter with TRUE DC clamp</strong></td>
+<td>Measures DC current non-contact—essential for string/battery current. Must be a <strong>Hall-effect / DC-capable</strong> clamp, not AC-only</td>
+</tr>
+<tr>
+<td><strong>Irradiance meter</strong></td>
+<td>Measures incident sunlight (W/m²) so you can normalize measured output to expected</td>
+</tr>
+<tr>
+<td><strong>IV-curve tracer</strong></td>
+<td>Plots a module/string's current-voltage curve to reveal mismatch, shading, and degradation</td>
+</tr>
+<tr>
+<td><strong>Insulation tester (megohmmeter)</strong></td>
+<td>Applies high test voltage to check insulation resistance—finds ground faults and damaged cable</td>
+</tr>
+<tr>
+<td><strong>Torque wrench / torque screwdriver</strong></td>
+<td>Verifies terminations to spec (calibrate periodically)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>TIP: An <strong>irradiance meter</strong> turns "the array seems weak" into a real measurement: compare measured power against <code>irradiance x array rating / 1000 W/m²</code> (with temperature correction) before you start swapping parts.</p>
+</blockquote>
+<h2 id="cat-safety-ratings-read-this-before-you-buy-a-meter">CAT Safety Ratings — Read This Before You Buy a Meter</h2>
+<p>CAT (Category) ratings are an IEC standard describing <strong>how much transient overvoltage</strong> a meter can survive in a given environment. A meter's voltage number alone is <strong>not</strong> enough—the CAT rating tells you whether it can absorb the energy spikes present where you're measuring.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Where it applies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CAT I</strong></td>
+<td>Protected electronics, not connected to mains</td>
+</tr>
+<tr>
+<td><strong>CAT II</strong></td>
+<td>Single-phase receptacle-connected loads (appliances)</td>
+</tr>
+<tr>
+<td><strong>CAT III</strong></td>
+<td>Distribution: panels, feeders, bus, fixed installations</td>
+</tr>
+<tr>
+<td><strong>CAT IV</strong></td>
+<td>Origin of installation: service entrance, outdoor utility, where transients are highest</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>RULE: A meter rated for a <strong>higher</strong> category is safe at <strong>lower</strong> categories, but <strong>never the reverse.</strong> A CAT&nbsp;III meter must <strong>not</strong> be used on a CAT&nbsp;IV circuit.</p>
+<p>CRITICAL FOR SOLAR:
+- Use at minimum a <strong>CAT&nbsp;III</strong> meter for PV string/array and panel work, with a <strong>voltage rating above your maximum system voltage.</strong>
+- Modern PV runs at high DC voltage. <strong>CAT&nbsp;III 1000&nbsp;V</strong> is the common floor; <strong>CAT&nbsp;III 1500&nbsp;V</strong> is now standard for higher-voltage solar. A CAT&nbsp;III 1500&nbsp;V instrument survives much larger transients than a CAT&nbsp;III 1000&nbsp;V one.
+- Confirm both <strong>CAT level <em>and</em> voltage rating</strong> (e.g., "CAT III 1500&nbsp;V / CAT IV 600&nbsp;V") for the exact circuit you're on.</p>
+<p>WARNING: An under-rated or damaged meter (cracked case, frayed leads, worn probe tips) can <strong>explode</strong> under a transient. Inspect leads before every use; replace anything questionable. Cheap unrated "1000&nbsp;V" meters with no real CAT certification are a known arc-flash risk.</p>
+</blockquote>
+<h2 id="measuring-the-numbers-that-matter">Measuring the Numbers That Matter</h2>
+<blockquote>
+<p>SAFETY: PV is live in daylight. Measure <strong>with the array disconnected from the controller/inverter</strong> at the points below, use a properly rated meter, and <strong>never break a current-carrying DC connection under load</strong>—DC arcs don't self-extinguish and will sustain a dangerous arc.</p>
+</blockquote>
+<h3 id="open-circuit-voltage-voc">Open-Circuit Voltage (Voc)</h3>
+<pre><code>- Disconnect the string/module from any load (controller, inverter).
+- Set DMM to DC volts; measure across the + and - of the open module/string.
+- Compare to: expected Voc = module Voc(STC) x cells-in-series,
+  corrected COLDER = higher voltage (cold boosts Voc).
+</code></pre>
+<h3 id="short-circuit-current-isc">Short-Circuit Current (Isc)</h3>
+<pre><code>- Use a DC clamp meter on the conductor where possible (safest), OR
+- A meter rated to safely short the module's Isc directly.
+- Compare measured Isc to module Isc(STC) scaled by irradiance:
+    expected Isc ~= Isc(STC) x (measured irradiance / 1000)
+</code></pre>
+<blockquote>
+<p>WARNING: Directly shorting a module to read Isc creates a live short. Only do it with a meter rated for the module's Isc and proper PPE—<strong>or use a DC clamp meter instead</strong>, which is far safer.</p>
+</blockquote>
+<h3 id="string-voltage-and-polarity">String Voltage and Polarity</h3>
+<pre><code>- DC volts across the full string at the combiner / controller input
+  (disconnected from the controller). Should ~= per-module Voc x modules.
+- CHECK POLARITY: red probe on +, black on -. A NEGATIVE reading means
+  reversed polarity -&gt; fix before connecting to the controller.
+</code></pre>
+<blockquote>
+<p>RULE: <strong>Always verify polarity before connecting an array to a charge controller or inverter.</strong> A reversed string can destroy the controller instantly.</p>
+</blockquote>
+<h3 id="expected-reading-reference">Expected-Reading Reference</h3>
+<table>
+<thead>
+<tr>
+<th>Test point</th>
+<th>Instrument</th>
+<th>What to expect</th>
+<th>Red flag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Module Voc</td>
+<td>DMM (DC&nbsp;V)</td>
+<td>≈ module Voc(STC), higher when cold</td>
+<td>Low/zero = dead module or bad connector</td>
+</tr>
+<tr>
+<td>String Voc</td>
+<td>DMM (DC&nbsp;V)</td>
+<td>≈ module Voc × series count</td>
+<td>Low = one module/connector failed open</td>
+</tr>
+<tr>
+<td>Module/string Isc</td>
+<td>DC clamp / rated DMM</td>
+<td>≈ Isc(STC) × (irradiance/1000)</td>
+<td>Low = shading, soiling, or mismatch</td>
+</tr>
+<tr>
+<td>Polarity</td>
+<td>DMM (DC&nbsp;V)</td>
+<td>Positive reading, red on +</td>
+<td>Negative = reversed wiring</td>
+</tr>
+<tr>
+<td>Battery bank V</td>
+<td>DMM (DC&nbsp;V)</td>
+<td>Within LiFePO4 window for SoC</td>
+<td>Out of range = imbalance/BMS issue</td>
+</tr>
+<tr>
+<td>Insulation resistance</td>
+<td>Megohmmeter</td>
+<td>High (MΩ range) per spec</td>
+<td>Low = ground fault / damaged cable</td>
+</tr>
+<tr>
+<td>Continuity / EGC</td>
+<td>DMM (Ω)</td>
+<td>Near 0&nbsp;Ω on bonding/ground path</td>
+<td>High = broken bond</td>
+</tr>
+</tbody>
+</table>
+<h2 id="commissioning-checklist">Commissioning Checklist</h2>
+<p>Run this before and at first energization:</p>
+<pre><code>PRE-ENERGIZATION
+ [ ] Visual: all terminations torqued to spec, labeled, no exposed copper
+ [ ] Conductor sizes/colors and overcurrent devices match the design
+ [ ] Grounding/bonding (EGC, GEC) verified by continuity
+ [ ] PV polarity confirmed at every string
+ [ ] String/array Voc vs expected (cold-corrected) checked
+ [ ] Insulation resistance test passes (megohmmeter) where required
+ [ ] Battery: per-cell voltages, BMS parameters, low-temp charge cutoff set
+       (see DIY Battery Builds)
+ [ ] Disconnects, signage, and rapid-shutdown (if required) in place
+
+ENERGIZATION (in order)
+ [ ] Energize battery -&gt; verify bus voltage and BMS reports
+ [ ] Energize PV into controller -&gt; verify charging, polarity, no faults
+ [ ] Energize inverter -&gt; verify AC output voltage/frequency
+ [ ] Apply loads gradually -&gt; watch current, temperature, voltage sag
+ [ ] Confirm clamp-meter currents match expected at full load
+
+POST
+ [ ] Record baseline: Voc, Isc, string V, battery V, irradiance, faults
+ [ ] Re-torque battery terminals after first cycles
+ [ ] Label the system; document settings for the next person
+</code></pre>
+<blockquote>
+<p>RULE: <strong>Energize in stages, battery-first, with a meter in hand at each step.</strong> Bringing everything live at once hides which connection is wrong.</p>
+</blockquote>
+<h2 id="common-fault-troubleshooting">Common Fault Troubleshooting</h2>
+<h3 id="open-circuit-nolow-voltage-where-there-should-be-voltage">Open circuit (no/low voltage where there should be voltage)</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String Voc ≈ 0</td>
+<td>Broken connector, failed module, blown fuse</td>
+<td>Measure module-by-module Voc to find the dead segment</td>
+</tr>
+<tr>
+<td>Voc low by ~one module's worth</td>
+<td>One module/connector open</td>
+<td>Sectional Voc measurement</td>
+</tr>
+<tr>
+<td>Intermittent</td>
+<td>Loose/water-ingressed MC4</td>
+<td>Inspect/re-seat connectors; look for corrosion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ground-fault">Ground fault</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Controller/inverter GFDI trip</td>
+<td>Damaged cable insulation, pinched wire, water in conduit</td>
+<td><strong>Megohmmeter</strong> insulation test array-to-ground; inspect cable runs</td>
+</tr>
+<tr>
+<td>Nuisance trips when wet</td>
+<td>Marginal insulation, moisture ingress</td>
+<td>Insulation test under dry vs damp conditions</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>SAFETY: A ground fault means a conductor that should be isolated is touching ground/frame. <strong>Treat the array as live and faulted</strong>—do not handle until isolated and tested. Megohmmeter testing applies high voltage; disconnect electronics first and follow the tester's procedure.</p>
+</blockquote>
+<h3 id="underperformance-system-works-but-produces-too-little">Underperformance (system "works" but produces too little)</h3>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Soiling/shading on array</td>
+<td>Visual + irradiance meter</td>
+</tr>
+<tr>
+<td>Actual vs expected power</td>
+<td><code>expected ~= rating x irradiance/1000</code>, temp-corrected</td>
+</tr>
+<tr>
+<td>Module/string mismatch</td>
+<td><strong>IV-curve tracer</strong> reveals a sick module/string</td>
+</tr>
+<tr>
+<td>Hot/high-resistance joints</td>
+<td>Thermal/IR check; re-torque terminations</td>
+</tr>
+<tr>
+<td>Battery not accepting charge</td>
+<td>BMS limits, cold cutoff, full bank, imbalance</td>
+</tr>
+<tr>
+<td>Wrong tilt/orientation for season</td>
+<td>Compare December PSH assumptions (see Off-Grid Whole-Home)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>TIP: Quantify before you swap parts. An <strong>irradiance meter + IV-curve tracer</strong> turn guesswork into a measurement and stop you from replacing healthy hardware.</p>
+</blockquote>
+<h2 id="safety-procedures-always">Safety Procedures (Always)</h2>
+<pre><code>1. De-energize what you can; remember PV is LIVE in daylight.
+2. Use a CAT III/IV meter rated above system voltage; inspect leads.
+3. Lock-out/tag-out disconnects where possible.
+4. Treat every DC conductor as live until you've proven otherwise.
+5. Never break a DC circuit under load (use the rated DC disconnect).
+6. Remove metal jewelry; wear glasses/gloves/arc-rated clothing.
+7. Keep a lithium/Class-D-appropriate extinguisher and a clear exit.
+8. Work with a second person present for battery/inverter energization.
+</code></pre>
+<blockquote>
+<p>WARNING: DC arcs do not self-extinguish like AC. Switching DC load through a non-DC-rated switch, or pulling a live MC4, can sustain an arc that ignites equipment. <strong>Use only DC-rated disconnects and break circuits only when de-energized.</strong></p>
+</blockquote>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li>Fluke — <a class="inline" target="_blank" rel="noopener" href="https://www.fluke.com/en-us/learn/blog/renewable-energy/cat3-clamp-meter">Why use a CAT III rated meter in solar PV installations</a></li>
+<li>DigiKey — <a class="inline" target="_blank" rel="noopener" href="https://www.digikey.com/en/blog/what-are-multimeter-cat-safety-ratings">What are Multimeter CAT (Category) Safety Ratings?</a></li>
+<li>NFPA — <a class="inline" href="downloads.html">NEC (NFPA 70), Article 690 (PV) including testing/disconnect requirements</a></li>
+<li>NREL — <a class="inline" href="downloads.html">PVWatts (expected production for performance comparison)</a></li>
+<li>Related pages: <a class="inline" href="diy-overview.html">Building Your Own System</a> · <a class="inline" href="diy-electrical-calcs.html">DIY Electrical Calculations</a> · <a class="inline" href="diy-structural-calcs.html">DIY Structural Calculations</a> · <a class="inline" href="diy-sourcing.html">Sourcing Materials &amp; Kits</a> · <a class="inline" href="diy-battery-builds.html">DIY Battery Builds</a> · <a class="inline" href="battery-storage.html">Battery Energy Storage</a> · <a class="inline" href="diy-off-grid-whole-home.html">Off-Grid Whole-Home Design</a></li>
+</ul>
+<hr />
+<p><em>Disclaimer: This page is educational only. Testing live PV and battery systems involves lethal voltage, fault-current, and arc-flash hazards; use correctly CAT-rated equipment, follow manufacturer and NEC/NFPA procedures, and consult a licensed professional when in doubt.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="diy-battery-builds.html" class="prev"><span class="dir">Previous</span><span class="ttl">DIY Battery Builds</span></a><a href="diy-permitting-inspection.html" class="next"><span class="dir">Next</span><span class="ttl">Permitting &amp; Inspection</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#hand-tools-and-ppe">Hand Tools and PPE</a>
+<a class="lvl-3" href="#core-hand-tools">Core hand tools</a>
+<a class="lvl-3" href="#ppe">PPE</a>
+<a class="lvl-2" href="#electrical-test-gear">Electrical Test Gear</a>
+<a class="lvl-2" href="#cat-safety-ratings-read-this-before-you-buy-a-meter">CAT Safety Ratings — Read This Before You Buy a Meter</a>
+<a class="lvl-2" href="#measuring-the-numbers-that-matter">Measuring the Numbers That Matter</a>
+<a class="lvl-3" href="#open-circuit-voltage-voc">Open-Circuit Voltage (Voc)</a>
+<a class="lvl-3" href="#short-circuit-current-isc">Short-Circuit Current (Isc)</a>
+<a class="lvl-3" href="#string-voltage-and-polarity">String Voltage and Polarity</a>
+<a class="lvl-3" href="#expected-reading-reference">Expected-Reading Reference</a>
+<a class="lvl-2" href="#commissioning-checklist">Commissioning Checklist</a>
+<a class="lvl-2" href="#common-fault-troubleshooting">Common Fault Troubleshooting</a>
+<a class="lvl-3" href="#open-circuit-nolow-voltage-where-there-should-be-voltage">Open circuit (no/low voltage where there should be voltage)</a>
+<a class="lvl-3" href="#ground-fault">Ground fault</a>
+<a class="lvl-3" href="#underperformance-system-works-but-produces-too-little">Underperformance (system &quot;works&quot; but produces too little)</a>
+<a class="lvl-2" href="#safety-procedures-always">Safety Procedures (Always)</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

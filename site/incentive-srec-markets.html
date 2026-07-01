@@ -1,0 +1,205 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>SREC Markets Deep-Dive · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="illinois" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link active" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="incentive-nj-susi.html" aria-label="Previous: New Jersey — SuSI"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">New Jersey — SuSI</span></div><div class="side-nav next"><a href="incentive-more-states.html" aria-label="Next: More State Programs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">More State Programs</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Incentives</span><h1>SREC Markets Deep-Dive</h1><p class="lede">How solar certificates become revenue — RPS carve-outs and SREC minting, registration and sale, the SACP price ceiling, volatility, and a survey of the main state markets.</p><div class="banner-meta"><div class="m"><b>1 SREC</b><span>= 1 MWh</span></div><div class="m"><b>SACP</b><span>Price ceiling</span></div><div class="m"><b>Markets</b><span>DC · NJ · MD · MA · PA</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>Solar Renewable Energy Certificates (<strong>SRECs</strong>) are one of the most powerful — and most misunderstood — commercial-solar revenue streams. This guide explains where SREC value comes from, how certificates are minted and sold, why prices swing, and how a commercial project actually monetizes them. It also surveys the major U.S. markets and contrasts SRECs with fixed performance-based incentives.</p>
+<p>For state-specific program mechanics, see <a class="inline" href="incentive-more-states.html">More State Programs</a>. For how SRECs interact with tax credits and depreciation, see <a class="inline" href="state-tax-credits.html">State Tax Credits &amp; Incentives</a>. For authoritative, continuously-updated program detail, start with <strong><a class="inline" href="downloads.html">DSIRE</a></strong>.</p>
+<h2 id="what-creates-srec-demand">What Creates SREC Demand</h2>
+<p>SREC value is manufactured by policy, not by the electricity itself.</p>
+<p>Many states adopt a <strong>Renewable Portfolio Standard (RPS)</strong> requiring load-serving entities (utilities and competitive suppliers) to procure a rising percentage of their electricity from renewables. Some states go further and add a <strong>solar carve-out</strong> — a portion of the RPS that <em>must</em> be met specifically with solar. That carve-out is what creates a dedicated market for <strong>solar</strong> certificates.</p>
+<ul>
+<li><strong><code>1 SREC = 1 MWh</code></strong> of solar electricity generated (metered, not nameplate).</li>
+<li>Compliance entities must retire enough SRECs each year to meet the carve-out percentage.</li>
+<li>If they fall short, they owe the <strong>Solar Alternative Compliance Payment (SACP)</strong> — a per-MWh penalty.</li>
+</ul>
+<p>Because a supplier will buy an SREC rather than pay the SACP, <strong>the SACP functions as a price ceiling</strong>: rational buyers never pay more than the SACP to satisfy their obligation. The floor, by contrast, is set by supply and demand — and can approach zero when the market is oversupplied.</p>
+<h2 id="minting-registering-and-selling-certificates">Minting, Registering, and Selling Certificates</h2>
+<p>An SREC's life cycle has three stages.</p>
+<h3 id="1-minting">1. Minting</h3>
+<p>Every megawatt-hour a certified system produces mints one SREC. Systems typically need production <strong>metering</strong> and must be <strong>certified</strong> as RPS-eligible in the target state (some states require the system to be in-state or in-region; others accept out-of-state solar for a lower-value tier).</p>
+<h3 id="2-registration-and-tracking">2. Registration and tracking</h3>
+<p>SRECs are recorded in a regional <strong>generation attribute tracking system</strong> that prevents double-counting:</p>
+<ul>
+<li><strong>PJM-GATS</strong> — the tracking registry for the PJM region (NJ, MD, DC, PA, OH, DE, VA, IL and others).</li>
+<li><strong>NEPOOL-GIS</strong> — the tracking system for New England (MA, CT, RI, etc.).</li>
+</ul>
+<p>The registry issues serialized certificates tied to metered output, and retires them when a buyer uses them for compliance.</p>
+<h3 id="3-selling">3. Selling</h3>
+<p>A commercial owner has several monetization paths:</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>How it works</th>
+<th>Trade-off</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Spot sale</strong></td>
+<td>Sell certificates as minted at the current market price</td>
+<td>Maximum upside, maximum volatility</td>
+</tr>
+<tr>
+<td><strong>Long-term contract / SREC forward</strong></td>
+<td>Lock a fixed <code>$/SREC</code> for a term (often via the installer, an off-taker, or a financier)</td>
+<td>Predictable cash flow; may sell below peak spot</td>
+</tr>
+<tr>
+<td><strong>Aggregator / broker</strong></td>
+<td>A third party (e.g., an SREC aggregator) registers, tracks, and sells on the owner's behalf for a fee or spread</td>
+<td>Simplicity; gives up part of the value</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>For financeable commercial projects, a <strong>multi-year SREC contract</strong> is common because lenders and investors prefer predictable revenue over spot exposure.</p>
+</blockquote>
+<h2 id="price-volatility-and-oversupply">Price Volatility and Oversupply</h2>
+<p>SREC prices are notoriously volatile because supply responds slowly and demand is a fixed statutory schedule:</p>
+<ul>
+<li>When installations <strong>outpace</strong> the carve-out schedule, certificates flood the market and prices <strong>collapse</strong> — sometimes to a few dollars.</li>
+<li>When installations <strong>lag</strong> the schedule, prices climb <strong>toward the SACP ceiling</strong>.</li>
+<li>Legislative changes (raising the carve-out, extending the schedule, or replacing the market outright) can reset prices overnight.</li>
+</ul>
+<p>This is why several states have <strong>retired open SREC markets</strong> in favor of administratively set incentives (see the market survey below).</p>
+<h2 id="major-srec-markets-and-their-status">Major SREC Markets and Their Status</h2>
+<p>Values below are <strong>approximate and change constantly — verify</strong> before modeling. Always cross-check with <a class="inline" href="downloads.html">DSIRE</a> and the relevant state registry.</p>
+<table>
+<thead>
+<tr>
+<th>Market</th>
+<th>Mechanism / status</th>
+<th>Approximate recent value (verify)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Washington, D.C.</strong></td>
+<td>Active, high-value SREC-I market; strong carve-out, high SACP</td>
+<td>~<code>$350–$415</code>/SREC <em>(approx — verify)</em></td>
+</tr>
+<tr>
+<td><strong>New Jersey (SuSI)</strong></td>
+<td>Legacy SREC market <strong>closed</strong>; replaced by <strong>Successor Solar Incentive (SuSI)</strong> — fixed 15-yr payments via ADI/SREC-II. Legacy Transition (TREC) certificates still settle</td>
+<td>ADI ~<code>$85</code>/MWh residential net-metered, EY2025–26 <em>(approx — verify)</em>; legacy SREC/TREC in the <code>$150s–$190s</code></td>
+</tr>
+<tr>
+<td><strong>Maryland</strong></td>
+<td>Active SREC market + RPS carve-out; <strong>Certified SREC multiplier (up to 1.5×)</strong> since Jan 2025</td>
+<td>Standard ~low <code>$50s</code>; Certified higher <em>(approx — verify)</em>; SACP ~<code>$55</code></td>
+</tr>
+<tr>
+<td><strong>Massachusetts</strong></td>
+<td>SREC-I/SREC-II <strong>closed to new systems</strong> (legacy certificates run out through ~2027); successor is the <strong>SMART tariff</strong> (SMART 3.0 launched 2025) — a fixed tariff, not a spot certificate</td>
+<td>Legacy SREC-II only; new projects use SMART tariff</td>
+</tr>
+<tr>
+<td><strong>Pennsylvania</strong></td>
+<td>Active but low-value SREC market (in-state carve-out)</td>
+<td>Low single-to-double digits <em>(approx — verify)</em></td>
+</tr>
+<tr>
+<td><strong>Ohio</strong></td>
+<td>Active but very low-value SREC market</td>
+<td>Often under <code>$5</code>/SREC <em>(approx — verify)</em></td>
+</tr>
+<tr>
+<td><strong>Delaware</strong></td>
+<td>Active SREC market with utility procurement (SREC Delaware)</td>
+<td>Varies by procurement <em>(approx — verify)</em></td>
+</tr>
+<tr>
+<td><strong>Virginia</strong></td>
+<td>Newer SREC market tied to the Virginia Clean Economy Act RPS</td>
+<td>Emerging; verify current bids</td>
+</tr>
+<tr>
+<td><strong>Illinois (ABP / Shines)</strong></td>
+<td><strong>Not a spot market</strong> — the <strong>Adjustable Block Program / Illinois Shines</strong> buys RECs at <strong>fixed, block-based prices</strong> via 15-yr contracts</td>
+<td>Administratively set block prices <em>(verify current block)</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Note the pattern: <strong>D.C., Maryland, PA, OH, DE, and VA</strong> run genuine tradable SREC markets; <strong>NJ, MA, and IL</strong> have moved to <strong>administratively set</strong> payments (SuSI, SMART, ABP). Treat those three as fixed-incentive programs, not spot markets.</p>
+</blockquote>
+<h2 id="how-a-commercial-project-monetizes-srecs">How a Commercial Project Monetizes SRECs</h2>
+<p>For a commercial host in an SREC state, the practical steps are:</p>
+<ol>
+<li><strong>Confirm eligibility</strong> — verify the system qualifies for the target state's RPS tier (in-state vs. out-of-state pricing differs sharply).</li>
+<li><strong>Meter production</strong> — install revenue-grade or program-approved metering so generation is verifiable.</li>
+<li><strong>Register</strong> in the applicable tracking system (<strong>PJM-GATS</strong> or <strong>NEPOOL-GIS</strong>).</li>
+<li><strong>Choose a sales channel</strong> — spot, forward contract, or aggregator — balancing upside against the certainty lenders want.</li>
+<li><strong>Retire/deliver</strong> certificates to buyers; receive payment per MWh generated over the SREC's eligible life (term varies by state).</li>
+</ol>
+<p>SREC revenue is generally <strong>taxable income</strong> and is <strong>separate</strong> from the federal Investment Tax Credit and MACRS depreciation, which apply to the equipment. See <a class="inline" href="state-tax-credits.html">State Tax Credits &amp; Incentives</a> for how these stack.</p>
+<h2 id="srecs-vs-performance-based-incentives">SRECs vs. Performance-Based Incentives</h2>
+<p>It helps to distinguish two revenue models that both pay for generation:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>SREC market</th>
+<th>Performance-based incentive (PBI) / fixed tariff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price</td>
+<td>Market-set, volatile, capped by SACP</td>
+<td>Administratively set, fixed for the contract term</td>
+</tr>
+<tr>
+<td>Certainty</td>
+<td>Low (unless contracted)</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Examples</td>
+<td>D.C., MD, PA, OH, DE, VA</td>
+<td>NJ SuSI/ADI, MA SMART, IL ABP, CT NRES</td>
+</tr>
+<tr>
+<td>Financing</td>
+<td>Harder without a forward contract</td>
+<td>Lender-friendly</td>
+</tr>
+<tr>
+<td>Upside</td>
+<td>Can be large in undersupplied markets</td>
+<td>Capped by the set rate</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Bottom line: An open SREC market offers upside and risk; a fixed PBI/tariff offers bankable certainty. Many states have migrated from the former to the latter precisely to tame price volatility and control ratepayer cost.</p>
+</blockquote>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" href="downloads.html">DSIRE — Database of State Incentives for Renewables &amp; Efficiency</a></li>
+<li><a class="inline" href="downloads.html">PJM-GATS — Generation Attribute Tracking System</a></li>
+<li><a class="inline" href="downloads.html">NEPOOL-GIS — New England Power Pool Generation Information System</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://programs.dsireusa.org/system/program/detail/22418">DSIRE — New Jersey Successor Solar Incentive (SuSI)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.mass.gov/info-details/program-summaries">Mass.gov — SMART Program Summaries</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://programs.dsireusa.org/system/program/md/solar">DSIRE — Maryland Solar Programs</a></li>
+<li><a class="inline" href="downloads.html">Illinois Shines / Adjustable Block Program</a></li>
+<li>Related site pages: <a class="inline" href="incentive-more-states.html">More State Programs</a> · <a class="inline" href="state-tax-credits.html">State Tax Credits &amp; Incentives</a></li>
+</ul>
+<blockquote>
+<p><strong>Disclaimer:</strong> This material is educational only and is not tax, legal, or financial advice. SREC prices are volatile and program rules change frequently — every figure here is approximate and may be out of date. Verify the current status of any market, rate, or program with the administering agency, the applicable tracking registry, and a qualified professional before making investment decisions.</p>
+</blockquote><div class="related" id="related-slot" hidden></div><div class="pager"><a href="incentive-nj-susi.html" class="prev"><span class="dir">Previous</span><span class="ttl">New Jersey — SuSI</span></a><a href="incentive-more-states.html" class="next"><span class="dir">Next</span><span class="ttl">More State Programs</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#what-creates-srec-demand">What Creates SREC Demand</a>
+<a class="lvl-2" href="#minting-registering-and-selling-certificates">Minting, Registering, and Selling Certificates</a>
+<a class="lvl-3" href="#1-minting">1. Minting</a>
+<a class="lvl-3" href="#2-registration-and-tracking">2. Registration and tracking</a>
+<a class="lvl-3" href="#3-selling">3. Selling</a>
+<a class="lvl-2" href="#price-volatility-and-oversupply">Price Volatility and Oversupply</a>
+<a class="lvl-2" href="#major-srec-markets-and-their-status">Major SREC Markets and Their Status</a>
+<a class="lvl-2" href="#how-a-commercial-project-monetizes-srecs">How a Commercial Project Monetizes SRECs</a>
+<a class="lvl-2" href="#srecs-vs-performance-based-incentives">SRECs vs. Performance-Based Incentives</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

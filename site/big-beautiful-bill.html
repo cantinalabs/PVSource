@@ -1,0 +1,677 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>The “Big Beautiful Bill” (OBBBA) · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="obbba" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link active" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="state-tax-credits.html" aria-label="Previous: State Tax Credits"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">State Tax Credits</span></div><div class="side-nav next"><a href="incentive-direct-pay.html" aria-label="Next: Direct Pay (Elective Payment)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Direct Pay (Elective Payment)</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Federal Legislation</span><h1>The “Big Beautiful Bill” (OBBBA)</h1><p class="lede">How the One Big Beautiful Bill Act accelerates the phaseout of clean-energy credits for wind and solar, the new begin-construction deadlines, and the FEOC supply-chain rules.</p><div class="banner-meta"><div class="m"><b>Jul 4, 2026</b><span>Begin-construction deadline</span></div><div class="m"><b>Dec 31, 2027</b><span>Credit termination (PIS)</span></div><div class="m"><b>FEOC</b><span>New supply-chain rules</span></div></div></div></section><div class="doc-wrap"><article class="content"><h2 id="overview">Overview</h2>
+<p><strong>Official Name</strong>: One Big Beautiful Bill Act (OBBBA) — H.R. 1, Public Law 119-21
+<strong>Enacted</strong>: July 4, 2025 (signed by President Trump)
+<strong>Primary Impact</strong>: <strong>Accelerated phaseout/termination of IRA clean energy tax credits for wind and solar</strong>, new Foreign Entity of Concern (FEOC) restrictions, and modifications to domestic content rules.</p>
+<blockquote>
+<p><strong>Bottom Line for Commercial Solar</strong>: The technology-neutral credits (Section 48E ITC / Section 45Y PTC) for <strong>wind and solar are terminated for projects placed in service after Dec 31, 2027</strong>, unless construction began by <strong>July 4, 2026</strong>. Pre-IRA credits (Section 48 ITC / Section 45 PTC) for projects beginning construction <strong>before Jan 1, 2025</strong> are <strong>largely unaffected</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="key-provisions-affecting-commercial-solar">Key Provisions Affecting Commercial Solar</h2>
+<h3 id="1-termination-of-section-48e-itc-section-45y-ptc-for-wind-solar">1. Termination of Section 48E ITC &amp; Section 45Y PTC for Wind &amp; Solar</h3>
+<table>
+<thead>
+<tr>
+<th>Provision</th>
+<th>Pre-OBBBA (IRA)</th>
+<th>Post-OBBBA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Credit Type</strong></td>
+<td>Technology-neutral (zero-emission)</td>
+<td>Same, but <strong>terminated for wind/solar</strong></td>
+</tr>
+<tr>
+<td><strong>Phaseout Trigger</strong></td>
+<td>2034 or 75% sector emissions reduction</td>
+<td><strong>Dec 31, 2027 placed-in-service deadline</strong></td>
+</tr>
+<tr>
+<td><strong>Exception</strong></td>
+<td>4-year continuity safe harbor</td>
+<td><strong>Construction began ≤ July 4, 2026</strong></td>
+</tr>
+</tbody>
+</table>
+<h4>Critical Deadlines</h4>
+<pre><code>┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                     OBBBA WIND &amp; SOLAR DEADLINES                         │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  CONSTRUCTION BEGINS BY:          MUST BE PLACED IN SERVICE BY:         │
+│  ─────────────────────────        ──────────────────────────────        │
+│  July 4, 2026 (12 mo post-enact)  December 31, 2030 (per IRS guidance) │
+│  After July 4, 2026               December 31, 2027                     │
+│                                                                          │
+│  ⚠ IRS Notice 2025-42: Physical Work Test ONLY (no 5% Safe Harbor)     │
+│  ⚠ Executive Order 14315: &quot;Strict enforcement&quot; — Treasury to issue     │
+│     further guidance restricting &quot;artificial acceleration&quot; of BOC       │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h4>IRS Notice 2025-42 (Aug 2025) — Beginning of Construction Rules</h4>
+<ul>
+<li><strong>Five Percent Safe Harbor ELIMINATED</strong> for wind/solar for OBBBA BOC deadline</li>
+<li><strong>Only Physical Work Test</strong> qualifies for July 4, 2026 deadline</li>
+<li><strong>Continuity Requirement</strong>: Must maintain continuous construction program</li>
+<li><strong>Continuity Safe Harbor</strong>: 4 calendar years from BOC to placed-in-service</li>
+<li><strong>Effective</strong>: Facilities where construction did NOT begin under old rules before <strong>Sept 2, 2025</strong></li>
+<li><strong>Small Project Exception</strong> (≤1.5 MW AC): 5% Safe Harbor still available</li>
+</ul>
+<blockquote>
+<p><strong>Practical Impact</strong>: Commercial solar developers must perform <strong>physical work of significant nature</strong> (not just incur costs) by July 4, 2026 to qualify for Section 48E/45Y.</p>
+</blockquote>
+<hr />
+<h3 id="2-pre-ira-credits-section-48-itc-section-45-ptc-largely-preserved">2. Pre-IRA Credits (Section 48 ITC / Section 45 PTC) — Largely Preserved</h3>
+<table>
+<thead>
+<tr>
+<th>Credit</th>
+<th>Status Under OBBBA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Section 48 ITC</strong> (solar, storage, etc.)</td>
+<td><strong>Unchanged</strong> for construction beginning <strong>before Jan 1, 2025</strong></td>
+</tr>
+<tr>
+<td><strong>Section 45 PTC</strong> (wind, solar)</td>
+<td><strong>Unchanged</strong> for construction beginning <strong>before Jan 1, 2025</strong></td>
+</tr>
+<tr>
+<td><strong>5-Year MACRS</strong></td>
+<td><strong>Preserved</strong> (House/Senate proposals to eliminate were dropped)</td>
+</tr>
+<tr>
+<td><strong>Bonus Depreciation</strong></td>
+<td>Unchanged (80% in 2025, 60% in 2026, 40% in 2027, 20% in 2028)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Strategic Window</strong>: Projects that began construction in <strong>2024</strong> (or earlier) under Section 48/45 are <strong>grandfathered</strong> and unaffected by OBBBA termination provisions.</p>
+</blockquote>
+<hr />
+<h3 id="3-foreign-entity-of-concern-feoc-rules-broad-new-restrictions">3. Foreign Entity of Concern (FEOC) Rules — Broad New Restrictions</h3>
+<p>Three interlocking prohibitions apply to <strong>Section 48E, 45Y, 45X, 48C, and others</strong>:</p>
+<h4>A. Specified Foreign Entity (SFE) / Foreign-Influenced Entity (FIE) Prohibition</h4>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SFE</strong></td>
+<td>Governments of China, Iran, Russia, North Korea; their citizens/nationals; entities organized in or with principal place of business in those countries; &gt;50% owned subsidiaries</td>
+</tr>
+<tr>
+<td><strong>FIE</strong></td>
+<td>Entity where SFE: (i) appoints covered officers, (ii) owns ≥25% equity (or ≥40% aggregate), (iii) holds ≥15% debt, (iv) receives "effective control" payments</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Effect</strong>: <strong>No credits allowed</strong> to SFEs, FIEs, or facilities they construct.</p>
+<h4>B. Effective Control Rule</h4>
+<ul>
+<li>Prohibits payments to SFEs under contracts giving SFE "specific authority over key aspects" of energy generation</li>
+<li><strong>IP Licenses</strong>: Any license entered <strong>after July 4, 2025</strong> = deemed effective control (except bona fide sales)</li>
+<li><strong>Oftake/Data/Operations</strong> contracts scrutinized</li>
+</ul>
+<h4>C. Material Assistance Rule</h4>
+<ul>
+<li>Facility cannot incorporate manufactured products where <strong>SFE/FIE content exceeds threshold</strong></li>
+<li>Threshold varies by credit type and construction start year</li>
+<li><strong>Interim Safe Harbor</strong> (until Dec 31, 2026): Rely on supplier certifications + IRS Notice 2025-08 domestic content tables</li>
+<li><strong>Penalties</strong>: Stricter penalties + extended statute of limitations for violations</li>
+</ul>
+<h4>FEOC Effective Dates</h4>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Effective For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SFE/FIE Prohibition</td>
+<td>Tax years beginning after July 4, 2025</td>
+</tr>
+<tr>
+<td>Effective Control</td>
+<td>Tax years beginning after July 4, 2025</td>
+</tr>
+<tr>
+<td>Material Assistance</td>
+<td>Construction beginning after Dec 31, 2025</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Supply Chain Impact</strong>: Commercial solar EPCs must <strong>audit supply chains</strong> for Chinese-origin content (modules, inverters, racking, batteries, critical minerals). Target: <strong>≥40-55% domestic content</strong> depending on year.</p>
+</blockquote>
+<hr />
+<h3 id="4-domestic-content-bonus-escalating-thresholds-corrected">4. Domestic Content Bonus — Escalating Thresholds (Corrected)</h3>
+<table>
+<thead>
+<tr>
+<th>Construction Begins</th>
+<th>Domestic Content Threshold (General)</th>
+<th>Offshore Wind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Before June 16, 2025</td>
+<td>40%</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>June 16, 2025 – Dec 31, 2025</td>
+<td>45%</td>
+<td>27.5%</td>
+</tr>
+<tr>
+<td><strong>2026</strong></td>
+<td><strong>50%</strong></td>
+<td><strong>35%</strong></td>
+</tr>
+<tr>
+<td><strong>After 2026</strong></td>
+<td><strong>55%</strong></td>
+<td><strong>—</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note</strong>: OBBBA corrected IRA drafting error — Section 48E thresholds now align with Section 45Y.</p>
+</blockquote>
+<hr />
+<h3 id="5-technologies-unaffected-extended-continue-under-section-48e45y">5. Technologies Unaffected / Extended (Continue Under Section 48E/45Y)</h3>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Phaseout Timeline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy Storage</strong> (standalone)</td>
+<td>2034+ (original IRA schedule)</td>
+</tr>
+<tr>
+<td><strong>Nuclear</strong> (advanced)</td>
+<td>2034+; <strong>New 10% energy community adder</strong></td>
+</tr>
+<tr>
+<td><strong>Hydropower / Marine / Hydrokinetic</strong></td>
+<td>2034+</td>
+</tr>
+<tr>
+<td><strong>Geothermal Heat Pumps</strong></td>
+<td>Construction through 2034</td>
+</tr>
+<tr>
+<td><strong>Fuel Cells</strong> (qualified)</td>
+<td><strong>New: 30% ITC w/o PWA requirements</strong> (post-2025 construction); no adders</td>
+</tr>
+<tr>
+<td><strong>Other Zero-Emission</strong></td>
+<td>2034+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="6-transferability-direct-pay-retained">6. Transferability &amp; Direct Pay — Retained</h3>
+<table>
+<thead>
+<tr>
+<th>Provision</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Credit Transferability</strong> (Section 6418)</td>
+<td><strong>Retained</strong> — but transfers to FEOCs prohibited</td>
+</tr>
+<tr>
+<td><strong>Direct Pay / Elective Payment</strong> (Section 6417)</td>
+<td><strong>Retained</strong> — tax-exempt entities can still monetize</td>
+</tr>
+<tr>
+<td><strong>Carryforward</strong></td>
+<td>Unchanged (20 years)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="7-section-45z-clean-fuel-production-credit-extended">7. Section 45Z Clean Fuel Production Credit — Extended</h3>
+<ul>
+<li>Extended <strong>through 2029</strong> (was expiring 2027)</li>
+<li><strong>US/Canada/Mexico feedstock only</strong></li>
+<li><strong>Sustainable Aviation Fuel (SAF)</strong> credit rate reduced</li>
+<li><strong>Small Producer Biodiesel</strong> credit extended through 2026, rate increased</li>
+</ul>
+<hr />
+<h3 id="8-section-48c-advanced-energy-manufacturing-credit">8. Section 48C Advanced Energy Manufacturing Credit</h3>
+<ul>
+<li>FEOC restrictions apply</li>
+<li>Material assistance rules apply</li>
+<li>$10B total allocation (IRA) — competitive awards continue</li>
+</ul>
+<hr />
+<h2 id="commercial-solar-epc-decision-framework">Commercial Solar EPC: Decision Framework</h2>
+<h3 id="scenario-analysis-which-credit-path">Scenario Analysis: Which Credit Path?</h3>
+<pre><code>┌────────────────────────────────────────────────────────────────────────────┐
+│                    COMMERCIAL SOLAR CREDIT PATH DECISION TREE              │
+└────────────────────────────────────────────────────────────────────────────┘
+
+                         ┌─────────────────────────┐
+                         │ Construction began      │
+                         │ BEFORE Jan 1, 2025?     │
+                         └───────────┬─────────────┘
+                                     │
+                    ┌────────────────┴────────────────┐
+                    ▼                                 ▼
+                   YES                                NO
+                    │                                 │
+                    ▼                                 ▼
+         ┌──────────────────┐            ┌─────────────────────────┐
+         │ Section 48 ITC   │            │ Construction began      │
+         │ (30% w/ PWA)     │            │ BEFORE July 4, 2026?    │
+         │ + 5-yr MACRS     │            └───────────┬─────────────┘
+         │ UNAFFECTED       │                        │
+         └──────────────────┘           ┌────────────┴────────────┐
+                                       ▼                         ▼
+                                      YES                        NO
+                                       │                         │
+                                       ▼                         ▼
+                            ┌──────────────────┐      ┌──────────────────┐
+                            │ Section 48E ITC  │      │ NO FEDERAL       │
+                            │ (30% w/ PWA)     │      │ ITC/PTC FOR      │
+                            │ Must PIS by      │      │ WIND/SOLAR       │
+                            │ Dec 31, 2030*    │      │ (only storage,   │
+                            │ Physical Work    │      │ nuclear, etc.)   │
+                            │ Test by 7/4/2026 │      └──────────────────┘
+                            └──────────────────┘
+                                       │
+                                       ▼
+                            ⚠ FEOC Rules Apply
+                            ⚠ Domestic Content 50-55%
+                            ⚠ No 5% Safe Harbor
+</code></pre>
+<p>*Per IRS guidance for projects beginning construction in 2025.</p>
+<hr />
+<h3 id="immediate-action-items-for-commercial-solar-epcs-2025-2026">Immediate Action Items for Commercial Solar EPCs (2025-2026)</h3>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Action</th>
+<th>Deadline</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Identify all projects that can begin Physical Work by July 4, 2026</strong></td>
+<td>ASAP</td>
+<td>Development</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Execute Physical Work Test</strong> (grading, foundations, pile driving, etc.)</td>
+<td><strong>Before July 4, 2026</strong></td>
+<td>EPC/Construction</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Document BOC meticulously</strong> (photos, contracts, invoices, daily logs)</td>
+<td>Ongoing</td>
+<td>Legal/Tax</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Audit supply chain for FEOC exposure</strong> (modules, inverters, batteries, steel)</td>
+<td>Before procurement</td>
+<td>Procurement</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Secure domestic content certifications</strong> from suppliers (≥50% for 2026 starts)</td>
+<td>Before procurement</td>
+<td>Procurement/Legal</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Model economics under Section 48E vs. no credit</strong></td>
+<td>Before financial close</td>
+<td>Finance</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Evaluate Section 48 ITC path</strong> for any 2024 construction starts</td>
+<td>Immediately</td>
+<td>Development</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Monitor IRS guidance</strong> (Notice 2025-42 updates, FEOC regulations)</td>
+<td>Continuous</td>
+<td>Tax Counsel</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="physical-work-test-what-qualifies-per-notice-2025-42-notice-2013-29">Physical Work Test — What Qualifies (Per Notice 2025-42 / Notice 2013-29)</h3>
+<table>
+<thead>
+<tr>
+<th>Qualifying Physical Work</th>
+<th>Likely NOT Qualifying</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Site grading/clearing for array</td>
+<td>Land purchase/option payments</td>
+</tr>
+<tr>
+<td>Pile driving / foundation installation</td>
+<td>Permitting/engineering fees</td>
+</tr>
+<tr>
+<td>Racking installation</td>
+<td>Interconnection application fees</td>
+</tr>
+<tr>
+<td>Module/inverter delivery to site (if binding contract)</td>
+<td>Developer fees</td>
+</tr>
+<tr>
+<td>Trenching for electrical</td>
+<td>"Paper" expenditures</td>
+</tr>
+<tr>
+<td>Substation/switchgear construction</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Binding contracts for above work</strong> (pre-manufacture)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Key</strong>: Work must be <strong>of a significant nature</strong> and <strong>integral to the facility</strong>. No minimum dollar threshold, but must be more than "preparatory."</p>
+</blockquote>
+<hr />
+<h3 id="financial-modeling-impact-with-vs-without-section-48e">Financial Modeling Impact: With vs. Without Section 48E</h3>
+<table>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>With Section 48E (30% + PWA)</th>
+<th>Without Federal Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project CapEx</strong></td>
+<td>$1.50/W</td>
+<td>$1.50/W</td>
+</tr>
+<tr>
+<td><strong>ITC Value</strong></td>
+<td>$0.45/W (30%)</td>
+<td>$0</td>
+</tr>
+<tr>
+<td><strong>Net CapEx</strong></td>
+<td>$1.05/W</td>
+<td>$1.50/W</td>
+</tr>
+<tr>
+<td><strong>LCOE Impact</strong></td>
+<td>~$30-40/MWh lower</td>
+<td>Baseline</td>
+</tr>
+<tr>
+<td><strong>IRR Impact</strong></td>
+<td>+500-800 bps</td>
+<td>Baseline</td>
+</tr>
+<tr>
+<td><strong>Payback</strong></td>
+<td>4-6 years</td>
+<td>8-12 years</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Conclusion</strong>: Loss of Section 48E <strong>dramatically changes project economics</strong>. Most commercial solar PPAs/leases become unviable without federal credit unless state incentives (IL Shines, CA SGIP, NY VDER) or high retail rates compensate.</p>
+</blockquote>
+<hr />
+<h2 id="legislative-timeline-context">Legislative Timeline &amp; Context</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Aug 16, 2022</strong></td>
+<td>IRA enacted — Creates Section 48E/45Y (tech-neutral, phaseout 2034+)</td>
+</tr>
+<tr>
+<td><strong>Jan 1, 2025</strong></td>
+<td>Section 48E/45Y effective for new construction</td>
+</tr>
+<tr>
+<td><strong>July 4, 2025</strong></td>
+<td>OBBBA (H.R. 1) signed into law</td>
+</tr>
+<tr>
+<td><strong>July 7, 2025</strong></td>
+<td>Executive Order 14315 — "Strict enforcement" of termination</td>
+</tr>
+<tr>
+<td><strong>Aug 18, 2025</strong></td>
+<td>IRS Notice 2025-42 issued — BOC guidance, eliminates 5% safe harbor</td>
+</tr>
+<tr>
+<td><strong>July 4, 2026</strong></td>
+<td><strong>BOC Deadline</strong> — Last day to start construction for 48E/45Y eligibility</td>
+</tr>
+<tr>
+<td><strong>Dec 31, 2027</strong></td>
+<td><strong>Credit Termination Date</strong> — Last day for PIS (post-7/4/2026 BOC)</td>
+</tr>
+<tr>
+<td><strong>Dec 31, 2030</strong></td>
+<td><strong>Extended PIS Deadline</strong> — For projects with BOC ≤ July 4, 2026 (per guidance)</td>
+</tr>
+<tr>
+<td><strong>2034+</strong></td>
+<td>Phaseout for storage, nuclear, other zero-emission technologies</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="uncertainties-watch-items">Uncertainties &amp; Watch Items</h2>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Status</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Treasury FEOC Regulations</strong></td>
+<td>Drafting (due 45 days post-EO)</td>
+<td>Will define "material assistance" thresholds, safe harbors</td>
+</tr>
+<tr>
+<td><strong>BOC Guidance Refinement</strong></td>
+<td>Expected</td>
+<td>May further restrict Physical Work Test interpretation</td>
+</tr>
+<tr>
+<td><strong>"Substantial Portion Built"</strong></td>
+<td>Undefined</td>
+<td>EO directs restriction of safe harbors unless "substantial portion" built by BOC deadline</td>
+</tr>
+<tr>
+<td><strong>Small Project Exception (≤1.5 MW)</strong></td>
+<td>In Notice 2025-42</td>
+<td>5% safe harbor preserved — but "integrated operations" aggregation rules apply</td>
+</tr>
+<tr>
+<td><strong>Section 48 ITC for 2025 starts?</strong></td>
+<td>Unclear</td>
+<td>OBBBA silent on Section 48 for 2025 construction; likely not available</td>
+</tr>
+<tr>
+<td><strong>State Program Interactions</strong></td>
+<td>Varies</td>
+<td>IL Shines, CA Title 24, NY VDER may gain relative importance</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="key-resources">Key Resources</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OBBBA Text (H.R. 1)</strong></td>
+<td><code>congress.gov/bill/119th-congress/house-bill/1/text</code></td>
+</tr>
+<tr>
+<td><strong>IRS Notice 2025-42</strong></td>
+<td><code>irs.gov/pub/irs-drop/n-25-42.pdf</code></td>
+</tr>
+<tr>
+<td><strong>Executive Order 14315</strong></td>
+<td><code>whitehouse.gov/presidential-actions/2025/07/ending-market-distorting-subsidies...</code></td>
+</tr>
+<tr>
+<td><strong>Gibson Dunn Alert</strong></td>
+<td><code>gibsondunn.com/focus-on-clean-energy-tax-provisions-in-the-one-big-beautiful-bill-act/</code></td>
+</tr>
+<tr>
+<td><strong>Sidley Austin Alert</strong></td>
+<td><code>sidley.com/en/insights/newsupdates/2025/07/the-one-big-beautiful-bill-act...</code></td>
+</tr>
+<tr>
+<td><strong>McDermott Will &amp; Emery</strong></td>
+<td><code>mcdermottlaw.com/insights/the-one-big-beautiful-bill-act-navigating-clean-energy-tax-credits...</code></td>
+</tr>
+<tr>
+<td><strong>RSM Analysis</strong></td>
+<td><code>rsmus.com/insights/services/business-tax/obbba-tax-clean-energy.html</code></td>
+</tr>
+<tr>
+<td><strong>Mintz Analysis</strong></td>
+<td><code>mintz.com/insights-center/viewpoints/2906/2025-09-16-obbba-major-shift-federal-clean-energy-tax-incentives</code></td>
+</tr>
+<tr>
+<td><strong>Project Finance Law Blog</strong></td>
+<td><code>projectfinance.law/tax-equity-news/the-one-big-beautiful-bills-obbb-energy-tax-credit-timeline...</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="summary-what-commercial-solar-epcs-need-to-know">Summary: What Commercial Solar EPCs Need to Know</h2>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Key Takeaway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Section 48E ITC for Solar</strong></td>
+<td><strong>Dead for new starts after July 4, 2026</strong>; must PIS by 2027 (or 2030 if BOC by 7/4/2026)</td>
+</tr>
+<tr>
+<td><strong>Section 48 ITC (Pre-IRA)</strong></td>
+<td><strong>Still available</strong> for construction started <strong>before Jan 1, 2025</strong></td>
+</tr>
+<tr>
+<td><strong>Physical Work Test</strong></td>
+<td><strong>Only way</strong> to establish BOC for 48E — <strong>no 5% safe harbor</strong></td>
+</tr>
+<tr>
+<td><strong>FEOC / China Supply Chain</strong></td>
+<td><strong>Major new compliance burden</strong> — audit modules, inverters, batteries, steel</td>
+</tr>
+<tr>
+<td><strong>Domestic Content</strong></td>
+<td><strong>50% (2026), 55% (2027+)</strong> for bonus — harder to achieve with FEOC rules</td>
+</tr>
+<tr>
+<td><strong>Storage / Nuclear / Other</strong></td>
+<td><strong>Unaffected</strong> — continue under 48E/45Y with 2034+ phaseout</td>
+</tr>
+<tr>
+<td><strong>Transferability / Direct Pay</strong></td>
+<td><strong>Retained</strong> — but no transfers to FEOCs</td>
+</tr>
+<tr>
+<td><strong>MACRS / Bonus Depreciation</strong></td>
+<td><strong>Preserved</strong> — 5-year MACRS + bonus depreciation unchanged</td>
+</tr>
+<tr>
+<td><strong>Immediate Action</strong></td>
+<td><strong>Start physical work by July 4, 2026</strong> or pivot to storage/other tech</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Last Updated: September 2025. Based on OBBBA (P.L. 119-21), IRS Notice 2025-42, Executive Order 14315, and major law firm analyses. </em><em>This is not tax or legal advice.</em><em> Consult qualified tax counsel for project-specific guidance. Treasury regulations on FEOC and further BOC guidance forthcoming.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="state-tax-credits.html" class="prev"><span class="dir">Previous</span><span class="ttl">State Tax Credits</span></a><a href="incentive-direct-pay.html" class="next"><span class="dir">Next</span><span class="ttl">Direct Pay (Elective Payment)</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#overview">Overview</a>
+<a class="lvl-2" href="#key-provisions-affecting-commercial-solar">Key Provisions Affecting Commercial Solar</a>
+<a class="lvl-3" href="#1-termination-of-section-48e-itc-section-45y-ptc-for-wind-solar">1. Termination of Section 48E ITC &amp; Section 45Y PTC for Wind &amp; Solar</a>
+<a class="lvl-3" href="#2-pre-ira-credits-section-48-itc-section-45-ptc-largely-preserved">2. Pre-IRA Credits (Section 48 ITC / Section 45 PTC) — Largely Preserved</a>
+<a class="lvl-3" href="#3-foreign-entity-of-concern-feoc-rules-broad-new-restrictions">3. Foreign Entity of Concern (FEOC) Rules — Broad New Restrictions</a>
+<a class="lvl-3" href="#4-domestic-content-bonus-escalating-thresholds-corrected">4. Domestic Content Bonus — Escalating Thresholds (Corrected)</a>
+<a class="lvl-3" href="#5-technologies-unaffected-extended-continue-under-section-48e45y">5. Technologies Unaffected / Extended (Continue Under Section 48E/45Y)</a>
+<a class="lvl-3" href="#6-transferability-direct-pay-retained">6. Transferability &amp; Direct Pay — Retained</a>
+<a class="lvl-3" href="#7-section-45z-clean-fuel-production-credit-extended">7. Section 45Z Clean Fuel Production Credit — Extended</a>
+<a class="lvl-3" href="#8-section-48c-advanced-energy-manufacturing-credit">8. Section 48C Advanced Energy Manufacturing Credit</a>
+<a class="lvl-2" href="#commercial-solar-epc-decision-framework">Commercial Solar EPC: Decision Framework</a>
+<a class="lvl-3" href="#scenario-analysis-which-credit-path">Scenario Analysis: Which Credit Path?</a>
+<a class="lvl-3" href="#immediate-action-items-for-commercial-solar-epcs-2025-2026">Immediate Action Items for Commercial Solar EPCs (2025-2026)</a>
+<a class="lvl-3" href="#physical-work-test-what-qualifies-per-notice-2025-42-notice-2013-29">Physical Work Test — What Qualifies (Per Notice 2025-42 / Notice 2013-29)</a>
+<a class="lvl-3" href="#financial-modeling-impact-with-vs-without-section-48e">Financial Modeling Impact: With vs. Without Section 48E</a>
+<a class="lvl-2" href="#legislative-timeline-context">Legislative Timeline &amp; Context</a>
+<a class="lvl-2" href="#uncertainties-watch-items">Uncertainties &amp; Watch Items</a>
+<a class="lvl-2" href="#key-resources">Key Resources</a>
+<a class="lvl-2" href="#summary-what-commercial-solar-epcs-need-to-know">Summary: What Commercial Solar EPCs Need to Know</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

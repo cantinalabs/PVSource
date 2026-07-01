@@ -1,0 +1,219 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Shading, Mismatch &amp; Bypass Diodes · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="fundamentals" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link active" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="fundamentals-pv-modules.html" aria-label="Previous: PV Modules Deep-Dive"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">PV Modules Deep-Dive</span></div><div class="side-nav next"><a href="system-components.html" aria-label="Next: System Components"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">System Components</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Fundamentals</span><h1>Shading, Mismatch &amp; Bypass Diodes</h1><p class="lede">Why one shaded cell hurts a whole string — bypass diodes, the shaded I-V curve, module mismatch and its losses, and how microinverters and optimizers mitigate it.</p><div class="banner-meta"><div class="m"><b>Bypass diodes</b><span>Hot-spot protection</span></div><div class="m"><b>I-V under shade</b><span>Local vs global MPP</span></div><div class="m"><b>MLPE</b><span>Mitigation</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>Shading is the single largest source of avoidable energy loss in many real-world PV arrays. Because of how cells, modules, and strings are wired together, the impact of shade is almost never proportional to the shaded area: a small shadow on one cell can suppress the output of an entire string. This page explains <em>why</em> that happens, how <strong>bypass diodes</strong> limit the damage, how partial shade deforms the I-V curve, what <strong>mismatch</strong> is and how to estimate its loss, and how module-level power electronics (MLPE) change the trade-offs.</p>
+<h2 id="why-one-shaded-cell-hurts-series-string-current-limiting">Why One Shaded Cell Hurts: Series-String Current Limiting</h2>
+<p>PV cells in a module are wired in <strong>series</strong>, and modules in a string are also wired in series. The defining property of a series circuit is that <strong>the same current flows through every element</strong>. A solar cell is fundamentally a current source whose output current is proportional to the irradiance falling on it.</p>
+<blockquote>
+<p><strong>Key point:</strong> In a series string, the <em>current</em> is limited by the weakest (least-illuminated) cell, while the <em>voltages</em> add. One heavily shaded cell tries to throttle the current of every cell in series with it.</p>
+</blockquote>
+<p>Consider a string of cells each producing about <code>9.5 A</code> in full sun. If one cell is 75% shaded, that cell can only pass roughly <code>2.4 A</code>. Without protection, the entire series path is forced toward that lower current — the healthy cells cannot push their current through the shaded cell. The string's power collapses far more than the ~2% physical area that is shaded.</p>
+<pre><code>Full sun (all cells ~9.5 A):     [9.5A]-[9.5A]-[9.5A]-[9.5A]  -&gt; string = 9.5 A
+One cell 75% shaded (no diode):  [9.5A]-[9.5A]-[2.4A]-[9.5A]  -&gt; string ~ 2.4 A (!)
+</code></pre>
+<p>Worse, the unshaded cells, still being driven by the surrounding string voltage, can <strong>reverse-bias</strong> the shaded cell. The shaded cell then <em>dissipates</em> power instead of producing it, heating up — the origin of the <strong>hot-spot</strong> failure mode described below.</p>
+<h2 id="bypass-diodes-how-they-work">Bypass Diodes: How They Work</h2>
+<p>A <strong>bypass diode</strong> is a diode wired in parallel with a group of cells (a <strong>substring</strong>), but with reversed polarity so it is normally non-conducting. During normal operation the substring's forward voltage reverse-biases the diode and no current flows through it.</p>
+<p>When a cell in that substring is shaded and the rest of the string tries to force a higher current through it, the shaded cell goes into reverse bias. Once the reverse voltage across the substring exceeds the diode's forward turn-on voltage (~<code>0.3–0.7 V</code>), the <strong>diode conducts and carries the string current around the shaded substring</strong>. The substring is "bypassed."</p>
+<pre><code>        +------[ substring of cells ]------+
+        |                                  |
+ -------+                                  +-------  (string current path)
+        |                                  |
+        +--------|&lt;|----- bypass diode ----+   (conducts when substring is shaded)
+</code></pre>
+<blockquote>
+<p><strong>Key point:</strong> A bypass diode does not <em>recover</em> the shaded substring's power — it sacrifices that substring's voltage so the rest of the string can keep producing at full current. You lose a chunk of voltage, not the whole string.</p>
+</blockquote>
+<h3 id="substrings-and-the-typical-3-diode-module">Substrings and the Typical 3-Diode Module</h3>
+<p>A conventional 60- or 72-cell module is usually divided into <strong>three substrings</strong>, each protected by one bypass diode housed in the junction box. Shade anywhere in one substring bypasses roughly one-third of the module (<code>~1/3</code> of its voltage and power) rather than the whole module.</p>
+<pre><code>72-cell module = 3 substrings of 24 cells, each with its own bypass diode:
+
+[ 24 cells | D1 ]--[ 24 cells | D2 ]--[ 24 cells | D3 ]
+
+Shade in the middle substring -&gt; D2 conducts -&gt; module outputs ~2/3 of Vmp.
+</code></pre>
+<p>Modern modules complicate this picture. <strong>Half-cut cell</strong> modules split the panel into two parallel halves; <strong>shingled</strong> and <strong>back-contact</strong> designs use finer-grained cell groups. These layouts can make a module more tolerant of certain shade geometries (e.g., a horizontal shadow across the bottom row), but the underlying series-current-limiting physics is unchanged.</p>
+<h3 id="hot-spot-protection">Hot-Spot Protection</h3>
+<p>Without a bypass diode, a reverse-biased shaded cell can dissipate the power of the entire string as heat concentrated in one spot, reaching temperatures that crack glass, discolor the encapsulant, and permanently damage the cell — a <strong>hot spot</strong>. The hot-spot endurance test in the safety standards (<strong>IEC 61730</strong> / <strong>UL 61730</strong>) verifies that a module survives this condition; bypass diodes are the primary defense. See <a class="inline" href="fundamentals-standards-bodies.html">Standards &amp; Certification Bodies</a>.</p>
+<h2 id="partial-shading-and-the-i-v-curve">Partial Shading and the I-V Curve</h2>
+<p>A single, fully-illuminated module has a smooth I-V curve with one <strong>maximum power point (MPP)</strong>. When parts of a string are shaded and bypass diodes activate, the combined I-V curve develops <strong>steps and kinks</strong> — each activated diode "patches in" at a different current level.</p>
+<pre><code> I (A)
+  ^
+  |■■■■■■■■                    Unshaded string: smooth knee, single MPP
+  |        ■                   ----------------------------------------
+  |         ■■■■■■■■           Partially shaded string: a STEP appears
+  |        :        ■          where a bypass diode kicks in.
+  |  step-&gt;:         ■
+  |  · · · ·· · · · · ■        local MPP (lower-V, higher-I region)
+  |                    ■
+  +---------------------+----&gt; V
+              global MPP somewhere on this curve
+</code></pre>
+<p>The consequence is <strong>multiple local maxima</strong> on the power-vs-voltage (P-V) curve. There is one <strong>global MPP</strong> (the true best operating point) and one or more <strong>local MPPs</strong>. A naive maximum power point tracker (MPPT) can get "stuck" on a local MPP and miss the global peak, costing energy even beyond the shade loss itself. Quality inverters and optimizers run periodic <strong>global MPPT sweeps</strong> to find the true peak. See <a class="inline" href="fundamentals-inverters.html">Inverters Deep-Dive</a>.</p>
+<blockquote>
+<p><strong>Key point:</strong> Partial shade does two things: it removes the shaded substrings' output, <em>and</em> it can trap the tracker on a local maximum. Good MPPT logic addresses the second problem; only array design and MLPE address the first.</p>
+</blockquote>
+<h2 id="module-mismatch-mismatch-loss">Module Mismatch &amp; Mismatch Loss</h2>
+<p><strong>Mismatch</strong> is any difference between series-connected cells, modules, or strings that prevents them all from operating at their individual best point simultaneously. Even without shade, real arrays always have <em>some</em> mismatch. Sources include:</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Mechanism</th>
+<th>Typical magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Manufacturing tolerance</strong></td>
+<td>Cells/modules vary in Imp, Vmp within the flash-test bin</td>
+<td>0–3% (tighter with positive-tolerance binning)</td>
+</tr>
+<tr>
+<td><strong>Soiling</strong></td>
+<td>Dust, pollen, bird droppings, snow reduce irradiance unevenly</td>
+<td>1–7%+ (site dependent)</td>
+</tr>
+<tr>
+<td><strong>Orientation / tilt differences</strong></td>
+<td>Modules facing different azimuths in one string</td>
+<td>Highly variable</td>
+</tr>
+<tr>
+<td><strong>Temperature gradients</strong></td>
+<td>Roof hot spots, uneven airflow shift Vmp</td>
+<td>~0.3–0.5% per °C spread (Voc)</td>
+</tr>
+<tr>
+<td><strong>Degradation</strong></td>
+<td>Modules age at different rates (LID, PID, cell cracks)</td>
+<td>Grows over array lifetime</td>
+</tr>
+<tr>
+<td><strong>Partial shading</strong></td>
+<td>The dominant, time-varying source (above)</td>
+<td>Can dominate all others</td>
+</tr>
+</tbody>
+</table>
+<p>The total <strong>mismatch loss</strong> is the difference between the sum of each module's individual maximum power and the actual power delivered when they are forced to a common operating current/voltage. In well-designed, unshaded crystalline-silicon systems, baseline mismatch loss is commonly modeled at roughly <strong>1–3%</strong>; shading can push the effective mismatch loss far higher. Mismatch loss is one of the line items in the <a class="inline" href="fundamentals-metrics-primer.html">Performance Ratio</a> loss stack and in modeling tools such as PVsyst. The detailed loss math is covered in <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>.</p>
+<p><strong>Design practices that reduce mismatch:</strong></p>
+<ul>
+<li><strong>Bin matching</strong> — group modules with similar Imp/Vmp into the same string.</li>
+<li><strong>Homogeneous strings</strong> — keep one orientation/tilt per string; never mix azimuths in a single series string feeding a string inverter.</li>
+<li><strong>Avoid mixing aged and new modules</strong> in the same string during repairs.</li>
+</ul>
+<h2 id="mlpe-microinverters-and-dc-optimizers-vs-the-central-string">MLPE: Microinverters and DC Optimizers vs. the Central String</h2>
+<p><strong>Module-level power electronics (MLPE)</strong> move power conversion or MPPT down to the individual module, breaking the series-current-limiting tyranny.</p>
+<table>
+<thead>
+<tr>
+<th>Architecture</th>
+<th>Where MPPT happens</th>
+<th>Shade behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Central / string inverter</strong></td>
+<td>One MPPT per string (a few per inverter)</td>
+<td>A shaded module pulls down its whole string; bypass diodes limit but do not eliminate the loss</td>
+</tr>
+<tr>
+<td><strong>DC optimizer</strong> (e.g., one per module, feeding a string inverter)</td>
+<td>Per-module DC-DC; inverter still does final DC-AC</td>
+<td>Each module runs at its own MPP; optimizer adjusts output V/I so the shaded module no longer constrains the string current</td>
+</tr>
+<tr>
+<td><strong>Microinverter</strong> (one per module/pair)</td>
+<td>Per-module DC-AC inversion</td>
+<td>Modules are electrically independent on the DC side; shade on one barely affects others</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Key point:</strong> With a plain string inverter, <strong>module outputs multiply down</strong> — the worst module drags the string. With MLPE, modules are <strong>decoupled</strong>, so a shaded module loses roughly only its own share.</p>
+</blockquote>
+<h3 id="why-mlpe-helps-mismatch-not-just-shade">Why MLPE Helps Mismatch (Not Just Shade)</h3>
+<p>Because each module is independently optimized, MLPE also recovers the <em>chronic</em> mismatch from manufacturing tolerance, soiling, and uneven degradation — not just transient shade. The harvest gain from optimizers/microinverters on a clean, unshaded, single-orientation array is modest (often low single-digit percent); the gain grows substantially on complex roofs with shade, multiple orientations, or partial obstructions.</p>
+<h3 id="string-level-vs-module-level-trade-offs">String-Level vs. Module-Level Trade-Offs</h3>
+<table>
+<thead>
+<tr>
+<th>Consideration</th>
+<th>String inverter</th>
+<th>MLPE (optimizers / microinverters)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cost ($/W)</strong></td>
+<td>Lowest</td>
+<td>Higher upfront</td>
+</tr>
+<tr>
+<td><strong>Shade / multi-orientation</strong></td>
+<td>Poor to moderate</td>
+<td>Strong</td>
+</tr>
+<tr>
+<td><strong>Module-level monitoring</strong></td>
+<td>No (string-level only)</td>
+<td>Yes (per-module data)</td>
+</tr>
+<tr>
+<td><strong>Rapid shutdown (NEC 690.12)</strong></td>
+<td>Needs added devices</td>
+<td>Often inherent at the module</td>
+</tr>
+<tr>
+<td><strong>Failure points</strong></td>
+<td>Few, centralized</td>
+<td>Many distributed units on the roof</td>
+</tr>
+<tr>
+<td><strong>Best fit</strong></td>
+<td>Large, unshaded, uniform arrays (utility, clean commercial roofs)</td>
+<td>Complex residential roofs, shaded sites, mixed orientations</td>
+</tr>
+</tbody>
+</table>
+<p>Rapid shutdown and broader inverter topology trade-offs are detailed in <a class="inline" href="fundamentals-inverters.html">Inverters Deep-Dive</a>, and module construction (cell layout, half-cut, junction box) in <a class="inline" href="fundamentals-pv-modules.html">PV Modules Deep-Dive</a>.</p>
+<h2 id="shading-analysis-basics">Shading Analysis Basics</h2>
+<p>Good design starts by <em>predicting</em> shade, not just reacting to it.</p>
+<ul>
+<li><strong>The solar window (solar access):</strong> the band of the sky the sun travels through across the year. In the Northern Hemisphere it sweeps the southern sky; obstructions there (trees, chimneys, parapets, adjacent buildings) cast the most damaging shade. Tools (Solar Pathfinder, drone/photo apps, and software horizon models) chart obstructions against the sun's seasonal path to compute a <strong>solar access percentage</strong>.</li>
+<li><strong>The "9 a.m. to 3 p.m." rule of thumb:</strong> prioritize keeping the array <strong>unshaded during the ~6 peak-production hours around solar noon</strong> (roughly 9 a.m.–3 p.m.). The large majority of daily energy is generated in this window; shade outside it costs comparatively little. Many AHJs, incentive programs, and rating systems (e.g., solar-readiness checklists) reference an equivalent unshaded-window criterion.</li>
+<li><strong>TSRF / TOF / solar access metrics:</strong> Total Solar Resource Fraction (TSRF) = Tilt-and-Orientation Factor (TOF) × shading factor, expressing how much of the optimal annual resource a given plane actually receives. These feed directly into the energy-yield math in <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>.</li>
+</ul>
+<blockquote>
+<p><strong>Key point:</strong> The cheapest mismatch mitigation is <strong>site selection and array placement</strong> that keep the 9-to-3 solar window clear. Electronics mitigate the shade you cannot avoid; they do not create energy that the sun never delivered to the cells.</p>
+</blockquote>
+<p>See also the <a class="inline" href="engineering-glossary.html">Engineering Glossary</a> for terms such as Imp, Vmp, MPPT, LID, and PID.</p>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.ul.com/services/pv-module-certification">UL 61730 / IEC 61730 PV module safety standard — UL Solutions</a></li>
+<li><a class="inline" href="downloads.html">IEC 61215 &amp; 61730 module qualification overview — PVKnowHow</a></li>
+<li><a class="inline" href="downloads.html">NREL — PV performance, shading and mismatch modeling</a></li>
+<li><a class="inline" href="downloads.html">IEA PVPS — Review of failures and degradation of PV modules</a></li>
+<li><a class="inline" href="downloads.html">PVEducation — Bypass diodes, mismatch, and partial shading</a></li>
+<li>Related: <a class="inline" href="fundamentals-pv-modules.html">PV Modules Deep-Dive</a> · <a class="inline" href="fundamentals-inverters.html">Inverters Deep-Dive</a> · <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a> · <a class="inline" href="fundamentals-metrics-primer.html">Power, Energy &amp; Key Metrics</a></li>
+</ul>
+<hr />
+<p><em>Disclaimer: Educational reference only; verify all designs against current manufacturer specifications, applicable codes, and a licensed professional before installation.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="fundamentals-pv-modules.html" class="prev"><span class="dir">Previous</span><span class="ttl">PV Modules Deep-Dive</span></a><a href="system-components.html" class="next"><span class="dir">Next</span><span class="ttl">System Components</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#why-one-shaded-cell-hurts-series-string-current-limiting">Why One Shaded Cell Hurts: Series-String Current Limiting</a>
+<a class="lvl-2" href="#bypass-diodes-how-they-work">Bypass Diodes: How They Work</a>
+<a class="lvl-3" href="#substrings-and-the-typical-3-diode-module">Substrings and the Typical 3-Diode Module</a>
+<a class="lvl-3" href="#hot-spot-protection">Hot-Spot Protection</a>
+<a class="lvl-2" href="#partial-shading-and-the-i-v-curve">Partial Shading and the I-V Curve</a>
+<a class="lvl-2" href="#module-mismatch-mismatch-loss">Module Mismatch &amp; Mismatch Loss</a>
+<a class="lvl-2" href="#mlpe-microinverters-and-dc-optimizers-vs-the-central-string">MLPE: Microinverters and DC Optimizers vs. the Central String</a>
+<a class="lvl-3" href="#why-mlpe-helps-mismatch-not-just-shade">Why MLPE Helps Mismatch (Not Just Shade)</a>
+<a class="lvl-3" href="#string-level-vs-module-level-trade-offs">String-Level vs. Module-Level Trade-Offs</a>
+<a class="lvl-2" href="#shading-analysis-basics">Shading Analysis Basics</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

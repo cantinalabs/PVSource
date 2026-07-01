@@ -1,0 +1,318 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>PV Modules Deep-Dive · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="fundamentals" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link active" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="fundamentals-solar-resource.html" aria-label="Previous: The Solar Resource &amp; Geometry"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">The Solar Resource &amp; Geometry</span></div><div class="side-nav next"><a href="fundamentals-shading-mismatch.html" aria-label="Next: Shading, Mismatch &amp; Bypass Diodes"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Shading, Mismatch &amp; Bypass Diodes</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Fundamentals</span><h1>PV Modules Deep-Dive</h1><p class="lede">Inside the panel — construction, datasheet parameters, temperature coefficients, degradation, bifaciality, certification testing, warranties and failure modes.</p><div class="banner-meta"><div class="m"><b>Temp coeffs</b><span>Real output</span></div><div class="m"><b>Degradation</b><span>LID · PID · LeTID</span></div><div class="m"><b>IEC 61215/61730</b><span>Testing</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>A photovoltaic (PV) <strong>module</strong> — commonly called a solar panel — is the building block that converts sunlight into direct-current electricity. This page goes beneath the nameplate: how a module is constructed, how to read its datasheet, how temperature and aging affect output, and how durability is certified. For the conversion physics at the cell level and the role of modules in a full system, see <a class="inline" href="how-solar-works.html">How Solar Power Works</a> and <a class="inline" href="system-components.html">Solar System Components</a>. The equations for output and derating are consolidated in <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>.</p>
+<h2 id="module-construction-layers">Module Construction Layers</h2>
+<p>A standard glass-backsheet or glass-glass module is a laminated stack engineered to protect fragile cells for <strong>25+ years</strong> outdoors. From front to back:</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Typical material</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Front glass</strong></td>
+<td>Low-iron, tempered, anti-reflective coated</td>
+<td>Mechanical protection, high light transmission</td>
+</tr>
+<tr>
+<td><strong>Front encapsulant</strong></td>
+<td>EVA or POE</td>
+<td>Optical coupling, moisture and UV barrier, adhesion</td>
+</tr>
+<tr>
+<td><strong>Solar cells + interconnects</strong></td>
+<td>Crystalline silicon cells joined by ribbons/wires</td>
+<td>The active converting layer</td>
+</tr>
+<tr>
+<td><strong>Rear encapsulant</strong></td>
+<td>EVA or POE</td>
+<td>Embeds cells, electrical isolation</td>
+</tr>
+<tr>
+<td><strong>Backsheet or rear glass</strong></td>
+<td>Polymer backsheet (e.g., fluoropolymer) <strong>or</strong> glass (bifacial)</td>
+<td>Weather barrier, electrical insulation</td>
+</tr>
+<tr>
+<td><strong>Frame</strong></td>
+<td>Anodized aluminum</td>
+<td>Structural rigidity, mounting, grounding</td>
+</tr>
+<tr>
+<td><strong>Junction box</strong></td>
+<td>Sealed enclosure with bypass diodes and connectors</td>
+<td>Electrical termination, bypass-diode housing</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>POE (polyolefin elastomer) encapsulant</strong> has become common on n-type and bifacial modules because it resists the ion migration that causes potential-induced degradation (PID) far better than standard EVA.</p>
+</blockquote>
+<h2 id="cell-types-recap">Cell Types Recap</h2>
+<p>Module performance starts with the cell. The dominant terrestrial technologies are crystalline silicon variants:</p>
+<ul>
+<li><strong>Mono PERC (Passivated Emitter and Rear Cell)</strong> — the long-standing p-type workhorse; mature and low-cost, now being displaced at the high end.</li>
+<li><strong>TOPCon (Tunnel Oxide Passivated Contact)</strong> — n-type, higher efficiency and better temperature behavior than PERC; the mainstream high-volume technology as of 2025–2026.</li>
+<li><strong>HJT (Heterojunction)</strong> — n-type with amorphous-silicon passivation layers; very high efficiency, excellent temperature coefficient, strong bifaciality.</li>
+<li><strong>Thin-film (CdTe, CIGS)</strong> — lower efficiency per area but strong in heat and diffuse light; used in some large-scale plants.</li>
+</ul>
+<p>As a 2025-era reference, commercial <strong>module</strong> efficiencies sit roughly at: PERC ~20–21.5%, TOPCon ~21.5–23%, and HJT ~22–24%, with leading laboratory <strong>cell</strong> efficiencies higher still. See <a class="inline" href="downloads.html">PVEducation</a> and the cell-physics discussion in <a class="inline" href="how-solar-works.html">How Solar Power Works</a>.</p>
+<h2 id="reading-the-datasheet">Reading the Datasheet</h2>
+<p>Module datasheets report electrical parameters at <strong>Standard Test Conditions (STC)</strong>: 1000 W/m² irradiance, AM1.5 spectrum, 25 °C cell temperature. Some also report <strong>NOCT/NMOT</strong> (Nominal Operating Cell/Module Temperature, ~800 W/m², 20 °C ambient) values, which are closer to real-world operation.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Maximum power</strong></td>
+<td>Pmax / Pmpp</td>
+<td>Nameplate watts at the maximum power point</td>
+</tr>
+<tr>
+<td><strong>Open-circuit voltage</strong></td>
+<td>Voc</td>
+<td>Voltage with terminals open (no current) — sizes string voltage</td>
+</tr>
+<tr>
+<td><strong>Short-circuit current</strong></td>
+<td>Isc</td>
+<td>Current with terminals shorted (no voltage)</td>
+</tr>
+<tr>
+<td><strong>Max power voltage</strong></td>
+<td>Vmp</td>
+<td>Voltage at the maximum power point</td>
+</tr>
+<tr>
+<td><strong>Max power current</strong></td>
+<td>Imp</td>
+<td>Current at the maximum power point</td>
+</tr>
+<tr>
+<td><strong>Module efficiency</strong></td>
+<td>η</td>
+<td>Pmax ÷ (area × 1000 W/m²)</td>
+</tr>
+<tr>
+<td><strong>Fill factor</strong></td>
+<td>FF</td>
+<td>(Vmp·Imp) ÷ (Voc·Isc); a quality indicator</td>
+</tr>
+<tr>
+<td><strong>Max system voltage</strong></td>
+<td>—</td>
+<td>Typically 1000 V or 1500 V; caps series string length</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Voc is the parameter that drives string sizing and safety.</strong> Because Voc <em>rises</em> as temperature <em>falls</em>, the worst case for over-voltage is a cold, sunny morning at start-up — not hot midday. Always size strings using the record-low ambient temperature. See <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>.</p>
+</blockquote>
+<pre><code>Current-Voltage (I-V) curve landmarks:
+
+  Current
+   Isc |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾.
+       |                      \  &lt;- Maximum Power Point (MPP)
+   Imp |- - - - - - - - - - - -*
+       |                       |\
+       |        Power = V × I  | \
+       |                       |  \
+     0 |_______________________|___\___
+       0                      Vmp   Voc   Voltage
+</code></pre>
+<h2 id="temperature-coefficients-in-depth">Temperature Coefficients in Depth</h2>
+<p>Silicon cells lose voltage as they heat up, so <strong>module output falls as temperature rises</strong>. Datasheets give three <strong>temperature coefficients</strong>, each a %/°C change relative to the 25 °C STC value:</p>
+<table>
+<thead>
+<tr>
+<th>Coefficient</th>
+<th>Symbol</th>
+<th>Typical (c-Si)</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power</td>
+<td>β(Pmax)</td>
+<td>−0.26% to −0.40%/°C</td>
+<td>Drives real-world energy loss in heat</td>
+</tr>
+<tr>
+<td>Voltage</td>
+<td>β(Voc)</td>
+<td>~−0.25% to −0.35%/°C</td>
+<td>Drives cold-weather over-voltage</td>
+</tr>
+<tr>
+<td>Current</td>
+<td>α(Isc)</td>
+<td>~+0.04% to +0.06%/°C</td>
+<td>Small positive (more carriers)</td>
+</tr>
+</tbody>
+</table>
+<p>The temperature-corrected power is:</p>
+<pre><code>P(T) = P_STC × [ 1 + β(Pmax) × (T_cell − 25 °C) ]
+</code></pre>
+<pre><code>Worked example — hot-roof power loss:
+  P_STC      = 400 W
+  β(Pmax)    = −0.34%/°C
+  T_cell     = 60 °C  (typical on a hot day)
+  ΔT         = 60 − 25 = 35 °C
+  P(60)      = 400 × [1 + (−0.0034 × 35)]
+             = 400 × (1 − 0.119)
+             = 352 W   (≈12% loss vs. nameplate)
+</code></pre>
+<blockquote>
+<p>A <strong>less negative power coefficient is better</strong> in hot climates. HJT (~−0.24 to −0.26%/°C) and TOPCon typically outperform PERC here, which is part of why n-type modules win on summer-afternoon energy even at similar nameplate ratings.</p>
+</blockquote>
+<h2 id="degradation-mechanisms">Degradation Mechanisms</h2>
+<p>Modules lose a small amount of output every year. Manufacturers warrant a <strong>degradation rate</strong> (often ≤0.4–0.55%/year after year one) and a residual power at year 25–30 (commonly <strong>84–92%</strong> for premium n-type). Field studies report a <strong>median degradation near 0.5%/year</strong>, though poorly performing modules can exceed 1%/year.</p>
+<p>Key mechanisms:</p>
+<ul>
+<li><strong>LID (Light-Induced Degradation).</strong> A first-exposure drop, classically from <strong>boron-oxygen defects</strong> in p-type silicon, causing ~1–3% loss in the first hours/days of sunlight. Modern n-type (TOPCon, HJT) and gallium-doped p-type cells largely avoid boron-oxygen LID.</li>
+<li><strong>PID (Potential-Induced Degradation).</strong> Driven by high system voltage relative to ground; <strong>ionic contaminants (e.g., sodium) migrate</strong> into the cell, causing shunting and power loss. Worse at high voltage, heat, and humidity. Mitigated by PID-resistant encapsulants (POE), proper grounding, and certified PID-resistant modules.</li>
+<li><strong>LeTID (Light and elevated Temperature Induced Degradation).</strong> A hydrogen-related defect mechanism appearing over hundreds of hours at operating temperatures above ~65 °C, historically affecting some p-type PERC; can add several percent loss over years 1–3 and is <strong>highly manufacturer-dependent</strong>.</li>
+<li><strong>Baseline aging.</strong> UV-induced encapsulant browning, contact corrosion, and thermal cycling produce the steady ~0.5%/year decline after initial stabilization.</li>
+</ul>
+<blockquote>
+<p>Always read warranties carefully: a "year-1 allowance" (often ~1–2%) plus an annual rate plus an end-of-term floor together define guaranteed output. Two modules with the same nameplate can differ meaningfully in 25-year energy.</p>
+</blockquote>
+<h2 id="bifaciality-albedo-gain">Bifaciality &amp; Albedo Gain</h2>
+<p><strong>Bifacial modules</strong> (glass-glass, transparent or grid backsheet) collect light on both faces, capturing <strong>ground-reflected (albedo)</strong> irradiance on the rear. The extra output is the <strong>bifacial gain</strong>, typically <strong>5–15%</strong> depending on:</p>
+<ul>
+<li><strong>Albedo</strong> of the ground — white gravel, sand, or snow (high albedo, ~0.5–0.8) yields far more rear gain than dark soil or asphalt (~0.1–0.2).</li>
+<li><strong>Mount height and row spacing</strong> — higher, more open mounting lets more diffuse light reach the rear.</li>
+<li><strong>Bifaciality factor</strong> — the ratio of rear to front efficiency, often <strong>70–90%</strong> for modern n-type cells.</li>
+</ul>
+<blockquote>
+<p>Bifacial gain is real but site-specific. Energy models should use measured or assumed albedo and a validated bifacial transposition model — do not assume nameplate "bifacial" numbers will materialize on dark rooftops with little rear exposure. See <a class="inline" href="fundamentals-solar-resource.html">The Solar Resource &amp; Geometry</a> for albedo's role in plane-of-array irradiance.</p>
+</blockquote>
+<h2 id="durability-certification-testing">Durability &amp; Certification Testing</h2>
+<p>Bankable modules carry international certifications proving they survive defined stress sequences:</p>
+<table>
+<thead>
+<tr>
+<th>Standard</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IEC 61215</strong></td>
+<td>Design qualification and type approval (performance/durability); current edition IEC 61215:2021, with technology-specific parts (e.g., 61215-1-1 for crystalline silicon). Tests include thermal cycling, damp heat, humidity-freeze, UV exposure, mechanical load, and hot-spot endurance.</td>
+</tr>
+<tr>
+<td><strong>IEC 61730</strong></td>
+<td>Safety qualification (electrical and mechanical safety, fire/shock prevention), companion to 61215.</td>
+</tr>
+<tr>
+<td><strong>IEC TS 62804 (PID test)</strong></td>
+<td>Test methodology to evaluate <strong>PID resistance</strong> under high-voltage, humid, hot conditions.</td>
+</tr>
+<tr>
+<td><strong>UL 61730 / UL 1703</strong></td>
+<td>North American module safety certification.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>IEC 61215 and IEC 61730 are companions:</strong> 61215 proves durability/performance, 61730 proves safety. A fully qualified module carries <strong>both</strong>. Additional "extended reliability" or PVEL-style independent test programs go beyond the IEC minimums to differentiate quality.</p>
+</blockquote>
+<h2 id="warranties-product-vs-performance">Warranties: Product vs. Performance</h2>
+<p>Two distinct warranties accompany a module:</p>
+<ul>
+<li><strong>Product (materials/workmanship) warranty</strong> — covers defects in the physical module; typically <strong>12–25 years</strong>, increasingly <strong>25–30 years</strong> on premium products.</li>
+<li><strong>Performance (power) warranty</strong> — guarantees a minimum power output over time, defined by the year-1 allowance, the annual degradation rate, and an end-of-term floor (e.g., "≥87.4% at year 30").</li>
+</ul>
+<p>These are independent: a module can be defect-free yet under-performing, or vice versa. Evaluate both, and confirm the <strong>warrantor's bankability</strong> — a long warranty is only as good as the company standing behind it.</p>
+<h2 id="common-failure-modes">Common Failure Modes</h2>
+<table>
+<thead>
+<tr>
+<th>Failure mode</th>
+<th>Cause</th>
+<th>Symptom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Microcracks</strong></td>
+<td>Mechanical/thermal stress, rough handling, hail</td>
+<td>Invisible cracks that grow, raising resistance and creating hot spots</td>
+</tr>
+<tr>
+<td><strong>Hot spots</strong></td>
+<td>Shading, cracked cells, mismatch forcing reverse bias</td>
+<td>Localized overheating; can scorch backsheet, accelerate failure</td>
+</tr>
+<tr>
+<td><strong>Snail trails</strong></td>
+<td>Moisture + microcracks reacting with metallization</td>
+<td>Dark discoloration lines along cell cracks (cosmetic + indicator)</td>
+</tr>
+<tr>
+<td><strong>Delamination</strong></td>
+<td>Encapsulant adhesion loss from heat/humidity/UV</td>
+<td>Bubbles, moisture ingress, optical and electrical degradation</td>
+</tr>
+<tr>
+<td><strong>PID</strong></td>
+<td>High-voltage ion migration</td>
+<td>Progressive power loss, often recoverable with mitigation</td>
+</tr>
+<tr>
+<td><strong>Junction box / connector failure</strong></td>
+<td>Poor crimps, thermal cycling, water ingress</td>
+<td>Arcing, hot connectors, fire risk</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Bypass diodes</strong> in the junction box are the defense against hot spots: when a cell string is shaded or damaged, the diode routes current around it. Diode failure removes that protection and is a known fire-risk pathway — it is checked during commissioning and O&amp;M.</p>
+</blockquote>
+<h2 id="power-tolerance-binning">Power Tolerance &amp; Binning</h2>
+<ul>
+<li><strong>Power tolerance</strong> is the allowed deviation of actual Pmax from nameplate. Modern modules use a <strong>positive-only tolerance</strong> (e.g., <strong>0 / +5 W</strong> or <strong>0 / +3%</strong>), guaranteeing buyers at least the rated wattage.</li>
+<li><strong>Binning / sorting</strong> groups cells and modules of similar current (and power) so series strings have well-matched output, minimizing <strong>mismatch losses</strong>.</li>
+</ul>
+<blockquote>
+<p>Mismatch within a string pulls the whole string toward its weakest module, so tight binning and positive-only tolerance directly protect array yield. This is a key reason not to mix module models or significantly different vintages on the same string. See <a class="inline" href="system-components.html">Solar System Components</a>.</p>
+</blockquote>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" href="downloads.html">IEC 61215 / IEC 61730 — International Electrotechnical Commission</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.pveducation.org/pvcdrom/modules">PVEducation.org — Modules and Cells</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.nrel.gov/pv/photovoltaic-reliability.html">NREL — Photovoltaic Reliability</a></li>
+<li><a class="inline" href="downloads.html">PVEL / Kiwa PV Module Reliability Scorecard</a></li>
+<li>Related pages: <a class="inline" href="how-solar-works.html">How Solar Power Works</a> · <a class="inline" href="fundamentals-solar-resource.html">The Solar Resource &amp; Geometry</a> · <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a> · <a class="inline" href="system-components.html">Solar System Components</a></li>
+</ul>
+<hr />
+<p><em>This content is provided for educational and reference purposes only. Module specifications, efficiency ranges, and certification details change frequently; verify all figures against current manufacturer datasheets, certification reports, and a qualified solar professional before design or purchase.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="fundamentals-solar-resource.html" class="prev"><span class="dir">Previous</span><span class="ttl">The Solar Resource &amp; Geometry</span></a><a href="fundamentals-shading-mismatch.html" class="next"><span class="dir">Next</span><span class="ttl">Shading, Mismatch &amp; Bypass Diodes</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#module-construction-layers">Module Construction Layers</a>
+<a class="lvl-2" href="#cell-types-recap">Cell Types Recap</a>
+<a class="lvl-2" href="#reading-the-datasheet">Reading the Datasheet</a>
+<a class="lvl-2" href="#temperature-coefficients-in-depth">Temperature Coefficients in Depth</a>
+<a class="lvl-2" href="#degradation-mechanisms">Degradation Mechanisms</a>
+<a class="lvl-2" href="#bifaciality-albedo-gain">Bifaciality &amp; Albedo Gain</a>
+<a class="lvl-2" href="#durability-certification-testing">Durability &amp; Certification Testing</a>
+<a class="lvl-2" href="#warranties-product-vs-performance">Warranties: Product vs. Performance</a>
+<a class="lvl-2" href="#common-failure-modes">Common Failure Modes</a>
+<a class="lvl-2" href="#power-tolerance-binning">Power Tolerance &amp; Binning</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

@@ -1,0 +1,279 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>How the Electrical Grid Works · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="fundamentals" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link active" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="battery-storage.html" aria-label="Previous: Battery Storage"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Battery Storage</span></div><div class="side-nav next"><a href="calculations-formulas.html" aria-label="Next: Calculations &amp; Formulas"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Calculations &amp; Formulas</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Fundamentals</span><h1>How the Electrical Grid Works</h1><p class="lede">The system solar plugs into — AC fundamentals, generation to distribution, single- vs three-phase service, how DER interconnects, and why grid-tied drops in an outage.</p><div class="banner-meta"><div class="m"><b>AC basics</b><span>Frequency &amp; phase</span></div><div class="m"><b>1Ø vs 3Ø</b><span>Service types</span></div><div class="m"><b>Anti-islanding</b><span>Outage behavior</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>The electrical grid is the vast, interconnected machine that generates, transports, and delivers electricity from power plants to end users. Understanding how it works is essential to understanding solar power, because a grid-tied photovoltaic (PV) system does not operate in isolation: it must synchronize with the grid, push power onto it safely, and respond correctly when the grid behaves abnormally. This page covers the fundamentals of alternating current (AC), how power moves from generation to your service panel, how distributed generation such as solar interconnects, and why grid-tied systems behave the way they do during an outage.</p>
+<p>For the physics of how panels and inverters produce power, see <a class="inline" href="how-solar-works.html">How Solar Power Works</a>. For the hardware that connects a PV system to the grid, see <a class="inline" href="system-components.html">Solar System Components</a>. The rules governing interconnection are introduced in <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a>, and the math behind sizing and compensation lives in <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a>.</p>
+<h2 id="alternating-current-fundamentals">Alternating Current Fundamentals</h2>
+<p>Nearly all grid power is <strong>alternating current (AC)</strong>, where voltage and current reverse direction periodically in a sine wave. This contrasts with the <strong>direct current (DC)</strong> produced by solar panels, which an inverter must convert to AC before it can be used on the grid.</p>
+<h3 id="frequency">Frequency</h3>
+<p><strong>Frequency</strong> is the number of complete AC cycles per second, measured in <strong>hertz (Hz)</strong>. North America operates at <strong>60 Hz</strong>; most of the rest of the world uses 50 Hz. Grid frequency is tightly regulated because it reflects the instantaneous balance between generation and load:</p>
+<ul>
+<li>When generation exceeds demand, frequency rises slightly above 60 Hz.</li>
+<li>When demand exceeds generation, frequency sags below 60 Hz.</li>
+</ul>
+<blockquote>
+<p>Grid operators continuously adjust generation to hold frequency near 60 Hz. A grid-tied inverter must match grid frequency exactly to export power, and it watches frequency as one signal of whether the grid is healthy.</p>
+</blockquote>
+<h3 id="phase">Phase</h3>
+<p><strong>Phase</strong> describes the timing relationship between two AC waveforms, expressed in degrees (one full cycle = 360 degrees). Two waveforms that peak at the same moment are <em>in phase</em>; waveforms offset in time are <em>out of phase</em>. Phase matters in two ways for solar:</p>
+<ol>
+<li>An inverter must <strong>phase-lock</strong> its output to the grid before connecting, or large circulating currents would result.</li>
+<li>The phase difference between voltage and current determines how much <em>useful</em> power is delivered (see real vs. reactive power below).</li>
+</ol>
+<h3 id="rms-value">RMS Value</h3>
+<p>Because an AC waveform constantly changes, we describe its magnitude using the <strong>root-mean-square (RMS)</strong> value, which is the equivalent steady DC value that would deliver the same heating power to a resistor. For a pure sine wave:</p>
+<pre><code>V_rms = V_peak / sqrt(2)   ≈ V_peak × 0.707
+V_peak = V_rms × sqrt(2)   ≈ V_rms × 1.414
+</code></pre>
+<p>When an outlet is labeled "120 V," that is the RMS value; the actual peak is about 170 V. All standard voltage ratings (120 V, 240 V, 480 V) are RMS values unless stated otherwise.</p>
+<h3 id="real-reactive-and-apparent-power">Real, Reactive, and Apparent Power</h3>
+<p>In AC systems, not all power does useful work. Three quantities describe the relationship:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Symbol</th>
+<th>Unit</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Real power</strong></td>
+<td>P</td>
+<td>watts (W)</td>
+<td>Power that does actual work (heat, light, torque)</td>
+</tr>
+<tr>
+<td><strong>Reactive power</strong></td>
+<td>Q</td>
+<td>volt-amperes reactive (VAR)</td>
+<td>Power that oscillates between source and load, supporting voltage but doing no net work</td>
+</tr>
+<tr>
+<td><strong>Apparent power</strong></td>
+<td>S</td>
+<td>volt-amperes (VA)</td>
+<td>The vector sum of real and reactive power</td>
+</tr>
+</tbody>
+</table>
+<p>The relationships are:</p>
+<pre><code>S = sqrt(P^2 + Q^2)
+Power Factor (PF) = P / S = cos(theta)
+</code></pre>
+<p>where <code>theta</code> is the phase angle between voltage and current. A <strong>power factor</strong> of 1.0 means all power is real (purely resistive load). Motors, transformers, and other inductive loads draw reactive power and lower the power factor.</p>
+<blockquote>
+<p>Modern <strong>smart inverters</strong> can supply or absorb reactive power on command to help the utility regulate voltage. This grid-support capability is central to <a class="inline" target="_blank" rel="noopener" href="https://standards.ieee.org/standard/1547-2018.html">IEEE 1547-2018</a>, discussed below.</p>
+</blockquote>
+<h2 id="generation-transmission-and-distribution">Generation, Transmission, and Distribution</h2>
+<p>Electricity reaches you through three stages, each operating at a different voltage and serving a different purpose.</p>
+<pre><code>   GENERATION              TRANSMISSION                DISTRIBUTION
+  +-----------+        +-------------------+        +-----------------+
+  | Power     |        | High-voltage      |        | Medium/low      |
+  | plant     |---&gt;[GSU]--- lines (HV) ----[Sub]--- voltage lines ---[Xfmr]--- Home/
+  | 10-25 kV  | step-up | 115-765 kV        | step- | 4-35 kV / 120-  | step-  Business
+  +-----------+         |                   | down  | 480 V           | down
+                        +-------------------+        +-----------------+
+  GSU = generator step-up transformer   Sub = transmission substation   Xfmr = distribution transformer
+</code></pre>
+<h3 id="generation">Generation</h3>
+<p>Power plants (natural gas, nuclear, hydro, wind, solar, etc.) typically generate at <strong>10–25 kV</strong>. A <strong>generator step-up (GSU) transformer</strong> immediately raises this to transmission voltage. Solar fits here too: utility-scale solar farms feed the transmission or sub-transmission system, while rooftop solar feeds the distribution system directly.</p>
+<h3 id="transmission">Transmission</h3>
+<p><strong>Transmission</strong> moves bulk power long distances at very high voltage, commonly <strong>115 kV to 765 kV</strong>. High voltage is used because, for a given amount of power, higher voltage means lower current, and lower current means dramatically lower resistive losses in the wires:</p>
+<pre><code>Power loss = I^2 × R
+</code></pre>
+<p>Halving current cuts losses to one-quarter. Transmission lines are the tall steel lattice towers seen between cities.</p>
+<h3 id="distribution">Distribution</h3>
+<p>At a <strong>distribution substation</strong>, voltage is stepped down to <strong>distribution voltages</strong>, typically <strong>4 kV to 35 kV</strong> (a common value is 12.47 kV). These are the lines on wooden poles along streets. A final <strong>distribution transformer</strong> (the cylindrical can on a pole or the green pad-mounted box) steps voltage down to the <strong>utilization voltage</strong> delivered to homes and businesses.</p>
+<h3 id="voltage-levels-and-transformers">Voltage Levels and Transformers</h3>
+<p><strong>Transformers</strong> are the workhorses that move energy between voltage levels. A transformer changes voltage and current inversely while (ideally) preserving power:</p>
+<pre><code>V_primary / V_secondary = N_primary / N_secondary   (turns ratio)
+V_primary × I_primary ≈ V_secondary × I_secondary
+</code></pre>
+<p>Transformers only work with AC, which is the historical reason AC won out over DC for grid distribution.</p>
+<h2 id="single-phase-vs-three-phase-service">Single-Phase vs. Three-Phase Service</h2>
+<p>The grid generates and transmits power as <strong>three-phase AC</strong>: three separate waveforms offset by 120 degrees. Three-phase delivers power more smoothly and efficiently and is ideal for motors, so it is the standard for transmission and commercial/industrial service. Homes receive a simpler single-phase service tapped from the three-phase distribution system.</p>
+<h3 id="residential-service-120240-v-split-phase">Residential Service: 120/240 V Split-Phase</h3>
+<p>Most North American homes receive <strong>single-phase 120/240 V</strong> service, often called <strong>split-phase</strong>. The distribution transformer's secondary is center-tapped, producing:</p>
+<ul>
+<li><strong>240 V</strong> between the two "hot" legs (for large loads: electric ranges, dryers, water heaters, EV chargers, and most solar inverters).</li>
+<li><strong>120 V</strong> between either hot leg and the grounded <strong>neutral</strong> (for lights and ordinary outlets).</li>
+</ul>
+<pre><code>  L1 ----+--------- 120 V to N ---+
+         |                        |
+         |---- 240 V across L1-L2 |
+         |                        |
+   N ----+ (center tap, grounded) +
+         |                        |
+  L2 ----+--------- 120 V to N ---+
+</code></pre>
+<h3 id="commercial-service-208-v-and-480-v-three-phase">Commercial Service: 208 V and 480 V Three-Phase</h3>
+<p>Commercial and industrial buildings typically receive <strong>three-phase</strong> service. Common configurations:</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Line-to-Line</th>
+<th>Line-to-Neutral</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>208Y/120 V</strong> (wye)</td>
+<td>208 V</td>
+<td>120 V</td>
+<td>Small commercial; 120 V outlets plus 208 V three-phase equipment</td>
+</tr>
+<tr>
+<td><strong>480Y/277 V</strong> (wye)</td>
+<td>480 V</td>
+<td>277 V</td>
+<td>Larger commercial/industrial; 277 V lighting, 480 V motors</td>
+</tr>
+</tbody>
+</table>
+<p>In a wye (Y) system the line-to-line voltage relates to line-to-neutral voltage by:</p>
+<pre><code>V_line-to-line = V_line-to-neutral × sqrt(3)
+208 ≈ 120 × 1.732       480 ≈ 277 × 1.732
+</code></pre>
+<p>The service type determines which inverters are appropriate. See <a class="inline" href="system-components.html">Solar System Components</a> for inverter selection and <a class="inline" href="fundamentals-wiring-connectors.html">Wiring &amp; Connectors Reference</a> for conductor implications.</p>
+<h2 id="how-distributed-generation-interconnects">How Distributed Generation Interconnects</h2>
+<p><strong>Distributed generation (DG)</strong> means small generation sources, like rooftop solar, connected at the distribution level near the point of use. Connecting a generator to the utility's wires requires a controlled, code-compliant <strong>point of interconnection</strong>.</p>
+<h3 id="load-side-vs-supply-side-connections">Load-Side vs. Supply-Side Connections</h3>
+<p>Where the PV system ties in relative to the main service disconnect matters because it determines how the <strong>busbar capacity rule</strong> is applied (in the U.S., NEC 705.12):</p>
+<table>
+<thead>
+<tr>
+<th>Connection type</th>
+<th>Where it ties in</th>
+<th>Key consideration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Load-side</strong></td>
+<td>On the load side of the main breaker (e.g., a backfed breaker in the main panel)</td>
+<td>Must satisfy the busbar overload rule (commonly the "120% rule") so panel busbars are not overloaded</td>
+</tr>
+<tr>
+<td><strong>Supply-side</strong></td>
+<td>Between the utility meter and the main breaker (the service entrance)</td>
+<td>Bypasses the busbar limit; sized to the service, not the panel busbar</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Always verify the specific NEC section and edition adopted by the local <strong>Authority Having Jurisdiction (AHJ)</strong>, because code editions and amendments vary. See <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a>.</p>
+</blockquote>
+<h3 id="ieee-1547-and-smart-inverters">IEEE 1547 and Smart Inverters</h3>
+<p>In the United States, <strong>IEEE 1547</strong> is the governing standard for interconnecting distributed energy resources (DERs) with the grid. The current edition, <strong>IEEE 1547-2018</strong>, requires DERs to provide <strong>grid-support functions</strong> such as voltage and frequency <strong>ride-through</strong> (staying connected through brief disturbances rather than tripping offline), volt-VAR control, and frequency-watt response.</p>
+<p>The companion safety/test standard is <strong>UL 1741</strong>, and its <strong>Supplement SB (UL 1741 SB)</strong> certifies that an inverter meets the performance requirements of IEEE 1547-2018 using the IEEE 1547.1-2020 test procedures. UL 1741 SB certification has become the de facto requirement for new interconnections across much of North America, though specific mandates and adoption dates are set by individual utilities and AHJs.</p>
+<blockquote>
+<p>The takeaway: a compliant grid-tied inverter is not a "dumb" power source. It actively senses grid conditions and modulates its behavior to support, rather than destabilize, the grid.</p>
+</blockquote>
+<h2 id="net-metering-vs-net-billing">Net Metering vs. Net Billing</h2>
+<p>When a grid-tied PV system produces more than the site consumes, the surplus flows back to the grid. How the customer is compensated falls into two broad models.</p>
+<h3 id="net-metering">Net Metering</h3>
+<p>Under traditional <strong>net energy metering (NEM)</strong>, the meter effectively spins backward: exported energy offsets imported energy at (or near) the <strong>full retail rate</strong>, kWh-for-kWh, over a billing period. Net metering is simple and maximizes the financial value of exports, which is why it drove early solar adoption.</p>
+<h3 id="net-billing">Net Billing</h3>
+<p>Under <strong>net billing</strong> (also called a net billing tariff), imports and exports are valued <strong>separately</strong>. The customer pays the retail rate for energy drawn from the grid but is credited for exports at a <strong>lower, often time-varying export rate</strong> that reflects the grid value of the energy rather than the retail price.</p>
+<p>California's <strong>NEM 3.0 / Net Billing Tariff (NBT)</strong>, effective for the state's three large investor-owned utilities, is the most prominent example: export credits dropped sharply (averaging roughly $0.08/kWh versus about $0.30/kWh under the prior NEM 2.0).</p>
+<blockquote>
+<p><strong>National trend:</strong> Across the U.S., full-retail net metering is increasingly being replaced by lower-rate net billing structures. The consistent market consequence is that standalone solar economics weaken while <strong>solar-plus-storage</strong> becomes the default, because storing surplus for on-site evening use is worth more than exporting it cheaply. Compensation rules are state- and utility-specific and change frequently; always confirm the current tariff with the local utility. See <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a> for how these rates flow into savings estimates.</p>
+</blockquote>
+<h2 id="anti-islanding-why-grid-tied-systems-shut-down-in-an-outage">Anti-Islanding: Why Grid-Tied Systems Shut Down in an Outage</h2>
+<p>A common surprise for new solar owners: a standard grid-tied PV system <strong>stops producing during a utility outage</strong>, even in bright sunshine. This is a safety feature, not a defect.</p>
+<h3 id="the-islanding-hazard">The Islanding Hazard</h3>
+<p>An <strong>island</strong> is a portion of the grid that continues to be energized by a DER after the utility supply has been cut. Unintentional islanding is dangerous because:</p>
+<ul>
+<li>Utility line workers expecting a de-energized line could be electrocuted.</li>
+<li>Reconnection out of phase could damage equipment.</li>
+</ul>
+<p>To prevent this, IEEE 1547 and UL 1741 require <strong>anti-islanding</strong> protection. The inverter constantly monitors grid voltage and frequency; if the grid disappears or drifts out of bounds, the inverter <strong>disconnects within a fraction of a second</strong> and will not restart until stable grid conditions return for a set time.</p>
+<h3 id="how-batteries-and-islanding-change-the-picture">How Batteries and Islanding Change the Picture</h3>
+<p>To keep power flowing during an outage, the system needs the ability to form an <strong>intentional island</strong> that is electrically isolated from the utility:</p>
+<ul>
+<li>A <strong>battery with a grid-forming inverter</strong> plus an <strong>automatic transfer switch (or microgrid interconnect device)</strong> physically disconnects the home from the grid, then re-energizes a protected subpanel (or the whole home) as a self-contained island.</li>
+<li>Because the island is isolated, no power flows back onto the utility line, so the line-worker hazard is eliminated.</li>
+</ul>
+<blockquote>
+<p>Without storage and grid-forming hardware, sun alone cannot power a grid-tied home during an outage. The capability to "island" requires specific equipment. See <a class="inline" href="system-components.html">Solar System Components</a> for batteries, hybrid inverters, and transfer switches.</p>
+</blockquote>
+<h2 id="grid-operators-and-grid-services">Grid Operators and Grid Services</h2>
+<p>The grid is operated by a layered set of entities:</p>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Utilities (IOUs, municipal, co-ops)</strong></td>
+<td>Own and operate the local distribution system; deliver power to customers; process interconnection applications and meter exports</td>
+</tr>
+<tr>
+<td><strong>Independent System Operators (ISO) / Regional Transmission Organizations (RTO)</strong></td>
+<td>Operate the high-voltage transmission grid and wholesale electricity markets across a region (e.g., CAISO, PJM, ERCOT, MISO); balance generation and load in real time</td>
+</tr>
+<tr>
+<td><strong>Balancing authorities</strong></td>
+<td>Continuously match generation to demand within their footprint to hold frequency stable</td>
+</tr>
+<tr>
+<td><strong>Regulators (FERC, state PUCs)</strong></td>
+<td>Set rules, rates, and reliability standards</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grid services</strong> are the functions that keep the grid stable, and DERs increasingly help provide them:</p>
+<ul>
+<li><strong>Frequency regulation</strong> – matching generation to load second-by-second.</li>
+<li><strong>Voltage support / reactive power</strong> – holding voltage within limits (smart inverters can contribute).</li>
+<li><strong>Ramping and reserves</strong> – capacity that can respond to sudden changes.</li>
+<li><strong>Demand response</strong> – reducing or shifting load on signal.</li>
+</ul>
+<p>As distributed solar and storage proliferate, these resources are increasingly aggregated into <strong>virtual power plants (VPPs)</strong> that provide grid services collectively, blurring the historical line between "the grid" and "behind-the-meter" assets.</p>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://standards.ieee.org/standard/1547-2018.html">IEEE SA – IEEE 1547-2018 Standard for Interconnection and Interoperability of Distributed Energy Resources</a></li>
+<li><a class="inline" href="downloads.html">IREC – IEEE 1547-2018 Adoption Tracker</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.anernstore.com/blogs/diy-solar-guides/grid-compliance-roadmap-ul1741sb-ieee1547">Grid Compliance Roadmap: UL 1741 SB and IEEE 1547 (ANERN)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/net-energy-metering-and-net-billing">CPUC – Net Energy Metering and Net Billing</a></li>
+<li><a class="inline" href="downloads.html">Solar.com – What is NEM 3.0 and How Will it Impact California Solar Owners?</a></li>
+<li><a class="inline" href="downloads.html">U.S. Energy Information Administration – Electricity Explained</a></li>
+<li><a class="inline" href="how-solar-works.html">How Solar Power Works</a> · <a class="inline" href="system-components.html">Solar System Components</a> · <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> · <a class="inline" href="calculations-formulas.html">Solar Calculations &amp; Formulas</a></li>
+</ul>
+<p><em>Disclaimer: This reference is for general educational purposes; verify all codes, standards, and utility tariffs against the current editions adopted by your local Authority Having Jurisdiction and serving utility, and consult a licensed professional before designing or installing an electrical system.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="battery-storage.html" class="prev"><span class="dir">Previous</span><span class="ttl">Battery Storage</span></a><a href="calculations-formulas.html" class="next"><span class="dir">Next</span><span class="ttl">Calculations &amp; Formulas</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#alternating-current-fundamentals">Alternating Current Fundamentals</a>
+<a class="lvl-3" href="#frequency">Frequency</a>
+<a class="lvl-3" href="#phase">Phase</a>
+<a class="lvl-3" href="#rms-value">RMS Value</a>
+<a class="lvl-3" href="#real-reactive-and-apparent-power">Real, Reactive, and Apparent Power</a>
+<a class="lvl-2" href="#generation-transmission-and-distribution">Generation, Transmission, and Distribution</a>
+<a class="lvl-3" href="#generation">Generation</a>
+<a class="lvl-3" href="#transmission">Transmission</a>
+<a class="lvl-3" href="#distribution">Distribution</a>
+<a class="lvl-3" href="#voltage-levels-and-transformers">Voltage Levels and Transformers</a>
+<a class="lvl-2" href="#single-phase-vs-three-phase-service">Single-Phase vs. Three-Phase Service</a>
+<a class="lvl-3" href="#residential-service-120240-v-split-phase">Residential Service: 120/240 V Split-Phase</a>
+<a class="lvl-3" href="#commercial-service-208-v-and-480-v-three-phase">Commercial Service: 208 V and 480 V Three-Phase</a>
+<a class="lvl-2" href="#how-distributed-generation-interconnects">How Distributed Generation Interconnects</a>
+<a class="lvl-3" href="#load-side-vs-supply-side-connections">Load-Side vs. Supply-Side Connections</a>
+<a class="lvl-3" href="#ieee-1547-and-smart-inverters">IEEE 1547 and Smart Inverters</a>
+<a class="lvl-2" href="#net-metering-vs-net-billing">Net Metering vs. Net Billing</a>
+<a class="lvl-3" href="#net-metering">Net Metering</a>
+<a class="lvl-3" href="#net-billing">Net Billing</a>
+<a class="lvl-2" href="#anti-islanding-why-grid-tied-systems-shut-down-in-an-outage">Anti-Islanding: Why Grid-Tied Systems Shut Down in an Outage</a>
+<a class="lvl-3" href="#the-islanding-hazard">The Islanding Hazard</a>
+<a class="lvl-3" href="#how-batteries-and-islanding-change-the-picture">How Batteries and Islanding Change the Picture</a>
+<a class="lvl-2" href="#grid-operators-and-grid-services">Grid Operators and Grid Services</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

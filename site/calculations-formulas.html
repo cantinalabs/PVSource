@@ -1,0 +1,548 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Solar Calculations &amp; Formulas · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="calc" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<div class="nav-group" data-group="Tools"><button class="nav-group-toggle" type="button"><span>Tools</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="calculators.html"><span class="ix">01</span>Interactive Calculators</a><a class="nav-link" href="state-solar-map.html"><span class="ix">02</span>U.S. State Solar Map</a><a class="nav-link" href="downloads.html"><span class="ix">03</span>Downloads</a></div></div>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">04</span>How Solar Works</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">05</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">06</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">07</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">08</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">09</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">10</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">11</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">12</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">13</span>How the Grid Works</a><a class="nav-link active" href="calculations-formulas.html"><span class="ix">14</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">15</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">16</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">17</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">18</span>Codes &amp; Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">19</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">20</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">21</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">22</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">23</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">24</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">25</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">26</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">27</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">28</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">29</span>Microgrids &amp; Islanding</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">30</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">31</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">32</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">33</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">34</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">35</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">36</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">37</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">38</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">39</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">40</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">41</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">42</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">43</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">44</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">45</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">46</span>Residential Design</a><a class="nav-link" href="residential-sizing.html"><span class="ix">47</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">48</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">49</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">50</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">51</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">52</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">53</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">54</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">55</span>Community Solar for Households</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">56</span>Commercial Design</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">57</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">58</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">59</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">60</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">61</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">62</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">63</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">64</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">65</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">66</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">67</span>Agrivoltaics &amp; Dual-Use</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">68</span>Utility-Scale Overview</a><a class="nav-link" href="util-site-land.html"><span class="ix">69</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">70</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">71</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">72</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">73</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">74</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">75</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">76</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">77</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">78</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">79</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">80</span>Agrivoltaics &amp; Land Use</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">81</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">82</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">83</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">84</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">85</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">86</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">87</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">88</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">89</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">90</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">91</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">92</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">93</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">94</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">95</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">96</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">97</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">98</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">99</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">100</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">101</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">102</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">103</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">104</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">105</span>More State Programs</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="fundamentals-grid.html" aria-label="Previous: How the Grid Works"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">How the Grid Works</span></div><div class="side-nav next"><a href="engineering-glossary.html" aria-label="Next: Engineering Glossary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">Engineering Glossary</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Calculations</span><h1>Solar Calculations &amp; Formulas</h1><p class="lede">The working math of solar — system sizing, string sizing with cold-temperature correction, conductor and OCPD rules, voltage drop, geometry and financial metrics.</p><div class="banner-meta"><div class="m"><b>String sizing</b><span>Cold-Voc limits</span></div><div class="m"><b>690.8 · 705.12</b><span>NEC sizing</span></div><div class="m"><b>LCOE</b><span>Cost of energy</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>This page is an in-depth working reference for the equations used to design, size, and evaluate grid-tied and battery-backed photovoltaic (PV) systems. It is organized from electrical fundamentals through resource assessment, system sizing, string/conductor sizing under the National Electrical Code (NEC), array geometry, and financial metrics. Worked examples are separated into <strong>RESIDENTIAL</strong> and <strong>COMMERCIAL</strong> cases where the design constraints differ materially.</p>
+<p>All equations are written in plain-text. Substitute real, project-specific values from manufacturer datasheets, weather data, and the adopted code edition before relying on any result.</p>
+<hr />
+<h2 id="1-electrical-fundamentals">1. Electrical Fundamentals</h2>
+<h3 id="11-ohms-law">1.1 Ohm's Law</h3>
+<p>The relationship between voltage (<code>V</code>, volts), current (<code>I</code>, amperes), and resistance (<code>R</code>, ohms):</p>
+<pre><code>V = I × R
+I = V ÷ R
+R = V ÷ I
+</code></pre>
+<h3 id="12-dc-power">1.2 DC Power</h3>
+<p>For a DC circuit (PV modules and strings on the DC side are DC):</p>
+<pre><code>P = V × I        (watts = volts × amperes)
+</code></pre>
+<p>Combined with Ohm's law:</p>
+<pre><code>P = I² × R = V² ÷ R
+</code></pre>
+<h3 id="13-ac-power-real-reactive-apparent-and-power-factor">1.3 AC Power: Real, Reactive, Apparent, and Power Factor</h3>
+<p>On the AC side (inverter output, service conductors, utility), three power quantities matter:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Symbol</th>
+<th>Unit</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Real (active) power</strong></td>
+<td><code>P</code></td>
+<td>W (or kW)</td>
+<td>Power that does useful work</td>
+</tr>
+<tr>
+<td><strong>Reactive power</strong></td>
+<td><code>Q</code></td>
+<td>VAR (or kVAR)</td>
+<td>Power exchanged with reactive loads, does no net work</td>
+</tr>
+<tr>
+<td><strong>Apparent power</strong></td>
+<td><code>S</code></td>
+<td>VA (or kVA)</td>
+<td>Vector sum of real and reactive power</td>
+</tr>
+</tbody>
+</table>
+<pre><code>S = V × I              (single phase apparent power)
+P = S × pf             (real power)
+Q = S × sin(θ) = √(S² − P²)
+S = √(P² + Q²)
+pf = P ÷ S = cos(θ)
+</code></pre>
+<p><strong>Power factor (<code>pf</code>)</strong> is the cosine of the phase angle <code>θ</code> between voltage and current, ranging 0 to 1. Most grid-tied PV inverters operate near <strong>unity power factor (pf ≈ 1.0)</strong> unless commanded by the utility to supply or absorb reactive power (volt-VAR / power-factor modes under IEEE 1547 / UL 1741-SB).</p>
+<blockquote>
+<p><strong>Rule of thumb:</strong> Inverter nameplate is often given in both kW and kVA. Size AC conductors and OCPD to the <strong>continuous AC output current at the rated apparent power (kVA)</strong> and lowest permitted operating voltage, not just kW.</p>
+</blockquote>
+<h3 id="14-single-phase-vs-three-phase-power">1.4 Single-Phase vs. Three-Phase Power</h3>
+<p><strong>Single-phase</strong> (typical residential service, 240 V split-phase in North America):</p>
+<pre><code>P = V × I × pf
+</code></pre>
+<p><strong>Three-phase</strong> (typical commercial service, 208 V, 480 V, etc.). Using line-to-line voltage <code>VL</code> and line current <code>IL</code>:</p>
+<pre><code>P = √3 × VL × IL × pf
+S = √3 × VL × IL
+</code></pre>
+<p>Solving for line current from a known three-phase apparent power:</p>
+<pre><code>IL = S ÷ (√3 × VL)
+</code></pre>
+<pre><code>WORKED EXAMPLE — three-phase inverter output current
+A 50 kW (50 kVA) commercial inverter, 480 V three-phase, pf = 1.0:
+  IL = S ÷ (√3 × VL)
+  IL = 50,000 VA ÷ (1.732 × 480 V)
+  IL = 50,000 ÷ 831.4
+  IL = 60.1 A continuous output current
+Conductor/OCPD sizing then applies the 125% continuous factor:
+  60.1 A × 1.25 = 75.1 A  → size for at least 75.1 A
+</code></pre>
+<hr />
+<h2 id="2-solar-resource">2. Solar Resource</h2>
+<h3 id="21-irradiance-vs-insolation">2.1 Irradiance vs. Insolation</h3>
+<ul>
+<li><strong>Irradiance</strong> is <em>instantaneous</em> power density from the sun, in <strong>W/m²</strong>. The reference value at Standard Test Conditions (STC) is <strong>1000 W/m²</strong>.</li>
+<li><strong>Insolation</strong> (incident solar radiation) is <em>energy</em> accumulated over time, in <strong>Wh/m²</strong> or <strong>kWh/m²</strong> (often per day).</li>
+</ul>
+<pre><code>Insolation (kWh/m²) = Irradiance (kW/m²) integrated over time (h)
+</code></pre>
+<h3 id="22-peak-sun-hours-psh">2.2 Peak Sun Hours (PSH)</h3>
+<p><strong>Peak sun hours</strong> is the number of hours per day during which irradiance would have to equal exactly 1000 W/m² to deliver the same total daily insolation. Numerically, <strong>daily PSH = daily insolation in kWh/m²</strong> at the array's tilt and orientation.</p>
+<pre><code>PSH (h/day) = Daily plane-of-array insolation (kWh/m²/day) ÷ 1.0 (kW/m²)
+</code></pre>
+<p>Example: a site receiving 5.5 kWh/m²/day on the array plane has <strong>5.5 peak sun hours</strong>.</p>
+<h3 id="23-getting-psh-by-location">2.3 Getting PSH by Location</h3>
+<p>Use modeled meteorological datasets rather than guessing:</p>
+<ul>
+<li><strong><a class="inline" href="downloads.html">NREL PVWatts Calculator</a></strong> — returns plane-of-array insolation, monthly/annual production, and the derate "system losses" stack for any location.</li>
+<li><strong><a class="inline" href="downloads.html">NREL National Solar Radiation Database (NSRDB)</a></strong> — raw TMY irradiance data.</li>
+<li><strong><a class="inline" href="downloads.html">Global Solar Atlas</a></strong> — worldwide GHI/DNI/PVOUT maps.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> PSH changes with <strong>tilt and azimuth</strong>. PVWatts reports plane-of-array (POA) values for the orientation you enter, which is what sizing should use — not the horizontal GHI.</p>
+</blockquote>
+<hr />
+<h2 id="3-system-sizing">3. System Sizing</h2>
+<h3 id="31-sizing-from-a-target-annual-energy">3.1 Sizing from a Target Annual Energy</h3>
+<p>To size the DC array (kWp) needed to meet a target annual energy production:</p>
+<pre><code>System kWp = Annual kWh ÷ (PSH × 365 × PR)
+</code></pre>
+<p>Where <code>PR</code> is the <strong>performance ratio</strong> (Section 3.2). Equivalently, expected production from a known array:</p>
+<pre><code>Annual kWh = System kWp × PSH × 365 × PR
+</code></pre>
+<pre><code>WORKED EXAMPLE — RESIDENTIAL sizing
+Home uses 11,000 kWh/year. Site PSH = 4.8. Assume PR = 0.80.
+  System kWp = 11,000 ÷ (4.8 × 365 × 0.80)
+  System kWp = 11,000 ÷ 1,401.6
+  System kWp = 7.85 kWp DC
+At 410 W modules: 7,850 ÷ 410 ≈ 20 modules (8.2 kWp).
+</code></pre>
+<pre><code>WORKED EXAMPLE — COMMERCIAL sizing
+Facility target = 1,200,000 kWh/year (offset). Site PSH = 5.3. PR = 0.82.
+  System kWp = 1,200,000 ÷ (5.3 × 365 × 0.82)
+  System kWp = 1,200,000 ÷ 1,586.5
+  System kWp = 756 kWp DC
+</code></pre>
+<h3 id="32-performance-ratio-and-the-derate-stack">3.2 Performance Ratio and the Derate Stack</h3>
+<p><strong>Performance ratio (PR)</strong> is the ratio of actual/expected AC energy delivered to the theoretical energy at the array's rated DC power and measured irradiance. It is the product of all individual loss factors:</p>
+<pre><code>PR = (1 − L_temp) × (1 − L_soil) × (1 − L_mismatch) × (1 − L_wiring) × (1 − L_inv) × (1 − L_avail) × ...
+</code></pre>
+<p>A typical modern fixed-tilt system has PR ≈ <strong>0.78–0.84</strong>.</p>
+<h3 id="33-specific-yield">3.3 Specific Yield</h3>
+<p><strong>Specific yield</strong> normalizes production to installed DC capacity, enabling apples-to-apples comparison between systems:</p>
+<pre><code>Specific yield (kWh/kWp/yr) = Annual AC energy (kWh) ÷ System size (kWp)
+</code></pre>
+<p>Typical values range from ~1,100 kWh/kWp (cloudy northern climates) to ~1,900+ kWh/kWp (high-irradiance deserts).</p>
+<h3 id="34-capacity-factor">3.4 Capacity Factor</h3>
+<p><strong>Capacity factor (CF)</strong> is the ratio of actual energy produced to the energy that would be produced running at full nameplate AC power continuously:</p>
+<pre><code>CF = Annual AC energy (kWh) ÷ (Rated AC power (kW) × 8760 h)
+</code></pre>
+<pre><code>WORKED EXAMPLE — capacity factor
+A 1,000 kW-AC system produces 1,950,000 kWh/year:
+  CF = 1,950,000 ÷ (1,000 × 8760)
+  CF = 1,950,000 ÷ 8,760,000
+  CF = 0.2226 ≈ 22.3%
+Fixed-tilt PV typically lands ~15–25%; single-axis trackers ~25–32%.
+</code></pre>
+<hr />
+<h2 id="4-energy-yield-losses-derate-table">4. Energy Yield &amp; Losses (Derate Table)</h2>
+<p>The cumulative derate stack converts ideal DC nameplate energy into delivered AC energy. Typical loss magnitudes (modeled in PVWatts and similar tools):</p>
+<table>
+<thead>
+<tr>
+<th>Loss mechanism</th>
+<th>Typical loss</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cell temperature</strong></td>
+<td>5–15%</td>
+<td>Output falls as cells heat above 25 °C STC; depends on climate &amp; mounting</td>
+</tr>
+<tr>
+<td><strong>Soiling</strong></td>
+<td>1–5%</td>
+<td>Dust/pollen/snow; higher in arid/agricultural/dusty sites</td>
+</tr>
+<tr>
+<td><strong>Shading</strong></td>
+<td>0–10%+</td>
+<td>Site-specific; near/far obstructions, inter-row</td>
+</tr>
+<tr>
+<td><strong>Module mismatch</strong></td>
+<td>1–2%</td>
+<td>Cell-to-cell, module-to-module manufacturing tolerance</td>
+</tr>
+<tr>
+<td><strong>DC wiring (I²R)</strong></td>
+<td>1–2%</td>
+<td>Resistive losses in DC conductors</td>
+</tr>
+<tr>
+<td><strong>AC wiring (I²R)</strong></td>
+<td>0.5–1%</td>
+<td>Resistive losses on AC side</td>
+</tr>
+<tr>
+<td><strong>Inverter efficiency</strong></td>
+<td>2–4%</td>
+<td>Conversion loss (CEC weighted efficiency ~96–99%)</td>
+</tr>
+<tr>
+<td><strong>Light-induced degradation (LID)</strong></td>
+<td>0.5–2%</td>
+<td>Initial first-year drop</td>
+</tr>
+<tr>
+<td><strong>Nameplate tolerance</strong></td>
+<td>0–1%</td>
+<td>Actual vs. rated DC power</td>
+</tr>
+<tr>
+<td><strong>Connections</strong></td>
+<td>~0.5%</td>
+<td>Resistance at terminations</td>
+</tr>
+<tr>
+<td><strong>Availability / downtime</strong></td>
+<td>1–3%</td>
+<td>Grid outages, O&amp;M, faults</td>
+</tr>
+<tr>
+<td><strong>Annual degradation</strong></td>
+<td>~0.3–0.7%/yr</td>
+<td>Ongoing; not a year-one loss but reduces lifetime yield</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Default PVWatts "system losses"</strong> lumps several of these into a single ~14% default. Always replace with project-specific values when known.</p>
+</blockquote>
+<hr />
+<h2 id="5-string-sizing-detailed">5. String Sizing (Detailed)</h2>
+<p>String sizing reconciles three voltage constraints against the inverter's MPPT and absolute-maximum input window:</p>
+<ol>
+<li><strong>Maximum string Voc (cold)</strong> must stay <strong>below</strong> the inverter's max DC input voltage <strong>and</strong> the module/system max system voltage (NEC 690.7).</li>
+<li><strong>Minimum string Vmp (hot)</strong> should stay <strong>above</strong> the inverter's MPPT minimum / startup voltage so the MPPT can operate.</li>
+<li><strong>Operating Vmp</strong> should sit comfortably inside the MPPT window across temperatures.</li>
+</ol>
+<h3 id="51-cold-temperature-voc-correction">5.1 Cold-Temperature Voc Correction</h3>
+<p>Open-circuit voltage <strong>rises</strong> as temperature <strong>drops</strong>. The worst case for over-voltage is the <strong>record/extreme minimum ambient temperature</strong> at the site (per ASHRAE extreme annual mean minimum, used at sunrise when cell temp ≈ ambient).</p>
+<pre><code>Voc_cold = Voc_stc × (1 + (β ÷ 100) × (Tmin − 25))
+</code></pre>
+<p>Where:
+- <code>Voc_stc</code> = module open-circuit voltage at STC (datasheet)
+- <code>β</code> = temperature coefficient of Voc in <strong>%/°C</strong> (negative number, e.g. −0.27)
+- <code>Tmin</code> = lowest expected cell/ambient temperature in °C
+- <code>25</code> = STC reference temperature in °C</p>
+<p>Per <strong>NEC 690.7(A)</strong>, you must use the manufacturer's coefficient if provided; otherwise use NEC Table 690.7(A) correction factors. Maximum number of modules per string:</p>
+<pre><code>N_max = floor( V_inverter_max ÷ Voc_cold_per_module )
+</code></pre>
+<h3 id="52-hot-temperature-vmp-minimum-string-check">5.2 Hot-Temperature Vmp (Minimum String) Check</h3>
+<p>Vmp <strong>falls</strong> as temperature <strong>rises</strong>. Worst case for dropping below MPPT minimum is the <strong>highest expected cell temperature</strong> (often 65–75 °C for the cell on a hot day):</p>
+<pre><code>Vmp_hot = Vmp_stc × (1 + (γ ÷ 100) × (Tmax_cell − 25))
+N_min = ceil( V_mppt_min ÷ Vmp_hot_per_module )
+</code></pre>
+<p>Where <code>γ</code> is the temperature coefficient of Vmp (or Pmax) in %/°C (negative).</p>
+<h3 id="53-worked-example-residential-600-v-string-inverter">5.3 Worked Example — RESIDENTIAL 600 V String Inverter</h3>
+<pre><code>WORKED EXAMPLE — RESIDENTIAL, 600 V max (one/two-family dwelling, NEC 690.7)
+Module: Voc_stc = 41.5 V, Vmp_stc = 34.8 V, β(Voc) = −0.27 %/°C
+Inverter: max DC input = 600 V, MPPT min ≈ 100 V, startup ≈ 120 V
+Site extreme low temp Tmin = −20 °C
+Site high cell temp Tmax_cell = 70 °C, γ(Vmp) ≈ −0.34 %/°C
+
+Step 1 — Cold Voc per module:
+  Voc_cold = 41.5 × (1 + (−0.27 ÷ 100) × (−20 − 25))
+  Voc_cold = 41.5 × (1 + (−0.0027) × (−45))
+  Voc_cold = 41.5 × (1 + 0.1215)
+  Voc_cold = 41.5 × 1.1215 = 46.54 V per module
+
+Step 2 — Max modules per string:
+  N_max = floor(600 ÷ 46.54) = floor(12.89) = 12 modules
+
+Step 3 — Hot Vmp per module (min-string check):
+  Vmp_hot = 34.8 × (1 + (−0.34 ÷ 100) × (70 − 25))
+  Vmp_hot = 34.8 × (1 + (−0.0034)(45))
+  Vmp_hot = 34.8 × (1 − 0.153) = 29.47 V per module
+
+Step 4 — Min modules to stay above MPPT/startup:
+  N_min = ceil(120 ÷ 29.47) = ceil(4.07) = 5 modules
+
+RESULT: 5 to 12 modules per string. A 10-module string is well-centered:
+  Cold Voc = 10 × 46.54 = 465.4 V  (&lt; 600 V ✓)
+  Hot Vmp  = 10 × 29.47 = 294.7 V  (&gt; 120 V startup ✓)
+</code></pre>
+<h3 id="54-worked-example-commercial-1500-v-string-inverter">5.4 Worked Example — COMMERCIAL 1500 V String Inverter</h3>
+<pre><code>WORKED EXAMPLE — COMMERCIAL, 1500 V max DC input
+Module: Voc_stc = 49.6 V, Vmp_stc = 41.8 V, β(Voc) = −0.25 %/°C
+Inverter: max DC input = 1500 V, MPPT min ≈ 500 V
+Site extreme low temp Tmin = −25 °C
+Site high cell temp Tmax_cell = 72 °C, γ(Vmp) ≈ −0.30 %/°C
+
+Step 1 — Cold Voc per module:
+  Voc_cold = 49.6 × (1 + (−0.25 ÷ 100) × (−25 − 25))
+  Voc_cold = 49.6 × (1 + (−0.0025) × (−50))
+  Voc_cold = 49.6 × (1 + 0.125)
+  Voc_cold = 49.6 × 1.125 = 55.80 V per module
+
+Step 2 — Max modules per string:
+  N_max = floor(1500 ÷ 55.80) = floor(26.88) = 26 modules
+
+Step 3 — Hot Vmp per module:
+  Vmp_hot = 41.8 × (1 + (−0.0030)(72 − 25))
+  Vmp_hot = 41.8 × (1 − 0.141) = 35.91 V per module
+
+Step 4 — Min modules above MPPT minimum:
+  N_min = ceil(500 ÷ 35.91) = ceil(13.92) = 14 modules
+
+RESULT: 14 to 26 modules per string. A 24-module string:
+  Cold Voc = 24 × 55.80 = 1339.2 V  (&lt; 1500 V ✓)
+  Hot Vmp  = 24 × 35.91 = 861.8 V   (&gt; 500 V ✓)
+</code></pre>
+<blockquote>
+<p><strong>Warning:</strong> Always leave engineering margin below the absolute max (do not design to exactly the limit). Verify against the <em>lower</em> of inverter max input voltage and module max system voltage. Confirm the site's true extreme minimum from ASHRAE data, not the typical winter low.</p>
+</blockquote>
+<hr />
+<h2 id="6-conductor-ocpd-sizing-nec">6. Conductor &amp; OCPD Sizing (NEC)</h2>
+<h3 id="61-maximum-pv-sourceoutput-circuit-current-nec-6908a">6.1 Maximum PV Source/Output Circuit Current — NEC 690.8(A)</h3>
+<p>For systems under 100 kW, the maximum current of a PV source/output circuit is <strong>125% of the sum of the parallel module short-circuit currents (Isc)</strong> to account for irradiance above 1000 W/m²:</p>
+<pre><code>I_max = 1.25 × Isc   (per parallel source; sum parallel strings)
+</code></pre>
+<h3 id="62-continuous-current-conductor-sizing-the-125-125-rule">6.2 Continuous-Current Conductor Sizing — the 125% × 125% Rule</h3>
+<p>PV output is treated as a <strong>continuous load</strong>, so a second 125% factor applies for conductor ampacity and OCPD. The conductor must have ampacity (after all correction/adjustment factors) of at least:</p>
+<pre><code>Conductor minimum ampacity = 1.25 × (1.25 × Isc) = 1.5625 × Isc
+</code></pre>
+<p>The first 1.25 (690.8(A)) covers high irradiance; the second 1.25 covers continuous duty. <strong>NEC 690.8(B)</strong> also requires conductors to be sized to the <strong>larger</strong> of:
+- (a) 1.25 × continuous current (before temperature/conduit adjustment), or
+- (b) the maximum current after temperature and conduit-fill adjustment factors (at 100%).</p>
+<h3 id="63-ocpd-nec-6909">6.3 OCPD — NEC 690.9</h3>
+<p>Overcurrent devices (fuses/breakers) protecting PV circuits must be rated at least <strong>125% of the maximum current</strong> from 690.8(A), then rounded up to a standard rating (NEC 240.6):</p>
+<pre><code>OCPD ≥ 1.25 × (1.25 × Isc) = 1.5625 × Isc
+</code></pre>
+<blockquote>
+<p>The PV-circuit fuse/breaker rating must not exceed the conductor ampacity <strong>and</strong> must not exceed the module's maximum series fuse rating from the datasheet.</p>
+</blockquote>
+<h3 id="64-ampacity-correction-adjustment">6.4 Ampacity Correction &amp; Adjustment</h3>
+<p>Base conductor ampacity (NEC Table 310.16, typically the 75 °C or 90 °C column) is reduced by:</p>
+<ul>
+<li><strong>Temperature correction</strong> — Table 310.15(B)(1) — for ambient temperature; rooftop conduit adds a temperature <strong>adder</strong> (historically Table 310.15(B)(3)(c)).</li>
+<li><strong>Conduit-fill adjustment</strong> — Table 310.15(C)(1) — for more than 3 current-carrying conductors in a raceway (e.g. 4–6 conductors = 80%, 7–9 = 70%).</li>
+</ul>
+<pre><code>Adjusted ampacity = Base ampacity (90°C col) × Temp_correction × Fill_adjustment
+This adjusted value must be ≥ 1.25 × Isc (continuous), per 690.8(B).
+</code></pre>
+<pre><code>WORKED EXAMPLE — DC conductor ampacity check
+Module Isc = 11.0 A, two strings in parallel into one combiner output.
+  Step 1: per-string design current = 1.25 × 11.0 = 13.75 A
+  Step 2: continuous sizing = 1.25 × 13.75 = 17.19 A per string
+  Combiner output (2 parallel): 2 × 17.19 = 34.4 A
+  Step 3: choose 10 AWG Cu, 90°C = 40 A base.
+  Rooftop, 4 CCCs in conduit, ambient 36°C corrected to ~61°C cell-vicinity:
+    Temp factor (90°C col, ~61°C) ≈ 0.71
+    Fill factor (4–6 CCCs) = 0.80
+    Adjusted = 40 × 0.71 × 0.80 = 22.7 A  (≥ 17.19 A per string ✓)
+  Verify terminations at 75°C column also satisfied.
+</code></pre>
+<h3 id="65-voltage-drop">6.5 Voltage Drop</h3>
+<p>Voltage drop is not strictly an NEC ampacity requirement (it is a recommendation in 210.19/215 informational notes) but is a design must. For a <strong>single-phase / DC two-wire</strong> run using the K-constant method:</p>
+<pre><code>Vdrop = (2 × K × I × L) ÷ CM
+%Vd = (Vdrop ÷ Vsource) × 100
+</code></pre>
+<p>Where:
+- <code>K</code> = resistivity constant ≈ <strong>12.9 Ω·cmil/ft for copper</strong>, <strong>21.2 for aluminum</strong> (at 75 °C)
+- <code>I</code> = current (A)
+- <code>L</code> = one-way circuit length (ft)
+- <code>CM</code> = conductor cross-sectional area in <strong>circular mils</strong> (e.g. 10 AWG = 10,380 cmil; 8 AWG = 16,510; 6 AWG = 26,240; 4 AWG = 41,740)
+- <code>2</code> = factor for the round-trip (out and back) of a 2-wire circuit</p>
+<p>For <strong>three-phase</strong>, replace <code>2</code> with <code>√3</code> (1.732).</p>
+<pre><code>WORKED EXAMPLE — long DC run voltage drop
+String operating: Vmp = 360 V, Imp = 10.5 A, one-way length L = 150 ft.
+Conductor: 8 AWG Cu, CM = 16,510 cmil, K = 12.9
+  Vdrop = (2 × 12.9 × 10.5 × 150) ÷ 16,510
+  Vdrop = (40,635) ÷ 16,510
+  Vdrop = 2.46 V
+  %Vd = (2.46 ÷ 360) × 100 = 0.68%   (well under 2% DC target ✓)
+</code></pre>
+<blockquote>
+<p><strong>Rule of thumb:</strong> Keep DC string-to-inverter drop under ~2% and total system (DC + AC) under ~3%. If a run exceeds target, increase conductor size (more circular mils) or shorten the run.</p>
+</blockquote>
+<hr />
+<h2 id="7-interconnection-nec-70512-busbar-120-rule">7. Interconnection — NEC 705.12 Busbar "120% Rule"</h2>
+<p>When PV is connected on the <strong>load side</strong> of the service (a back-fed breaker in a panel), the busbar can be fed from both the utility main and the PV breaker. <strong>NEC 705.12(B)(3)(2)</strong> (the "120% rule," formerly 705.12(D)(2)) permits, where the PV breaker is at the <strong>opposite end</strong> from the main:</p>
+<pre><code>(Main breaker rating) + (Sum of back-fed PV breakers) ≤ 1.20 × Busbar rating
+</code></pre>
+<p>The back-fed PV breaker is sized at <strong>125% of the inverter continuous output current</strong>, rounded up to a standard size.</p>
+<pre><code>WORKED EXAMPLE — RESIDENTIAL 120% rule
+200 A busbar, 200 A main breaker, single 7.6 kW inverter, 240 V, pf 1.0.
+  Inverter continuous output: 7600 ÷ 240 = 31.7 A
+  PV breaker: 1.25 × 31.7 = 39.6 A → round up to 40 A breaker
+  Check: 200 (main) + 40 (PV) = 240 A
+  Limit: 1.20 × 200 = 240 A
+  240 ≤ 240  → PASSES exactly (opposite-end placement) ✓
+</code></pre>
+<pre><code>WORKED EXAMPLE — COMMERCIAL 120% rule
+800 A busbar, 600 A main breaker, three 50 kVA inverters, 480 V 3-phase.
+  Per inverter continuous output: 50,000 ÷ (1.732 × 480) = 60.1 A
+  Three inverters combined at AC panel: 3 × 60.1 = 180.4 A
+  Aggregate PV breaker: 1.25 × 180.4 = 225.5 A → 250 A breaker
+  Check: 600 (main) + 250 (PV) = 850 A
+  Limit: 1.20 × 800 = 960 A
+  850 ≤ 960  → PASSES ✓ (room remains for future expansion)
+</code></pre>
+<blockquote>
+<p><strong>Alternatives if the 120% rule fails:</strong> use the <strong>sum rule</strong> (main + PV ≤ busbar rating), a <strong>center-fed</strong> allowance, a <strong>supply-side (line-side) tap</strong> per NEC 705.11, a <strong>breaker downsize</strong> of the main, or an <strong>Energy Management System / Power Control System</strong> per NEC 705.13.</p>
+</blockquote>
+<hr />
+<h2 id="8-array-geometry">8. Array Geometry</h2>
+<h3 id="81-optimal-tilt-and-azimuth">8.1 Optimal Tilt and Azimuth</h3>
+<ul>
+<li><strong>Azimuth:</strong> In the Northern Hemisphere, optimal is <strong>true south (180°)</strong>; small east/west offsets cost little annual energy. (Reverse for Southern Hemisphere.)</li>
+<li><strong>Tilt (annual-optimal):</strong> roughly equal to <strong>site latitude</strong> for year-round energy; lower tilt favors summer, higher tilt favors winter. Use PVWatts to optimize for the actual rate structure/load shape.</li>
+</ul>
+<h3 id="82-inter-row-spacing-ground-coverage-ratio">8.2 Inter-Row Spacing &amp; Ground-Coverage Ratio</h3>
+<p><strong>Ground-coverage ratio (GCR)</strong> is the module-area-to-ground-area ratio:</p>
+<pre><code>GCR = Module row width (along slope) ÷ Row pitch (center-to-center)
+</code></pre>
+<p>To avoid inter-row shading at a target time (commonly solar noon on the <strong>winter solstice</strong>), compute the shadow length cast by a row of height <code>h</code> (vertical height of the tilted row above its base):</p>
+<pre><code>Shadow length = h ÷ tan(α)
+</code></pre>
+<p>Where <code>α</code> is the <strong>solar elevation (altitude) angle</strong> at the design time. The minimum row pitch is then the shadow length projected so the next row's base is unshaded; with row collector width <code>W</code> at tilt <code>θ</code>:</p>
+<pre><code>Module vertical height:   h = W × sin(θ)
+Module horizontal depth:  d = W × cos(θ)
+Min pitch (no-shade) ≈ d + (h ÷ tan(α))
+GCR = W ÷ pitch
+</code></pre>
+<pre><code>WORKED EXAMPLE — inter-row spacing
+Row collector width W = 4.0 m, tilt θ = 30°, design solar elevation α = 25°.
+  h = 4.0 × sin(30°) = 4.0 × 0.500 = 2.00 m
+  d = 4.0 × cos(30°) = 4.0 × 0.866 = 3.46 m
+  Shadow = h ÷ tan(25°) = 2.00 ÷ 0.4663 = 4.29 m
+  Min pitch = 3.46 + 4.29 = 7.75 m
+  GCR = 4.0 ÷ 7.75 = 0.52
+</code></pre>
+<h3 id="83-tracker-gcr">8.3 Tracker GCR</h3>
+<p>Single-axis trackers trade higher GCR (tighter packing, lower land/wiring cost) against <strong>backtracking</strong> losses (panels rotate flat near sunrise/sunset to avoid row-on-row shading). Typical single-axis GCR is <strong>0.30–0.45</strong>. Higher GCR raises energy density per acre but increases diffuse-shading and backtracking energy loss.</p>
+<hr />
+<h2 id="9-financial-metrics">9. Financial Metrics</h2>
+<h3 id="91-simple-payback">9.1 Simple Payback</h3>
+<pre><code>Simple payback (years) = Net installed cost ÷ Annual savings (or net cash flow)
+</code></pre>
+<p>Ignores time value of money and degradation — use only as a first-order screen.</p>
+<h3 id="92-levelized-cost-of-energy-lcoe">9.2 Levelized Cost of Energy (LCOE)</h3>
+<p>LCOE is the lifetime cost per unit of energy, discounting both costs and energy:</p>
+<pre><code>LCOE = Σ[ (I_t + O_t + F_t) ÷ (1 + r)^t ] ÷ Σ[ E_t ÷ (1 + r)^t ]
+</code></pre>
+<p>Where for each year <code>t</code>: <code>I_t</code> = investment/capital, <code>O_t</code> = O&amp;M, <code>F_t</code> = fuel (≈ 0 for PV), <code>E_t</code> = energy produced (declining with degradation), and <code>r</code> = discount rate. A <strong>simplified</strong> form:</p>
+<pre><code>sLCOE = (Capital × CRF + Annual O&amp;M) ÷ (Annual energy production)
+
+CRF = [ r × (1 + r)^n ] ÷ [ (1 + r)^n − 1 ]
+</code></pre>
+<p>Where <strong>CRF</strong> is the capital recovery factor, <code>r</code> = discount rate, <code>n</code> = analysis period (years).</p>
+<pre><code>WORKED EXAMPLE — simplified LCOE
+Capital = $1,500,000; r = 6%; n = 25 yr; O&amp;M = $15,000/yr; Year-1 energy = 1,950,000 kWh.
+  CRF = (0.06 × 1.06^25) ÷ (1.06^25 − 1)
+      = (0.06 × 4.2919) ÷ (4.2919 − 1)
+      = 0.25751 ÷ 3.2919 = 0.07823
+  Annualized capital = 1,500,000 × 0.07823 = $117,345/yr
+  sLCOE ≈ (117,345 + 15,000) ÷ 1,950,000
+        = 132,345 ÷ 1,950,000 = $0.0679/kWh ≈ 6.8 ¢/kWh
+(A full LCOE would also discount degraded annual energy.)
+</code></pre>
+<h3 id="93-npv-and-irr-concept">9.3 NPV and IRR (Concept)</h3>
+<ul>
+<li><strong>Net Present Value (NPV):</strong> sum of all discounted cash flows; positive NPV means the project beats the discount-rate hurdle.</li>
+</ul>
+<pre><code>NPV = Σ[ Cashflow_t ÷ (1 + r)^t ]  −  Initial investment
+</code></pre>
+<ul>
+<li><strong>Internal Rate of Return (IRR):</strong> the discount rate <code>r</code> at which NPV = 0. Compare IRR to the cost of capital / required return.</li>
+</ul>
+<h3 id="94-dcac-ratio-ilr-clipping">9.4 DC/AC Ratio (ILR) &amp; Clipping</h3>
+<p>The <strong>DC-to-AC ratio</strong>, or <strong>inverter load ratio (ILR)</strong>, is array DC nameplate divided by inverter AC nameplate:</p>
+<pre><code>ILR = Array DC kWp ÷ Inverter AC kW
+</code></pre>
+<p>Oversizing the array (ILR &gt; 1.0) raises low-light/morning/evening production and improves capacity factor, but the inverter <strong>clips</strong> (caps output) when DC power exceeds AC rating during peak irradiance. Typical economic ILR is <strong>1.15–1.35</strong> (fixed tilt) and can be lower for trackers/high-irradiance sites.</p>
+<pre><code>WORKED EXAMPLE — ILR / clipping
+Array = 1,200 kWp DC, Inverter = 1,000 kW AC.
+  ILR = 1,200 ÷ 1,000 = 1.20
+On the clearest few midday hours, DC &gt; 1,000 kW is clipped to 1,000 kW AC.
+Modest clipping (a few % of annual energy) is usually a net economic gain
+because the inverter cost is shared over more annual kWh.
+</code></pre>
+<pre><code>WORKED EXAMPLE — RESIDENTIAL financial summary
+8.2 kWp system, installed $22,000, 30% federal ITC = −$6,600 → net $15,400.
+Year-1 production 12,000 kWh, offsetting $0.16/kWh = $1,920/yr savings.
+  Simple payback = 15,400 ÷ 1,920 = 8.0 years
+</code></pre>
+<pre><code>WORKED EXAMPLE — COMMERCIAL financial summary
+756 kWp system, installed $1,100,000.
+ITC 30% (−$330,000) + 5-yr MACRS depreciation benefit (≈ −$200,000) → net ≈ $570,000.
+Year-1 production 1,200,000 kWh; blended value $0.12/kWh = $144,000/yr.
+  Simple payback ≈ 570,000 ÷ 144,000 = 4.0 years
+(Commercial uses LCOE, NPV, and IRR for an investment-grade decision, not just payback.)
+</code></pre>
+<hr />
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" href="downloads.html">NREL PVWatts Calculator</a> — production modeling and loss/derate defaults</li>
+<li><a class="inline" href="downloads.html">NREL National Solar Radiation Database (NSRDB)</a> — irradiance/TMY data</li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.nrel.gov/analysis/tech-lcoe-documentation">NREL Simple LCOE Calculator Documentation</a> — LCOE and CRF method</li>
+<li><a class="inline" href="downloads.html">Global Solar Atlas</a> — worldwide solar resource maps</li>
+<li><a class="inline" href="downloads.html">ExpertCE — PV String Sizing Calculations</a> — temperature-corrected Voc/Vmp</li>
+<li><a class="inline" href="downloads.html">Mayfield Renewables — 2023 NEC 690.7 &amp; String Sizing Update</a></li>
+<li><a class="inline" href="downloads.html">ExpertCE — Sizing PV Conductors &amp; OCPD per NEC 690</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.greenlancer.com/post/120-rule-for-solar">GreenLancer — The 120% Rule for Solar (NEC 705.12)</a></li>
+<li><a class="inline" href="downloads.html">Mayfield Renewables — NEC 705.12(B)(3) Code Corner</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.ecmweb.com/national-electrical-code/code-basics/article/55091230/nec-requirements-for-solar-part-2">EC&amp;M — NEC Requirements for Solar</a></li>
+<li>NFPA 70 (National Electrical Code), Article 690 and Article 705 — consult the edition adopted by your AHJ</li>
+</ul>
+<hr />
+<p><em>Disclaimer: Educational/reference use only. Verify all values, formulas, and code citations against the NEC edition adopted by your jurisdiction, manufacturer datasheets, and a licensed Professional Engineer or electrician before design or installation.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="fundamentals-grid.html" class="prev"><span class="dir">Previous</span><span class="ttl">How the Grid Works</span></a><a href="engineering-glossary.html" class="next"><span class="dir">Next</span><span class="ttl">Engineering Glossary</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#1-electrical-fundamentals">1. Electrical Fundamentals</a>
+<a class="lvl-3" href="#11-ohms-law">1.1 Ohm&#x27;s Law</a>
+<a class="lvl-3" href="#12-dc-power">1.2 DC Power</a>
+<a class="lvl-3" href="#13-ac-power-real-reactive-apparent-and-power-factor">1.3 AC Power: Real, Reactive, Apparent, and Power Factor</a>
+<a class="lvl-3" href="#14-single-phase-vs-three-phase-power">1.4 Single-Phase vs. Three-Phase Power</a>
+<a class="lvl-2" href="#2-solar-resource">2. Solar Resource</a>
+<a class="lvl-3" href="#21-irradiance-vs-insolation">2.1 Irradiance vs. Insolation</a>
+<a class="lvl-3" href="#22-peak-sun-hours-psh">2.2 Peak Sun Hours (PSH)</a>
+<a class="lvl-3" href="#23-getting-psh-by-location">2.3 Getting PSH by Location</a>
+<a class="lvl-2" href="#3-system-sizing">3. System Sizing</a>
+<a class="lvl-3" href="#31-sizing-from-a-target-annual-energy">3.1 Sizing from a Target Annual Energy</a>
+<a class="lvl-3" href="#32-performance-ratio-and-the-derate-stack">3.2 Performance Ratio and the Derate Stack</a>
+<a class="lvl-3" href="#33-specific-yield">3.3 Specific Yield</a>
+<a class="lvl-3" href="#34-capacity-factor">3.4 Capacity Factor</a>
+<a class="lvl-2" href="#4-energy-yield-losses-derate-table">4. Energy Yield &amp; Losses (Derate Table)</a>
+<a class="lvl-2" href="#5-string-sizing-detailed">5. String Sizing (Detailed)</a>
+<a class="lvl-3" href="#51-cold-temperature-voc-correction">5.1 Cold-Temperature Voc Correction</a>
+<a class="lvl-3" href="#52-hot-temperature-vmp-minimum-string-check">5.2 Hot-Temperature Vmp (Minimum String) Check</a>
+<a class="lvl-3" href="#53-worked-example-residential-600-v-string-inverter">5.3 Worked Example — RESIDENTIAL 600 V String Inverter</a>
+<a class="lvl-3" href="#54-worked-example-commercial-1500-v-string-inverter">5.4 Worked Example — COMMERCIAL 1500 V String Inverter</a>
+<a class="lvl-2" href="#6-conductor-ocpd-sizing-nec">6. Conductor &amp; OCPD Sizing (NEC)</a>
+<a class="lvl-3" href="#61-maximum-pv-sourceoutput-circuit-current-nec-6908a">6.1 Maximum PV Source/Output Circuit Current — NEC 690.8(A)</a>
+<a class="lvl-3" href="#62-continuous-current-conductor-sizing-the-125-125-rule">6.2 Continuous-Current Conductor Sizing — the 125% × 125% Rule</a>
+<a class="lvl-3" href="#63-ocpd-nec-6909">6.3 OCPD — NEC 690.9</a>
+<a class="lvl-3" href="#64-ampacity-correction-adjustment">6.4 Ampacity Correction &amp; Adjustment</a>
+<a class="lvl-3" href="#65-voltage-drop">6.5 Voltage Drop</a>
+<a class="lvl-2" href="#7-interconnection-nec-70512-busbar-120-rule">7. Interconnection — NEC 705.12 Busbar &quot;120% Rule&quot;</a>
+<a class="lvl-2" href="#8-array-geometry">8. Array Geometry</a>
+<a class="lvl-3" href="#81-optimal-tilt-and-azimuth">8.1 Optimal Tilt and Azimuth</a>
+<a class="lvl-3" href="#82-inter-row-spacing-ground-coverage-ratio">8.2 Inter-Row Spacing &amp; Ground-Coverage Ratio</a>
+<a class="lvl-3" href="#83-tracker-gcr">8.3 Tracker GCR</a>
+<a class="lvl-2" href="#9-financial-metrics">9. Financial Metrics</a>
+<a class="lvl-3" href="#91-simple-payback">9.1 Simple Payback</a>
+<a class="lvl-3" href="#92-levelized-cost-of-energy-lcoe">9.2 Levelized Cost of Energy (LCOE)</a>
+<a class="lvl-3" href="#93-npv-and-irr-concept">9.3 NPV and IRR (Concept)</a>
+<a class="lvl-3" href="#94-dcac-ratio-ilr-clipping">9.4 DC/AC Ratio (ILR) &amp; Clipping</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>
