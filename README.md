@@ -36,22 +36,6 @@ Optionally serve it over http (nicer for some browsers):
 cd site && python3 -m http.server 8080
 # then visit http://localhost:8080
 ```
-
----
-
-## Deploy to GitHub Pages
-
-This repo ships with a ready-to-go workflow (`.github/workflows/deploy.yml`) that publishes the `site/` folder.
-
-1. Push this repository to GitHub.
-2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment → Source**, choose **GitHub Actions**.
-4. Push to your default branch (`main` or `master`). The workflow builds and deploys automatically; your site appears at `https://<username>.github.io/<repo>/`.
-
-All internal links are relative, so it works correctly under a project subpath. A `.nojekyll` file is included so Pages serves the assets as-is.
-
-**Alternative (no Actions):** rename `site/` to `docs/`, then in **Settings → Pages** choose **Deploy from a branch** → branch `main` → folder `/docs`.
-
 ---
 
 ## Project structure
