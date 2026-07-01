@@ -1,0 +1,341 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Utility Rate Design &amp; Tariffs · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="grid" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<a class="nav-link" href="calculators.html"><span class="ix">◆</span>Interactive Calculators</a>
+<a class="nav-link" href="state-solar-map.html"><span class="ix">◆</span>U.S. State Solar Map</a>
+<a class="nav-link" href="downloads.html"><span class="ix">◆</span>Downloads</a>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">01</span>How Solar Works</a><a class="nav-link" href="fundamentals-circuits-primer.html"><span class="ix">02</span>Electricity &amp; Circuits Primer</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">03</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">04</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">05</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">06</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">07</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">08</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">09</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">10</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">11</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">12</span>Calculations &amp; Formulas</a><a class="nav-link" href="engineering-glossary.html"><span class="ix">13</span>Engineering Glossary</a><a class="nav-link" href="tools-software.html"><span class="ix">14</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">15</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="codes-standards-overview.html"><span class="ix">16</span>Codes &amp; Standards</a><a class="nav-link" href="fundamentals-myths.html"><span class="ix">17</span>Solar Myths &amp; Misconceptions</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">18</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">19</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">20</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">21</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">22</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">23</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">24</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">25</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">26</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">27</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">28</span>Microgrids &amp; Islanding</a><a class="nav-link active" href="grid-rate-design.html"><span class="ix">29</span>Utility Rate Design &amp; Tariffs</a><a class="nav-link" href="grid-ev-grid.html"><span class="ix">30</span>EVs &amp; the Grid</a><a class="nav-link" href="grid-resilience.html"><span class="ix">31</span>Grid Resilience &amp; Reliability</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">32</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">33</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">34</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">35</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">36</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">37</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">38</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">39</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">40</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">41</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">42</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">43</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">44</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">45</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">46</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-grounding-surge.html"><span class="ix">47</span>Grounding, Bonding &amp; Surge</a><a class="nav-link" href="diy-ev-charging.html"><span class="ix">48</span>DIY EV Charging from Solar</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">49</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">50</span>Residential Design</a><a class="nav-link" href="residential-anatomy.html"><span class="ix">51</span>Anatomy of a Residential System</a><a class="nav-link" href="residential-sizing.html"><span class="ix">52</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">53</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">54</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">55</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">56</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">57</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">58</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">59</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">60</span>Community Solar for Households</a><a class="nav-link" href="residential-bill-rates.html"><span class="ix">61</span>Reading Your Electric Bill</a><a class="nav-link" href="residential-financing.html"><span class="ix">62</span>Homeowner Financing 101</a><a class="nav-link" href="residential-insurance-warranties.html"><span class="ix">63</span>Insurance, Warranties &amp; Protection</a><a class="nav-link" href="residential-selling-home.html"><span class="ix">64</span>Selling a Home with Solar</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">65</span>Commercial Design</a><a class="nav-link" href="commercial-anatomy.html"><span class="ix">66</span>Anatomy of a Commercial System</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">67</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">68</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">69</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">70</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">71</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">72</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">73</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">74</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">75</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">76</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">77</span>Agrivoltaics &amp; Dual-Use</a><a class="nav-link" href="commercial-financing.html"><span class="ix">78</span>C&amp;I Financing</a><a class="nav-link" href="commercial-multifamily-vnem.html"><span class="ix">79</span>Multifamily &amp; VNEM</a><a class="nav-link" href="commercial-data-centers.html"><span class="ix">80</span>Data Centers &amp; High-Load</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">81</span>Utility-Scale Overview</a><a class="nav-link" href="util-anatomy.html"><span class="ix">82</span>Anatomy of a Utility Plant</a><a class="nav-link" href="util-site-land.html"><span class="ix">83</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">84</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">85</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">86</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">87</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">88</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">89</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">90</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">91</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">92</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">93</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">94</span>Agrivoltaics &amp; Land Use</a><a class="nav-link" href="util-floating-solar.html"><span class="ix">95</span>Floating Solar</a><a class="nav-link" href="util-bifacial-albedo.html"><span class="ix">96</span>Bifacial &amp; Albedo</a><a class="nav-link" href="util-grid-forming.html"><span class="ix">97</span>Grid-Forming Inverters</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">98</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">99</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">100</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">101</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">102</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">103</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">104</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">105</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">106</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">107</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">108</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">109</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">110</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">111</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">112</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">113</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">114</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">115</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">116</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">117</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">118</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">119</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">120</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">121</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">122</span>More State Programs</a><a class="nav-link" href="incentive-prevailing-wage.html"><span class="ix">123</span>Prevailing Wage &amp; Apprenticeship</a><a class="nav-link" href="incentive-tax-equity.html"><span class="ix">124</span>Tax-Equity Structures</a><a class="nav-link" href="incentive-rec-tracking.html"><span class="ix">125</span>REC/SREC Registration &amp; Tracking</a><a class="nav-link" href="incentive-more-states-2.html"><span class="ix">126</span>More State Programs (Round 2)</a><a class="nav-link" href="incentive-property-sales-tax.html"><span class="ix">127</span>Property &amp; Sales-Tax Exemptions</a></div></div></nav><div style="padding:8px 22px 4px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="grid-microgrids.html" aria-label="Previous: Microgrids &amp; Islanding"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Microgrids &amp; Islanding</span></div><div class="side-nav next"><a href="grid-ev-grid.html" aria-label="Next: EVs &amp; the Grid"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">EVs &amp; the Grid</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Grid &amp; Interconnection</span><h1>Utility Rate Design &amp; Tariffs</h1><p class="lede">How electricity is billed and why it drives solar economics — energy, fixed and demand charges, tiers and time-of-use, demand ratchets, and how to read a tariff.</p><div class="banner-meta"><div class="m"><b>Energy · fixed · demand</b><span>Rate components</span></div><div class="m"><b>TOU</b><span>Time of use</span></div><div class="m"><b>Ratchets</b><span>Demand traps</span></div></div></div></section><div class="doc-wrap"><article class="content"><p>How a utility structures its rates — the <strong>tariff</strong> — determines exactly what a kilowatt-hour of solar production is worth, when it is worth the most, and whether an on-site system pays back in seven years or seventeen. Two homes with identical arrays and identical usage can see wildly different savings simply because they sit on different rate schedules. Understanding rate design is therefore not an accounting footnote; it is the single most important input to solar and storage economics.</p>
+<p>This page explains the components of an electric bill, the major rate structures (flat, tiered, time-of-use, real-time), demand charges and ratchets in depth, the difference between residential and commercial rate classes, how to read a tariff sheet, standby charges for distributed generation, and the reform trends reshaping compensation for exported solar. For how <em>exported</em> energy specifically is credited, see <a class="inline" href="grid-net-metering.html">Net Metering, Net Billing &amp; Rate Structures</a>.</p>
+<h2 id="why-rate-design-drives-solar-economics">Why Rate Design Drives Solar Economics</h2>
+<p>A solar array reduces a customer's bill in two ways: by offsetting energy the customer would otherwise <strong>import</strong> (avoided consumption) and by <strong>exporting</strong> surplus energy for a credit. The value of avoided consumption is set by the <em>retail</em> rate structure covered here; the value of exports is set by the <em>compensation</em> mechanism covered in <a class="inline" href="grid-net-metering.html">Net Metering, Net Billing &amp; Rate Structures</a>.</p>
+<p>Because most of a solar system's value comes from offsetting the customer's own load, the shape of the retail rate matters enormously:</p>
+<ul>
+<li>A <strong>high volumetric ($/kWh) rate</strong> makes every offset kilowatt-hour valuable — good for solar.</li>
+<li>A <strong>high fixed charge</strong> cannot be offset by production at all — bad for solar payback.</li>
+<li>A <strong>time-of-use rate</strong> rewards production that lines up with expensive hours, and makes storage that shifts energy into those hours especially valuable.</li>
+<li>A <strong>demand charge</strong> cannot be reduced by solar alone in any reliable way, but <em>can</em> be shaved by batteries — which is why commercial storage economics hinge on it.</li>
+</ul>
+<blockquote>
+<p><strong>Key idea:</strong> Solar offsets energy charges cleanly. It does <em>not</em> reliably offset fixed charges or demand charges. The larger the non-energy portion of a bill, the smaller the fraction a solar array can erase.</p>
+</blockquote>
+<h2 id="anatomy-of-an-electric-bill-rate-components">Anatomy of an Electric Bill: Rate Components</h2>
+<p>Almost every tariff is assembled from a handful of standard building blocks. A given rate schedule may use one, several, or all of them.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Unit</th>
+<th>What it recovers</th>
+<th>Can solar reduce it?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy (volumetric) charge</strong></td>
+<td>$/kWh</td>
+<td>Fuel, generation, and per-kWh delivery</td>
+<td>Yes — directly</td>
+</tr>
+<tr>
+<td><strong>Fixed / customer charge</strong></td>
+<td>$/month</td>
+<td>Metering, billing, basic service</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Demand charge</strong></td>
+<td>$/kW</td>
+<td>Capacity to serve the customer's peak draw</td>
+<td>Only with storage / load control</td>
+</tr>
+<tr>
+<td><strong>Minimum bill</strong></td>
+<td>$/month floor</td>
+<td>Guarantees minimum revenue per account</td>
+<td>Sets a floor solar cannot go below</td>
+</tr>
+<tr>
+<td><strong>Riders / adjustments</strong></td>
+<td>$/kWh or %</td>
+<td>Fuel cost, purchased power, programs, taxes</td>
+<td>Partly (the per-kWh portion)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="energy-volumetric-charge">Energy (Volumetric) Charge</h3>
+<p>The <strong>energy charge</strong>, billed in dollars per kilowatt-hour, is the part most customers think of as "the price of electricity." It scales directly with consumption and is the component solar offsets most cleanly. On many bills the energy charge is itself split into <strong>generation</strong> (the cost of producing power) and <strong>delivery / distribution</strong> (the cost of the wires that carry it) line items that add together.</p>
+<h3 id="fixed-customer-charge">Fixed / Customer Charge</h3>
+<p>The <strong>fixed charge</strong> (also "customer charge," "basic service charge," or "connection charge") is a flat monthly amount billed regardless of usage. It nominally recovers the cost of the meter, billing, and a share of the local distribution connection. Residential fixed charges in the U.S. commonly range from roughly $5 to $25 per month, though some utilities have proposed far higher figures. Because no amount of on-site generation reduces it, a rising fixed charge erodes solar savings and is a central battleground in rate-reform proceedings (see below).</p>
+<h3 id="demand-charge">Demand Charge</h3>
+<p>A <strong>demand charge</strong>, billed in dollars per kilowatt, is based not on <em>how much</em> energy a customer uses but on the <em>highest rate</em> at which they used it — their peak power draw over a short interval (typically 15 minutes) during the billing month. Demand charges are near-universal for commercial and industrial (C&amp;I) customers and are covered in depth in their own section below.</p>
+<h3 id="minimum-bill">Minimum Bill</h3>
+<p>A <strong>minimum bill</strong> sets a floor on the total monthly charge. If a customer's usage-based charges fall below the floor — as they can for a well-sized solar home in a sunny month — the customer is billed up to the minimum anyway. It functions as a softer, usage-linked alternative to a large fixed charge and similarly caps how low solar can push a bill.</p>
+<h3 id="riders-and-adjustments">Riders and Adjustments</h3>
+<p><strong>Riders</strong> (also "adjustments," "surcharges," or "clauses") are add-on charges layered on top of the base rate. Common examples include a <strong>fuel/energy cost adjustment</strong> that passes through volatile fuel prices, a <strong>purchased-power adjustment</strong>, charges that fund efficiency or low-income programs, franchise fees, and taxes. Riders billed per kWh <em>are</em> offset by solar; flat riders are not. They can add 10–30% or more to the base rate and are easy to overlook when estimating savings.</p>
+<h2 id="rate-structures-flat-tiered-tou-and-real-time">Rate Structures: Flat, Tiered, TOU, and Real-Time</h2>
+<p>The <em>structure</em> of the energy charge — how the per-kWh price varies — defines the four major families of rate design.</p>
+<h3 id="flat-fixed-rate">Flat (Fixed) Rate</h3>
+<p>Every kilowatt-hour costs the same, any time of day, any month, at any consumption level. Simple and still common for smaller customers. Solar value is straightforward: each offset kWh is worth the flat rate.</p>
+<h3 id="tiered-inclining-block-rate">Tiered (Inclining Block) Rate</h3>
+<p>The per-kWh price rises as monthly consumption crosses <strong>tier</strong> thresholds (blocks). The first block of usage is cheap; heavy users pay a higher rate on their top blocks.</p>
+<pre><code>Tiered residential example
+Tier 1   0–500 kWh      $0.14/kWh
+Tier 2   501–1,000 kWh  $0.20/kWh
+Tier 3   1,001+ kWh     $0.30/kWh
+</code></pre>
+<p>Tiered rates favor solar for <strong>high consumers</strong>: production shaves off the most expensive top-tier kilowatt-hours first, so the effective value of solar can exceed the average rate.</p>
+<h3 id="time-of-use-tou-rate">Time-of-Use (TOU) Rate</h3>
+<p>The price changes by <strong>time of day, day of week, and season</strong>. A typical TOU schedule defines <strong>peak</strong>, <strong>off-peak</strong>, and sometimes <strong>partial-peak</strong> periods.</p>
+<pre><code>Summer TOU example (weekdays)
+Off-peak   12 a.m.–4 p.m.   $0.18/kWh
+Peak       4 p.m.–9 p.m.    $0.45/kWh
+Off-peak   9 p.m.–12 a.m.   $0.18/kWh
+</code></pre>
+<p>TOU is now the default residential structure in several states and is standard for solar customers in California and elsewhere. Its interaction with solar is nuanced:</p>
+<ul>
+<li>Historically, midday solar coincided with the peak price — very valuable.</li>
+<li>As solar penetration grew, many utilities <strong>shifted the peak later</strong> (commonly 4–9 p.m.), when solar output has fallen. This "duck curve" mismatch means a west-facing array or, better, a <strong>battery</strong> that discharges into the evening peak captures far more value than a plain south-facing array.</li>
+</ul>
+<blockquote>
+<p><strong>Practical consequence:</strong> Under a late-afternoon TOU peak, pairing solar with storage often changes from a nice-to-have into the central economic driver, because the goal shifts from "make the most kWh" to "deliver kWh during the 4–9 p.m. window."</p>
+</blockquote>
+<h3 id="real-time-pricing-rtp">Real-Time Pricing (RTP)</h3>
+<p>The per-kWh price tracks the <strong>wholesale market</strong>, updating hourly or even every five minutes. RTP passes maximum price signal — and maximum volatility — to the customer. It is common in C&amp;I settings and offered to some residential customers. It rewards automated, flexible load and storage that can respond to price spikes, and it makes solar-plus-storage economics essentially a real-time arbitrage problem.</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Price varies by</th>
+<th>Best-fit customer</th>
+<th>Solar/storage implication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flat</td>
+<td>Nothing</td>
+<td>Small, simple loads</td>
+<td>Simple 1:1 offset</td>
+</tr>
+<tr>
+<td>Tiered</td>
+<td>Monthly volume</td>
+<td>High-usage homes</td>
+<td>Shaves costly top tiers</td>
+</tr>
+<tr>
+<td>TOU</td>
+<td>Time / season</td>
+<td>Shiftable loads</td>
+<td>Storage shifts to peak</td>
+</tr>
+<tr>
+<td>Real-time</td>
+<td>Wholesale market</td>
+<td>Flexible C&amp;I, automated homes</td>
+<td>Arbitrage / automation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="demand-charges-and-ratchets-in-depth">Demand Charges and Ratchets in Depth</h2>
+<p>For most commercial and industrial customers, the <strong>demand charge</strong> is the largest and least intuitive part of the bill. Per the National Renewable Energy Laboratory (NREL), demand charges commonly make up <strong>30–70%</strong> of a C&amp;I electricity bill.</p>
+<h3 id="how-demand-is-measured">How Demand Is Measured</h3>
+<p>The utility records power draw in short <strong>demand intervals</strong> — usually 15 minutes. The single highest interval in the billing period sets the <strong>billing demand</strong> in kilowatts, which is multiplied by the demand rate ($/kW).</p>
+<pre><code>Demand-charge mechanics
+Half-hour of running every machine at once  = 320 kW peak (15-min interval)
+Rest of the month never exceeds             = 180 kW
+Billing demand for the month                 = 320 kW
+Demand charge at $15/kW                       = $4,800
+</code></pre>
+<p>Two facilities can consume the <em>same total energy</em> yet pay very different demand charges: the one that spreads its load smoothly pays less; the one with brief, sharp spikes pays more. This is why <strong>peak shaving</strong> with batteries — discharging to cover short spikes — is a core commercial storage use case, and why plain solar is unreliable against demand charges (a passing cloud at the wrong moment can leave the peak untouched).</p>
+<h3 id="demand-charge-types">Demand Charge Types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Non-coincident (facility) demand</strong></td>
+<td>Customer's own monthly peak, whenever it occurs</td>
+</tr>
+<tr>
+<td><strong>Coincident demand</strong></td>
+<td>Customer's draw at the time of the <em>system-wide</em> peak</td>
+</tr>
+<tr>
+<td><strong>Time-of-use demand</strong></td>
+<td>Peak measured only during defined on-peak hours</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ratchet-clauses">Ratchet Clauses</h3>
+<p>A <strong>ratchet clause</strong> is a provision that sets the billing demand for a given month to at least a fixed <em>percentage of the highest peak</em> recorded over a look-back window — typically the prior <strong>11 or 12 months</strong>. Common floors are <strong>60% to 80%</strong> of the historic peak, though some tariffs set them higher.</p>
+<pre><code>Ratchet example (80% of highest peak in prior 11 months)
+August peak (heat wave)        = 800 kW
+Ratchet floor for the year     = 0.80 × 800 = 640 kW
+Actual January demand          = 300 kW
+Billed January demand          = 640 kW  ← the ratchet, not actual usage
+</code></pre>
+<p>The consequence is severe: a <strong>single</strong> high-demand event — a heat wave, a startup surge, a failed control that let equipment run simultaneously — can inflate the demand portion of every bill for up to a year afterward, long after actual usage has dropped. Facilities often discover a ratchet only when they notice their billed demand never falls even though their metered demand does.</p>
+<blockquote>
+<p><strong>Watch for it:</strong> Ratchets make demand management continuous, not seasonal. Avoiding one bad spike protects a full year of bills. This dramatically raises the value of storage and automated load control at ratcheted sites.</p>
+</blockquote>
+<h2 id="residential-vs-commercial-ci-rate-classes">Residential vs. Commercial (C&amp;I) Rate Classes</h2>
+<p>Utilities sort customers into <strong>rate classes</strong> with different tariffs. The dividing lines are usually load size and connection voltage.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Residential</th>
+<th>Small commercial</th>
+<th>Large C&amp;I</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Typical structure</td>
+<td>Flat / tiered / TOU</td>
+<td>TOU, sometimes demand</td>
+<td>TOU energy + demand + ratchet</td>
+</tr>
+<tr>
+<td>Demand charges</td>
+<td>Rare</td>
+<td>Sometimes</td>
+<td>Almost always</td>
+</tr>
+<tr>
+<td>Fixed charge</td>
+<td>Modest</td>
+<td>Higher</td>
+<td>Substantial</td>
+</tr>
+<tr>
+<td>Metering</td>
+<td>Simple or TOU meter</td>
+<td>Interval meter</td>
+<td>Interval meter, sometimes RTP</td>
+</tr>
+<tr>
+<td>Solar value driver</td>
+<td>Energy offset + exports</td>
+<td>Energy + some demand</td>
+<td>Demand shaving is often dominant</td>
+</tr>
+</tbody>
+</table>
+<p>The practical takeaway for solar: on residential and small commercial accounts, <strong>energy offset</strong> dominates the value stack, so array size and rate/kWh matter most. On large C&amp;I accounts, <strong>demand charges</strong> frequently dominate, which is why commercial proposals almost always model storage and why a battery's ability to shave a coincident or ratcheted peak can outweigh the value of the solar energy itself.</p>
+<h2 id="how-to-read-a-tariff-sheet">How to Read a Tariff Sheet</h2>
+<p>A utility's tariff is a public document (usually posted on the utility's or regulator's website). Reading it is the only reliable way to know what a customer actually pays. Work through it in order:</p>
+<ol>
+<li><strong>Applicability / eligibility</strong> — Which customers may take this rate? (Load size, voltage, class.)</li>
+<li><strong>Fixed / customer charge</strong> — The unavoidable monthly amount.</li>
+<li><strong>Energy charges</strong> — Flat, tiered, or TOU? Note the exact period definitions and seasonal boundaries.</li>
+<li><strong>Demand charges</strong> — Rate per kW, how the interval is measured, and whether TOU-based.</li>
+<li><strong>Ratchet language</strong> — Search the sheet for "ratchet," "minimum billing demand," or a percentage of prior peak.</li>
+<li><strong>Riders and adjustments</strong> — Add every applicable rider; the base rate alone understates the bill.</li>
+<li><strong>Minimum bill</strong> — The floor that caps how low solar can push the total.</li>
+<li><strong>DG / standby provisions</strong> — Special charges for customers with on-site generation (below).</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> The stated base energy rate is rarely the "all-in" rate. Sum the base energy charge plus all per-kWh riders and taxes to get the true value of an offset kilowatt-hour.</p>
+</blockquote>
+<h2 id="standby-backup-and-departing-load-charges-for-distributed-generation">Standby, Backup, and Departing-Load Charges for Distributed Generation</h2>
+<p>Customers with on-site generation may be placed on — or offered — special provisions:</p>
+<ul>
+<li><strong>Standby (backup) charges</strong> compensate the utility for standing ready to serve the customer's full load whenever the on-site system is not producing (at night, during maintenance, on cloudy days). They are often structured as a reservation demand charge based on the customer's connected load.</li>
+<li><strong>Departing-load or exit charges</strong> recover the customer's share of past utility investments or program costs that other ratepayers would otherwise absorb.</li>
+<li><strong>Grid-participation / grid-access charges</strong> are fixed monthly charges specifically applied to distributed-generation customers.</li>
+</ul>
+<p>These charges can materially affect commercial solar economics and are frequently contested in rate cases because they can offset much of a system's savings. Always confirm whether a standby rate applies before modeling a C&amp;I project.</p>
+<h2 id="reform-trends-fixed-charges-and-net-metering-change">Reform Trends: Fixed Charges and Net-Metering Change</h2>
+<p>Rate design is in active flux across the U.S., driven by utility concerns about revenue recovery as distributed solar grows. Two intertwined trends stand out:</p>
+<ol>
+<li>
+<p><strong>Higher and income-graduated fixed charges.</strong> Utilities in several states have proposed larger fixed charges, and some (notably in California) have advanced <strong>income-graduated fixed charges</strong> that scale with household income. Higher fixed charges shift bills away from the volumetric portion solar can offset, lengthening payback.</p>
+</li>
+<li>
+<p><strong>Net metering to net billing.</strong> The clearest example is California's <strong>Net Billing Tariff (NEM 3.0)</strong>, effective April 15, 2023, which replaced retail-rate export credit with time-differentiated <strong>avoided-cost</strong> export values — cutting typical export compensation by roughly 75% and adding a modest monthly grid-participation charge. Customers on the prior NEM 1.0/2.0 tariffs are generally grandfathered for about 20 years. As of 2025–2026, the underlying CPUC decision remained the subject of ongoing litigation, with the California Supreme Court in August 2025 directing the appeals court to revisit its earlier ruling. Full detail lives in <a class="inline" href="grid-net-metering.html">Net Metering, Net Billing &amp; Rate Structures</a>.</p>
+</li>
+</ol>
+<p>Together these trends push solar economics toward <strong>self-consumption and storage</strong>: when exports are worth less and fixed charges are unavoidable, keeping and time-shifting your own production becomes the higher-value strategy.</p>
+<h2 id="worked-bill-breakdown-a-home">Worked Bill Breakdown: A Home</h2>
+<p>A residential customer on a summer TOU rate with a modest fixed charge and a per-kWh rider. Illustrative rates only.</p>
+<pre><code>Residential TOU bill (summer month)
+Usage:  600 kWh off-peak @ $0.18   = $108.00
+        200 kWh peak     @ $0.45   =  $90.00
+Fixed customer charge               =  $12.00
+Rider (all kWh, 800 @ $0.03)        =  $24.00
+------------------------------------------------
+Total                               = $234.00
+
+With a solar + storage system that offsets all 200 peak kWh
+and 400 of the off-peak kWh:
+Remaining off-peak (200 kWh @ $0.18) = $36.00
+Peak (fully offset)                  =  $0.00
+Fixed customer charge (unavoidable)  = $12.00
+Rider (200 kWh @ $0.03)              =  $6.00
+------------------------------------------------
+Total                               =  $54.00
+</code></pre>
+<p>The peak-hour offset does the heaviest lifting, but the <strong>$12 fixed charge survives</strong> no matter how much the system produces — the reason fixed-charge levels matter so much to payback.</p>
+<h2 id="worked-bill-breakdown-a-business">Worked Bill Breakdown: A Business</h2>
+<p>A small commercial customer on a TOU-energy-plus-demand rate with an 80% ratchet. Illustrative rates only.</p>
+<pre><code>C&amp;I bill (summer month)
+Energy: 30,000 kWh @ $0.16          = $4,800.00
+Demand: 320 kW peak @ $15/kW        = $4,800.00
+Fixed / customer charge             =   $250.00
+Riders (30,000 kWh @ $0.02)         =   $600.00
+------------------------------------------------
+Total                               = $10,450.00
+
+Note: demand is ~46% of this bill. Solar reduces the ENERGY
+portion but, on its own, does little for the 320 kW peak if the
+peak occurs on a cloudy afternoon. A battery sized to shave the
+peak to 240 kW saves 80 kW × $15 = $1,200/month — and, because of
+the 80% ratchet, protects the demand floor for the following year
+as well.
+</code></pre>
+<p>This is the central lesson of commercial rate design: <strong>the demand charge is where storage earns its keep</strong>, and a ratchet turns a single month's peak-shaving into a year of protection.</p>
+<h2 id="sources-further-reading">Sources &amp; Further Reading</h2>
+<ul>
+<li><a class="inline" href="downloads.html">NREL — An Overview of Behind-the-Meter Solar-Plus-Storage Program Design (demand charges)</a></li>
+<li><a class="inline" href="downloads.html">U.S. Energy Information Administration — Electricity rate and tariff data</a></li>
+<li><a class="inline" href="downloads.html">Lawrence Berkeley National Laboratory (LBNL) — Tracking the Sun / rate design research</a></li>
+<li><a class="inline" href="downloads.html">DemandQ — Decoding Your Electric Utility Bill</a></li>
+<li><a class="inline" href="downloads.html">CPUC — Net Billing Tariff (NEM 3.0)</a></li>
+<li>Related: <a class="inline" href="grid-net-metering.html">Net Metering, Net Billing &amp; Rate Structures</a> · <a class="inline" href="grid-services-vpp.html">Grid Services, VPPs &amp; Demand Response</a> · <a class="inline" href="grid-microgrids.html">Microgrids &amp; Islanding</a> · <a class="inline" href="fundamentals-grid.html">How the Electrical Grid Works</a></li>
+</ul>
+<blockquote>
+<p>This page is educational and general in nature; verify all rates, riders, ratchet terms, and tariff provisions against your utility's current filed tariff sheet before making financial decisions.</p>
+</blockquote><div class="related" id="related-slot" hidden></div><div class="pager"><a href="grid-microgrids.html" class="prev"><span class="dir">Previous</span><span class="ttl">Microgrids &amp; Islanding</span></a><a href="grid-ev-grid.html" class="next"><span class="dir">Next</span><span class="ttl">EVs &amp; the Grid</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#why-rate-design-drives-solar-economics">Why Rate Design Drives Solar Economics</a>
+<a class="lvl-2" href="#anatomy-of-an-electric-bill-rate-components">Anatomy of an Electric Bill: Rate Components</a>
+<a class="lvl-3" href="#energy-volumetric-charge">Energy (Volumetric) Charge</a>
+<a class="lvl-3" href="#fixed-customer-charge">Fixed / Customer Charge</a>
+<a class="lvl-3" href="#demand-charge">Demand Charge</a>
+<a class="lvl-3" href="#minimum-bill">Minimum Bill</a>
+<a class="lvl-3" href="#riders-and-adjustments">Riders and Adjustments</a>
+<a class="lvl-2" href="#rate-structures-flat-tiered-tou-and-real-time">Rate Structures: Flat, Tiered, TOU, and Real-Time</a>
+<a class="lvl-3" href="#flat-fixed-rate">Flat (Fixed) Rate</a>
+<a class="lvl-3" href="#tiered-inclining-block-rate">Tiered (Inclining Block) Rate</a>
+<a class="lvl-3" href="#time-of-use-tou-rate">Time-of-Use (TOU) Rate</a>
+<a class="lvl-3" href="#real-time-pricing-rtp">Real-Time Pricing (RTP)</a>
+<a class="lvl-2" href="#demand-charges-and-ratchets-in-depth">Demand Charges and Ratchets in Depth</a>
+<a class="lvl-3" href="#how-demand-is-measured">How Demand Is Measured</a>
+<a class="lvl-3" href="#demand-charge-types">Demand Charge Types</a>
+<a class="lvl-3" href="#ratchet-clauses">Ratchet Clauses</a>
+<a class="lvl-2" href="#residential-vs-commercial-ci-rate-classes">Residential vs. Commercial (C&amp;I) Rate Classes</a>
+<a class="lvl-2" href="#how-to-read-a-tariff-sheet">How to Read a Tariff Sheet</a>
+<a class="lvl-2" href="#standby-backup-and-departing-load-charges-for-distributed-generation">Standby, Backup, and Departing-Load Charges for Distributed Generation</a>
+<a class="lvl-2" href="#reform-trends-fixed-charges-and-net-metering-change">Reform Trends: Fixed Charges and Net-Metering Change</a>
+<a class="lvl-2" href="#worked-bill-breakdown-a-home">Worked Bill Breakdown: A Home</a>
+<a class="lvl-2" href="#worked-bill-breakdown-a-business">Worked Bill Breakdown: A Business</a>
+<a class="lvl-2" href="#sources-further-reading">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

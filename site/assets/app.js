@@ -136,17 +136,20 @@
   var COLLAPSE_KEY = 'pv-nav-collapsed';
   function getCollapsed(){ try{ return JSON.parse(localStorage.getItem(COLLAPSE_KEY) || '{}'); }catch(e){ return {}; } }
   function setCollapsed(o){ try{ localStorage.setItem(COLLAPSE_KEY, JSON.stringify(o)); }catch(e){} }
-  var collapsedState = getCollapsed();
+  // Sections start COLLAPSED by default. A group opens only if it contains the
+  // current page, or the user has explicitly opened it before (persisted).
+  var savedState = getCollapsed(); // name -> 'open' | 'closed'
   document.querySelectorAll('.nav-group').forEach(function(g){
     var name = g.getAttribute('data-group');
     var hasActive = !!g.querySelector('.nav-link.active');
-    if(collapsedState[name] && !hasActive){ g.classList.add('collapsed'); }
+    var open = hasActive || savedState[name] === 'open';
+    g.classList.toggle('collapsed', !open);
     var btn = g.querySelector('.nav-group-toggle');
     if(btn){
-      btn.setAttribute('aria-expanded', String(!g.classList.contains('collapsed')));
+      btn.setAttribute('aria-expanded', String(open));
       btn.addEventListener('click', function(){
         var nowCollapsed = g.classList.toggle('collapsed');
-        collapsedState[name] = nowCollapsed; setCollapsed(collapsedState);
+        savedState[name] = nowCollapsed ? 'closed' : 'open'; setCollapsed(savedState);
         btn.setAttribute('aria-expanded', String(!nowCollapsed));
       });
     }
