@@ -1,0 +1,634 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>The International Fire Code (IFC) &amp; Solar · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="codes" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<a class="nav-link" href="calculators.html"><span class="ix">◆</span>Interactive Calculators</a>
+<a class="nav-link" href="state-solar-map.html"><span class="ix">◆</span>U.S. State Solar Map</a>
+<a class="nav-link" href="downloads.html"><span class="ix">◆</span>Downloads</a>
+<a class="nav-link" href="engineering-glossary.html"><span class="ix">◆</span>Glossary</a>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">01</span>How Solar Works</a><a class="nav-link" href="fundamentals-circuits-primer.html"><span class="ix">02</span>Electricity &amp; Circuits Primer</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">03</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">04</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">05</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">06</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">07</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">08</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">09</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">10</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">11</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">12</span>Calculations &amp; Formulas</a><a class="nav-link" href="tools-software.html"><span class="ix">13</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">14</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="fundamentals-myths.html"><span class="ix">15</span>Solar Myths &amp; Misconceptions</a></div></div>
+<div class="nav-group" data-group="Codes &amp; Standards"><button class="nav-group-toggle" type="button"><span>Codes &amp; Standards</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="codes-standards-overview.html"><span class="ix">16</span>Codes &amp; Standards Overview</a><a class="nav-link active" href="code-ifc.html"><span class="ix">17</span>IFC — Fire Code</a><a class="nav-link" href="code-ibc.html"><span class="ix">18</span>IBC — Building Code</a><a class="nav-link" href="code-irc.html"><span class="ix">19</span>IRC — Residential Code</a><a class="nav-link" href="code-nec.html"><span class="ix">20</span>NEC — Electrical Code</a><a class="nav-link" href="code-cfc.html"><span class="ix">21</span>CFC — California Fire</a><a class="nav-link" href="code-cbc.html"><span class="ix">22</span>CBC — California Building</a><a class="nav-link" href="code-crc.html"><span class="ix">23</span>CRC — California Residential</a><a class="nav-link" href="code-cec.html"><span class="ix">24</span>CEC — California Electrical</a><a class="nav-link" href="code-iecc.html"><span class="ix">25</span>IECC — Energy Code</a><a class="nav-link" href="code-nfpa.html"><span class="ix">26</span>NFPA Standards</a><a class="nav-link" href="code-ul-ieee.html"><span class="ix">27</span>UL &amp; IEEE Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">28</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">29</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">30</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">31</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">32</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">33</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">34</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">35</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">36</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">37</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">38</span>Microgrids &amp; Islanding</a><a class="nav-link" href="grid-rate-design.html"><span class="ix">39</span>Utility Rate Design &amp; Tariffs</a><a class="nav-link" href="grid-ev-grid.html"><span class="ix">40</span>EVs &amp; the Grid</a><a class="nav-link" href="grid-resilience.html"><span class="ix">41</span>Grid Resilience &amp; Reliability</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">42</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">43</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">44</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">45</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">46</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">47</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">48</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">49</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">50</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">51</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">52</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">53</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">54</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">55</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">56</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-grounding-surge.html"><span class="ix">57</span>Grounding, Bonding &amp; Surge</a><a class="nav-link" href="diy-ev-charging.html"><span class="ix">58</span>DIY EV Charging from Solar</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">59</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">60</span>Residential Design</a><a class="nav-link" href="residential-anatomy.html"><span class="ix">61</span>Anatomy of a Residential System</a><a class="nav-link" href="residential-sizing.html"><span class="ix">62</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">63</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">64</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">65</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">66</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">67</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">68</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">69</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">70</span>Community Solar for Households</a><a class="nav-link" href="residential-bill-rates.html"><span class="ix">71</span>Reading Your Electric Bill</a><a class="nav-link" href="residential-financing.html"><span class="ix">72</span>Homeowner Financing 101</a><a class="nav-link" href="residential-insurance-warranties.html"><span class="ix">73</span>Insurance, Warranties &amp; Protection</a><a class="nav-link" href="residential-selling-home.html"><span class="ix">74</span>Selling a Home with Solar</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">75</span>Commercial Design</a><a class="nav-link" href="commercial-anatomy.html"><span class="ix">76</span>Anatomy of a Commercial System</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">77</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">78</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">79</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">80</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">81</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">82</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">83</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">84</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">85</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">86</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">87</span>Agrivoltaics &amp; Dual-Use</a><a class="nav-link" href="commercial-financing.html"><span class="ix">88</span>C&amp;I Financing</a><a class="nav-link" href="commercial-multifamily-vnem.html"><span class="ix">89</span>Multifamily &amp; VNEM</a><a class="nav-link" href="commercial-data-centers.html"><span class="ix">90</span>Data Centers &amp; High-Load</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">91</span>Utility-Scale Overview</a><a class="nav-link" href="util-anatomy.html"><span class="ix">92</span>Anatomy of a Utility Plant</a><a class="nav-link" href="util-site-land.html"><span class="ix">93</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">94</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">95</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">96</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">97</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">98</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">99</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">100</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">101</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">102</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">103</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">104</span>Agrivoltaics &amp; Land Use</a><a class="nav-link" href="util-floating-solar.html"><span class="ix">105</span>Floating Solar</a><a class="nav-link" href="util-bifacial-albedo.html"><span class="ix">106</span>Bifacial &amp; Albedo</a><a class="nav-link" href="util-grid-forming.html"><span class="ix">107</span>Grid-Forming Inverters</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">108</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">109</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">110</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">111</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">112</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">113</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">114</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">115</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">116</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">117</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">118</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">119</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">120</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">121</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">122</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">123</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">124</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">125</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">126</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">127</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">128</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">129</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">130</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">131</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">132</span>More State Programs</a><a class="nav-link" href="incentive-prevailing-wage.html"><span class="ix">133</span>Prevailing Wage &amp; Apprenticeship</a><a class="nav-link" href="incentive-tax-equity.html"><span class="ix">134</span>Tax-Equity Structures</a><a class="nav-link" href="incentive-rec-tracking.html"><span class="ix">135</span>REC/SREC Registration &amp; Tracking</a><a class="nav-link" href="incentive-more-states-2.html"><span class="ix">136</span>More State Programs (Round 2)</a><a class="nav-link" href="incentive-property-sales-tax.html"><span class="ix">137</span>Property &amp; Sales-Tax Exemptions</a></div></div>
+<div class="nav-group" data-group="State Solar Guides"><button class="nav-group-toggle" type="button"><span>State Solar Guides</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="state-ca.html"><span class="ix">138</span>California</a><a class="nav-link" href="state-tx.html"><span class="ix">139</span>Texas</a><a class="nav-link" href="state-fl.html"><span class="ix">140</span>Florida</a><a class="nav-link" href="state-az.html"><span class="ix">141</span>Arizona</a><a class="nav-link" href="state-nv.html"><span class="ix">142</span>Nevada</a><a class="nav-link" href="state-nc.html"><span class="ix">143</span>North Carolina</a><a class="nav-link" href="state-ga.html"><span class="ix">144</span>Georgia</a><a class="nav-link" href="state-co.html"><span class="ix">145</span>Colorado</a><a class="nav-link" href="state-ny.html"><span class="ix">146</span>New York</a><a class="nav-link" href="state-nj.html"><span class="ix">147</span>New Jersey</a><a class="nav-link" href="state-ma.html"><span class="ix">148</span>Massachusetts</a><a class="nav-link" href="state-md.html"><span class="ix">149</span>Maryland</a><a class="nav-link" href="state-or.html"><span class="ix">150</span>Oregon</a><a class="nav-link" href="state-wa.html"><span class="ix">151</span>Washington</a><a class="nav-link" href="state-ut.html"><span class="ix">152</span>Utah</a><a class="nav-link" href="state-nm.html"><span class="ix">153</span>New Mexico</a><a class="nav-link" href="state-hi.html"><span class="ix">154</span>Hawaii</a><a class="nav-link" href="state-mn.html"><span class="ix">155</span>Minnesota</a><a class="nav-link" href="state-il.html"><span class="ix">156</span>Illinois</a><a class="nav-link" href="state-pa.html"><span class="ix">157</span>Pennsylvania</a><a class="nav-link" href="state-oh.html"><span class="ix">158</span>Ohio</a><a class="nav-link" href="state-va.html"><span class="ix">159</span>Virginia</a><a class="nav-link" href="state-ct.html"><span class="ix">160</span>Connecticut</a><a class="nav-link" href="state-mi.html"><span class="ix">161</span>Michigan</a><a class="nav-link" href="state-wi.html"><span class="ix">162</span>Wisconsin</a><a class="nav-link" href="state-sc.html"><span class="ix">163</span>South Carolina</a><a class="nav-link" href="state-in.html"><span class="ix">164</span>Indiana</a><a class="nav-link" href="state-ri.html"><span class="ix">165</span>Rhode Island</a></div></div></nav><div style="padding:8px 22px 9px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="codes-standards-overview.html" aria-label="Previous: Codes &amp; Standards Overview"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">Codes &amp; Standards Overview</span></div><div class="side-nav next"><a href="code-ibc.html" aria-label="Next: IBC — Building Code"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">IBC — Building Code</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Codes &amp; Standards</span><h1>The International Fire Code (IFC) &amp; Solar</h1><p class="lede">The fire code that governs rooftop access and solar fire safety — access pathways, ridge setbacks and marking — across the 2015, 2018, 2021 and 2024 editions in one place.</p><div class="banner-meta"><div class="m"><b>2015 → 2024</b><span>All editions</span></div><div class="m"><b>Ridge setbacks</b><span>&amp; exceptions</span></div><div class="m"><b>Pathways</b><span>Fire access</span></div></div></div></section><div class="doc-wrap"><article class="content"><div class="code-callout"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h16.9a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg><div>Model codes are <strong>adopted and amended locally</strong>. Section numbers and requirements vary by edition and jurisdiction — confirm the edition your <strong>Authority Having Jurisdiction (AHJ)</strong> enforces before relying on this page. See the <a class="inline" href="state-solar-map.html">State Solar Map</a> for adoption pointers.<span class="jz" data-jz></span></div></div><p>The <strong>International Fire Code (IFC)</strong> governs fire-service roof access and the fire safety of solar installations. Its solar provisions changed notably across editions — the section numbers moved and the ridge-setback and access-pathway rules were revised. This guide covers the four most commonly adopted editions in one place; always confirm the edition your Authority Having Jurisdiction (AHJ) enforces.</p>
+<h2 id="ifc-2015">IFC 2015</h2>
+<p>The <strong>2015 International Fire Code (IFC)</strong> was, for many jurisdictions, the first widely adopted edition to carry a mature, prescriptive set of rooftop <strong>solar photovoltaic (PV) access and pathway rules</strong>. In the 2015 IFC these provisions live in <strong>Chapter 6, Building Services and Systems, Section 605.11</strong> — <em>not</em> in the "Energy Systems" chapter that later editions created. If you are working under a jurisdiction still enforcing the 2015 IFC (a number remained on it well into the 2020s), the section numbers and, in places, the substance differ meaningfully from the 2018, 2021, and 2024 editions.</p>
+<p>This page explains the 2015 IFC solar provisions as written. It is a companion to the <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> overview and to the sibling edition articles <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a>, <a class="inline" href="code-ifc.html">IFC 2021 &amp; Solar</a>, and <a class="inline" href="code-ifc.html">IFC 2024 &amp; Solar</a>. For project-level context see <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> and <a class="inline" href="commercial-codes.html">Commercial Solar Codes &amp; Fire Requirements</a>.</p>
+<blockquote>
+<p><strong>Read this first:</strong> Model codes are not law until a jurisdiction adopts them, usually with amendments. Section numbers, dimensions, and exceptions cited here are the <em>model</em> 2015 IFC text. Your <strong>Authority Having Jurisdiction (AHJ)</strong> — building official or fire marshal — is authoritative. Confirm the adopted edition and any local amendments before relying on anything below.</p>
+</blockquote>
+<h3 id="scope-and-applicability">Scope and Applicability</h3>
+<p>Section 605.11 applies to the <strong>installation, modification, or alteration of solar photovoltaic power systems</strong>. The 2015 IFC explicitly acknowledges that solar is an emerging technology and directs fire code officials to the <strong>alternative materials and methods</strong> provision (Section 104.9) when a proposed installation cannot meet the prescriptive text but achieves equivalent firefighter access.</p>
+<p>The access and pathway requirements do <strong>not</strong> apply to two categories:</p>
+<ul>
+<li><strong>Detached, non-habitable Group U structures</strong> — parking shade structures, carports, solar trellises, and similar.</li>
+<li>Any roof where the <strong>fire chief has determined that rooftop operations will not be employed</strong>.</li>
+</ul>
+<p>The rules split into two tracks: <strong>Group R-3 buildings</strong> (one- and two-family dwellings and the residential occupancies that follow residential firefighting tactics) and <strong>buildings other than Group R-3</strong> (commercial and larger structures). A key nuance: buildings designed and constructed under the <strong>International Residential Code (IRC)</strong> are addressed by the IRC's own PV provisions, and the fire code official may apply the R-3 residential rules to a commercial roof whose configuration resembles a house.</p>
+<h3 id="roof-access-and-fire-service-pathways-residential-group-r-3">Roof Access and Fire-Service Pathways — Residential (Group R-3)</h3>
+<p>The 2015 residential rules are <strong>prescriptive and geometry-based</strong>, keyed to roof shape rather than to a percentage of roof coverage.</p>
+<p><strong>Array size.</strong> Each PV array is limited to <strong>150 ft by 150 ft</strong>; multiple arrays must be separated by a <strong>3-foot-wide clear access pathway</strong>.</p>
+<p><strong>Hip roofs.</strong> A <strong>3-foot-wide clear access pathway</strong> from the <strong>eave to the ridge</strong> is required on <strong>each roof slope</strong> where panels are located.</p>
+<p><strong>Single-ridge roofs.</strong> <strong>Two 3-foot-wide access pathways</strong> from the eave to the ridge are required on <strong>each roof slope</strong> where panels are located.</p>
+<p><strong>Hips and valleys.</strong> Panels may not be closer than <strong>18 inches</strong> to a hip or valley when panels sit on <strong>both</strong> sides of it. Where panels are on only one side of an equal-length hip or valley, they may be placed <strong>directly adjacent</strong> to it.</p>
+<p>All of the above have a common exception: they <strong>do not apply to roofs with a slope of 2:12 (17 percent) or less</strong>, which are treated more like low-slope commercial roofs.</p>
+<pre><code>   SINGLE-RIDGE ROOF (2015 IFC 605.11.1.2.3) — plan view of one slope
+
+   RIDGE  ==============================================
+          |        |                        |         |
+          |  3 ft  |   PV ARRAY             |  3 ft   |
+          | path   |                        |  path   |
+          |        |                        |         |
+   EAVE   ----------+------------------------+----------
+          &lt;-3 ft-&gt;                            &lt;-3 ft-&gt;
+          Two 3-ft eave-to-ridge pathways, one on each side of the array
+</code></pre>
+<p><strong>Ridge setback (smoke ventilation).</strong> Panels must be kept <strong>not less than 18 inches from the ridge</strong> to allow <strong>fire department vertical (smoke) ventilation</strong>. This is a <strong>single fixed 18-inch setback</strong> in 2015 — there is <strong>no percentage-of-roof sliding scale</strong> and <strong>no automatic-sprinkler exception</strong> in this edition. The 18-inch setback may be eliminated only where an <strong>alternative ventilation method approved by the fire chief</strong> is provided, or where the fire chief determines vertical ventilation will not be used.</p>
+<pre><code>   RIDGE  ================================================
+          | 18 in clear setback (smoke ventilation)      |
+          +----------------------------------------------+
+          |                  PV ARRAY                    |
+</code></pre>
+<blockquote>
+<p><strong>Key residential rule (2015):</strong> Fixed <strong>18-inch ridge setback</strong>, <strong>3-foot</strong> eave-to-ridge pathways (one per slope on hips, two per slope on single-ridge roofs), and an <strong>18-inch hip/valley</strong> clearance where panels flank both sides. There is <strong>no 33%/66% array-coverage exception</strong> in the 2015 edition — that concept arrives with the 2018 IFC.</p>
+</blockquote>
+<h3 id="roof-access-and-fire-service-pathways-commercial-other-than-group-r-3">Roof Access and Fire-Service Pathways — Commercial (Other Than Group R-3)</h3>
+<p>For commercial and other non-R-3 buildings, the 2015 IFC (Section 605.11.1.3) is built around a <strong>clear roof perimeter</strong>, <strong>centerline pathways</strong>, and <strong>smoke ventilation</strong>.</p>
+<p><strong>Perimeter access.</strong> A <strong>minimum 6-foot-wide clear perimeter</strong> is required around the edges of the roof.</p>
+<blockquote>
+<p><strong>Exception:</strong> Where <strong>either axis</strong> of the building is <strong>250 feet or less</strong>, the clear perimeter may be reduced to a <strong>minimum 4 feet wide</strong>.</p>
+</blockquote>
+<p><strong>Pathways.</strong> The installation must provide designated pathways meeting all of the following:</p>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>2015 IFC provision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structural capacity</td>
+<td>Pathways over areas capable of supporting firefighters</td>
+</tr>
+<tr>
+<td>Centerline pathways</td>
+<td>Provided in <strong>both axes</strong> of the roof, over supporting structure</td>
+</tr>
+<tr>
+<td>To standpipes / vent hatches</td>
+<td>Straight line, <strong>not less than 4 feet</strong> clear</td>
+</tr>
+<tr>
+<td>Around roof access hatch</td>
+<td><strong>Not less than 4 feet</strong> clear, with at least one 4-ft pathway to a parapet or roof edge</td>
+</tr>
+</tbody>
+</table>
+<pre><code>   COMMERCIAL LOW-SLOPE ROOF (2015 IFC 605.11.1.3) — plan view
+
+   +==================================================+
+   |  6 ft clear perimeter (4 ft if axis &lt;= 250 ft)   |
+   |   +------------------------------------------+   |
+   |   | ARRAY  |  4 ft  | ARRAY  |  4 ft |ARRAY  |   |
+   |   |        | path   |        | path  |       |   |
+   |   +------------------------------------------+   |
+   |          centerline pathways both axes           |
+   +==================================================+
+</code></pre>
+<h3 id="smoke-ventilation-commercial">Smoke Ventilation — Commercial</h3>
+<p>The 2015 IFC treats <strong>smoke ventilation</strong> as a distinct requirement for non-R-3 roofs (Section 605.11.1.3.3). Arrays must be <strong>no greater than 150 ft by 150 ft in either axis</strong> to create ventilation opportunities, and the spacing <strong>between array sections</strong> must use one of the following:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>2015 IFC smoke-ventilation configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A pathway <strong>8 feet or greater</strong> in width</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A <strong>4-foot-or-greater</strong> pathway bordering roof skylights or <strong>gravity-operated</strong> dropout smoke/heat vents on <strong>at least one side</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>A <strong>4-foot-or-greater</strong> pathway bordering <strong>all sides</strong> of <strong>non-gravity-operated</strong> dropout vents</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A <strong>4-foot-or-greater</strong> pathway bordering <strong>4-ft by 8-ft "venting cutouts"</strong> every <strong>20 feet</strong> on <strong>alternating sides</strong> of the pathway</td>
+</tr>
+</tbody>
+</table>
+<h3 id="marking-labeling-and-rapid-shutdown">Marking, Labeling, and Rapid Shutdown</h3>
+<p>The 2015 IFC's rooftop provisions focus on <strong>physical access and ventilation</strong> rather than on the detailed rapid-shutdown label graphics that later editions spell out. In practice, <strong>conductor marking, labeling, and rapid shutdown</strong> on a 2015-era system are driven primarily by the <strong>National Electrical Code (NEC)</strong> adopted alongside it — most commonly the <strong>2014 NEC</strong> or <strong>2017 NEC</strong>:</p>
+<ul>
+<li><strong>NEC 690.12 (rapid shutdown)</strong> first appeared in the <strong>2014 NEC</strong> as a conductor-length-based requirement and was substantially tightened in the <strong>2017 NEC</strong> to introduce the array-boundary "inside/outside" concept.</li>
+<li><strong>NEC 690 Part VI</strong> governs marking of DC conductors, disconnects, and placards; the IFC adds firefighter-visibility expectations.</li>
+</ul>
+<blockquote>
+<p>Because rapid-shutdown labeling detail depends heavily on <strong>which NEC edition</strong> your jurisdiction paired with the 2015 IFC, treat any specific label wording as <strong>"verify against the adopted NEC and edition."</strong> See <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> for the NEC 690.12 timeline.</p>
+</blockquote>
+<h3 id="ground-mounted-arrays">Ground-Mounted Arrays</h3>
+<p>Under the 2015 IFC, <strong>setback requirements do not apply</strong> to ground-mounted, free-standing PV arrays, but a <strong>clear, brush-free area of 10 feet</strong> is required around them for fire control.</p>
+<h3 id="what-changed-vs-the-previous-edition">What Changed vs the Previous Edition</h3>
+<p>Compared with the <strong>2012 IFC</strong> (the immediately prior edition, also numbered <strong>605.11</strong>), the 2015 IFC:</p>
+<ul>
+<li><strong>Kept the same chapter and section home</strong> (Chapter 6, Section 605.11) — the big renumbering to <strong>Chapter 12 / Section 1204</strong> did <strong>not</strong> happen until the <strong>2018 IFC</strong>.</li>
+<li><strong>Refined the prescriptive residential geometry</strong> (hip vs single-ridge pathway counts, the 18-inch hip/valley rule) and the commercial perimeter/centerline/smoke-ventilation structure, largely carrying forward the 2012 framework with editorial cleanup.</li>
+<li><strong>Retained the fixed 18-inch ridge setback</strong> with the fire-chief ventilation exception. The <strong>percentage-of-roof (33%/66%) ridge-setback model and the automatic-sprinkler exception did not yet exist</strong> — those are 2018 IFC additions.</li>
+</ul>
+<p>The single most important thing to know moving forward: <strong>if your project cites "605.11," it is on the 2012 or 2015 IFC.</strong> Once a jurisdiction moves to 2018 or later, the solar provisions relocate to Chapter 12 and the numbers change to 1204 (2018) and then 1205 (2021/2024).</p>
+<h3 id="sources-further-reading">Sources &amp; Further Reading</h3>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/content/IFC2015/chapter-6-building-services-and-systems">ICC Digital Codes — 2015 IFC Chapter 6, Building Services and Systems</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/IFC2015/chapter-6-building-services-and-systems/IFC2015-Pt03-Ch06-Sec605.11">ICC Digital Codes — 2015 IFC Section 605.11, Solar Photovoltaic Power Systems</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://sbcc.wa.gov/sites/default/files/2020-02/605%20PV%20Systems..pdf">Washington SBCC — IFC 605.11 Solar PV Systems (full section text, PDF)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/IFC2015/part-iii-building-and-equipment-design-features/IFC2015-Pt03-Ch06-Sec605.11.1.2">ICC Digital Codes — 2015 IFC 605.11.1.2, Group R-3 buildings</a></li>
+<li><a class="inline" href="downloads.html">International Code Council — I-Codes</a></li>
+</ul>
+<hr />
+<h2 id="ifc-2018">IFC 2018</h2>
+<p>The <strong>2018 International Fire Code (IFC)</strong> is the edition where the solar photovoltaic (PV) access rules <strong>moved and were rewritten</strong>. In the 2018 IFC, rooftop PV provisions relocated out of the old Chapter 6 "Building Services and Systems" and into a brand-new <strong>Chapter 12, Energy Systems</strong>, under <strong>Section 1204, Solar Photovoltaic Power Systems</strong>. This edition also introduced the concept that later editions still use: <strong>ridge setbacks that scale with how much of the roof the array covers</strong>, plus a <strong>reduced-setback exception for sprinklered dwellings</strong>.</p>
+<p>This page explains the 2018 IFC solar provisions. It is a companion to the <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> overview and to the sibling edition articles <a class="inline" href="code-ifc.html">IFC 2015 &amp; Solar</a>, <a class="inline" href="code-ifc.html">IFC 2021 &amp; Solar</a>, and <a class="inline" href="code-ifc.html">IFC 2024 &amp; Solar</a>. For project-level context see <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> and <a class="inline" href="commercial-codes.html">Commercial Solar Codes &amp; Fire Requirements</a>.</p>
+<blockquote>
+<p><strong>Read this first:</strong> Model codes are not law until a jurisdiction adopts them, usually with amendments. Section numbers, dimensions, and thresholds cited here are the <em>model</em> 2018 IFC text. Your <strong>Authority Having Jurisdiction (AHJ)</strong> — building official or fire marshal — is authoritative. Confirm the adopted edition and any local amendments before relying on anything below.</p>
+</blockquote>
+<h3 id="scope-and-applicability-2">Scope and Applicability</h3>
+<p>Section 1204 applies to the <strong>installation, modification, or alteration of solar PV power systems</strong> on and around buildings. As in 2015, the code recognizes solar as an evolving technology and preserves the <strong>alternative materials and methods</strong> path for designs that achieve equivalent firefighter access without matching the prescriptive text.</p>
+<p>The access and pathway requirements do <strong>not</strong> apply to:</p>
+<ul>
+<li><strong>Detached, non-habitable Group U structures</strong> — parking shade structures, carports, solar trellises, and similar.</li>
+<li>Roofs where the <strong>fire code official has determined that rooftop operations will not be employed</strong>.</li>
+</ul>
+<p>As before, the requirements branch between <strong>Group R-3 buildings</strong> (houses and residential-tactics occupancies) and <strong>buildings other than Group R-3</strong> (commercial and larger), with buildings built under the <strong>International Residential Code (IRC)</strong> picking up the IRC's parallel PV provisions (Section R324).</p>
+<h3 id="roof-access-and-fire-service-pathways-residential-group-r-3-2">Roof Access and Fire-Service Pathways — Residential (Group R-3)</h3>
+<p>The 2018 IFC keeps the residential <strong>eave-to-ridge pathway</strong> philosophy of 2015 but reorganizes the ridge rule around <strong>array coverage</strong>.</p>
+<p><strong>Pathways.</strong> As in 2015, a <strong>3-foot-wide clear access pathway</strong> from eave to ridge is provided based on roof geometry (hip and single-ridge layouts), and arrays remain limited in size with <strong>3-foot clear separations</strong> between array sections. These pathways sit over structure capable of supporting firefighters.</p>
+<p><strong>Ridge setbacks — the new sliding scale (Section 1204.2.1.2).</strong> This is the headline 2018 change. The ridge setback now depends on the <strong>plan-view percentage of the total roof area</strong> the array occupies:</p>
+<table>
+<thead>
+<tr>
+<th>Array coverage of total roof (plan view)</th>
+<th>Required clear setback at a horizontal ridge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>33% or less</strong></td>
+<td><strong>Not less than 18 inches</strong> on both sides of the ridge</td>
+</tr>
+<tr>
+<td><strong>More than 33%</strong></td>
+<td><strong>Not less than 36 inches</strong> on both sides of the ridge</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Key exception (sprinklered dwellings):</strong> Where an <strong>automatic sprinkler system</strong> is installed in the dwelling (e.g., to <strong>NFPA 13D</strong> or IRC <strong>Section P2904</strong>), the thresholds relax: an <strong>18-inch</strong> setback is allowed for arrays covering <strong>66% or less</strong> of the roof, and <strong>36 inches</strong> is required only where coverage <strong>exceeds 66%</strong>. This lets a sprinklered home place more panels near the ridge than a non-sprinklered one.</p>
+</blockquote>
+<pre><code>   RIDGE SETBACK LOGIC (2018 IFC 1204.2.1.2) — section through ridge
+
+   Non-sprinklered:   &lt;=33% coverage -&gt; 18 in    | &gt;33% coverage -&gt; 36 in
+   Sprinklered (13D/P2904): &lt;=66% coverage -&gt; 18 in | &gt;66% coverage -&gt; 36 in
+
+   RIDGE  ================================================
+          |  setback (18 in or 36 in, per coverage)      |
+          +----------------------------------------------+
+          |                   PV ARRAY                    |
+</code></pre>
+<blockquote>
+<p><strong>Key residential rule (2018):</strong> The <strong>fixed 18-inch ridge setback of 2015 becomes a two-step 18-in / 36-in setback keyed to 33% array coverage</strong>, and a <strong>new automatic-sprinkler exception</strong> raises that break point to <strong>66%</strong>. Pathways remain the familiar <strong>3-foot</strong> eave-to-ridge design.</p>
+</blockquote>
+<h3 id="roof-access-and-fire-service-pathways-commercial-other-than-group-r-3-2">Roof Access and Fire-Service Pathways — Commercial (Other Than Group R-3)</h3>
+<p>For commercial and other non-R-3 buildings, the 2018 IFC carries forward the 2015 structure — perimeter, pathways, and smoke ventilation — now under Chapter 12.</p>
+<p><strong>Perimeter access.</strong> A <strong>minimum 6-foot-wide clear perimeter</strong> around the roof edges.</p>
+<blockquote>
+<p><strong>Exception:</strong> Where <strong>either axis</strong> of the building is <strong>250 feet or less</strong>, the clear perimeter may be reduced to a <strong>minimum 4 feet wide</strong>.</p>
+</blockquote>
+<p><strong>Interior pathways.</strong> Pathways must be provided over supporting structure, in a <strong>straight line not less than 4 feet clear</strong> to roof standpipes or ventilation hatches, and <strong>not less than 4 feet clear</strong> around roof access hatches with at least one 4-ft pathway reaching a parapet or roof edge.</p>
+<pre><code>   COMMERCIAL LOW-SLOPE ROOF (2018 IFC 1204.3) — plan view
+
+   +==================================================+
+   |  6 ft clear perimeter (4 ft if axis &lt;= 250 ft)   |
+   |   +------------------------------------------+   |
+   |   | ARRAY | 4 ft |  ARRAY  | 4 ft |  ARRAY    |   |
+   |   |       | path |         | path |          |   |
+   |   +------------------------------------------+   |
+   +==================================================+
+</code></pre>
+<h3 id="smoke-ventilation-commercial-2">Smoke Ventilation — Commercial</h3>
+<p>The 2018 IFC keeps the 2015 <strong>smoke-ventilation</strong> menu for non-R-3 roofs. Spacing between array sections must use one of:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>2018 IFC smoke-ventilation configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A pathway <strong>8 feet or greater</strong> in width</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A <strong>4-foot-or-greater</strong> pathway bordering skylights or <strong>gravity-operated</strong> dropout smoke/heat vents on <strong>at least one side</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>A <strong>4-foot-or-greater</strong> pathway bordering <strong>all sides</strong> of <strong>non-gravity-operated</strong> dropout vents</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A <strong>4-foot-or-greater</strong> pathway bordering <strong>4-ft by 8-ft "venting cutouts"</strong> every <strong>20 feet</strong> on <strong>alternating sides</strong> of the pathway</td>
+</tr>
+</tbody>
+</table>
+<h3 id="marking-labeling-and-rapid-shutdown-2">Marking, Labeling, and Rapid Shutdown</h3>
+<p>The 2018 IFC formalizes <strong>rapid-shutdown labeling</strong> for buildings that carry PV rapid-shutdown systems, requiring permanent labels that identify the type of shutdown and its switch location, and cross-referencing the electrical requirements of the <strong>National Electrical Code</strong>. In practice a 2018-era system is usually paired with the <strong>2017 NEC</strong> or <strong>2020 NEC</strong>:</p>
+<ul>
+<li><strong>NEC 690.12</strong> in the <strong>2017 NEC</strong> introduced the <strong>array-boundary</strong> (module-level shutdown) concept that the 2020 NEC carried forward.</li>
+<li>The IFC label wording, character heights (header vs body text), and color conventions align with the NEC and ANSI Z535 practice.</li>
+</ul>
+<blockquote>
+<p>Because the exact label graphics depend on <strong>which NEC edition</strong> was adopted with your 2018 IFC, treat specific label wording as <strong>"verify against the adopted NEC and edition."</strong> See <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> for the rapid-shutdown timeline.</p>
+</blockquote>
+<h3 id="ground-mounted-arrays-2">Ground-Mounted Arrays</h3>
+<p>As in 2015, <strong>setback requirements do not apply</strong> to ground-mounted, free-standing PV arrays under the 2018 IFC, but a <strong>clear, brush-free area of 10 feet</strong> is required around them.</p>
+<h3 id="what-changed-vs-the-previous-edition-2">What Changed vs the Previous Edition</h3>
+<p>Compared with the <strong>2015 IFC</strong> (<a class="inline" href="code-ifc.html">IFC 2015 &amp; Solar</a>), the 2018 IFC made three consequential changes:</p>
+<ol>
+<li><strong>Renumbering / relocation.</strong> Solar PV moved from <strong>Chapter 6, Section 605.11</strong> to the new <strong>Chapter 12 (Energy Systems), Section 1204</strong>. This is the single biggest source of confusion when comparing plan sets across editions — the <em>same</em> requirement now lives under a different number.</li>
+<li><strong>Percentage-based ridge setback.</strong> The <strong>fixed 18-inch</strong> ridge setback of 2015 became a <strong>two-tier 18-in / 36-in setback</strong> tied to whether the array covers <strong>33% or less</strong> of the roof (Section 1204.2.1.2).</li>
+<li><strong>Automatic-sprinkler exception.</strong> A <strong>new exception for sprinklered dwellings</strong> raised the setback break point to <strong>66%</strong>, rewarding homes with fire sprinklers with more usable near-ridge roof area.</li>
+</ol>
+<p>The commercial perimeter, pathway, and smoke-ventilation provisions carried over from 2015 largely intact — the same 6-ft/4-ft perimeter, 4-ft interior pathways, and the four-option smoke-ventilation menu — just relocated into Chapter 12.</p>
+<h3 id="sources-further-reading-2">Sources &amp; Further Reading</h3>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/content/IFC2018/CHAPTER-12-ENERGY-SYSTEMS">ICC Digital Codes — 2018 IFC Chapter 12, Energy Systems</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/IFC2018/chapter-12-energy-systems/IFC2018-Pt03-Ch12-Sec1204">ICC Digital Codes — 2018 IFC Section 1204, Solar Photovoltaic Power Systems</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/IFC2018/chapter-12-energy-systems/IFC2018-Pt03-Ch12-Sec1204.2.1.2">ICC Digital Codes — 2018 IFC 1204.2.1.2, Setbacks at ridges</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.solarelectricsupply.com/media/sparsh/product_attachment/CALSSA_Modified_Setbacks_and_Pathways_06-20-2018.pdf">CALSSA — 2018 Modified Roof Setbacks for Residential Solar PV (PDF)</a></li>
+<li><a class="inline" href="downloads.html">International Code Council — I-Codes</a></li>
+</ul>
+<hr />
+<h2 id="ifc-2021">IFC 2021</h2>
+<p>The <strong>2021 International Fire Code (IFC)</strong> is, as of the mid-2020s, one of the most widely enforced editions for rooftop solar in the United States. In the 2021 IFC the solar photovoltaic (PV) provisions kept their home in <strong>Chapter 12, Energy Systems</strong>, but the section number moved again — from <strong>1204</strong> (2018) to <strong>Section 1205, Solar Photovoltaic Power Systems</strong>. More importantly, the 2021 edition <strong>rewrote the residential pathway model</strong>: instead of geometry-driven eave-to-ridge pathways keyed to roof shape, it requires a defined set of <strong>36-inch pathways to the ridge</strong>, a <strong>street-side pathway</strong>, and new protection for <strong>emergency escape and rescue openings</strong>.</p>
+<p>This page explains the 2021 IFC solar provisions. It is a companion to the <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> overview and to the sibling edition articles <a class="inline" href="code-ifc.html">IFC 2015 &amp; Solar</a>, <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a>, and <a class="inline" href="code-ifc.html">IFC 2024 &amp; Solar</a>. For project-level context see <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> and <a class="inline" href="commercial-codes.html">Commercial Solar Codes &amp; Fire Requirements</a>.</p>
+<blockquote>
+<p><strong>Read this first:</strong> Model codes are not law until a jurisdiction adopts them, usually with amendments. Section numbers, dimensions, and thresholds cited here are the <em>model</em> 2021 IFC text. Your <strong>Authority Having Jurisdiction (AHJ)</strong> — building official or fire marshal — is authoritative. Confirm the adopted edition and any local amendments before relying on anything below.</p>
+</blockquote>
+<h3 id="scope-and-applicability-3">Scope and Applicability</h3>
+<p>Section 1205 applies to the <strong>installation, modification, or alteration of solar PV power systems</strong>. Roof access, pathways, and spacing are set out in Sections 1205.2 (residential/general) through 1205.3 (commercial), with marking and rapid-shutdown labeling in 1205.4.</p>
+<p>The access and pathway requirements do <strong>not</strong> apply to:</p>
+<ul>
+<li><strong>Detached, non-habitable structures</strong> — detached garages, parking shade structures, carports, solar trellises, and similar (per the IRC exceptions carried alongside).</li>
+<li>Roofs where the <strong>fire code official has determined that rooftop operations will not be employed</strong>.</li>
+<li><strong>Roofs with a slope of 2:12 (17 percent) or less</strong> for the residential access provisions.</li>
+</ul>
+<p>The requirements branch between <strong>Group R-3 / IRC dwellings</strong> and <strong>buildings other than Group R-3</strong> (commercial and larger). The 2021 IFC coordinates closely with <strong>IRC Section R324/R329</strong> so that houses see the same substantive rules whether the AHJ cites the IFC or the IRC.</p>
+<h3 id="roof-access-and-fire-service-pathways-residential-group-r-3-3">Roof Access and Fire-Service Pathways — Residential (Group R-3)</h3>
+<p>The 2021 residential rules (Section 1205.2.1) are the biggest departure from earlier editions.</p>
+<p><strong>Pathways to the ridge (Section 1205.2.1.1).</strong> The old "3-foot pathway per slope, keyed to hip vs single-ridge" language is replaced by a defined pathway set:</p>
+<ul>
+<li><strong>Not fewer than two 36-inch-wide pathways</strong> on <strong>separate roof planes</strong>, running from the <strong>lowest roof edge to the ridge</strong>, must be provided on <strong>all buildings</strong>.</li>
+<li><strong>Not fewer than one pathway</strong> must be provided on the <strong>street or driveway side</strong> of the roof.</li>
+<li><strong>Each roof plane with a PV array</strong> must have <strong>at least one 36-inch-wide pathway</strong> from the lowest roof edge to the ridge.</li>
+</ul>
+<pre><code>   RESIDENTIAL PITCHED ROOF (2021 IFC 1205.2.1.1) — plan view, two planes
+
+   RIDGE ================================================
+         | 36in  |            |  36in |                |
+         | path  |  PV ARRAY  |  path |  PV ARRAY       |
+         | (to   |            | (to   |                |
+   EAVE  | ridge)|            | ridge)|                |
+         ----------------------------------------------
+         At least two 36-in eave-to-ridge pathways on separate planes;
+         at least one on the street/driveway side.
+</code></pre>
+<p><strong>Ridge setbacks (Section 1205.2.1.2).</strong> The 2021 IFC keeps the coverage-based ridge setback introduced in 2018:</p>
+<table>
+<thead>
+<tr>
+<th>Array coverage of total roof (plan view)</th>
+<th>Required clear setback at a horizontal ridge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>33% or less</strong></td>
+<td><strong>Not less than 18 inches</strong> on both sides of the ridge</td>
+</tr>
+<tr>
+<td><strong>More than 33%</strong></td>
+<td><strong>Not less than 36 inches</strong> on both sides of the ridge</td>
+</tr>
+</tbody>
+</table>
+<p>A companion rule adds that where arrays sit on <strong>both sides</strong> of a horizontal ridge, <strong>at least one side must maintain the full 36-inch clearance</strong> regardless of coverage.</p>
+<blockquote>
+<p><strong>Alternative (sprinklered) setback — Section 1205.2.1.3:</strong> Where an <strong>automatic sprinkler system</strong> is installed in the dwelling (per IFC Section 903.3.1.3 / NFPA 13D), the break point moves to <strong>66%</strong>: an <strong>18-inch</strong> setback for arrays covering <strong>66% or less</strong>, and <strong>36 inches</strong> where coverage <strong>exceeds 66%</strong> — again with at least one side of a two-sided ridge holding the 36-inch clearance.</p>
+</blockquote>
+<p><strong>Emergency escape and rescue openings (Section 1205.2.2).</strong> New emphasis in this edition: panels <strong>may not be placed on the portion of a roof below an emergency escape and rescue opening (EERO)</strong>, and a <strong>36-inch-wide pathway</strong> must be provided <strong>to</strong> the EERO.</p>
+<blockquote>
+<p><strong>Key residential rule (2021):</strong> Move from shape-based 3-foot pathways to <strong>two-or-more 36-inch pathways to the ridge</strong> plus a <strong>street/driveway-side pathway</strong>; retain the <strong>33%/66% ridge setback</strong> logic; and add <strong>protection of emergency escape openings</strong>.</p>
+</blockquote>
+<h3 id="roof-access-and-fire-service-pathways-commercial-other-than-group-r-3-3">Roof Access and Fire-Service Pathways — Commercial (Other Than Group R-3)</h3>
+<p>For commercial and other non-R-3 buildings, the 2021 IFC (Section 1205.3) keeps the familiar perimeter/pathway/ventilation model.</p>
+<p><strong>Perimeter access (1205.3.1).</strong> A <strong>minimum 6-foot-wide clear perimeter</strong> around the roof edges.</p>
+<blockquote>
+<p><strong>Exception:</strong> Where <strong>either axis</strong> of the building is <strong>250 feet or less</strong>, the clear perimeter may be reduced to a <strong>minimum 4 feet wide</strong>.</p>
+</blockquote>
+<p><strong>Interior pathways (1205.3.2).</strong> Between array sections:</p>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>2021 IFC provision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pathway spacing</td>
+<td>Pathways at intervals <strong>not greater than 150 feet</strong> across the roof's length and width</td>
+</tr>
+<tr>
+<td>To standpipes / vent hatches</td>
+<td>Straight line, <strong>not less than 4 feet</strong> clear</td>
+</tr>
+<tr>
+<td>Around roof access hatches</td>
+<td><strong>Not less than 4 feet</strong> clear, with at least one such pathway to a parapet or roof edge</td>
+</tr>
+</tbody>
+</table>
+<pre><code>   COMMERCIAL LOW-SLOPE ROOF (2021 IFC 1205.3) — plan view
+
+   +==================================================+
+   |  6 ft clear perimeter (4 ft if axis &lt;= 250 ft)   |
+   |   +------------------------------------------+   |
+   |   | ARRAY | 4ft |  ARRAY  | 4ft |   ARRAY     |   |
+   |   +------------------------------------------+   |
+   |   pathways at intervals &lt;= 150 ft both ways      |
+   +==================================================+
+</code></pre>
+<h3 id="smoke-ventilation-commercial-3">Smoke Ventilation — Commercial</h3>
+<p>The 2021 IFC (Section 1205.3.3) keeps the multi-option smoke-ventilation framework and clarifies vent-adjacent pathways:</p>
+<table>
+<thead>
+<tr>
+<th>Provision</th>
+<th>2021 IFC smoke-ventilation requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-gravity vents</td>
+<td>A <strong>4-foot-wide</strong> pathway <strong>bordering all sides</strong></td>
+</tr>
+<tr>
+<td>Gravity-operated dropout vents</td>
+<td>A <strong>4-foot-wide</strong> pathway on <strong>at least one side</strong></td>
+</tr>
+<tr>
+<td>Option A between array sections</td>
+<td>A pathway <strong>not less than 8 feet</strong> wide</td>
+</tr>
+<tr>
+<td>Option B between array sections</td>
+<td>A <strong>4-foot-wide</strong> pathway bordering <strong>4-ft by 8-ft venting cutouts</strong> every <strong>20 feet</strong> on <strong>alternating sides</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="marking-labeling-and-rapid-shutdown-3">Marking, Labeling, and Rapid Shutdown</h3>
+<p>The 2021 IFC gives rapid-shutdown and marking their own subsections (Section 1205.4). Buildings with <strong>rapid-shutdown PV systems</strong> must carry <strong>permanent labels</strong> describing the shutdown type and switch location:</p>
+<ul>
+<li><strong>Label type (1205.4.1).</strong> Distinct labels for systems that shut down <strong>the array and its conductors</strong> versus systems that shut down <strong>only the conductors leaving the array</strong> (array conductors remaining energized in sunlight), with specified character heights and colors and a <strong>building-diagram</strong> element.</li>
+<li><strong>Label location (1205.4.1.2).</strong> The rapid-shutdown label is placed <strong>within 3 feet of the service disconnecting means</strong>, indicating the location of all rapid-shutdown switches.</li>
+<li><strong>Multiple systems / partial shutdown (1205.4.2).</strong> Where a building has <strong>more than one rapid-shutdown type</strong>, a <strong>detailed plan-view roof diagram</strong> must show each PV system with a <strong>dotted line around areas that remain energized</strong> after shutdown.</li>
+<li><strong>BIPV marking.</strong> Where <strong>building-integrated PV (BIPV)</strong> creates hidden electrical-hazard areas, <strong>reflective markings visible from grade</strong> must identify those areas to avoid.</li>
+</ul>
+<p>These labels work in tandem with the electrical requirements of the <strong>National Electrical Code</strong> — 2021-era systems most often pair with the <strong>2020 NEC</strong> (NEC 690.12 module-level rapid shutdown).</p>
+<h3 id="ground-mounted-arrays-3">Ground-Mounted Arrays</h3>
+<p>Under the 2021 IFC, ground-mounted PV setbacks are governed by <strong>fire separation distances</strong>, and a <strong>clear, brush-free area of 10 feet</strong> is required around ground-mounted arrays; fire-apparatus access lanes must not be blocked.</p>
+<h3 id="what-changed-vs-the-previous-edition-3">What Changed vs the Previous Edition</h3>
+<p>Compared with the <strong>2018 IFC</strong> (<a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a>), the 2021 IFC:</p>
+<ol>
+<li><strong>Renumbered</strong> the solar section from <strong>1204</strong> to <strong>1205</strong> within Chapter 12.</li>
+<li><strong>Rewrote the residential pathway model.</strong> The 2018 geometry-based <strong>3-foot eave-to-ridge pathways</strong> (hip vs single-ridge counts) gave way to <strong>two-or-more 36-inch pathways to the ridge</strong> on separate roof planes, with a <strong>mandatory street/driveway-side pathway</strong> and at least one pathway per array-bearing roof plane.</li>
+<li><strong>Added emergency-escape-opening protection</strong> — no panels below an <strong>EERO</strong>, plus a <strong>36-inch pathway</strong> to it.</li>
+<li><strong>Reorganized marking and rapid shutdown</strong> into a dedicated Section 1205.4, with clearer label-type, label-location, multiple-system, and <strong>BIPV</strong> marking rules.</li>
+</ol>
+<p>The coverage-based <strong>33%/66% ridge setbacks</strong> and the <strong>automatic-sprinkler exception</strong> carried over from 2018, and the commercial perimeter, 4-foot pathways, and smoke-ventilation menu remained substantially the same.</p>
+<h3 id="sources-further-reading-3">Sources &amp; Further Reading</h3>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/content/IFC2021P1/chapter-12-energy-systems">ICC Digital Codes — 2021 IFC Chapter 12, Energy Systems</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/IFC2021P1/chapter-12-energy-systems/IFC2021P1-Pt03-Ch12-Sec1205.2.1">ICC Digital Codes — 2021 IFC 1205.2.1, Solar PV for Group R-3 buildings</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/IFC2021P1/chapter-12-energy-systems/IFC2021P1-Pt03-Ch12-Sec1205.3.3">ICC Digital Codes — 2021 IFC 1205.3.3, Smoke ventilation</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:4666c480-77e5-451b-8542-8358743548be/original/as/BD-PP-206-Solar-Photovoltaic-Requirements-FINAL-4.30.2026.pdf">Clark County (NV) Building Dept. — Solar Photovoltaic Requirements, BD-PP-206 (PDF)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.nfpa.org/news-blogs-and-articles/blogs/2020/07/24/accessways-for-roof-mounted-photovoltaic-installations">NFPA — Providing Access to Roofs with a PV System</a></li>
+<li><a class="inline" href="downloads.html">International Code Council — I-Codes</a></li>
+</ul>
+<hr />
+<h2 id="ifc-2024">IFC 2024</h2>
+<p>The <strong>2024 International Fire Code (IFC)</strong> is the current published edition of the model fire code and, through 2026 and 2027, is being adopted by a growing number of states and jurisdictions. For rooftop solar photovoltaic (PV) systems, the 2024 IFC keeps the numbering established in 2021: the provisions remain in <strong>Chapter 12, Energy Systems</strong>, under <strong>Section 1205, Solar Photovoltaic Power Systems</strong>. Rather than another wholesale rewrite, the 2024 edition <strong>refines and clarifies</strong> the 2021 framework — adding flexibility to how the residential ridge pathways may be arranged and sharpening the <strong>building-integrated PV (BIPV) marking</strong> language.</p>
+<p>This page explains the 2024 IFC solar provisions. It is a companion to the <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> overview and to the sibling edition articles <a class="inline" href="code-ifc.html">IFC 2015 &amp; Solar</a>, <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a>, and <a class="inline" href="code-ifc.html">IFC 2021 &amp; Solar</a>. For project-level context see <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> and <a class="inline" href="commercial-codes.html">Commercial Solar Codes &amp; Fire Requirements</a>.</p>
+<blockquote>
+<p><strong>Read this first:</strong> Model codes are not law until a jurisdiction adopts them, usually with amendments. Section numbers, dimensions, and thresholds cited here are the <em>model</em> 2024 IFC text. Your <strong>Authority Having Jurisdiction (AHJ)</strong> — building official or fire marshal — is authoritative. Because 2024 adoption is still ramping, many projects in 2026 remain under the 2021 or 2018 IFC. Confirm the adopted edition and local amendments before relying on anything below.</p>
+</blockquote>
+<h3 id="scope-and-applicability-4">Scope and Applicability</h3>
+<p>Section 1205 applies to the <strong>installation, modification, or alteration of solar PV power systems</strong>, with roof access and pathways in Sections 1205.2 (residential/general) and 1205.3 (commercial), and marking and rapid-shutdown labeling in 1205.4. Electrical work references the adopted <strong>National Electrical Code (NEC)</strong>; structural and access work coordinates with the <strong>IBC</strong> and <strong>IRC (Section R324/R329)</strong>.</p>
+<p>The access and pathway requirements do <strong>not</strong> apply to:</p>
+<ul>
+<li><strong>Detached, non-habitable structures</strong> — detached garages, parking shade structures, carports, solar trellises, and similar (IRC roof-access exceptions).</li>
+<li>Roofs where the <strong>fire code official has determined that rooftop operations will not be employed</strong>.</li>
+<li><strong>Roofs with a slope of 2:12 (17 percent) or less</strong> for the residential access provisions.</li>
+</ul>
+<p>As before, requirements branch between <strong>Group R-3 / IRC dwellings</strong> and <strong>buildings other than Group R-3</strong>.</p>
+<h3 id="roof-access-and-fire-service-pathways-residential-group-r-3-4">Roof Access and Fire-Service Pathways — Residential (Group R-3)</h3>
+<p>The 2024 residential rules (Section 1205.2.1) build directly on the 2021 pathway model.</p>
+<p><strong>Pathways to the ridge (Section 1205.2.1.1).</strong></p>
+<ul>
+<li><strong>Not fewer than two 36-inch-wide pathways</strong> on <strong>separate roof planes</strong>, from the <strong>lowest roof edge to the ridge</strong>, on <strong>all buildings</strong>.</li>
+<li><strong>Not fewer than one pathway</strong> on the <strong>street or driveway side</strong> of the roof.</li>
+<li>For <strong>each roof plane with a PV array</strong>, at least one <strong>36-inch-wide</strong> lowest-edge-to-ridge pathway — and the 2024 text clarifies this pathway may be <strong>on the same roof plane as the array, on an adjacent roof plane, or straddling the same and adjacent roof planes</strong>. This added flexibility is a notable 2024 refinement.</li>
+</ul>
+<pre><code>   RESIDENTIAL PITCHED ROOF (2024 IFC 1205.2.1.1) — plan view
+
+   RIDGE ================================================
+         | 36in |             | 36in |                 |
+         | path |  PV ARRAY   | path |   PV ARRAY       |
+   EAVE  ------------------------------------------------
+         Two+ 36-in eave-to-ridge pathways on separate planes;
+         one on street/driveway side. Per-plane pathway may sit on
+         the same plane, an adjacent plane, or straddle both.
+</code></pre>
+<p><strong>Ridge setbacks (Section 1205.2.1.2).</strong> Unchanged in substance from 2021:</p>
+<table>
+<thead>
+<tr>
+<th>Array coverage of total roof (plan view)</th>
+<th>Required clear setback at a horizontal ridge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>33% or less</strong></td>
+<td><strong>Not less than 18 inches</strong> on both sides of the ridge</td>
+</tr>
+<tr>
+<td><strong>More than 33%</strong></td>
+<td><strong>Not less than 36 inches</strong> on both sides of the ridge</td>
+</tr>
+</tbody>
+</table>
+<p>Where arrays sit on <strong>both sides</strong> of a horizontal ridge, <strong>at least one side must keep the full 36-inch clearance</strong> regardless of coverage.</p>
+<blockquote>
+<p><strong>Alternative (sprinklered) setback — Section 1205.2.1.3:</strong> With an <strong>automatic sprinkler system</strong> in the dwelling (per IFC Section 903.3.1.3), the break point is <strong>66%</strong>: <strong>18 inches</strong> for arrays covering <strong>66% or less</strong>, <strong>36 inches</strong> where coverage <strong>exceeds 66%</strong>, again holding at least one side of a two-sided ridge to the 36-inch clearance.</p>
+</blockquote>
+<p><strong>Emergency escape and rescue openings (Section 1205.2.2).</strong> Panels <strong>may not be placed on the portion of a roof below an emergency escape and rescue opening (EERO)</strong>, and a <strong>36-inch-wide pathway</strong> must reach the EERO.</p>
+<blockquote>
+<p><strong>Key residential rule (2024):</strong> Same <strong>two-plus 36-inch pathways to the ridge</strong>, <strong>street-side pathway</strong>, <strong>33%/66% ridge setbacks</strong>, and <strong>EERO protection</strong> as 2021 — with <strong>added flexibility</strong> for where the per-array-plane pathway may be located.</p>
+</blockquote>
+<h3 id="roof-access-and-fire-service-pathways-commercial-other-than-group-r-3-4">Roof Access and Fire-Service Pathways — Commercial (Other Than Group R-3)</h3>
+<p>For commercial and other non-R-3 buildings, the 2024 IFC (Section 1205.3) carries the perimeter/pathway model forward.</p>
+<p><strong>Perimeter access (1205.3.1).</strong> A <strong>minimum 6-foot-wide clear perimeter</strong> around the roof edges.</p>
+<blockquote>
+<p><strong>Exception:</strong> Where <strong>either axis</strong> of the building is <strong>250 feet or less</strong>, the clear perimeter may be reduced to a <strong>minimum 4 feet wide</strong>.</p>
+</blockquote>
+<p><strong>Interior pathways (1205.3.2).</strong> Between array sections:</p>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>2024 IFC provision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pathway spacing</td>
+<td>Pathways at intervals <strong>not greater than 150 feet</strong> across the roof</td>
+</tr>
+<tr>
+<td>To standpipes / vent hatches</td>
+<td>Straight line, <strong>not less than 4 feet</strong> clear</td>
+</tr>
+<tr>
+<td>Around roof access hatches</td>
+<td><strong>Not less than 4 feet</strong> clear, with at least one such pathway to a parapet or roof edge</td>
+</tr>
+</tbody>
+</table>
+<pre><code>   COMMERCIAL LOW-SLOPE ROOF (2024 IFC 1205.3) — plan view
+
+   +==================================================+
+   |  6 ft clear perimeter (4 ft if axis &lt;= 250 ft)   |
+   |   +------------------------------------------+   |
+   |   | ARRAY | 4ft |  ARRAY  | 4ft |   ARRAY     |   |
+   |   +------------------------------------------+   |
+   |   interior pathways at intervals &lt;= 150 ft       |
+   +==================================================+
+</code></pre>
+<h3 id="smoke-ventilation-commercial-4">Smoke Ventilation — Commercial</h3>
+<p>The 2024 IFC (Section 1205.3.3) retains the multi-option smoke-ventilation framework:</p>
+<table>
+<thead>
+<tr>
+<th>Provision</th>
+<th>2024 IFC smoke-ventilation requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-gravity vents</td>
+<td>A <strong>4-foot-wide</strong> pathway <strong>bordering all sides</strong></td>
+</tr>
+<tr>
+<td>Gravity-operated dropout vents</td>
+<td>A <strong>4-foot-wide</strong> pathway on <strong>at least one side</strong></td>
+</tr>
+<tr>
+<td>Option A between array sections</td>
+<td>A pathway <strong>not less than 8 feet</strong> wide</td>
+</tr>
+<tr>
+<td>Option B between array sections</td>
+<td>A <strong>4-foot-wide</strong> pathway bordering <strong>4-ft by 8-ft venting cutouts</strong> every <strong>20 feet</strong> on <strong>alternating sides</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="marking-labeling-and-rapid-shutdown-4">Marking, Labeling, and Rapid Shutdown</h3>
+<p>The 2024 IFC keeps rapid-shutdown and marking in <strong>Section 1205.4</strong> with the 2021 structure and tightens the BIPV language:</p>
+<ul>
+<li><strong>Rapid-shutdown labels (1205.4.1).</strong> Distinct labels for systems that shut down <strong>the array and its conductors</strong> versus systems that shut down <strong>only the conductors leaving the array</strong>, with specified character heights, colors, and a <strong>building-diagram</strong> element.</li>
+<li><strong>Label location (1205.4.1.2).</strong> Placed <strong>within 3 feet of the service disconnecting means</strong>, indicating all rapid-shutdown switch locations.</li>
+<li><strong>Multiple / partial systems (1205.4.2).</strong> A <strong>detailed plan-view roof diagram</strong> with a <strong>dotted line around areas that remain energized</strong> after shutdown.</li>
+<li><strong>BIPV marking.</strong> Where BIPV creates <strong>hidden electrical-hazard areas</strong>, <strong>reflective markings visible from grade</strong> (beneath the eaves or another approved location) must identify the areas to avoid — the 2024 text emphasizes that this is specifically to protect <strong>ladder placement</strong>.</li>
+</ul>
+<p>These provisions coordinate with the adopted <strong>NEC</strong> — 2024-era systems increasingly pair with the <strong>2023 NEC</strong> (NEC 690.12 rapid shutdown).</p>
+<h3 id="ground-mounted-arrays-4">Ground-Mounted Arrays</h3>
+<p>Under the 2024 IFC, ground-mounted PV setbacks are governed by <strong>fire separation distances</strong>; a <strong>clear, brush-free area of 10 feet</strong> is required around ground-mounted arrays, and <strong>fire-apparatus access lanes</strong> must not be blocked.</p>
+<h3 id="what-changed-vs-the-previous-edition-4">What Changed vs the Previous Edition</h3>
+<p>Compared with the <strong>2021 IFC</strong> (<a class="inline" href="code-ifc.html">IFC 2021 &amp; Solar</a>), the 2024 IFC is <strong>evolutionary, not revolutionary</strong> — the section number stayed <strong>1205</strong> and the core framework held:</p>
+<ol>
+<li><strong>Added residential pathway flexibility.</strong> The per-array-plane 36-inch pathway may now be placed on the <strong>same plane as the array, an adjacent plane, or straddling both</strong> — clarifying real-world roof geometries that the 2021 text handled awkwardly.</li>
+<li><strong>Sharpened BIPV marking.</strong> The building-integrated PV marking rule was clarified to tie the reflective, grade-visible markings explicitly to <strong>firefighter ladder placement</strong> and to identifying hidden hazard areas.</li>
+<li><strong>Retained</strong> the <strong>33%/66% ridge setbacks</strong>, the <strong>automatic-sprinkler exception</strong>, <strong>EERO protection</strong>, the <strong>commercial 6-ft/4-ft perimeter</strong> and <strong>150-ft interior pathway</strong> spacing, the <strong>smoke-ventilation menu</strong>, and the <strong>rapid-shutdown label structure</strong> from 2021.</li>
+</ol>
+<blockquote>
+<p>Because these are refinements rather than a rewrite, teams moving from 2021 to 2024 will find the biggest practical impacts in <strong>residential pathway layout flexibility</strong> and <strong>BIPV documentation</strong> — but any specific dimension or threshold on a real project should be confirmed against the <strong>adopted edition and local amendments</strong>.</p>
+</blockquote>
+<h3 id="sources-further-reading-4">Sources &amp; Further Reading</h3>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/content/IFC2024V2.0/chapter-12-energy-systems">ICC Digital Codes — 2024 IFC Chapter 12, Energy Systems</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/IFC2024V1.0/chapter-12-energy-systems/IFC2024V1.0-Pt03-Ch12-Sec1205.2.1.3">ICC Digital Codes — 2024 IFC 1205.2.1.3, Alternative setbacks at ridges</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:4666c480-77e5-451b-8542-8358743548be/original/as/BD-PP-206-Solar-Photovoltaic-Requirements-FINAL-4.30.2026.pdf">Clark County (NV) Building Dept. — Solar Photovoltaic Requirements, BD-PP-206, 2024 IFC (PDF)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://sbcc.wa.gov/sites/default/files/2024-07/IFC_SignificantChangesReportMaster_07242024.pdf">Washington SBCC — 2024 IFC Significant Changes Report (PDF)</a></li>
+<li><a class="inline" href="downloads.html">NFSA — Changes to the 2024 IBC and IFC</a></li>
+<li><a class="inline" href="downloads.html">International Code Council — I-Codes</a></li>
+</ul>
+<hr />
+<hr />
+<p><em>Reference and educational use only — not code-compliance advice. Model codes are adopted and amended locally; confirm the exact edition and any local amendments with your AHJ and a licensed professional.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="codes-standards-overview.html" class="prev"><span class="dir">Previous</span><span class="ttl">Codes &amp; Standards Overview</span></a><a href="code-ibc.html" class="next"><span class="dir">Next</span><span class="ttl">IBC — Building Code</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#ifc-2015">IFC 2015</a>
+<a class="lvl-3" href="#scope-and-applicability">Scope and Applicability</a>
+<a class="lvl-3" href="#roof-access-and-fire-service-pathways-residential-group-r-3">Roof Access and Fire-Service Pathways — Residential (Group R-3)</a>
+<a class="lvl-3" href="#roof-access-and-fire-service-pathways-commercial-other-than-group-r-3">Roof Access and Fire-Service Pathways — Commercial (Other Than Group R-3)</a>
+<a class="lvl-3" href="#smoke-ventilation-commercial">Smoke Ventilation — Commercial</a>
+<a class="lvl-3" href="#marking-labeling-and-rapid-shutdown">Marking, Labeling, and Rapid Shutdown</a>
+<a class="lvl-3" href="#ground-mounted-arrays">Ground-Mounted Arrays</a>
+<a class="lvl-3" href="#what-changed-vs-the-previous-edition">What Changed vs the Previous Edition</a>
+<a class="lvl-3" href="#sources-further-reading">Sources &amp; Further Reading</a>
+<a class="lvl-2" href="#ifc-2018">IFC 2018</a>
+<a class="lvl-3" href="#scope-and-applicability-2">Scope and Applicability</a>
+<a class="lvl-3" href="#roof-access-and-fire-service-pathways-residential-group-r-3-2">Roof Access and Fire-Service Pathways — Residential (Group R-3)</a>
+<a class="lvl-3" href="#roof-access-and-fire-service-pathways-commercial-other-than-group-r-3-2">Roof Access and Fire-Service Pathways — Commercial (Other Than Group R-3)</a>
+<a class="lvl-3" href="#smoke-ventilation-commercial-2">Smoke Ventilation — Commercial</a>
+<a class="lvl-3" href="#marking-labeling-and-rapid-shutdown-2">Marking, Labeling, and Rapid Shutdown</a>
+<a class="lvl-3" href="#ground-mounted-arrays-2">Ground-Mounted Arrays</a>
+<a class="lvl-3" href="#what-changed-vs-the-previous-edition-2">What Changed vs the Previous Edition</a>
+<a class="lvl-3" href="#sources-further-reading-2">Sources &amp; Further Reading</a>
+<a class="lvl-2" href="#ifc-2021">IFC 2021</a>
+<a class="lvl-3" href="#scope-and-applicability-3">Scope and Applicability</a>
+<a class="lvl-3" href="#roof-access-and-fire-service-pathways-residential-group-r-3-3">Roof Access and Fire-Service Pathways — Residential (Group R-3)</a>
+<a class="lvl-3" href="#roof-access-and-fire-service-pathways-commercial-other-than-group-r-3-3">Roof Access and Fire-Service Pathways — Commercial (Other Than Group R-3)</a>
+<a class="lvl-3" href="#smoke-ventilation-commercial-3">Smoke Ventilation — Commercial</a>
+<a class="lvl-3" href="#marking-labeling-and-rapid-shutdown-3">Marking, Labeling, and Rapid Shutdown</a>
+<a class="lvl-3" href="#ground-mounted-arrays-3">Ground-Mounted Arrays</a>
+<a class="lvl-3" href="#what-changed-vs-the-previous-edition-3">What Changed vs the Previous Edition</a>
+<a class="lvl-3" href="#sources-further-reading-3">Sources &amp; Further Reading</a>
+<a class="lvl-2" href="#ifc-2024">IFC 2024</a>
+<a class="lvl-3" href="#scope-and-applicability-4">Scope and Applicability</a>
+<a class="lvl-3" href="#roof-access-and-fire-service-pathways-residential-group-r-3-4">Roof Access and Fire-Service Pathways — Residential (Group R-3)</a>
+<a class="lvl-3" href="#roof-access-and-fire-service-pathways-commercial-other-than-group-r-3-4">Roof Access and Fire-Service Pathways — Commercial (Other Than Group R-3)</a>
+<a class="lvl-3" href="#smoke-ventilation-commercial-4">Smoke Ventilation — Commercial</a>
+<a class="lvl-3" href="#marking-labeling-and-rapid-shutdown-4">Marking, Labeling, and Rapid Shutdown</a>
+<a class="lvl-3" href="#ground-mounted-arrays-4">Ground-Mounted Arrays</a>
+<a class="lvl-3" href="#what-changed-vs-the-previous-edition-4">What Changed vs the Previous Edition</a>
+<a class="lvl-3" href="#sources-further-reading-4">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>

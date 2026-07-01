@@ -1,0 +1,610 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>The International Residential Code (IRC) &amp; Solar · PVSource</title><meta name="description" content="PVSource — a one-stop solar reference: fundamentals, components, calculations, codes, permitting, tools, and residential & commercial incentives."/><script>(function(){try{var t=localStorage.getItem("pv-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script><link rel="stylesheet" href="assets/styles.css"/></head><body data-doc="codes" data-base=""><div id="progress"></div><div class="topbar"><div class="burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="tb-brand"><svg width="22" height="22" viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg>PVSource</div><button class="tb-theme" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></button><div class="tb-search" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div></div><div class="scrim-nav"></div><aside class="sidebar"><div class="brand"><div class="brand-mark"><div class="sun"><svg viewBox="0 0 40 40" fill="none"><g class="ray" stroke="#C08A3E" stroke-width="2" stroke-linecap="round"><line x1="20" y1="2.5" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="37.5"/><line x1="2.5" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="37.5" y2="20"/><line x1="7.8" y1="7.8" x2="11.7" y2="11.7"/><line x1="28.3" y1="28.3" x2="32.2" y2="32.2"/><line x1="32.2" y1="7.8" x2="28.3" y2="11.7"/><line x1="11.7" y1="28.3" x2="7.8" y2="32.2"/></g><circle cx="20" cy="20" r="8.5" fill="#E6C079"/><circle cx="20" cy="20" r="8.5" fill="none" stroke="#C08A3E" stroke-width="1.5"/></svg></div><div><div class="brand-name">PVSource</div><div class="brand-sub">Solar Reference</div></div></div></div><div class="search-trigger" data-search><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span>Search the docs…</span><span class="kbd">⌘K</span></div><nav class="nav"><a class="nav-link" href="index.html"><span class="ix">◆</span>Overview</a>
+<a class="nav-link" href="calculators.html"><span class="ix">◆</span>Interactive Calculators</a>
+<a class="nav-link" href="state-solar-map.html"><span class="ix">◆</span>U.S. State Solar Map</a>
+<a class="nav-link" href="downloads.html"><span class="ix">◆</span>Downloads</a>
+<a class="nav-link" href="engineering-glossary.html"><span class="ix">◆</span>Glossary</a>
+<div class="nav-group" data-group="Fundamentals"><button class="nav-group-toggle" type="button"><span>Fundamentals</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="how-solar-works.html"><span class="ix">01</span>How Solar Works</a><a class="nav-link" href="fundamentals-circuits-primer.html"><span class="ix">02</span>Electricity &amp; Circuits Primer</a><a class="nav-link" href="fundamentals-metrics-primer.html"><span class="ix">03</span>Power, Energy &amp; Key Metrics</a><a class="nav-link" href="fundamentals-solar-resource.html"><span class="ix">04</span>The Solar Resource &amp; Geometry</a><a class="nav-link" href="fundamentals-pv-modules.html"><span class="ix">05</span>PV Modules Deep-Dive</a><a class="nav-link" href="fundamentals-shading-mismatch.html"><span class="ix">06</span>Shading, Mismatch &amp; Bypass Diodes</a><a class="nav-link" href="system-components.html"><span class="ix">07</span>System Components</a><a class="nav-link" href="fundamentals-inverters.html"><span class="ix">08</span>Inverters Deep-Dive</a><a class="nav-link" href="fundamentals-wiring-connectors.html"><span class="ix">09</span>Wiring &amp; Connectors</a><a class="nav-link" href="battery-storage.html"><span class="ix">10</span>Battery Storage</a><a class="nav-link" href="fundamentals-grid.html"><span class="ix">11</span>How the Grid Works</a><a class="nav-link" href="calculations-formulas.html"><span class="ix">12</span>Calculations &amp; Formulas</a><a class="nav-link" href="tools-software.html"><span class="ix">13</span>Tools &amp; Software</a><a class="nav-link" href="fundamentals-standards-bodies.html"><span class="ix">14</span>Standards &amp; Certification Bodies</a><a class="nav-link" href="fundamentals-myths.html"><span class="ix">15</span>Solar Myths &amp; Misconceptions</a></div></div>
+<div class="nav-group" data-group="Codes &amp; Standards"><button class="nav-group-toggle" type="button"><span>Codes &amp; Standards</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="codes-standards-overview.html"><span class="ix">16</span>Codes &amp; Standards Overview</a><a class="nav-link" href="code-ifc.html"><span class="ix">17</span>IFC — Fire Code</a><a class="nav-link" href="code-ibc.html"><span class="ix">18</span>IBC — Building Code</a><a class="nav-link active" href="code-irc.html"><span class="ix">19</span>IRC — Residential Code</a><a class="nav-link" href="code-nec.html"><span class="ix">20</span>NEC — Electrical Code</a><a class="nav-link" href="code-cfc.html"><span class="ix">21</span>CFC — California Fire</a><a class="nav-link" href="code-cbc.html"><span class="ix">22</span>CBC — California Building</a><a class="nav-link" href="code-crc.html"><span class="ix">23</span>CRC — California Residential</a><a class="nav-link" href="code-cec.html"><span class="ix">24</span>CEC — California Electrical</a><a class="nav-link" href="code-iecc.html"><span class="ix">25</span>IECC — Energy Code</a><a class="nav-link" href="code-nfpa.html"><span class="ix">26</span>NFPA Standards</a><a class="nav-link" href="code-ul-ieee.html"><span class="ix">27</span>UL &amp; IEEE Standards</a></div></div>
+<div class="nav-group" data-group="Grid &amp; Interconnection"><button class="nav-group-toggle" type="button"><span>Grid &amp; Interconnection</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="grid-overview.html"><span class="ix">28</span>Grid &amp; Interconnection Overview</a><a class="nav-link" href="grid-distribution.html"><span class="ix">29</span>Distribution Interconnection</a><a class="nav-link" href="grid-ieee1547.html"><span class="ix">30</span>IEEE 1547 &amp; Smart Inverters</a><a class="nav-link" href="grid-net-metering.html"><span class="ix">31</span>Net Metering &amp; Rate Structures</a><a class="nav-link" href="grid-studies-queues.html"><span class="ix">32</span>Interconnection Studies &amp; Queues</a><a class="nav-link" href="grid-protection.html"><span class="ix">33</span>Anti-Islanding &amp; Protection</a><a class="nav-link" href="grid-three-phase.html"><span class="ix">34</span>Three-Phase &amp; Service Connections</a><a class="nav-link" href="grid-services-vpp.html"><span class="ix">35</span>Grid Services, VPPs &amp; DR</a><a class="nav-link" href="grid-power-quality.html"><span class="ix">36</span>Power Quality</a><a class="nav-link" href="grid-storage-interconnection.html"><span class="ix">37</span>Energy-Storage Interconnection</a><a class="nav-link" href="grid-microgrids.html"><span class="ix">38</span>Microgrids &amp; Islanding</a><a class="nav-link" href="grid-rate-design.html"><span class="ix">39</span>Utility Rate Design &amp; Tariffs</a><a class="nav-link" href="grid-ev-grid.html"><span class="ix">40</span>EVs &amp; the Grid</a><a class="nav-link" href="grid-resilience.html"><span class="ix">41</span>Grid Resilience &amp; Reliability</a></div></div>
+<div class="nav-group" data-group="Build It Yourself"><button class="nav-group-toggle" type="button"><span>Build It Yourself</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="diy-overview.html"><span class="ix">42</span>Building Your Own System</a><a class="nav-link" href="diy-residential-roof.html"><span class="ix">43</span>DIY Residential Rooftop</a><a class="nav-link" href="diy-ground-mount.html"><span class="ix">44</span>DIY Ground &amp; Pole Mount</a><a class="nav-link" href="diy-rv-van.html"><span class="ix">45</span>RV, Van &amp; Mobile Solar</a><a class="nav-link" href="diy-tiny-home.html"><span class="ix">46</span>Tiny Home &amp; Off-Grid Cabin</a><a class="nav-link" href="diy-off-grid-whole-home.html"><span class="ix">47</span>Off-Grid Whole-Home</a><a class="nav-link" href="diy-marine-boat.html"><span class="ix">48</span>Marine &amp; Boat Solar</a><a class="nav-link" href="diy-portable-emergency.html"><span class="ix">49</span>Portable &amp; Emergency Power</a><a class="nav-link" href="diy-electrical-calcs.html"><span class="ix">50</span>DIY Electrical Calculations</a><a class="nav-link" href="diy-structural-calcs.html"><span class="ix">51</span>DIY Structural Calculations</a><a class="nav-link" href="diy-battery-builds.html"><span class="ix">52</span>DIY Battery Builds</a><a class="nav-link" href="diy-tools-testing.html"><span class="ix">53</span>Tools, Testing &amp; Commissioning</a><a class="nav-link" href="diy-permitting-inspection.html"><span class="ix">54</span>Permitting &amp; Inspection</a><a class="nav-link" href="diy-water-pumping.html"><span class="ix">55</span>Solar Water Pumping &amp; Wells</a><a class="nav-link" href="diy-monitoring-smarthome.html"><span class="ix">56</span>Monitoring &amp; Smart-Home</a><a class="nav-link" href="diy-grounding-surge.html"><span class="ix">57</span>Grounding, Bonding &amp; Surge</a><a class="nav-link" href="diy-ev-charging.html"><span class="ix">58</span>DIY EV Charging from Solar</a><a class="nav-link" href="diy-sourcing.html"><span class="ix">59</span>Sourcing Materials &amp; Kits</a></div></div>
+<div class="nav-group" data-group="Residential"><button class="nav-group-toggle" type="button"><span>Residential</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="residential-design.html"><span class="ix">60</span>Residential Design</a><a class="nav-link" href="residential-anatomy.html"><span class="ix">61</span>Anatomy of a Residential System</a><a class="nav-link" href="residential-sizing.html"><span class="ix">62</span>Residential Sizing</a><a class="nav-link" href="residential-battery-backup.html"><span class="ix">63</span>Battery &amp; Whole-Home Backup</a><a class="nav-link" href="residential-ev-charging.html"><span class="ix">64</span>EV Charging + Solar</a><a class="nav-link" href="residential-codes.html"><span class="ix">65</span>Residential Codes &amp; Fire</a><a class="nav-link" href="residential-permitting.html"><span class="ix">66</span>Residential Permitting</a><a class="nav-link" href="residential-monitoring.html"><span class="ix">67</span>Monitoring &amp; Troubleshooting</a><a class="nav-link" href="residential-reroofing.html"><span class="ix">68</span>Re-Roofing &amp; Solar</a><a class="nav-link" href="residential-incentives.html"><span class="ix">69</span>Residential Incentives</a><a class="nav-link" href="residential-community-solar.html"><span class="ix">70</span>Community Solar for Households</a><a class="nav-link" href="residential-bill-rates.html"><span class="ix">71</span>Reading Your Electric Bill</a><a class="nav-link" href="residential-financing.html"><span class="ix">72</span>Homeowner Financing 101</a><a class="nav-link" href="residential-insurance-warranties.html"><span class="ix">73</span>Insurance, Warranties &amp; Protection</a><a class="nav-link" href="residential-selling-home.html"><span class="ix">74</span>Selling a Home with Solar</a></div></div>
+<div class="nav-group" data-group="Commercial"><button class="nav-group-toggle" type="button"><span>Commercial</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="commercial-design.html"><span class="ix">75</span>Commercial Design</a><a class="nav-link" href="commercial-anatomy.html"><span class="ix">76</span>Anatomy of a Commercial System</a><a class="nav-link" href="commercial-sizing.html"><span class="ix">77</span>Commercial Sizing</a><a class="nav-link" href="commercial-carports.html"><span class="ix">78</span>Carports &amp; Canopies</a><a class="nav-link" href="commercial-community-solar.html"><span class="ix">79</span>Community Solar</a><a class="nav-link" href="commercial-storage.html"><span class="ix">80</span>Storage &amp; Demand Charges</a><a class="nav-link" href="commercial-codes.html"><span class="ix">81</span>Commercial Codes &amp; Fire</a><a class="nav-link" href="commercial-permitting.html"><span class="ix">82</span>Commercial Permitting</a><a class="nav-link" href="commercial-om-asset.html"><span class="ix">83</span>O&amp;M &amp; Asset Management</a><a class="nav-link" href="commercial-fleet-ev.html"><span class="ix">84</span>Fleet &amp; EV Charging</a><a class="nav-link" href="commercial-nonprofit-municipal.html"><span class="ix">85</span>Nonprofit, Municipal &amp; School</a><a class="nav-link" href="commercial-microgrids.html"><span class="ix">86</span>Microgrids &amp; Resilience</a><a class="nav-link" href="commercial-agrivoltaics.html"><span class="ix">87</span>Agrivoltaics &amp; Dual-Use</a><a class="nav-link" href="commercial-financing.html"><span class="ix">88</span>C&amp;I Financing</a><a class="nav-link" href="commercial-multifamily-vnem.html"><span class="ix">89</span>Multifamily &amp; VNEM</a><a class="nav-link" href="commercial-data-centers.html"><span class="ix">90</span>Data Centers &amp; High-Load</a></div></div>
+<div class="nav-group" data-group="Utility-Scale Solar"><button class="nav-group-toggle" type="button"><span>Utility-Scale Solar</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="util-overview.html"><span class="ix">91</span>Utility-Scale Overview</a><a class="nav-link" href="util-anatomy.html"><span class="ix">92</span>Anatomy of a Utility Plant</a><a class="nav-link" href="util-site-land.html"><span class="ix">93</span>Site Selection &amp; Land</a><a class="nav-link" href="util-trackers.html"><span class="ix">94</span>Trackers &amp; Fixed-Tilt</a><a class="nav-link" href="util-inverters-collection.html"><span class="ix">95</span>Inverters &amp; MV Collection</a><a class="nav-link" href="util-substation.html"><span class="ix">96</span>Substations &amp; Transmission</a><a class="nav-link" href="util-civil-structural.html"><span class="ix">97</span>Civil &amp; Structural</a><a class="nav-link" href="util-development-finance.html"><span class="ix">98</span>Development &amp; Finance</a><a class="nav-link" href="util-scada-controls.html"><span class="ix">99</span>SCADA, Controls &amp; Compliance</a><a class="nav-link" href="util-construction.html"><span class="ix">100</span>Construction &amp; Commissioning</a><a class="nav-link" href="util-solar-storage-hybrid.html"><span class="ix">101</span>Solar-Plus-Storage Hybrids</a><a class="nav-link" href="util-yield-modeling.html"><span class="ix">102</span>Energy-Yield Modeling (P50/P90)</a><a class="nav-link" href="util-environmental-permitting.html"><span class="ix">103</span>Environmental Permitting</a><a class="nav-link" href="util-agrivoltaics-landuse.html"><span class="ix">104</span>Agrivoltaics &amp; Land Use</a><a class="nav-link" href="util-floating-solar.html"><span class="ix">105</span>Floating Solar</a><a class="nav-link" href="util-bifacial-albedo.html"><span class="ix">106</span>Bifacial &amp; Albedo</a><a class="nav-link" href="util-grid-forming.html"><span class="ix">107</span>Grid-Forming Inverters</a></div></div>
+<div class="nav-group" data-group="Operations &amp; Maintenance"><button class="nav-group-toggle" type="button"><span>Operations &amp; Maintenance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="om-overview.html"><span class="ix">108</span>O&amp;M Overview</a><a class="nav-link" href="om-monitoring.html"><span class="ix">109</span>Monitoring &amp; Performance</a><a class="nav-link" href="om-inspection-testing.html"><span class="ix">110</span>Inspection &amp; Testing</a><a class="nav-link" href="om-cleaning-soiling.html"><span class="ix">111</span>Cleaning &amp; Soiling</a><a class="nav-link" href="om-vegetation-site.html"><span class="ix">112</span>Vegetation &amp; Site</a><a class="nav-link" href="om-inverter-electrical.html"><span class="ix">113</span>Inverter &amp; Electrical</a><a class="nav-link" href="om-troubleshooting.html"><span class="ix">114</span>Troubleshooting &amp; Diagnosis</a><a class="nav-link" href="om-repowering.html"><span class="ix">115</span>Repowering &amp; Decommissioning</a><a class="nav-link" href="om-bess-augmentation.html"><span class="ix">116</span>BESS O&amp;M &amp; Augmentation</a></div></div>
+<div class="nav-group" data-group="Commercial · Incentives"><button class="nav-group-toggle" type="button"><span>Commercial · Incentives</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="federal-tax-credits.html"><span class="ix">117</span>Federal Tax Credits</a><a class="nav-link" href="state-tax-credits.html"><span class="ix">118</span>State Tax Credits</a><a class="nav-link" href="big-beautiful-bill.html"><span class="ix">119</span>The Big Beautiful Bill</a><a class="nav-link" href="incentive-direct-pay.html"><span class="ix">120</span>Direct Pay (Elective Payment)</a><a class="nav-link" href="incentive-transferability.html"><span class="ix">121</span>Transferability (§6418)</a><a class="nav-link" href="incentive-energy-communities.html"><span class="ix">122</span>Energy Communities Bonus</a><a class="nav-link" href="incentive-domestic-content.html"><span class="ix">123</span>Domestic Content Bonus</a><a class="nav-link" href="incentive-macrs-depreciation.html"><span class="ix">124</span>MACRS &amp; Depreciation</a><a class="nav-link" href="incentive-usda-reap.html"><span class="ix">125</span>USDA REAP Grants</a><a class="nav-link" href="california-title-24.html"><span class="ix">126</span>California Title 24</a><a class="nav-link" href="illinois-shines.html"><span class="ix">127</span>Illinois Shines</a><a class="nav-link" href="incentive-ny-sun-vder.html"><span class="ix">128</span>New York — NY-Sun &amp; VDER</a><a class="nav-link" href="incentive-ma-smart.html"><span class="ix">129</span>Massachusetts — SMART</a><a class="nav-link" href="incentive-nj-susi.html"><span class="ix">130</span>New Jersey — SuSI</a><a class="nav-link" href="incentive-srec-markets.html"><span class="ix">131</span>SREC Markets Deep-Dive</a><a class="nav-link" href="incentive-more-states.html"><span class="ix">132</span>More State Programs</a><a class="nav-link" href="incentive-prevailing-wage.html"><span class="ix">133</span>Prevailing Wage &amp; Apprenticeship</a><a class="nav-link" href="incentive-tax-equity.html"><span class="ix">134</span>Tax-Equity Structures</a><a class="nav-link" href="incentive-rec-tracking.html"><span class="ix">135</span>REC/SREC Registration &amp; Tracking</a><a class="nav-link" href="incentive-more-states-2.html"><span class="ix">136</span>More State Programs (Round 2)</a><a class="nav-link" href="incentive-property-sales-tax.html"><span class="ix">137</span>Property &amp; Sales-Tax Exemptions</a></div></div>
+<div class="nav-group" data-group="State Solar Guides"><button class="nav-group-toggle" type="button"><span>State Solar Guides</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="nav-group-items"><a class="nav-link" href="state-ca.html"><span class="ix">138</span>California</a><a class="nav-link" href="state-tx.html"><span class="ix">139</span>Texas</a><a class="nav-link" href="state-fl.html"><span class="ix">140</span>Florida</a><a class="nav-link" href="state-az.html"><span class="ix">141</span>Arizona</a><a class="nav-link" href="state-nv.html"><span class="ix">142</span>Nevada</a><a class="nav-link" href="state-nc.html"><span class="ix">143</span>North Carolina</a><a class="nav-link" href="state-ga.html"><span class="ix">144</span>Georgia</a><a class="nav-link" href="state-co.html"><span class="ix">145</span>Colorado</a><a class="nav-link" href="state-ny.html"><span class="ix">146</span>New York</a><a class="nav-link" href="state-nj.html"><span class="ix">147</span>New Jersey</a><a class="nav-link" href="state-ma.html"><span class="ix">148</span>Massachusetts</a><a class="nav-link" href="state-md.html"><span class="ix">149</span>Maryland</a><a class="nav-link" href="state-or.html"><span class="ix">150</span>Oregon</a><a class="nav-link" href="state-wa.html"><span class="ix">151</span>Washington</a><a class="nav-link" href="state-ut.html"><span class="ix">152</span>Utah</a><a class="nav-link" href="state-nm.html"><span class="ix">153</span>New Mexico</a><a class="nav-link" href="state-hi.html"><span class="ix">154</span>Hawaii</a><a class="nav-link" href="state-mn.html"><span class="ix">155</span>Minnesota</a><a class="nav-link" href="state-il.html"><span class="ix">156</span>Illinois</a><a class="nav-link" href="state-pa.html"><span class="ix">157</span>Pennsylvania</a><a class="nav-link" href="state-oh.html"><span class="ix">158</span>Ohio</a><a class="nav-link" href="state-va.html"><span class="ix">159</span>Virginia</a><a class="nav-link" href="state-ct.html"><span class="ix">160</span>Connecticut</a><a class="nav-link" href="state-mi.html"><span class="ix">161</span>Michigan</a><a class="nav-link" href="state-wi.html"><span class="ix">162</span>Wisconsin</a><a class="nav-link" href="state-sc.html"><span class="ix">163</span>South Carolina</a><a class="nav-link" href="state-in.html"><span class="ix">164</span>Indiana</a><a class="nav-link" href="state-ri.html"><span class="ix">165</span>Rhode Island</a></div></div></nav><div style="padding:8px 22px 9px"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode"><span class="ti"><span class="moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></span><span class="suni"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></span></span><span class="lbl"><span class="moon">Dark mode</span><span class="suni">Light mode</span></span></button></div><div class="sidebar-foot">A one-stop solar reference — residential &amp; commercial. For planning and education only; not engineering, tax or legal advice.</div></aside><main class="main"><div class="side-nav prev"><a href="code-ibc.html" aria-label="Previous: IBC — Building Code"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></a><span class="tip">IBC — Building Code</span></div><div class="side-nav next"><a href="code-nec.html" aria-label="Next: NEC — Electrical Code"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a><span class="tip">NEC — Electrical Code</span></div><section class="banner"><div class="doc-actions"><button data-print type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>Print / PDF</button></div><div class="banner-inner reveal"><span class="eyebrow"><span class="dot"></span>Codes &amp; Standards</span><h1>The International Residential Code (IRC) &amp; Solar</h1><p class="lede">Solar on one- and two-family dwellings — roof access and fire setbacks, structural attachment, and the NEC pointer — across the 2015 to 2024 editions.</p><div class="banner-meta"><div class="m"><b>2015 → 2024</b><span>All editions</span></div><div class="m"><b>R324 / R329</b><span>PV sections</span></div><div class="m"><b>Setbacks</b><span>Residential</span></div></div></div></section><div class="doc-wrap"><article class="content"><div class="code-callout"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h16.9a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg><div>Model codes are <strong>adopted and amended locally</strong>. Section numbers and requirements vary by edition and jurisdiction — confirm the edition your <strong>Authority Having Jurisdiction (AHJ)</strong> enforces before relying on this page. See the <a class="inline" href="state-solar-map.html">State Solar Map</a> for adoption pointers.<span class="jz" data-jz></span></div></div><p>The <strong>International Residential Code (IRC)</strong> governs solar on one- and two-family dwellings — roof access and fire setbacks, structural attachment, and pointers to the NEC for electrical work.</p>
+<h2 id="irc-2015">IRC 2015</h2>
+<p>The <strong>2015 International Residential Code (IRC)</strong> is the model code that governs construction of <strong>detached one- and two-family dwellings and townhouses</strong> not more than three stories above grade. The 2015 edition is historically important for rooftop solar: it introduced <strong>Section R324, "Solar Energy Systems"</strong> — the first time the IRC carried a dedicated, comprehensive set of provisions for roof-mounted photovoltaic (PV) systems on dwellings. Earlier editions (2009, 2012) had no equivalent stand-alone solar section, so R324 is the baseline against which every later edition's changes are measured.</p>
+<p>This article covers what the 2015 IRC requires for residential PV: scope, fire-service roof access and ridge setbacks, structural attachment, and the pointer to the National Electrical Code (NEC) for the electrical installation. For the broader model-code framework, see <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> and the residential-specific summary in <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a>.</p>
+<blockquote>
+<p><strong>AHJ is authoritative.</strong> Every section number and dimension below is from the 2015 IRC model text. Your jurisdiction (the Authority Having Jurisdiction, or AHJ) may enforce a different edition, adopt the IRC with local amendments, or supplement it with the International Fire Code. Confirm the edition in force and have a licensed professional verify the design.</p>
+</blockquote>
+<h3 id="scope-what-r324-covers-for-dwellings">Scope: What R324 Covers for Dwellings</h3>
+<p>Section R324 applies to <strong>solar energy systems</strong> installed on structures built under the IRC — one- and two-family dwellings and townhouses. It addresses both <strong>solar thermal</strong> and <strong>photovoltaic</strong> systems, but the provisions most relevant to rooftop solar deal with PV panels and modules.</p>
+<p>The 2015 R324 is organized (in summary) as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Subsection (2015 IRC)</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R324.1</td>
+<td>General / scope</td>
+</tr>
+<tr>
+<td>R324.2</td>
+<td>Solar thermal systems</td>
+</tr>
+<tr>
+<td>R324.3</td>
+<td>Photovoltaic systems (general, listing)</td>
+</tr>
+<tr>
+<td>R324.4</td>
+<td>Rooftop-mounted PV — structural, wind, fire classification</td>
+</tr>
+<tr>
+<td>R324.5</td>
+<td>Building-integrated photovoltaic (BIPV) systems</td>
+</tr>
+<tr>
+<td>R324.6</td>
+<td>Photovoltaic systems — fire classification cross-reference</td>
+</tr>
+<tr>
+<td>R324.7</td>
+<td>Access and pathways (fire-service roof access)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Section numbering within R324 was reorganized in later editions. In the <strong>2015 IRC the fire-service access and setback rules live in R324.7</strong>; in the 2018 and 2021 editions they were consolidated under <strong>R324.6</strong>. Do not assume the same subsection number applies across editions — verify against the edition your AHJ enforces.</p>
+</blockquote>
+<p>Two general requirements from R324.3 are worth noting:</p>
+<ul>
+<li><strong>Listing.</strong> PV systems must be <strong>listed and labeled</strong> and installed in accordance with the manufacturer's instructions and the applicable codes.</li>
+<li><strong>Electrical.</strong> Photovoltaic systems must be installed in accordance with the applicable provisions that point to the <strong>NEC (NFPA 70)</strong> — see the electrical pointer below.</li>
+</ul>
+<h3 id="fire-service-roof-access-setback-pathways">Fire-Service Roof Access &amp; Setback Pathways</h3>
+<p>The 2015 IRC's roof-access rules (<strong>R324.7</strong>) exist so firefighters can walk the roof, ventilate it, and work around energized PV during a fire. These residential provisions closely mirror — and were coordinated with — the roof-access provisions of the <strong>International Fire Code</strong>. For the fire-code side of the same rules, see <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a>.</p>
+<h4>Access pathways</h4>
+<p>Not fewer than <strong>two 36-inch-wide pathways</strong> on separate roof planes, running from the lowest roof edge to the ridge, are required. For each roof plane bearing an array, a <strong>36-inch (914 mm) pathway</strong> from the lowest edge to the ridge must be provided on the same plane, an adjacent plane, or straddling both. Pathways must be over roof areas capable of supporting firefighters.</p>
+<pre><code>        RIDGE
+  ======================
+  |  18&quot; min setback     |   &lt;- setback at ridge (see below)
+  |  +----------------+  |
+  |  |                |  |
+  |  |   PV  ARRAY    |  |
+  |  |                |  |
+  |  +----------------+  |
+  |                      |
+  |&lt;-36&quot;-&gt;|      |&lt;-36&quot;-&gt;|   &lt;- two 36&quot; access pathways,
+  | path  |      | path  |      edge-to-ridge, on separate
+  ======================        roof planes
+     LOWEST ROOF EDGE (eave)
+</code></pre>
+<h4>Setback at the ridge — and the key exception</h4>
+<p>A clear setback is required on <strong>both sides of a horizontal ridge</strong> so crews can cut ventilation openings. The 2015 IRC scales the setback to how much of the roof the array covers:</p>
+<table>
+<thead>
+<tr>
+<th>PV array coverage (plan-view of total roof area)</th>
+<th>Ridge setback each side</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Not more than 33%</strong></td>
+<td><strong>18 in. (457 mm)</strong></td>
+</tr>
+<tr>
+<td>More than 66%</td>
+<td>36 in. (914 mm)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>The 18-inch exception.</strong> The headline residential concession is that an array covering <strong>no more than about one-third (≤33%) of the roof plan area</strong> qualifies for a reduced <strong>18-inch</strong> ridge setback instead of the larger setback. This lets a modest residential array sit closer to the ridge while preserving a firefighter working space. Coverage is measured in <strong>plan view (as projected onto a horizontal plane), not along the roof slope</strong> — a subtlety that trips up designers. Confirm the exact measurement method with your plan reviewer.</p>
+</blockquote>
+<pre><code>   ridge line
+   ===============================
+        ^  18&quot; (array &lt;=33% of roof)  ^
+        |                             |
+        +--- clear setback each side -+
+</code></pre>
+<p>Panels and modules must <strong>not</strong> be placed on the portion of a roof below an <strong>emergency escape and rescue opening (bedroom egress window)</strong>.</p>
+<h3 id="structural-attachment">Structural Attachment</h3>
+<p>Rooftop PV adds dead load and new uplift/​downward-load paths that the existing framing must carry.</p>
+<ul>
+<li><strong>Gravity and dead load.</strong> The array's added dead load (modules plus racking — commonly on the order of a few pounds per square foot) must be supported by the existing roof structure per IRC Chapter 3.</li>
+<li><strong>Wind load.</strong> Rooftop-mounted PV panels/modules and their supports must resist the <strong>component-and-cladding wind loads</strong> derived from the IRC wind provisions, which are coordinated with <strong>ASCE 7</strong> (Minimum Design Loads and Associated Criteria for Buildings and Other Structures). Uplift is highest at roof <strong>edges and corners</strong>.</li>
+<li><strong>Snow load.</strong> The roof must still satisfy its original snow-load requirement (also from ASCE 7 as referenced by the IRC) with the array in place.</li>
+<li><strong>Attachment.</strong> Fasteners must transfer loads into the <strong>structural framing (rafters/trusses)</strong>, not merely the roof sheathing, with adequate embedment; spacing is set by the calculated uplift and the fastener's withdrawal capacity. Penetrations must be flashed to maintain the roof's weather resistance.</li>
+<li><strong>Fire classification.</strong> The completed module-plus-racking-plus-roof assembly must maintain the roof's required <strong>fire classification</strong>.</li>
+</ul>
+<blockquote>
+<p>Most AHJs accept manufacturer-listed racking with an engineering letter, or a project-specific <strong>PE-stamped structural calculation</strong> for spans, attachment spacing, and uplift. Marginal or non-standard framing frequently triggers a required structural evaluation.</p>
+</blockquote>
+<h3 id="electrical-pointer-to-the-nec">Electrical: Pointer to the NEC</h3>
+<p>The IRC does <strong>not</strong> contain the detailed electrical rules for PV. Instead, R324's photovoltaic provisions direct the installation to the <strong>National Electrical Code (NFPA 70)</strong> — principally:</p>
+<ul>
+<li><strong>NEC Article 690</strong> — Solar Photovoltaic (PV) Systems</li>
+<li><strong>NEC Article 705</strong> — Interconnected Electric Power Production Sources</li>
+</ul>
+<p>Note that <strong>rapid shutdown</strong> is an NEC requirement (NEC 690.12), not an IRC one. The 2015 IRC pairs with the <strong>2014 NEC</strong> in most adopting jurisdictions, whose 690.12 required a rapid-shutdown boundary around the array; the more stringent module-level ("conductors inside the array") rapid-shutdown requirement arrived with the <strong>2017 NEC</strong>. Because NEC editions are adopted on their own cycle, <strong>verify which NEC edition your AHJ enforces</strong> alongside the 2015 IRC.</p>
+<h3 id="what-changed-vs-the-previous-edition">What Changed vs. the Previous Edition</h3>
+<p>Because there was <strong>no dedicated solar section before 2015</strong>, the 2015 IRC's change is foundational rather than incremental:</p>
+<ul>
+<li><strong>New Section R324, "Solar Energy Systems"</strong> was added — the first stand-alone IRC solar section. The 2012 IRC had no comparable provision, so rooftop PV was previously handled through general structural, roofing, and electrical requirements plus local practice.</li>
+<li>It <strong>codified fire-service roof access, pathways, and ridge setbacks</strong> for dwellings (in R324.7), including the <strong>≤33% coverage / 18-inch ridge-setback</strong> exception.</li>
+<li>It <strong>explicitly tied rooftop PV to wind and structural provisions</strong> (component-and-cladding loads coordinated with ASCE 7) and to the roof's <strong>fire classification</strong>.</li>
+<li>It <strong>directed the electrical installation to the NEC</strong> rather than restating electrical rules.</li>
+</ul>
+<p>The next edition (see <a class="inline" href="code-irc.html">IRC 2018 &amp; Solar</a>) reorganized these same rules — moving access and setbacks to <strong>R324.6</strong>, tightening the ridge-setback coverage threshold, and adding a sprinkler-based alternative. Later editions (<a class="inline" href="code-irc.html">IRC 2021 &amp; Solar</a> and <a class="inline" href="code-irc.html">IRC 2024 &amp; Solar</a>) refined the pathways further and, in 2024, renumbered the section entirely.</p>
+<hr />
+<blockquote>
+<p><strong>Disclaimer.</strong> This article is an educational summary of the 2015 IRC model text and is <strong>not</strong> a substitute for the adopted code, a plan review, or professional engineering. Section numbers, dimensions, and thresholds are drawn from the model edition and may differ under state or local amendments. The <strong>AHJ is authoritative</strong>; always confirm the edition in force (IRC and NEC) and have a licensed design professional verify structural, fire, and electrical compliance for your specific project.</p>
+</blockquote>
+<h3 id="sources-further-reading">Sources &amp; Further Reading</h3>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/content/IRC2015/chapter-3-building-planning">2015 IRC, Chapter 3 — Building Planning (Section R324, Solar Energy Systems)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/GCIRC2015P1/chapter-3-building-planning/GCIRC2015P1-Pt03-Ch03-SecR324.7">2015 IRC, Section R324.7 — Access and pathways (ICC Digital Codes)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://basc.pnnl.gov/code-compliance/installation-photovoltaic-systems-code-compliance-brief">Installation of Photovoltaic Systems — Code Compliance Brief (PNNL Building America Solution Center)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.fema.gov/sites/default/files/2020-08/2015_IRC_compilaton_of_wind_resistanc_provisions.pdf">2015 IRC — A Compilation of Wind Resistant Provisions (FEMA)</a></li>
+<li>Related pages on this site: <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> · <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> · <a class="inline" href="code-irc.html">IRC 2018 &amp; Solar</a> · <a class="inline" href="code-irc.html">IRC 2021 &amp; Solar</a> · <a class="inline" href="code-irc.html">IRC 2024 &amp; Solar</a> · <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a></li>
+</ul>
+<h2 id="irc-2018">IRC 2018</h2>
+<p>The <strong>2018 International Residential Code (IRC)</strong> governs construction of <strong>detached one- and two-family dwellings and townhouses</strong> up to three stories. It carries forward <strong>Section R324, "Solar Energy Systems"</strong> — the dedicated solar section first introduced in 2015 — but <strong>reorganizes and tightens the fire-service roof-access provisions</strong>. The most consequential 2018 change is the relocation of access and setback rules to <strong>Section R324.6</strong> and a stricter ridge-setback threshold, softened by a new <strong>sprinkler-based alternative</strong>.</p>
+<p>This article covers the 2018 IRC's residential PV requirements: scope, fire-service roof access and ridge setbacks (including the key ≤33% coverage exception), structural attachment, and the pointer to the National Electrical Code (NEC). For context, see <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> and <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a>; compare the prior edition at <a class="inline" href="code-irc.html">IRC 2015 &amp; Solar</a>.</p>
+<blockquote>
+<p><strong>AHJ is authoritative.</strong> Every section number and dimension below is from the 2018 IRC model text. Your jurisdiction (the Authority Having Jurisdiction, or AHJ) may enforce a different edition, adopt the IRC with local amendments, or supplement it with the International Fire Code. Confirm the edition in force and have a licensed professional verify the design.</p>
+</blockquote>
+<h3 id="scope-what-r324-covers-for-dwellings-2">Scope: What R324 Covers for Dwellings</h3>
+<p>Section R324 applies to <strong>solar energy systems</strong> — both solar thermal and photovoltaic (PV) — installed on structures built under the IRC, meaning one- and two-family dwellings and townhouses. The provisions relevant to rooftop solar address PV panels and modules: their listing, structural support, wind resistance, fire classification, and roof access.</p>
+<p>The 2018 R324 is organized (in summary) as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Subsection (2018 IRC)</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R324.1</td>
+<td>General / scope</td>
+</tr>
+<tr>
+<td>R324.2</td>
+<td>Solar thermal systems</td>
+</tr>
+<tr>
+<td>R324.3</td>
+<td>Photovoltaic systems (general, listing)</td>
+</tr>
+<tr>
+<td>R324.4</td>
+<td>Rooftop-mounted PV — structural, wind, fire classification</td>
+</tr>
+<tr>
+<td>R324.5</td>
+<td>Building-integrated photovoltaic (BIPV) systems</td>
+</tr>
+<tr>
+<td><strong>R324.6</strong></td>
+<td><strong>Roof access and pathways (fire-service access + setbacks)</strong></td>
+</tr>
+<tr>
+<td>R324.6.1</td>
+<td>Pathways</td>
+</tr>
+<tr>
+<td>R324.6.2</td>
+<td>Setback at ridge</td>
+</tr>
+<tr>
+<td>R324.6.2.1</td>
+<td>Alternative setback (sprinklered dwellings)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Key structural note.</strong> In the <strong>2015 IRC</strong> the fire-access rules were in <strong>R324.7</strong>; the <strong>2018 edition moved them to R324.6</strong> and added subsections R324.6.1, R324.6.2, and R324.6.2.1. Do not assume the same subsection number applies across editions — verify against the edition your AHJ enforces.</p>
+</blockquote>
+<h3 id="fire-service-roof-access-setback-pathways-2">Fire-Service Roof Access &amp; Setback Pathways</h3>
+<p>The 2018 roof-access rules (<strong>R324.6</strong>) let firefighters walk the roof, ventilate it, and work around energized PV. They are closely coordinated with the roof-access provisions of the <strong>International Fire Code</strong> — see <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a> for the parallel fire-code text.</p>
+<h4>Access pathways (R324.6.1)</h4>
+<p>Not fewer than <strong>two 36-inch-wide pathways</strong> on separate roof planes, running from the lowest roof edge to the ridge, are required. For each roof plane bearing an array, a <strong>36-inch (914 mm) pathway</strong> from the lowest edge to the ridge must be provided on the same plane, an adjacent plane, or straddling both. Pathways must be located over roof areas capable of supporting firefighters.</p>
+<pre><code>        RIDGE
+  ======================
+  | 18&quot; min setback (&lt;=33%) |
+  |  +----------------+  |
+  |  |                |  |
+  |  |   PV  ARRAY    |  |
+  |  |                |  |
+  |  +----------------+  |
+  |&lt;-36&quot;-&gt;|      |&lt;-36&quot;-&gt;|   &lt;- two 36&quot; access pathways,
+  | path  |      | path  |      edge-to-ridge, separate planes
+  ======================
+     LOWEST ROOF EDGE (eave)
+</code></pre>
+<h4>Setback at the ridge — the key exception (R324.6.2)</h4>
+<p>A clear setback is required on <strong>both sides of a horizontal ridge</strong>. In the 2018 IRC the threshold was <strong>tightened</strong> relative to 2015:</p>
+<table>
+<thead>
+<tr>
+<th>PV array coverage (plan-view of total roof area)</th>
+<th>Ridge setback each side (2018 base rule)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Not more than 33%</strong></td>
+<td><strong>18 in. (457 mm)</strong></td>
+</tr>
+<tr>
+<td>More than 33%</td>
+<td>36 in. (914 mm)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>The 18-inch exception.</strong> An array covering <strong>no more than about one-third (≤33%) of the roof plan area</strong> qualifies for the reduced <strong>18-inch</strong> ridge setback; anything larger requires the full <strong>36-inch</strong> setback. Compared with 2015 (where the 36-inch setback only kicked in above <strong>66%</strong> coverage), the 2018 base rule is <strong>stricter</strong> — the larger setback now applies as soon as coverage exceeds 33%. Coverage is measured in <strong>plan view (projected onto a horizontal plane), not along the slope.</strong></p>
+</blockquote>
+<h4>Sprinkler alternative (R324.6.2.1)</h4>
+<p>The 2018 IRC added a <strong>new alternative</strong> that restores the more generous 66% threshold when the dwelling is protected by fire sprinklers:</p>
+<blockquote>
+<p>Where an <strong>automatic sprinkler system</strong> is installed in the dwelling in accordance with <strong>NFPA 13D or IRC Section P2904</strong>, an array covering <strong>≤66%</strong> of the roof plan area may use the <strong>18-inch</strong> ridge setback; above 66%, the <strong>36-inch</strong> setback applies.</p>
+</blockquote>
+<p>Panels and modules must <strong>not</strong> be placed on the portion of a roof below an <strong>emergency escape and rescue opening</strong>.</p>
+<h3 id="structural-attachment-2">Structural Attachment</h3>
+<p>Rooftop PV adds dead load and new uplift/​downward-load paths the existing framing must carry.</p>
+<ul>
+<li><strong>Gravity and dead load.</strong> The array's added dead load must be supported by the existing roof structure per IRC Chapter 3.</li>
+<li><strong>Wind load.</strong> Rooftop PV panels/modules and their supports must resist the <strong>component-and-cladding wind loads</strong> from the IRC wind provisions, coordinated with <strong>ASCE 7</strong>. Uplift is highest at roof <strong>edges and corners</strong>.</li>
+<li><strong>Snow load.</strong> The roof must still meet its original snow-load requirement (ASCE 7, as referenced by the IRC) with the array in place.</li>
+<li><strong>Attachment.</strong> Fasteners must transfer loads into the <strong>structural framing (rafters/trusses)</strong>, not merely the sheathing, with adequate embedment; spacing follows the calculated uplift and fastener withdrawal capacity. Penetrations must be flashed to maintain weather resistance.</li>
+<li><strong>Fire classification.</strong> The completed module-plus-racking-plus-roof assembly must maintain the roof's required <strong>fire classification</strong>.</li>
+</ul>
+<blockquote>
+<p>Most AHJs accept manufacturer-listed racking with an engineering letter, or a project-specific <strong>PE-stamped structural calculation</strong> for spans, attachment spacing, and uplift. Marginal or non-standard framing frequently triggers a required structural evaluation.</p>
+</blockquote>
+<h3 id="electrical-pointer-to-the-nec-2">Electrical: Pointer to the NEC</h3>
+<p>The 2018 IRC does <strong>not</strong> restate the detailed electrical rules for PV. R324's photovoltaic provisions direct the installation to the <strong>National Electrical Code (NFPA 70)</strong>:</p>
+<ul>
+<li><strong>NEC Article 690</strong> — Solar Photovoltaic (PV) Systems</li>
+<li><strong>NEC Article 705</strong> — Interconnected Electric Power Production Sources</li>
+</ul>
+<p><strong>Rapid shutdown</strong> is an NEC requirement (NEC 690.12), not an IRC one. The 2018 IRC is commonly adopted alongside the <strong>2017 NEC</strong>, whose 690.12 introduced the module-level ("inside the array boundary," conductors limited to 80 V) rapid-shutdown requirement — a significant tightening over the 2014 NEC's array-boundary rule. Because NEC editions are adopted on their own cycle, <strong>verify which NEC edition your AHJ enforces</strong> with the 2018 IRC.</p>
+<h3 id="what-changed-vs-the-previous-edition-2">What Changed vs. the Previous Edition</h3>
+<p>Relative to <a class="inline" href="code-irc.html">IRC 2015 &amp; Solar</a>:</p>
+<ul>
+<li><strong>Fire-access rules relocated</strong> from <strong>R324.7 (2015)</strong> to <strong>R324.6 (2018)</strong>, with new numbered subsections for pathways (R324.6.1), ridge setback (R324.6.2), and the sprinkler alternative (R324.6.2.1).</li>
+<li><strong>Ridge-setback threshold tightened.</strong> In 2015, the full 36-inch setback applied only above <strong>66%</strong> coverage; in 2018 the <strong>36-inch setback applies as soon as coverage exceeds 33%</strong>. The ≤33% / 18-inch exception carries over.</li>
+<li><strong>New sprinkler-based alternative (R324.6.2.1).</strong> Dwellings sprinklered to <strong>NFPA 13D or IRC P2904</strong> may keep the 18-inch setback up to <strong>66%</strong> coverage — restoring flexibility that the base rule removed.</li>
+<li>The <strong>structural, wind (ASCE 7), fire-classification, and NEC-pointer</strong> provisions are substantively continuous with 2015.</li>
+</ul>
+<p>The following edition (<a class="inline" href="code-irc.html">IRC 2021 &amp; Solar</a>) retained the R324.6 structure while refining pathway placement (street/driveway side, emergency-escape-opening pathways) and BIPV references; the <a class="inline" href="code-irc.html">IRC 2024 &amp; Solar</a> edition then renumbered the section entirely.</p>
+<hr />
+<blockquote>
+<p><strong>Disclaimer.</strong> This article is an educational summary of the 2018 IRC model text and is <strong>not</strong> a substitute for the adopted code, a plan review, or professional engineering. Section numbers, dimensions, and thresholds are drawn from the model edition and may differ under state or local amendments. The <strong>AHJ is authoritative</strong>; always confirm the edition in force (IRC and NEC) and have a licensed design professional verify structural, fire, and electrical compliance for your specific project.</p>
+</blockquote>
+<h3 id="sources-further-reading-2">Sources &amp; Further Reading</h3>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://up.codes/s/roof-access-and-pathways">2018 IRC, Section R324.6 — Roof Access and Pathways (UpCodes)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.contracosta.ca.gov/DocumentCenter/View/69155/Example-for-Roof-Mount-Solar-Fire-Setbacks-per-Code">2018 IRC, Section R324.6.1 — Roof access example (Contra Costa County)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.solarelectricsupply.com/media/sparsh/product_attachment/CALSSA_Modified_Setbacks_and_Pathways_06-20-2018.pdf">Modified Roof Setbacks for Residential Solar PV Systems, 2018 (CALSSA)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.harfordcountymd.gov/DocumentCenter/View/3607/Installation-of-Solar-Mounted-Roofing-Panels">Section R324 Solar Energy Systems — installation reference (Harford County, MD)</a></li>
+<li>Related pages on this site: <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> · <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> · <a class="inline" href="code-irc.html">IRC 2015 &amp; Solar</a> · <a class="inline" href="code-irc.html">IRC 2021 &amp; Solar</a> · <a class="inline" href="code-irc.html">IRC 2024 &amp; Solar</a> · <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a></li>
+</ul>
+<h2 id="irc-2021">IRC 2021</h2>
+<p>The <strong>2021 International Residential Code (IRC)</strong> governs construction of <strong>detached one- and two-family dwellings and townhouses</strong> up to three stories. It keeps <strong>Section R324, "Solar Energy Systems,"</strong> and retains the <strong>R324.6 roof-access structure</strong> introduced in 2018, while <strong>refining the fire-service pathway rules</strong> — most notably requiring a pathway on the <strong>street or driveway side</strong> and an explicit pathway to <strong>emergency escape and rescue openings</strong>, and clarifying pathway obstruction language. The ridge-setback thresholds and the sprinkler alternative carry over from 2018.</p>
+<p>This article covers the 2021 IRC's residential PV requirements: scope, fire-service roof access and ridge setbacks (with the key ≤33% coverage exception), structural attachment, and the pointer to the National Electrical Code (NEC). For context, see <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> and <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a>; compare <a class="inline" href="code-irc.html">IRC 2018 &amp; Solar</a>.</p>
+<blockquote>
+<p><strong>AHJ is authoritative.</strong> Every section number and dimension below is from the 2021 IRC model text. Your jurisdiction (the Authority Having Jurisdiction, or AHJ) may enforce a different edition, adopt the IRC with local amendments, or supplement it with the International Fire Code. Confirm the edition in force and have a licensed professional verify the design.</p>
+</blockquote>
+<h3 id="scope-what-r324-covers-for-dwellings-3">Scope: What R324 Covers for Dwellings</h3>
+<p>Section R324 applies to <strong>solar energy systems</strong> — solar thermal and photovoltaic (PV) — installed on structures built under the IRC (one- and two-family dwellings and townhouses). For rooftop solar it governs listing, structural support, wind resistance, fire classification, and roof access.</p>
+<p>The 2021 R324 is organized (in summary) as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Subsection (2021 IRC)</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R324.1</td>
+<td>General / scope</td>
+</tr>
+<tr>
+<td>R324.2</td>
+<td>Solar thermal systems</td>
+</tr>
+<tr>
+<td>R324.3</td>
+<td>Photovoltaic systems (general, listing)</td>
+</tr>
+<tr>
+<td>R324.4</td>
+<td>Rooftop-mounted PV — structural, wind, fire classification</td>
+</tr>
+<tr>
+<td>R324.5</td>
+<td>Building-integrated photovoltaic (BIPV) systems</td>
+</tr>
+<tr>
+<td><strong>R324.6</strong></td>
+<td><strong>Roof access and pathways</strong></td>
+</tr>
+<tr>
+<td>R324.6.1</td>
+<td>Pathways</td>
+</tr>
+<tr>
+<td>R324.6.2</td>
+<td>Setback at ridge</td>
+</tr>
+<tr>
+<td>R324.6.2.1</td>
+<td>Alternative setback (sprinklered dwellings)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The <strong>R324.6</strong> location for fire-access rules is the same as 2018 (it was <strong>R324.7</strong> back in 2015). The <strong>2024 edition renumbers the whole section to R329</strong> — do not carry the R324 number forward blindly. Verify against the edition your AHJ enforces.</p>
+</blockquote>
+<h3 id="fire-service-roof-access-setback-pathways-3">Fire-Service Roof Access &amp; Setback Pathways</h3>
+<p>The 2021 roof-access rules (<strong>R324.6</strong>) preserve firefighter access for walking, ventilating, and working around energized PV. They remain coordinated with the roof-access provisions of the <strong>International Fire Code</strong> — see <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a>.</p>
+<h4>Access pathways (R324.6.1)</h4>
+<p>Not fewer than <strong>two 36-inch-wide pathways</strong> on separate roof planes, from the lowest roof edge to the ridge, are required, with <strong>not fewer than one pathway on the street or driveway side</strong> of the roof. For each roof plane bearing an array, a <strong>36-inch (914 mm) pathway</strong> from the lowest edge to the ridge must be provided on the same plane, an adjacent plane, or straddling both. The 2021 text also clarifies that pathways should be located in areas with <strong>minimal obstructions</strong> (vent pipes, conduit, mechanical equipment) and adds an explicit <strong>36-inch pathway to any emergency escape and rescue opening</strong>.</p>
+<pre><code>        RIDGE
+  ======================
+  | 18&quot; min setback (&lt;=33%) |
+  |  +----------------+  |
+  |  |   PV  ARRAY    |  |
+  |  +----------------+  |
+  |&lt;-36&quot;-&gt;|      |&lt;-36&quot;-&gt;|   two 36&quot; access pathways,
+  | path  |      | path  |   &gt;=1 on street/driveway side
+  ======================
+     LOWEST ROOF EDGE (eave)   &lt;- + 36&quot; pathway to any egress window
+</code></pre>
+<h4>Setback at the ridge — the key exception (R324.6.2)</h4>
+<p>A clear setback is required on <strong>both sides of a horizontal ridge</strong>, scaled to coverage (unchanged from 2018):</p>
+<table>
+<thead>
+<tr>
+<th>PV array coverage (plan-view of total roof area)</th>
+<th>Ridge setback each side</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Not more than 33%</strong></td>
+<td><strong>18 in. (457 mm)</strong></td>
+</tr>
+<tr>
+<td>More than 33%</td>
+<td>36 in. (914 mm)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>The 18-inch exception.</strong> An array covering <strong>no more than about one-third (≤33%) of the roof plan area</strong> qualifies for the reduced <strong>18-inch</strong> ridge setback; larger arrays require the full <strong>36-inch</strong> setback. Coverage is measured in <strong>plan view (projected onto a horizontal plane), not along the slope.</strong></p>
+</blockquote>
+<h4>Sprinkler alternative (R324.6.2.1)</h4>
+<p>Where an <strong>automatic sprinkler system</strong> complying with <strong>NFPA 13D or IRC Section P2904</strong> is installed, an array covering <strong>≤66%</strong> of the roof plan area may use the <strong>18-inch</strong> setback; above 66%, the <strong>36-inch</strong> setback applies. Panels and modules must <strong>not</strong> be placed on the portion of a roof below an <strong>emergency escape and rescue opening</strong>.</p>
+<h3 id="structural-attachment-3">Structural Attachment</h3>
+<p>Rooftop PV adds dead load and new load paths the existing framing must carry.</p>
+<ul>
+<li><strong>Gravity and dead load.</strong> The added array dead load must be supported by the existing roof structure per IRC Chapter 3.</li>
+<li><strong>Wind load.</strong> Rooftop PV panels/modules and supports must resist <strong>component-and-cladding wind loads</strong> from the IRC provisions, coordinated with <strong>ASCE 7</strong>. The 2021 IRC generation is coordinated with the <strong>ASCE 7-16</strong> load standard, which introduced explicit rooftop-solar wind provisions. Uplift is highest at roof <strong>edges and corners</strong>.</li>
+<li><strong>Snow load.</strong> The roof must still meet its original snow-load requirement (ASCE 7) with the array in place.</li>
+<li><strong>Attachment.</strong> Fasteners must transfer loads into the <strong>structural framing (rafters/trusses)</strong>, not just the sheathing, with adequate embedment; spacing follows the calculated uplift and fastener withdrawal capacity. Penetrations must be flashed to maintain weather resistance.</li>
+<li><strong>Fire classification.</strong> The completed module-plus-racking-plus-roof assembly must maintain the roof's required <strong>fire classification</strong>.</li>
+</ul>
+<blockquote>
+<p>Most AHJs accept manufacturer-listed racking with an engineering letter, or a project-specific <strong>PE-stamped structural calculation</strong>. Marginal or non-standard framing frequently triggers a required structural evaluation.</p>
+</blockquote>
+<h3 id="electrical-pointer-to-the-nec-3">Electrical: Pointer to the NEC</h3>
+<p>The 2021 IRC does <strong>not</strong> restate PV electrical rules; R324 directs the installation to the <strong>National Electrical Code (NFPA 70)</strong>:</p>
+<ul>
+<li><strong>NEC Article 690</strong> — Solar Photovoltaic (PV) Systems</li>
+<li><strong>NEC Article 705</strong> — Interconnected Electric Power Production Sources</li>
+</ul>
+<p><strong>Rapid shutdown</strong> is an NEC requirement (NEC 690.12), not an IRC one. The 2021 IRC is commonly paired with the <strong>2020 NEC</strong>, which retained module-level rapid shutdown and refined the initiation and BIPV-listing provisions (including an allowance in 690.12 for listed BIPV where cutting the system has been determined not to expose firefighters to shock hazard). Because NEC editions are adopted on their own cycle, <strong>verify which NEC edition your AHJ enforces</strong> with the 2021 IRC.</p>
+<h3 id="what-changed-vs-the-previous-edition-3">What Changed vs. the Previous Edition</h3>
+<p>Relative to <a class="inline" href="code-irc.html">IRC 2018 &amp; Solar</a>:</p>
+<ul>
+<li><strong>Pathway rules refined (R324.6.1).</strong> The 2021 edition adds an explicit requirement for <strong>at least one pathway on the street or driveway side</strong>, clarifies that pathways should avoid <strong>obstructions</strong> (vents, conduit, mechanical equipment), and calls out a <strong>36-inch pathway to emergency escape and rescue openings</strong>.</li>
+<li><strong>Ridge-setback thresholds unchanged.</strong> The <strong>≤33% / 18-inch</strong> exception, the <strong>&gt;33% / 36-inch</strong> base rule, and the <strong>≤66% sprinkler alternative (R324.6.2.1)</strong> all carry over from 2018.</li>
+<li><strong>Structural/wind coordination advances</strong> with the <strong>ASCE 7-16</strong> generation of load provisions and its rooftop-solar wind rules.</li>
+<li><strong>NEC pairing</strong> typically advances to the <strong>2020 NEC</strong> (rapid-shutdown and BIPV refinements), though NEC adoption is independent of the IRC.</li>
+</ul>
+<p>The next edition (<a class="inline" href="code-irc.html">IRC 2024 &amp; Solar</a>) <strong>renumbers the section from R324 to R329</strong> and adjusts firefighter-access-pathway provisions — a larger structural change than the 2018-to-2021 refinements.</p>
+<hr />
+<blockquote>
+<p><strong>Disclaimer.</strong> This article is an educational summary of the 2021 IRC model text and is <strong>not</strong> a substitute for the adopted code, a plan review, or professional engineering. Section numbers, dimensions, and thresholds are drawn from the model edition and may differ under state or local amendments. The <strong>AHJ is authoritative</strong>; always confirm the edition in force (IRC and NEC) and have a licensed design professional verify structural, fire, and electrical compliance for your specific project.</p>
+</blockquote>
+<h3 id="sources-further-reading-3">Sources &amp; Further Reading</h3>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/s/IRC2021P3/part-iii-building-planning-and-construction/IRC2021P3-Pt03-Ch03-SecR324.6.2">2021 IRC, Section R324.6.2 — Setback at ridge (ICC Digital Codes)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://up.codes/s/roof-access-and-pathways">2021 IRC, Section R324.6 — Roof Access and Pathways (UpCodes)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.nfpa.org/news-blogs-and-articles/blogs/2020/07/24/accessways-for-roof-mounted-photovoltaic-installations">Providing Access to Roofs with a PV System (NFPA)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.houstonpermittingcenter.org/media/7121/download">2015 IRC / 2021 IRC solar access comparison (Houston Permitting Center)</a></li>
+<li>Related pages on this site: <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> · <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> · <a class="inline" href="code-irc.html">IRC 2015 &amp; Solar</a> · <a class="inline" href="code-irc.html">IRC 2018 &amp; Solar</a> · <a class="inline" href="code-irc.html">IRC 2024 &amp; Solar</a> · <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a></li>
+</ul>
+<h2 id="irc-2024">IRC 2024</h2>
+<p>The <strong>2024 International Residential Code (IRC)</strong> governs construction of <strong>detached one- and two-family dwellings and townhouses</strong> up to three stories. Its headline change for rooftop solar is <strong>structural, not just editorial</strong>: the residential PV provisions long known as <strong>Section R324</strong> were <strong>reorganized and renumbered to Section R329, "Photovoltaic Systems,"</strong> with the solar-thermal material moved to its own location. The familiar fire-service roof-access framework — pathways, ridge setbacks, and the sprinkler alternative — carries forward largely intact, with <strong>refinements to the firefighter-access pathway provisions</strong>.</p>
+<p>This article covers the 2024 IRC's residential PV requirements: scope, fire-service roof access and ridge setbacks (with the key ≤33% coverage exception), structural attachment, and the pointer to the National Electrical Code (NEC). For context, see <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> and <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a>; compare <a class="inline" href="code-irc.html">IRC 2021 &amp; Solar</a>.</p>
+<blockquote>
+<p><strong>AHJ is authoritative.</strong> Every section number and dimension below is from the 2024 IRC model text. The 2024 IRC is relatively new and, as of this writing, is being adopted on a rolling basis; many jurisdictions still enforce 2021, 2018, or 2015. Your jurisdiction (the Authority Having Jurisdiction, or AHJ) may enforce a different edition, adopt the IRC with local amendments, or supplement it with the International Fire Code. Confirm the edition in force and have a licensed professional verify the design.</p>
+</blockquote>
+<h3 id="scope-what-r329-covers-for-dwellings">Scope: What R329 Covers for Dwellings</h3>
+<p>In the 2024 IRC, the <strong>photovoltaic provisions are consolidated under Section R329, "Photovoltaic Systems"</strong> (the section number that in prior editions was R324). It applies to PV systems installed on structures built under the IRC — one- and two-family dwellings and townhouses — covering listing, structural support, wind resistance, fire classification, roof access, ground-mounted systems, and BIPV.</p>
+<p>The 2024 R329 is organized (in summary) as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Subsection (2024 IRC)</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R329.1</td>
+<td>General / scope</td>
+</tr>
+<tr>
+<td>R329.2</td>
+<td>Photovoltaic systems (general, listing)</td>
+</tr>
+<tr>
+<td>R329.3 – R329.5</td>
+<td>Rooftop-mounted PV — structural, wind, fire classification</td>
+</tr>
+<tr>
+<td><strong>R329.6</strong></td>
+<td><strong>Roof access and pathways</strong></td>
+</tr>
+<tr>
+<td>R329.6.1</td>
+<td>Pathways</td>
+</tr>
+<tr>
+<td>R329.6.2</td>
+<td>Setback at ridge</td>
+</tr>
+<tr>
+<td>R329.6.2.1</td>
+<td>Alternative setback (sprinklered dwellings)</td>
+</tr>
+<tr>
+<td>R329.6.4</td>
+<td>Building-integrated photovoltaic (BIPV) systems</td>
+</tr>
+<tr>
+<td>R329.7</td>
+<td>Ground-mounted photovoltaic systems</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>This is the big change.</strong> The residential PV section <strong>moved from R324 to R329</strong> in 2024, and solar-thermal content was separated out. Older references, plan-check checklists, and third-party guides still cite "R324" — when you see R324 in a 2024-context document, confirm whether it should read <strong>R329</strong>. The exact subsection numbering within R329 should be verified against the published 2024 IRC, as the reorganization shifted some sub-numbers. <strong>Verify against the edition your AHJ enforces.</strong></p>
+</blockquote>
+<h3 id="fire-service-roof-access-setback-pathways-4">Fire-Service Roof Access &amp; Setback Pathways</h3>
+<p>The 2024 roof-access rules (<strong>R329.6</strong>) preserve firefighter access for walking, ventilating, and working around energized PV, and remain coordinated with the roof-access provisions of the <strong>International Fire Code</strong> — see <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a>.</p>
+<h4>Access pathways (R329.6.1)</h4>
+<p>Not fewer than <strong>two 36-inch-wide pathways</strong> on separate roof planes, from the lowest roof edge to the ridge, are required, with <strong>not fewer than one pathway on the street or driveway side</strong> of the roof. For each roof plane bearing an array, a <strong>36-inch (914 mm) pathway</strong> from the lowest edge to the ridge must be provided on the same plane, an adjacent plane, or straddling both. The 2024 edition <strong>refines the firefighter-access pathway provisions</strong>, including clarifying/​adding conditions under which certain access pathways may be exempted; confirm the specific exemption language and its triggers with your plan reviewer.</p>
+<pre><code>        RIDGE
+  ======================
+  | 18&quot; min setback (&lt;=33%) |
+  |  +----------------+  |
+  |  |   PV  ARRAY    |  |
+  |  +----------------+  |
+  |&lt;-36&quot;-&gt;|      |&lt;-36&quot;-&gt;|   two 36&quot; access pathways,
+  | path  |      | path  |   &gt;=1 on street/driveway side
+  ======================
+     LOWEST ROOF EDGE (eave)
+</code></pre>
+<h4>Setback at the ridge — the key exception (R329.6.2)</h4>
+<p>A clear setback is required on <strong>both sides of a horizontal ridge</strong>, scaled to coverage (thresholds continuous with 2018/2021):</p>
+<table>
+<thead>
+<tr>
+<th>PV array coverage (plan-view of total roof area)</th>
+<th>Ridge setback each side</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Not more than 33%</strong></td>
+<td><strong>18 in. (457 mm)</strong></td>
+</tr>
+<tr>
+<td>More than 33%</td>
+<td>36 in. (914 mm)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>The 18-inch exception.</strong> An array covering <strong>no more than about one-third (≤33%) of the roof plan area</strong> qualifies for the reduced <strong>18-inch</strong> ridge setback; larger arrays require the full <strong>36-inch</strong> setback. Coverage is measured in <strong>plan view (projected onto a horizontal plane), not along the slope.</strong></p>
+</blockquote>
+<h4>Sprinkler alternative (R329.6.2.1)</h4>
+<p>Where an <strong>automatic sprinkler system</strong> complying with <strong>NFPA 13D or IRC Section P2904</strong> is installed, an array covering <strong>≤66%</strong> of the roof plan area may use the <strong>18-inch</strong> setback; above 66%, the <strong>36-inch</strong> setback applies. Panels and modules must <strong>not</strong> be placed on the portion of a roof below an <strong>emergency escape and rescue opening</strong>.</p>
+<h4>Ground-mounted PV (R329.7)</h4>
+<p>The 2024 edition addresses <strong>ground-mounted photovoltaic systems</strong> in their own subsection, requiring them to be designed and installed to the applicable structural provisions (referencing IRC Section R301). This is a useful clarification for residential detached arrays that are not on the dwelling roof.</p>
+<h3 id="structural-attachment-4">Structural Attachment</h3>
+<p>Rooftop PV adds dead load and new load paths the existing framing must carry.</p>
+<ul>
+<li><strong>Gravity and dead load.</strong> The added array dead load must be supported by the existing roof structure per IRC Chapter 3.</li>
+<li><strong>Wind load.</strong> Rooftop PV panels/modules and supports must resist <strong>component-and-cladding wind loads</strong> from the IRC provisions, coordinated with <strong>ASCE 7</strong>. The 2024 IRC generation is coordinated with the <strong>ASCE 7-22</strong> load standard, which further updated rooftop-solar wind and (regionally) tornado provisions. Uplift is highest at roof <strong>edges and corners</strong>.</li>
+<li><strong>Snow load.</strong> The roof must still meet its original snow-load requirement (ASCE 7) with the array in place.</li>
+<li><strong>Attachment.</strong> Fasteners must transfer loads into the <strong>structural framing (rafters/trusses)</strong>, not just the sheathing, with adequate embedment; spacing follows the calculated uplift and fastener withdrawal capacity. Penetrations must be flashed to maintain weather resistance.</li>
+<li><strong>Fire classification.</strong> The completed module-plus-racking-plus-roof assembly must maintain the roof's required <strong>fire classification</strong>.</li>
+</ul>
+<blockquote>
+<p>Most AHJs accept manufacturer-listed racking with an engineering letter, or a project-specific <strong>PE-stamped structural calculation</strong>. Marginal or non-standard framing frequently triggers a required structural evaluation.</p>
+</blockquote>
+<h3 id="electrical-pointer-to-the-nec-4">Electrical: Pointer to the NEC</h3>
+<p>The 2024 IRC does <strong>not</strong> restate PV electrical rules; the photovoltaic section directs the installation to the <strong>National Electrical Code (NFPA 70)</strong>:</p>
+<ul>
+<li><strong>NEC Article 690</strong> — Solar Photovoltaic (PV) Systems</li>
+<li><strong>NEC Article 705</strong> — Interconnected Electric Power Production Sources</li>
+</ul>
+<p><strong>Rapid shutdown</strong> is an NEC requirement (NEC 690.12), not an IRC one. The 2024 IRC is commonly paired with the <strong>2023 NEC</strong>, which retained module-level rapid shutdown and continued to refine 690.12 (initiation devices, labeling, and BIPV allowances) as well as energy-storage-system interconnection rules. Because NEC editions are adopted on their own cycle, <strong>verify which NEC edition your AHJ enforces</strong> with the 2024 IRC.</p>
+<h3 id="what-changed-vs-the-previous-edition-4">What Changed vs. the Previous Edition</h3>
+<p>Relative to <a class="inline" href="code-irc.html">IRC 2021 &amp; Solar</a>:</p>
+<ul>
+<li><strong>Section renumbered R324 → R329.</strong> The residential PV provisions were <strong>reorganized into Section R329, "Photovoltaic Systems,"</strong> and solar-thermal content was separated. This is the most visible change and the biggest source of citation confusion — legacy documents citing "R324" generally map to <strong>R329</strong> under the 2024 IRC.</li>
+<li><strong>Firefighter-access pathway provisions refined</strong>, including clarified/​added conditions for pathway exemptions. Verify the precise triggers with the published code and your AHJ.</li>
+<li><strong>Ground-mounted PV</strong> given a clearer dedicated subsection (R329.7).</li>
+<li><strong>Ridge-setback thresholds unchanged.</strong> The <strong>≤33% / 18-inch</strong> exception, the <strong>&gt;33% / 36-inch</strong> base rule, and the <strong>≤66% sprinkler alternative</strong> carry forward from 2018/2021.</li>
+<li><strong>Structural/wind coordination advances</strong> to the <strong>ASCE 7-22</strong> generation of load provisions; NEC pairing typically advances to the <strong>2023 NEC</strong> (though NEC adoption is independent of the IRC).</li>
+</ul>
+<p>Because the 2024 IRC is newly published and still being adopted, expect a long transition during which most residential PV permits are still reviewed under the <a class="inline" href="code-irc.html">2021</a>, <a class="inline" href="code-irc.html">2018</a>, or <a class="inline" href="code-irc.html">2015</a> editions. Always confirm the edition in force before designing to R329 numbering.</p>
+<hr />
+<blockquote>
+<p><strong>Disclaimer.</strong> This article is an educational summary of the 2024 IRC model text and is <strong>not</strong> a substitute for the adopted code, a plan review, or professional engineering. The 2024 edition is newly published; section numbers (including the R324-to-R329 renumbering), dimensions, and thresholds should be verified against the published code and may differ under state or local amendments. The <strong>AHJ is authoritative</strong>; always confirm the edition in force (IRC and NEC) and have a licensed design professional verify structural, fire, and electrical compliance for your specific project.</p>
+</blockquote>
+<h3 id="sources-further-reading-4">Sources &amp; Further Reading</h3>
+<ul>
+<li><a class="inline" target="_blank" rel="noopener" href="https://codes.iccsafe.org/content/IRC2024V2.0/index">2024 IRC — Index (ICC Digital Codes)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://www.nahb.org/-/media/NAHB/advocacy/docs/top-priorities/codes/code-adoption/signficant-code-changes-2024-irc.pdf">2024 Significant Code Changes for the IRC (NAHB)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://mybuildingpermit.com/sites/default/files/TS_24_Residential%20Solar%20Systems_FINAL_4_14_25.pdf">Section R324 / R329 roof-access example, Roof-Mounted PV (mybuildingpermit.com)</a></li>
+<li><a class="inline" target="_blank" rel="noopener" href="https://app.leg.wa.gov/WAC/default.aspx?cite=51-51-03240&amp;pdf=true">Section R324—Solar energy systems, state adoption reference (Washington WAC 51-51-03240)</a></li>
+<li>Related pages on this site: <a class="inline" href="codes-standards-overview.html">Building Codes &amp; Standards Explained</a> · <a class="inline" href="residential-codes.html">Residential Solar Codes &amp; Fire Requirements</a> · <a class="inline" href="code-irc.html">IRC 2015 &amp; Solar</a> · <a class="inline" href="code-irc.html">IRC 2018 &amp; Solar</a> · <a class="inline" href="code-irc.html">IRC 2021 &amp; Solar</a> · <a class="inline" href="code-ifc.html">IFC 2018 &amp; Solar</a></li>
+</ul>
+<hr />
+<p><em>Reference and educational use only — not code-compliance advice. Model codes are adopted and amended locally; confirm the exact edition and any local amendments with your AHJ and a licensed professional.</em></p><div class="related" id="related-slot" hidden></div><div class="pager"><a href="code-ibc.html" class="prev"><span class="dir">Previous</span><span class="ttl">IBC — Building Code</span></a><a href="code-nec.html" class="next"><span class="dir">Next</span><span class="ttl">NEC — Electrical Code</span></a></div></article><aside class="toc"><div class="toc-title">On this page</div><a class="lvl-2" href="#irc-2015">IRC 2015</a>
+<a class="lvl-3" href="#scope-what-r324-covers-for-dwellings">Scope: What R324 Covers for Dwellings</a>
+<a class="lvl-3" href="#fire-service-roof-access-setback-pathways">Fire-Service Roof Access &amp; Setback Pathways</a>
+<a class="lvl-3" href="#structural-attachment">Structural Attachment</a>
+<a class="lvl-3" href="#electrical-pointer-to-the-nec">Electrical: Pointer to the NEC</a>
+<a class="lvl-3" href="#what-changed-vs-the-previous-edition">What Changed vs. the Previous Edition</a>
+<a class="lvl-3" href="#sources-further-reading">Sources &amp; Further Reading</a>
+<a class="lvl-2" href="#irc-2018">IRC 2018</a>
+<a class="lvl-3" href="#scope-what-r324-covers-for-dwellings-2">Scope: What R324 Covers for Dwellings</a>
+<a class="lvl-3" href="#fire-service-roof-access-setback-pathways-2">Fire-Service Roof Access &amp; Setback Pathways</a>
+<a class="lvl-3" href="#structural-attachment-2">Structural Attachment</a>
+<a class="lvl-3" href="#electrical-pointer-to-the-nec-2">Electrical: Pointer to the NEC</a>
+<a class="lvl-3" href="#what-changed-vs-the-previous-edition-2">What Changed vs. the Previous Edition</a>
+<a class="lvl-3" href="#sources-further-reading-2">Sources &amp; Further Reading</a>
+<a class="lvl-2" href="#irc-2021">IRC 2021</a>
+<a class="lvl-3" href="#scope-what-r324-covers-for-dwellings-3">Scope: What R324 Covers for Dwellings</a>
+<a class="lvl-3" href="#fire-service-roof-access-setback-pathways-3">Fire-Service Roof Access &amp; Setback Pathways</a>
+<a class="lvl-3" href="#structural-attachment-3">Structural Attachment</a>
+<a class="lvl-3" href="#electrical-pointer-to-the-nec-3">Electrical: Pointer to the NEC</a>
+<a class="lvl-3" href="#what-changed-vs-the-previous-edition-3">What Changed vs. the Previous Edition</a>
+<a class="lvl-3" href="#sources-further-reading-3">Sources &amp; Further Reading</a>
+<a class="lvl-2" href="#irc-2024">IRC 2024</a>
+<a class="lvl-3" href="#scope-what-r329-covers-for-dwellings">Scope: What R329 Covers for Dwellings</a>
+<a class="lvl-3" href="#fire-service-roof-access-setback-pathways-4">Fire-Service Roof Access &amp; Setback Pathways</a>
+<a class="lvl-3" href="#structural-attachment-4">Structural Attachment</a>
+<a class="lvl-3" href="#electrical-pointer-to-the-nec-4">Electrical: Pointer to the NEC</a>
+<a class="lvl-3" href="#what-changed-vs-the-previous-edition-4">What Changed vs. the Previous Edition</a>
+<a class="lvl-3" href="#sources-further-reading-4">Sources &amp; Further Reading</a></aside></div></main><div class="palette-scrim" id="palette"><div class="palette" role="dialog" aria-label="Search"><div class="palette-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="pal-input" type="text" placeholder="Ask a question — “what are inverters?”, “conduit fill”…" autocomplete="off" spellcheck="false"/><span class="esc">ESC</span></div><div class="pal-scopes" id="pal-scopes"></div><div class="palette-results" id="pal-results"></div><div class="palette-foot"><span><span class="k">↑</span><span class="k">↓</span> navigate</span><span><span class="k">↵</span> open</span><span><span class="k">esc</span> close</span></div></div></div><script src="assets/search-index.js"></script><script src="assets/search-engine.js"></script><script src="assets/glossary-data.js"></script><script src="assets/app.js"></script></body></html>
