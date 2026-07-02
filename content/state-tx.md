@@ -45,7 +45,7 @@ Instead:
 
 - In **deregulated ERCOT areas**, individual **REPs offer "solar buyback" plans** that credit exported energy — terms vary widely (full retail-equivalent 1:1 credit on some plans, wholesale-ish or capped credits on others, sometimes only up to your consumption). Shopping REPs is essential.
 - **Municipal utilities and co-ops** set their own policies:
-  - **Austin Energy** uses a **Value of Solar (VoS) tariff** — all solar production is credited at a Value-of-Solar rate (recently around **~9.9¢/kWh**; verify current value), rather than netting against consumption.
+  - **Austin Energy** uses a **Value of Solar (VoS) tariff** — all solar production (gross generation, not just exports) is credited at a Value-of-Solar rate (**~9.91¢/kWh**; reviewed roughly every 3 years — verify current value), rather than netting against consumption. Credits roll over monthly but cannot be cashed out.
   - **CPS Energy** (San Antonio) and various co-ops have their own net-metering-style or buyback arrangements.
 
 For how buyback and net-billing mechanics compare, see [Net Metering, Net Billing & Rate Structures](grid-net-metering.md).
@@ -95,16 +95,51 @@ Because Texas is decentralized, **the best solar rebates are local**, offered by
 
 | Provider | Program (verify current) | Notes |
 |----------|--------------------------|-------|
-| **Austin Energy** | Residential solar rebate (recently ~$2,500) + Value of Solar tariff | Qualified contractor required; Austin territory only |
+| **Austin Energy** | Residential rebate + Capacity/Performance commercial incentives + Value of Solar tariff | See detail below; Austin territory only |
 | **Oncor** (TDU) | Residential/commercial solar + storage incentive | Battery pairing often required; annual budget window; amount varies |
 | **CPS Energy** (San Antonio) | Solar and battery rebates | Program terms change annually |
 | **CenterPoint / AEP / TNMP** | Varies | Some energy-efficiency/DR programs |
 
 Many programs are **budget-limited, seasonal, and change year to year** — several run only during defined enrollment windows.
 
-> **Key point:** **Check your specific utility's live rebate page.** Amounts, contractor requirements, and enrollment windows change frequently. Storage rebates increasingly require batteries paired with solar.
+### Austin Energy — the details
 
-For storage design, see [Battery Storage](battery-storage.md).
+Austin Energy (municipal utility) has the state's most structured solar-incentive program. **All amounts below are the new rates effective July 1, 2026** — anyone who has not yet installed is eligible at the new rates.
+
+**Residential rebate**
+
+| System size | Previous | As of July 1, 2026 |
+|-------------|----------|--------------------|
+| **> 3 kW** (per project) | $2,500 | **$4,000** |
+
+To earn the residential rebate you must: **complete Austin Energy's free Solar Education Course**, use an **Austin Energy Participating Contractor**, install a **new system ≥ 3 kW (DC)** that is largely unshaded, and receive a **Solar Rebate Confirmation Letter *before* installation** (systems already installed are not eligible).
+
+**Commercial — pick ONE of two options** (eligibility is set by **kW-AC ≈ 83% of the kW-DC** system rating):
+
+*Capacity-Based Incentive (CBI) — one-time payment, per watt-DC*
+
+| Customer / size | Previous | As of July 1, 2026 |
+|-----------------|----------|--------------------|
+| **Nonprofit, < 200 kW** | $0.60 / W | **$1.00 / W** |
+| **For-profit business, < 100 kW** | $0.50 / W | **$0.70 / W** |
+
+*Performance-Based Incentive (PBI) — paid on production for 5 years, per kWh*
+
+| System size | Previous | As of July 1, 2026 |
+|-------------|----------|--------------------|
+| **< 400 kW** | $0.08 / kWh | **$0.10 / kWh** |
+| **400 – 999 kW** | $0.06 / kWh | **$0.08 / kWh** |
+| **≥ 1,000 kW (1 MW)** | $0.04 / kWh | **$0.06 / kWh** |
+
+CBI rebates are **capped** (historically ~$168,675 for nonprofits and ~$60,240 for businesses < 100 kW — verify the current cap under the new rates). Commercial projects go through a **reservation process**: the contractor applies, Austin Energy issues an **Encumbrance Letter** then a **Letter of Intent (LOI)**; Austin Energy makes **no financial commitment until the LOI is issued**, and if the project isn't finished before the LOI expires you must reapply at the then-current rate. **Funding is first-come, first-served.** Nonprofits must submit 501(c)(3)/(4) documentation.
+
+**Value of Solar (VoS) tariff** — Austin Energy uses **VoS instead of net metering**. Every solar system is automatically credited at **~9.91¢/kWh for *all* energy it produces** (gross production, not just exports). The rate is **reviewed every ~3 years**, credits **roll over** month to month against electric charges only, and **excess credits cannot be cashed out** (don't oversize).
+
+**Batteries:** there's no upfront battery rebate, but battery owners can earn rewards through Austin Energy's **Power Partner** demand-response (virtual-power-plant) program. **Note:** third-party solar **PPAs are not allowed** in Austin Energy's territory.
+
+> **Key point:** **Check your specific utility's live rebate page.** Amounts, contractor requirements, and enrollment windows change frequently, and storage rebates increasingly require batteries paired with solar.
+
+For storage design, see [Battery Storage](battery-storage.md); for the residential-side view of these programs, see [Utility Residential Rebates & Programs](resinc-utility.md).
 
 ---
 
@@ -154,6 +189,8 @@ Texas is a booming solar market with an excellent resource and a strong, permane
 - [Public Utility Commission of Texas (PUCT)](https://www.puc.texas.gov/)
 - [Texas Comptroller — Property Tax / Forms (incl. Form 50-123)](https://comptroller.texas.gov/taxes/property-tax/)
 - [Austin Energy — Solar programs](https://austinenergy.com/green-power/solar-solutions)
+- [Austin Energy — Solar for your home (residential)](https://austinenergy.com/green-power/solar-solutions/for-your-home)
+- [Austin Energy — Solar for business (commercial)](https://austinenergy.com/green-power/solar-solutions/for-business)
 - [Oncor — Take a Load Off Texas / energy efficiency programs](https://www.oncor.com/)
 - [CPS Energy — Solar](https://www.cpsenergy.com/)
 - Related site pages: [Net Metering, Net Billing & Rate Structures](grid-net-metering.md) · [Residential Incentives](residential-incentives.md) · [Commercial Solar Federal Tax Credits](federal-tax-credits.md) · [SREC Markets Deep-Dive](incentive-srec-markets.md) · [Battery Storage](battery-storage.md)

@@ -17,6 +17,8 @@ Some utilities pay a **direct rebate** toward system cost — a flat amount or a
 
 > With §25D ended for homeowner-owned systems placed in service after Dec 31, 2025, utility rebates no longer interact with a federal residential credit — but they still stack with [state credits](resinc-state.md), [SRECs](resinc-srec.md), and [net-metering value](resinc-net-metering.md).
 
+**Example — Austin Energy (TX).** As of **July 1, 2026**, Austin Energy pays a **$4,000 residential solar rebate** for a system **larger than 3 kW** (up from $2,500), open to any customer who hasn't yet installed. To earn it you must complete Austin Energy's free **Solar Education Course**, use an **Austin Energy Participating Contractor**, and get a **rebate confirmation letter before installation**. Austin Energy credits production under a **Value of Solar tariff (~9.91¢/kWh on all generation)** rather than net metering, and battery owners can earn peak rewards through the **Power Partner** program (third-party PPAs are not allowed in its territory). See the full breakdown, including commercial capacity- and performance-based incentives, in the [Texas solar guide](state-tx.md).
+
 ## Battery / Storage Incentives
 
 As [net billing](resinc-net-metering.md) spreads and export credits shrink, **storage incentives** have become the headline utility offering. Several programs pay substantial amounts — often in exchange for **grid access** to your battery (see VPPs below).
